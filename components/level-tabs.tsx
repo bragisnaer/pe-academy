@@ -5,21 +5,31 @@ import { Lock } from "lucide-react"
 interface LevelTabsProps {
   activeLevel?: number
   onLevelChange?: (level: number) => void
+  unlockedLevelNumbers?: number[]
 }
 
 const TABS = [
-  { level: 1, label: "Beginner", locked: false },
-  { level: 2, label: "Intermediate", locked: true },
-  { level: 3, label: "Expert", locked: true },
+  { level: 1, label: "Beginner" },
+  { level: 2, label: "Intermediate" },
+  { level: 3, label: "Expert" },
 ]
 
-export function LevelTabs({ activeLevel = 1, onLevelChange }: LevelTabsProps) {
+function getLockedTooltip(level: number): string {
+  if (level === 2) return "Pass the Level 1 quiz to unlock Intermediate"
+  if (level === 3) return "Complete Level 2 to unlock Expert"
+  return "Complete previous levels to unlock"
+}
+
+export function LevelTabs({ activeLevel = 1, onLevelChange, unlockedLevelNumbers }: LevelTabsProps) {
+  const unlockedSet = new Set(unlockedLevelNumbers ?? [1])
+
   return (
     <div className="flex items-center border-b border-white/10 px-4">
       {TABS.map((tab) => {
-        const isActive = tab.level === activeLevel && !tab.locked
+        const isLocked = !unlockedSet.has(tab.level)
+        const isActive = tab.level === activeLevel && !isLocked
 
-        if (tab.locked) {
+        if (isLocked) {
           return (
             <button
               key={tab.level}
@@ -27,7 +37,7 @@ export function LevelTabs({ activeLevel = 1, onLevelChange }: LevelTabsProps) {
               className="flex h-10 items-center gap-1 px-3 text-sm font-normal text-zinc-600 cursor-not-allowed select-none"
               aria-disabled="true"
               tabIndex={-1}
-              title="Complete Beginner level to unlock"
+              title={getLockedTooltip(tab.level)}
             >
               <Lock className="size-3" aria-hidden="true" />
               {tab.label}

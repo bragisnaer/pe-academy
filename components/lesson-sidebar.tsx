@@ -1,5 +1,6 @@
+import Link from "next/link"
 import { getLessonsByLevel } from "@/lib/content"
-import { MODULES } from "@/content/curriculum-taxonomy"
+import { MODULES, LEVELS } from "@/content/curriculum-taxonomy"
 import { LevelTabs } from "@/components/level-tabs"
 import { LessonSidebarItem } from "@/components/lesson-sidebar-item"
 
@@ -7,14 +8,26 @@ interface LessonSidebarProps {
   currentModuleSlug?: string
   currentLessonSlug?: string
   completedLessonUuids?: string[]
+  unlockedLevelIds?: string[]
 }
 
 export function LessonSidebar({
   currentModuleSlug,
   currentLessonSlug,
   completedLessonUuids = [],
+  unlockedLevelIds = [],
 }: LessonSidebarProps) {
   const level1Lessons = getLessonsByLevel(1)
+
+  // Convert UUID array to level number array for LevelTabs.
+  // Always include Level 1 (seeded by signup trigger — may not appear in
+  // user_progress for legacy accounts).
+  const unlockedLevelNumbers = [
+    1, // always unlocked
+    ...LEVELS
+      .filter((l) => l.number > 1 && unlockedLevelIds.includes(l.uuid))
+      .map((l) => l.number),
+  ]
 
   // Group Level 1 lessons by module
   const lessonsByModule = level1Lessons.reduce<Record<string, typeof level1Lessons>>(
@@ -34,7 +47,7 @@ export function LessonSidebar({
 
   return (
     <nav className="flex flex-col h-full" aria-label="Curriculum navigation">
-      <LevelTabs activeLevel={1} />
+      <LevelTabs activeLevel={1} unlockedLevelNumbers={unlockedLevelNumbers} />
 
       <div className="flex-1 overflow-y-auto py-2">
         {/* Level 1 modules */}
@@ -69,6 +82,17 @@ export function LessonSidebar({
             </div>
           )
         })}
+
+        {/* Quiz CTA — shown below Level 1 lessons */}
+        <div className="px-4 pb-4 pt-2 border-t border-white/10 mt-2">
+          <Link
+            href="/levels/beginner/quiz"
+            className="flex items-center justify-center gap-2 w-full rounded-md bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium px-4 py-2.5 transition-colors"
+          >
+            Take Level 1 Quiz
+          </Link>
+          <p className="text-xs text-zinc-500 text-center mt-1.5">Pass to unlock Level 2</p>
+        </div>
 
         {/* Locked placeholder modules */}
         {lockedModules.map((mod) => (
