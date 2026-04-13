@@ -27,14 +27,20 @@ const lessons = defineCollection({
 const caseStudies = defineCollection({
   name: "CaseStudy",
   pattern: "case-studies/**/*.mdx",
-  schema: s.object({
-    title: s.string(),
-    topic_tags: s.array(s.string()),
-    uuid: s.string(),
-    slug: s.slug("case-studies"),
-    summary: s.string(),
-    body: s.mdx(),
-  }),
+  schema: s
+    .object({
+      title: s.string(),
+      topic_tags: s.array(s.string()),
+      uuid: s.string(),
+      slug: s.slug("case-studies"),
+      summary: s.string(),
+      body: s.mdx(),
+    })
+    .transform((data) => ({
+      ...data,
+      // Strip the "case-studies/" prefix so slugAsParams is just the case study slug
+      slugAsParams: data.slug.replace(/^case-studies\//, ""),
+    })),
 });
 
 // ─── Config ────────────────────────────────────────────────────────────────

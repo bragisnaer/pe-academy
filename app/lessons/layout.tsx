@@ -1,16 +1,22 @@
 import { LessonSidebar } from "@/components/lesson-sidebar"
 import { MobileSidebarToggle } from "@/components/mobile-sidebar-toggle"
+import { getCompletedLessons } from "@/lib/actions/lessons"
 
-export default function LessonsLayout({
+export default async function LessonsLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  // Fetch completed lesson UUIDs for the current user.
+  // This makes the layout dynamic (per-request) so sidebar checkmarks are always
+  // up to date. The lesson page content itself remains ISR-static.
+  const completedLessonUuids = await getCompletedLessons()
+
   return (
     <div className="flex min-h-[calc(100vh-56px)]">
       {/* Desktop sidebar */}
       <aside className="hidden md:flex w-72 shrink-0 flex-col bg-zinc-900 border-r border-white/10 sticky top-14 h-[calc(100vh-56px)] overflow-y-auto">
-        <LessonSidebar />
+        <LessonSidebar completedLessonUuids={completedLessonUuids} />
       </aside>
 
       {/* Mobile header bar with hamburger */}

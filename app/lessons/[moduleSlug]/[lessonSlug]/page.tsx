@@ -2,10 +2,13 @@ import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import { getLessons, getLessonBySlug } from "@/lib/content"
 import { MdxContent } from "@/components/mdx-content"
+import { MarkCompleteButton } from "@/components/mark-complete-button"
 
 // ISR: revalidate lesson pages every hour.
 // Auth is enforced by middleware (lib/supabase/middleware.ts) which redirects
 // unauthenticated requests from /lessons/* to / before the page is reached.
+// NOTE: initialCompleted is always false here (ISR page cannot be per-user dynamic).
+// Sidebar checkmarks come from the layout which calls getCompletedLessons() per request.
 export const revalidate = 3600
 
 export async function generateStaticParams() {
@@ -67,6 +70,11 @@ export default async function LessonPage({
         ].join(" ")}
       >
         <MdxContent code={lesson.body} withGlossary />
+      </div>
+
+      {/* Mark complete — right-aligned on desktop, full-width on mobile */}
+      <div className="flex justify-end mt-8">
+        <MarkCompleteButton lessonUuid={lesson.uuid} initialCompleted={false} />
       </div>
     </article>
   )
