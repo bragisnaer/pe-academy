@@ -34,5 +34,14 @@ export async function updateSession(request: NextRequest) {
     return NextResponse.redirect(url)
   }
 
+  const protectedPaths = ['/lessons']
+  const isProtected = protectedPaths.some(p => pathname === p || pathname.startsWith(p + '/'))
+
+  if (!user && isProtected) {
+    const url = request.nextUrl.clone()
+    url.pathname = '/'
+    return NextResponse.redirect(url)
+  }
+
   return supabaseResponse
 }
