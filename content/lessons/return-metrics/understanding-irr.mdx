@@ -8,8 +8,79 @@ uuid: "780ced85-5736-4df9-ae2e-b729b1417660"
 slug: "understanding-irr"
 ---
 
-IRR — Internal Rate of Return — is the annualised return on a private equity investment, calculated as the discount rate that makes the net present value (NPV) of all cash flows equal to zero, accounting for both the timing and magnitude of each capital call and distribution.
+**IRR** — Internal Rate of Return — is the annualised return on a private equity investment, expressed as a percentage. Where MOIC measures the absolute multiple of return, IRR measures the speed at which that return was generated. Together, they form the two-metric standard for evaluating PE performance.
 
-IRR is the primary performance benchmark in private equity because it captures the time value of money — a fast return is worth more than a slow one, which is why PE firms often pursue early exits or dividend recapitalisations to boost reported IRR alongside the J-curve effect.
+IRR is the primary benchmark used by PE firms when reporting to LPs, comparing funds, and setting return targets. Understanding how it is calculated and what it actually measures is essential for anyone working in or evaluating private equity.
 
-This lesson explains IRR calculation mechanics, how it relates to MOIC across different holding periods, the difference between gross IRR (deal level) and net IRR (after fees and carry), and why IRR can be manipulated through subscription credit facilities — a growing LP governance concern.
+## What IRR Measures
+
+IRR is the discount rate that makes the net present value (NPV) of all cash flows — both in and out — equal to zero. In plain terms, it is the annualised rate of return that accounts for the exact timing and size of every capital call and distribution.
+
+This time sensitivity is IRR's defining characteristic and its key advantage over MOIC:
+
+- Capital returned early is worth more than capital returned late (because it can be reinvested)
+- IRR penalises slow returns and rewards fast ones
+- Two investments with identical MOICs can have dramatically different IRRs if their timing differs
+
+### The Time Value of Money
+
+The underlying principle is **time value of money**: a dollar received today is worth more than a dollar received in five years, because today's dollar can be invested and compounded. IRR embeds this logic by finding the annualised rate at which all future cash flows, discounted back to today, equal the initial investment.
+
+## Worked Example: Same MOIC, Different IRR
+
+Consider two PE deals, both achieving a 3.0x MOIC on a $100 million equity investment:
+
+**Deal A:** $100 million invested; $300 million returned after **3 years**
+**Deal B:** $100 million invested; $300 million returned after **7 years**
+
+- Deal A IRR: approximately **44%** per year
+- Deal B IRR: approximately **17%** per year
+
+Same MOIC. Radically different IRR. Deal A is dramatically superior on a time-adjusted basis — the capital was returned in 3 years rather than 7, freeing it for reinvestment much sooner.
+
+This example illustrates why PE professionals always quote both metrics together. A fund reporting a "3x return" without specifying the holding period is providing only half the picture.
+
+## The J-Curve
+
+The **J-curve** describes the typical pattern of IRR over the life of a PE fund. In the early years (typically years 1–3), the fund's IRR appears negative or very low because:
+
+- Management fees are being paid but no investments have been exited
+- Portfolio company valuations are typically carried at or near cost in early years
+- The denominator (capital called) grows while returns have not yet been realised
+
+As portfolio companies mature, are grown, and eventually exited — typically in years 4–8 — distributions begin to flow and the IRR climbs sharply. The shape traces a "J": declining first, then rising.
+
+The **J-curve** is important context for LPs evaluating fund performance. A fund reporting a -5% IRR after 2 years is not necessarily underperforming — it may simply be early in its natural J-curve. Conversely, a high early IRR (boosted by quick early exits) may not be sustained as the rest of the portfolio matures.
+
+## Gross IRR vs. Net IRR
+
+Like MOIC, IRR is reported on two bases:
+
+**Gross IRR** is calculated at the deal or fund level before management fees and carried interest. It reflects the raw investment performance and is used for fund marketing and deal-level attribution.
+
+**Net IRR** is what LPs actually earn — after deducting management fees (typically 2% annually) and the GP's 20% carried interest. Net IRR is the figure LPs use to compare PE returns against public market benchmarks.
+
+The difference between gross and net IRR is typically 3–7 percentage points, depending on fund size, fee structure, and the timing of carry crystallisation.
+
+> **Rule of thumb:** Top-quartile PE funds target 20–25%+ gross IRR and 15–20%+ net IRR. Funds generating net IRR below 10% have generally underperformed relative to public market alternatives on a risk-adjusted basis.
+
+## IRR Limitations and Manipulation
+
+IRR has well-known limitations that sophisticated LPs monitor carefully:
+
+**Reinvestment rate assumption:** IRR implicitly assumes all distributed cash flows are reinvested at the same IRR — an often unrealistic assumption for very high-return funds.
+
+**Subscription credit facilities:** Many PE funds use short-term credit lines (subscription credit facilities) to delay capital calls from LPs. Because IRR is highly sensitive to the timing of capital calls, delaying the initial call artificially inflates reported IRR — sometimes by several percentage points — without improving actual investment performance. This is a growing governance concern among LPs.
+
+**Early exit bias:** PE firms can improve reported fund IRR by prioritising quick exits on their strongest investments (boosting early distributions) while holding weaker investments longer. This tactically inflates IRR without reflecting true portfolio quality.
+
+Sophisticated LPs evaluate IRR alongside MOIC, DPI (Distributed to Paid-In), and public market equivalent (PME) benchmarks to get a complete picture.
+
+## Key Terms Introduced in This Lesson
+
+- **IRR** — Internal Rate of Return; the annualised percentage return on an investment accounting for the timing of all cash flows
+- **Internal rate of return** — the discount rate at which the net present value of all investment cash flows equals zero; the time-adjusted return metric
+- **J-curve** — the typical pattern of PE fund returns, where early years show low or negative IRR that rises sharply as investments mature and are exited
+- **Time value of money** — the principle that capital received sooner is worth more than the same capital received later, because it can be reinvested
+- **Net IRR** — IRR after deducting management fees and carried interest; the return actually received by LP investors
+- **Gross IRR** — IRR before fees and carry; reflects raw deal or fund performance before GP economics are deducted
