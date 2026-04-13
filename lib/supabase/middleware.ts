@@ -23,6 +23,16 @@ export async function updateSession(request: NextRequest) {
       },
     }
   )
-  await supabase.auth.getUser()
+  const { data: { user } } = await supabase.auth.getUser()
+
+  const { pathname } = request.nextUrl
+  const authOnlyPaths = ['/', '/login', '/signup']
+
+  if (user && authOnlyPaths.includes(pathname)) {
+    const url = request.nextUrl.clone()
+    url.pathname = '/lessons'
+    return NextResponse.redirect(url)
+  }
+
   return supabaseResponse
 }
