@@ -37,7 +37,7 @@ Declared values (multiples of 4 only):
 | Token | Value | Usage |
 |-------|-------|-------|
 | xs | 4px | Icon gaps, inline padding within lesson tree items |
-| sm | 8px | Between lesson items in sidebar tree, badge padding |
+| sm | 8px | Between lesson items in sidebar tree, badge padding, glossary tooltip internal padding |
 | md | 16px | Default element spacing, sidebar padding, lesson body paragraph gap |
 | lg | 24px | Section padding within lesson content, card padding |
 | xl | 32px | Gap between sidebar and main content area |
@@ -46,7 +46,6 @@ Declared values (multiples of 4 only):
 
 Exceptions:
 - Touch targets for sidebar lesson items: minimum 44px height on mobile (accessibility requirement)
-- Glossary tooltip: 12px internal padding (3px deviation from scale — acceptable for tooltip compactness)
 - "Mark complete" button: minimum 44px height (touch target standard)
 
 ---
@@ -56,14 +55,14 @@ Exceptions:
 | Role | Size | Weight | Line Height | Usage |
 |------|------|--------|-------------|-------|
 | Body | 16px | 400 (regular) | 1.6 | Lesson prose, glossary definitions, case study body |
-| Label | 14px | 500 (medium) | 1.4 | Sidebar lesson titles, level tabs, badge text, tooltip text |
+| Label | 14px | 400 (regular) | 1.4 | Sidebar lesson titles, level tabs, badge text, tooltip text |
 | Heading | 24px | 600 (semibold) | 1.2 | Lesson title (h1), module headings in sidebar |
-| Display | 32px | 700 (bold) | 1.15 | Page-level heading (e.g. /glossary page title) |
+| Display | 32px | 600 (semibold) | 1.15 | Page-level heading (e.g. /glossary page title) |
 
 Font: Inter (system fallback: ui-sans-serif, system-ui, sans-serif)
 Source: app/layout.tsx — Inter loaded via next/font/google, assigned to --font-sans
 
-> Executor note: Use `text-base` (16px), `text-sm` (14px), `text-2xl` (24px), `text-3xl` (32px) in Tailwind. Weights via `font-normal`, `font-medium`, `font-semibold`, `font-bold`.
+> Executor note: Use `text-base` (16px), `text-sm` (14px), `text-2xl` (24px), `text-3xl` (32px) in Tailwind. Weights via `font-normal` and `font-semibold` only.
 
 ---
 
@@ -134,7 +133,7 @@ Source: app/globals.css (.dark variables) + app/layout.tsx (bg-zinc-950 enforced
 - Three tabs: Beginner / Intermediate / Expert
 - Active (Beginner): `text-white`, bottom border indicator `border-b-2 border-white`
 - Locked (Intermediate, Expert): `text-zinc-600`, `Lock` icon (12px) inline before label, no click interaction, cursor-not-allowed
-- Tab height: 40px, label size: 14px / font-medium
+- Tab height: 40px, label size: 14px / font-normal
 
 ### Mark Complete Button
 
@@ -146,16 +145,16 @@ Source: app/globals.css (.dark variables) + app/layout.tsx (bg-zinc-950 enforced
 
 ### Glossary Tooltip
 
-- **Desktop (hover):** `Tooltip` component from @base-ui/react; triggers on mouse enter of highlighted term; shows one-line definition (max 120 chars) in `bg-zinc-800 text-white text-sm` popover; 8px offset from term
+- **Desktop (hover):** `Tooltip` component from @base-ui/react; triggers on mouse enter of highlighted term; shows one-line definition (max 120 chars) in `bg-zinc-800 text-white text-sm` popover; 8px offset from term; internal padding 8px (sm token)
 - **Mobile (click):** Same popover triggered on tap; dismissed on outside tap
 - **Term highlighting:** First occurrence only per lesson page; `text-white underline decoration-dotted decoration-zinc-400` inline style; subsequent occurrences plain text
 
 ### Glossary Page (/glossary)
 
 - Alphabetical sections with letter headers (`text-2xl font-semibold text-white`, `Separator` below)
-- Each term: `text-base font-medium text-white` term label + `text-zinc-400` definition below
+- Each term: `text-base font-normal text-white` term label + `text-zinc-400` definition below
 - Filter input (top of page): filters terms live (client-side); clears with Button variant=ghost
-- Empty filter state: "No terms match '{query}'. Try a shorter search."
+- Empty filter state: "No matching terms. Try a shorter or different search."
 
 ### Locked Level Cards
 
@@ -179,8 +178,9 @@ Source: app/globals.css (.dark variables) + app/layout.tsx (bg-zinc-950 enforced
 | Primary CTA | "Mark complete" |
 | Completed state label | "Completed" |
 | Locked level tooltip | "Complete Beginner level to unlock" |
-| Glossary empty state heading | "No terms found" |
-| Glossary empty state body | "No terms match your search. Try a shorter or different query." |
+| Glossary empty state heading | "No matching terms" |
+| Glossary empty state body | "No matching terms. Try a shorter or different search." |
+| Glossary filter clear button | "Clear filter" |
 | Glossary page title | "Glossary" |
 | Glossary page subtitle | "Key concepts from the PE Academy curriculum." |
 | Case study breadcrumb | "Curriculum / Case Studies / {title}" |
