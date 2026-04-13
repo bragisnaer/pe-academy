@@ -1,0 +1,152 @@
+[
+  {
+    "term": "AUM",
+    "definition": "Assets Under Management — the total market value of assets a PE firm manages on behalf of investors.",
+    "full_definition": "Assets Under Management (AUM) refers to the total market value of all investments a private equity firm manages on behalf of its limited partners and other investors. It is a key measure of a firm's size and market influence. AUM includes committed but uncalled capital (dry powder), invested capital, and the current value of portfolio companies. Larger AUM generally correlates with greater fee income for the GP, as management fees are typically calculated as a percentage of committed or invested capital.",
+    "related_topic_tags": ["fund-structure", "return-metrics"]
+  },
+  {
+    "term": "bolt-on acquisition",
+    "definition": "An acquisition made by a portfolio company to expand its business, typically smaller than the original deal.",
+    "full_definition": "A bolt-on acquisition (also called an add-on acquisition) is when a private equity-backed portfolio company acquires another, usually smaller, company to expand its capabilities, customer base, geographic reach, or market share. Bolt-ons are a core value creation lever in PE — by acquiring complementary businesses at lower multiples than the platform company's entry multiple, the GP can grow EBITDA while simultaneously expanding the valuation multiple at exit. This 'multiple arbitrage' effect is a significant driver of PE returns.",
+    "related_topic_tags": ["deal-concepts", "value-creation"]
+  },
+  {
+    "term": "capital call",
+    "definition": "A GP's formal request for LPs to contribute a portion of their committed capital for an investment.",
+    "full_definition": "A capital call (also known as a drawdown) is the mechanism by which a general partner formally requests that limited partners transfer a portion of their committed capital into the fund. LPs do not hand over all committed capital at fund close — instead, the GP calls capital over time as investment opportunities arise. Capital calls must typically be funded within a short window (often 10 business days). Failure to meet a capital call can result in severe penalties, including dilution of the LP's interest or forfeiture of prior contributions.",
+    "related_topic_tags": ["fund-structure"]
+  },
+  {
+    "term": "carried interest",
+    "definition": "The GP's share of profits from a fund — typically 20% of returns above a preferred return hurdle.",
+    "full_definition": "Carried interest (or 'carry') is the performance-based compensation earned by a fund's general partners and investment team. It represents a share of the fund's profits — typically 20% — paid to the GP after limited partners have received their committed capital back plus a preferred return (hurdle rate, usually 8%). Carried interest aligns the GP's incentives with LP returns, since the GP only profits when the fund performs well. In most structures, a clawback provision ensures that if early fund wins are followed by later losses, the GP must return excess carry already paid.",
+    "related_topic_tags": ["fund-structure", "return-metrics"]
+  },
+  {
+    "term": "debt-to-equity",
+    "definition": "The ratio of a company's total debt to its equity — a key measure of financial leverage in LBO structures.",
+    "full_definition": "The debt-to-equity (D/E) ratio measures a company's financial leverage by comparing total liabilities to shareholder equity. In LBO transactions, PE firms deliberately engineer high D/E ratios (typically 3:1 to 5:1 at entry) to amplify equity returns. As the company pays down debt over the hold period using its operating cash flows, the equity stake grows — this is the core return mechanic of leveraged buyouts. A high D/E ratio increases both return potential and financial risk; if the business underperforms, the debt burden can lead to distress or default.",
+    "related_topic_tags": ["deal-concepts", "return-metrics"]
+  },
+  {
+    "term": "dry powder",
+    "definition": "Committed but undeployed capital — funds LPs have committed to a PE firm but that haven't been invested yet.",
+    "full_definition": "Dry powder refers to the committed but uninvested capital sitting in private equity funds, available for deployment into new investments. When LPs commit to a fund, they do not immediately transfer all capital — instead, the GP calls capital as deals are made. The uninvested portion is called dry powder. Industry-wide dry powder levels are closely watched as a market health indicator: very high dry powder can signal a competitive deal environment and pressure to deploy at high valuations, while low levels may indicate a more cautious market or a late-cycle correction.",
+    "related_topic_tags": ["fund-structure", "key-players"]
+  },
+  {
+    "term": "due diligence",
+    "definition": "The comprehensive investigation of a target company before an investment — covering financial, legal, and operational areas.",
+    "full_definition": "Due diligence is the rigorous investigation process conducted by a PE firm before completing an acquisition. It covers financial diligence (validating historical financials, quality of earnings, working capital dynamics), commercial diligence (market size, competitive position, customer concentration), legal diligence (contracts, litigation, IP, regulatory compliance), and operational diligence (management quality, systems, operational efficiency). Due diligence typically involves external advisors (Big 4 accountants, legal counsel, industry consultants) and can take 6–12 weeks. Its purpose is to validate the investment thesis and identify risks before committing capital.",
+    "related_topic_tags": ["deal-concepts"]
+  },
+  {
+    "term": "EBITDA",
+    "definition": "Earnings Before Interest, Taxes, Depreciation and Amortisation — the primary profitability metric in PE deal analysis.",
+    "full_definition": "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortisation) is the most widely used profitability metric in private equity deal analysis and valuation. It strips out the effects of capital structure (interest), tax jurisdiction, and non-cash charges (depreciation and amortisation) to provide a cleaner view of operating profitability. PE firms use EBITDA as the basis for entry and exit multiples (EV/EBITDA), debt sizing (total debt is typically 4–7x EBITDA at entry), and value creation measurement. 'Adjusted EBITDA' or 'normalised EBITDA' adds back one-time items and run-rate adjustments to reflect true recurring earnings power.",
+    "related_topic_tags": ["deal-concepts", "return-metrics"]
+  },
+  {
+    "term": "endowment",
+    "definition": "An institutional fund that manages a non-profit's long-term assets — a major LP category in PE.",
+    "full_definition": "Endowments are permanent capital pools managed by universities, hospitals, foundations, and other non-profit organisations. They invest assets to generate returns that fund institutional operations and programmes in perpetuity. Endowments are among the most sophisticated and influential limited partners in private equity. Harvard Management Company and Yale Investment Office pioneered the 'endowment model' (also called the Yale Model) — a heavily alternatives-weighted approach that allocates 30–50% of the portfolio to private equity and venture capital. Their long investment horizons and low liquidity constraints make them ideal PE limited partners.",
+    "related_topic_tags": ["fund-structure", "key-players"]
+  },
+  {
+    "term": "exit strategy",
+    "definition": "The method by which a PE firm realises its investment in a portfolio company — typically IPO, sale, or recapitalisation.",
+    "full_definition": "An exit strategy is the planned method by which a private equity firm monetises its investment in a portfolio company and returns capital to limited partners. The three primary exit routes are: (1) Strategic sale — selling to a corporate buyer (most common, typically at the highest multiple); (2) Sponsor-to-sponsor sale (secondary buyout) — selling to another PE firm; (3) IPO — listing the company on a public stock exchange, after which the PE firm gradually sells down its stake. The chosen exit path depends on market conditions, the portfolio company's readiness, and which route maximises value for LPs.",
+    "related_topic_tags": ["deal-concepts", "fund-structure"]
+  },
+  {
+    "term": "fund lifecycle",
+    "definition": "The typical 10-year arc of a PE fund — from capital raising through investment to exit and distribution.",
+    "full_definition": "The fund lifecycle describes the standard stages a private equity fund moves through from inception to wind-down. A typical PE fund has a 10-year term (often extendable by 1–2 years). Year 1–2: Fund raising and initial investments. Years 2–5: Deployment period — capital is called and invested into portfolio companies. Years 3–7: Value creation period — the GP works actively with portfolio companies to drive operational improvements and growth. Years 5–10: Harvest period — portfolio companies are exited via sales or IPOs and proceeds are distributed to LPs. After all distributions, the fund winds down.",
+    "related_topic_tags": ["fund-structure"]
+  },
+  {
+    "term": "GP",
+    "definition": "General Partner — the PE firm that manages the fund, makes investment decisions, and earns management fees and carry.",
+    "full_definition": "The General Partner (GP) is the fund manager — the private equity firm that raises capital from limited partners, manages the fund's investments, and ultimately returns capital with profits to investors. GPs have unlimited liability for fund obligations (in practice, GPs use LLC structures to limit personal exposure). They earn two forms of compensation: a management fee (typically 1.5–2% of committed capital annually) to cover operating costs, and carried interest (typically 20% of profits above the hurdle rate) as a performance incentive. GP principals typically co-invest 1–3% of fund capital alongside LPs to align interests.",
+    "related_topic_tags": ["fund-structure", "key-players"]
+  },
+  {
+    "term": "investment committee",
+    "definition": "The senior decision-making body at a PE firm that approves or rejects individual investment proposals.",
+    "full_definition": "The investment committee (IC) is the senior governing body at a private equity firm responsible for approving or rejecting investment decisions. It typically comprises senior partners and, in some firms, external advisors or LP representatives. When a deal team identifies a potential investment, they prepare an investment committee memo (IC memo) — a detailed analysis covering investment thesis, due diligence findings, financial projections, risk factors, and proposed deal structure. The IC subjects the memo to rigorous questioning before voting on whether to proceed. IC approval is required at multiple stages: initial approval to pursue due diligence, and final approval to close the transaction.",
+    "related_topic_tags": ["deal-concepts", "key-players"]
+  },
+  {
+    "term": "IRR",
+    "definition": "Internal Rate of Return — the annualised return on an investment, accounting for the timing of cash flows.",
+    "full_definition": "Internal Rate of Return (IRR) is the annualised rate of return on an investment, calculated as the discount rate that makes the net present value (NPV) of all cash flows equal to zero. Unlike MOIC, IRR accounts for the time value of money — a faster return produces a higher IRR even at the same absolute profit. In PE, IRR is used alongside MOIC to evaluate fund and deal performance. The 'time component' of IRR makes it sensitive to the hold period: an investment that returns 3x in 3 years (IRR ~44%) is far more impressive than one that returns 3x in 7 years (IRR ~17%). Top-tier PE funds typically target net IRRs of 20%+ to limited partners.",
+    "related_topic_tags": ["return-metrics"]
+  },
+  {
+    "term": "J-curve",
+    "definition": "The early negative returns followed by positive returns typical of PE fund performance over its lifecycle.",
+    "full_definition": "The J-curve describes the characteristic return pattern of private equity funds over their lifecycle. In the early years of a fund (years 1–4), returns appear negative when plotted on a chart: management fees are being charged, deal costs are incurred, and portfolio companies are early in their value creation journey and valued conservatively. As the fund matures and portfolio companies are exited at gains, returns improve sharply — the curve dips down and then rises steeply, forming a 'J' shape. The J-curve is a critical concept for LP portfolio construction: investors must plan for negative early-year valuations before the harvest years deliver positive returns.",
+    "related_topic_tags": ["return-metrics", "fund-structure"]
+  },
+  {
+    "term": "LBO",
+    "definition": "Leveraged Buyout — acquiring a company using a combination of equity and significant borrowed debt.",
+    "full_definition": "A Leveraged Buyout (LBO) is the acquisition of a company using a mix of equity (typically 30–40% of purchase price) and debt (60–70%), where the target company's own assets and cash flows serve as collateral and repayment source for the debt. LBOs allow PE firms to amplify equity returns: by using debt to finance most of the purchase price, the equity investment needed is smaller, so even moderate absolute gains produce high percentage returns on equity. The debt is placed on the portfolio company's balance sheet, not the PE fund's — making the company responsible for servicing it from operating cash flows over the hold period.",
+    "related_topic_tags": ["deal-concepts", "return-metrics"]
+  },
+  {
+    "term": "letter of intent",
+    "definition": "A non-binding document outlining the key terms of a proposed acquisition before a definitive agreement is signed.",
+    "full_definition": "A Letter of Intent (LOI), also called a Term Sheet or Heads of Terms in some jurisdictions, is a non-binding document that outlines the principal terms of a proposed transaction before a legally binding purchase agreement is negotiated. In private equity deals, the LOI typically covers: proposed purchase price and structure, exclusivity period (usually 30–60 days, during which the seller cannot shop the deal), conditions precedent to closing, deal timeline, and key working capital and indemnification terms. LOIs are critical because they establish deal parameters early and protect the buyer's due diligence investment by locking in exclusivity.",
+    "related_topic_tags": ["deal-concepts"]
+  },
+  {
+    "term": "leverage ratio",
+    "definition": "Total debt divided by EBITDA — the primary measure of how much debt is used to finance a PE acquisition.",
+    "full_definition": "The leverage ratio in a private equity context typically refers to Total Debt / EBITDA — the number of years of operating earnings it would take to repay all debt. At LBO entry, leverage ratios of 4x–7x EBITDA are common for high-quality, stable businesses. Leverage ratios vary by sector and credit market conditions: defensive sectors (healthcare, software) can support higher leverage; cyclical sectors (industrials, retail) are typically lent to at lower multiples. Lenders impose financial covenants — minimum EBITDA, maximum leverage ratio — to protect against credit deterioration. PE firms track leverage ratio reduction over the hold period as a key sign of balance sheet health and value creation.",
+    "related_topic_tags": ["deal-concepts", "return-metrics"]
+  },
+  {
+    "term": "LP",
+    "definition": "Limited Partner — an investor in a PE fund who commits capital but has no role in managing investments.",
+    "full_definition": "Limited Partners (LPs) are the institutional and individual investors who commit capital to a private equity fund. Unlike general partners, LPs have limited liability — their maximum loss is capped at their committed capital. They play no active role in fund management or investment decisions. Common LP types include pension funds, sovereign wealth funds, endowments, insurance companies, family offices, and high-net-worth individuals. LPs commit capital over the fund's investment period (typically 3–5 years) and receive distributions as portfolio companies are exited. The LP/GP relationship is governed by the Limited Partnership Agreement (LPA), which defines fees, carry, governance rights, and reporting obligations.",
+    "related_topic_tags": ["fund-structure", "key-players"]
+  },
+  {
+    "term": "management fee",
+    "definition": "The annual fee paid by LPs to the GP — typically 1.5–2% of committed capital — to cover operating costs.",
+    "full_definition": "The management fee is the annual operating fee charged by a private equity firm's general partner to its limited partners, typically expressed as a percentage of committed capital (1.5–2% for buyout funds, sometimes lower for large funds). Management fees cover the GP's overhead: salaries, rent, travel, deal sourcing costs, and advisory fees for uncompleted transactions. During the investment period, fees are charged on committed capital; post-investment period, many LPAs reduce fees to a percentage of invested (or net asset) value. The management fee is meant to cover costs, not generate profit — the GP's profit mechanism is carried interest on successful exits.",
+    "related_topic_tags": ["fund-structure"]
+  },
+  {
+    "term": "MOIC",
+    "definition": "Multiple on Invested Capital — total value returned divided by total capital invested. A 3x MOIC means $3 returned per $1 invested.",
+    "full_definition": "Multiple on Invested Capital (MOIC) measures the total return generated on an investment as a simple multiple of the original capital invested. It is calculated as: Total Value Realised (distributions + residual value) divided by Total Capital Invested. A 3x MOIC means that for every dollar invested, three dollars were returned. MOIC is the simplest measure of absolute return in PE — it does not account for the time value of money (unlike IRR). Top-quartile PE funds typically target a 2.5x–3.5x gross MOIC over a 5–7 year hold period. MOIC is often reported as both 'gross' (before fees and carry) and 'net' (after fees and carry to LPs).",
+    "related_topic_tags": ["return-metrics"]
+  },
+  {
+    "term": "portfolio company",
+    "definition": "A company that has been acquired by a PE fund and is actively managed as part of the fund's investment portfolio.",
+    "full_definition": "A portfolio company is a business that a private equity fund has acquired and holds as part of its investment portfolio. During the ownership period (typically 4–7 years), the PE firm works actively with the portfolio company's management team to execute a value creation plan — which may include operational improvements, strategic acquisitions (bolt-ons), management team changes, geographic expansion, or financial restructuring. The GP sits on the portfolio company's board of directors and provides strategic guidance. Portfolio company performance is measured by EBITDA growth, revenue growth, and margin expansion, which drive the enterprise value at exit.",
+    "related_topic_tags": ["deal-concepts", "key-players"]
+  },
+  {
+    "term": "sovereign wealth fund",
+    "definition": "A state-owned investment fund — one of the largest and most influential LP categories in global PE.",
+    "full_definition": "Sovereign wealth funds (SWFs) are state-owned investment vehicles that manage national wealth — typically funded by commodity revenues (e.g., Norway's Government Pension Fund Global, funded by oil revenues) or foreign exchange reserves. The largest SWFs — including GIC (Singapore), Abu Dhabi Investment Authority (ADIA), and Kuwait Investment Authority — manage trillions of dollars in assets and are among the most influential limited partners in global private equity. Their long investment horizons, absence of near-term liquidity needs, and enormous capital pools make them ideal PE investors. Some SWFs also invest directly in PE deals alongside GPs (co-investment), bypassing management fees.",
+    "related_topic_tags": ["fund-structure", "key-players"]
+  },
+  {
+    "term": "value creation",
+    "definition": "The operational and strategic improvements a PE firm makes to a portfolio company to increase its value before exit.",
+    "full_definition": "Value creation refers to the active improvement initiatives a private equity firm implements within a portfolio company during its ownership period to increase the company's enterprise value. PE firms categorise value creation into three buckets: (1) Revenue growth — organic growth through pricing, new markets, new products, and bolt-on acquisitions; (2) Margin improvement — operational efficiencies, procurement savings, headcount rationalisation, and working capital improvements; (3) Multiple expansion — exiting at a higher EV/EBITDA multiple than the entry multiple, often achieved by growing the business into a premium category (e.g., scaling a regional business into a national one commands a higher valuation). Top-performing PE firms create value primarily through operational improvement, not financial engineering alone.",
+    "related_topic_tags": ["deal-concepts", "return-metrics"]
+  },
+  {
+    "term": "waterfall",
+    "definition": "The distribution waterfall defines the order in which investment proceeds are distributed between LPs and the GP.",
+    "full_definition": "The distribution waterfall is the contractual mechanism in a fund's Limited Partnership Agreement that determines the sequence in which proceeds from portfolio company exits are allocated between limited partners and the general partner. A standard American-style waterfall proceeds as follows: (1) Return of capital — LPs receive 100% of distributions until all committed capital is returned; (2) Preferred return — LPs receive distributions until an 8% annual preferred return (hurdle rate) is reached; (3) GP catch-up — the GP receives a disproportionate share (often 80–100%) until it has received 20% of total profits above the hurdle; (4) Carried interest split — remaining profits split 80% LP / 20% GP. European-style waterfalls require full capital return before any carry is paid, providing greater LP protection.",
+    "related_topic_tags": ["fund-structure", "return-metrics"]
+  }
+]

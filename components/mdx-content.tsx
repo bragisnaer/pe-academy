@@ -1,9 +1,12 @@
 "use client"
 
 import * as runtime from "react/jsx-runtime"
+import { createMdxComponents } from "@/components/mdx-components"
 
 interface MdxContentProps {
   code: string
+  /** Pass true to enable inline glossary term highlighting (first occurrence per render). */
+  withGlossary?: boolean
 }
 
 // SECURITY NOTE: new Function() is used intentionally here. The `code` string is
@@ -21,7 +24,10 @@ function getMDXComponent(code: string) {
   }>
 }
 
-export function MdxContent({ code }: MdxContentProps) {
+export function MdxContent({ code, withGlossary = false }: MdxContentProps) {
   const Component = getMDXComponent(code)
-  return <Component />
+  // createMdxComponents() creates a fresh seenTerms Set per MdxContent render,
+  // ensuring only the first occurrence of each term is highlighted per lesson page.
+  const components = withGlossary ? createMdxComponents() : undefined
+  return <Component components={components} />
 }

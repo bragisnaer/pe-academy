@@ -66,7 +66,7 @@ export default async function LessonPage({
           "[&_p]:mb-4",
         ].join(" ")}
       >
-        <MdxContent code={lesson.body} />
+        <MdxContent code={lesson.body} withGlossary />
       </div>
     </article>
   )
