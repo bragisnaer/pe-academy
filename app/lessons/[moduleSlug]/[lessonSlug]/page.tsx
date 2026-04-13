@@ -1,8 +1,10 @@
-import { notFound } from "next/navigation"
+import { notFound, redirect } from "next/navigation"
 import type { Metadata } from "next"
 import { getLessons, getLessonBySlug } from "@/lib/content"
 import { MdxContent } from "@/components/mdx-content"
 import { MarkCompleteButton } from "@/components/mark-complete-button"
+import { getUnlockedLevelIds } from "@/lib/actions/progress"
+import { LEVELS } from "@/content/curriculum-taxonomy"
 
 // ISR: revalidate lesson pages every hour.
 // Auth is enforced by middleware (lib/supabase/middleware.ts) which redirects
@@ -52,6 +54,19 @@ export default async function LessonPage({
   // Return 404 for missing or locked lessons
   if (!lesson || lesson.locked) {
     notFound()
+  }
+
+  // Runtime access control for Level 2+ lessons.
+  // Level 1 lessons are always accessible (seeded by signup trigger).
+  // For Level 2+, verify the user has unlocked that level via user_progress.
+  if (lesson.level > 1) {
+    const levelMeta = LEVELS.find((l) => l.number === lesson.level)
+    if (levelMeta) {
+      const unlockedLevelIds = await getUnlockedLevelIds()
+      if (!unlockedLevelIds.includes(levelMeta.uuid)) {
+        redirect("/levels/beginner/quiz")
+      }
+    }
   }
 
   return (
