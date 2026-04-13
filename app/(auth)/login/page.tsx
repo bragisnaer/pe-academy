@@ -8,7 +8,7 @@ import { z } from 'zod'
 import Link from 'next/link'
 import { Loader2 } from 'lucide-react'
 
-import { login } from '@/lib/actions/auth'
+import { createClient } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import {
@@ -50,14 +50,14 @@ export default function LoginPage() {
     setIsLoading(true)
     setServerError(null)
 
-    const formData = new FormData()
-    formData.set('email', values.email)
-    formData.set('password', values.password)
+    const supabase = createClient()
+    const { error } = await supabase.auth.signInWithPassword({
+      email: values.email,
+      password: values.password,
+    })
 
-    const result = await login(formData)
-
-    if (result?.error) {
-      setServerError(result.error)
+    if (error) {
+      setServerError('Incorrect email or password. Please try again.')
       setIsLoading(false)
     } else {
       router.refresh()
