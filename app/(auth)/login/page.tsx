@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
@@ -33,6 +34,7 @@ const loginSchema = z.object({
 type LoginValues = z.infer<typeof loginSchema>
 
 export default function LoginPage() {
+  const router = useRouter()
   const [serverError, setServerError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
 
@@ -57,8 +59,10 @@ export default function LoginPage() {
     if (result?.error) {
       setServerError(result.error)
       setIsLoading(false)
+    } else {
+      router.refresh()
+      router.push('/lessons')
     }
-    // On success, server action redirects
   }
 
   return (

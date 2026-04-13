@@ -41,7 +41,7 @@ export async function login(formData: FormData) {
     return { error: 'Incorrect email or password. Please try again.' }
   }
 
-  redirect('/lessons')
+  return { success: true }
 }
 
 export async function resetPassword(formData: FormData) {
