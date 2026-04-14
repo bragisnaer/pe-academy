@@ -1,0 +1,182 @@
+[
+  {
+    "id": "res-001",
+    "title": "King of Capital",
+    "author": "David Carey & John E. Morris",
+    "type": "book",
+    "level": "Beginner",
+    "description": "The definitive history of Blackstone and Steve Schwarzman, tracing the firm from its 1985 founding through the financial crisis and beyond. An accessible entry point to understanding how a mega-fund operates, how deals are sourced, and how PE firms build institutional relationships with LPs.",
+    "url": null
+  },
+  {
+    "id": "res-002",
+    "title": "The Buyout of America",
+    "author": "Josh Kosman",
+    "type": "book",
+    "level": "Beginner",
+    "description": "A critical examination of leveraged buyouts and their economic consequences. Provides useful context on how LBO structures work and the debates around PE's role in employment and corporate governance — essential for understanding the industry's critics as well as its practitioners.",
+    "url": null
+  },
+  {
+    "id": "res-003",
+    "title": "Private Equity at Work",
+    "author": "Eileen Appelbaum & Rosemary Batt",
+    "type": "book",
+    "level": "Intermediate",
+    "description": "An academically rigorous analysis of PE business models, returns, and their impact on workers and portfolio companies. Covers fund economics, fee structures, and the empirical evidence on value creation. Balanced reading that goes beyond the industry's own narrative.",
+    "url": null
+  },
+  {
+    "id": "res-004",
+    "title": "Mastering Private Equity",
+    "author": "Claudia Zeisberger, Michael Prahl & Bowen White",
+    "type": "book",
+    "level": "Intermediate",
+    "description": "A comprehensive textbook covering the full private equity lifecycle: fundraising, deal sourcing, due diligence, value creation, and exit. Used on MBA programmes at INSEAD and elsewhere. Heavy on frameworks and practical tools including LBO modelling concepts.",
+    "url": null
+  },
+  {
+    "id": "res-005",
+    "title": "Investment Banking: Valuation, LBOs, M&A, and IPOs",
+    "author": "Joshua Rosenbaum & Joshua Pearl",
+    "type": "book",
+    "level": "Expert",
+    "description": "The industry-standard technical reference for valuation methodologies — comparable company analysis, precedent transactions, DCF, and LBO modelling. Every PE associate has a copy. Work through the LBO chapter and build the model yourself to understand the mechanics of leverage and equity returns.",
+    "url": null
+  },
+  {
+    "id": "res-006",
+    "title": "The Private Equity Podcast",
+    "author": "Moonfare",
+    "type": "podcast",
+    "level": "Beginner",
+    "description": "Accessible interviews with PE professionals covering fund structures, deal processes, and career paths. Well-suited for those new to the asset class who want to hear how practitioners think and talk. Episodes range from 30–60 minutes.",
+    "url": "https://www.moonfare.com/blog/podcast"
+  },
+  {
+    "id": "res-007",
+    "title": "Behind the Balance Sheet",
+    "author": "Steve Clapham",
+    "type": "podcast",
+    "level": "Intermediate",
+    "description": "In-depth conversations with fund managers, analysts, and corporate executives focused on financial analysis, accounting quality, and investment research. Particularly useful for understanding how sophisticated investors scrutinise management accounts and build conviction.",
+    "url": "https://www.behindthebalancesheet.com/podcast"
+  },
+  {
+    "id": "res-008",
+    "title": "Acquired",
+    "author": "Ben Gilbert & David Rosenthal",
+    "type": "podcast",
+    "level": "Intermediate",
+    "description": "Deep-dive case studies of individual companies and business histories — covering how businesses were built, acquired, and transformed. Episodes on KKR, Berkshire Hathaway, and specific portfolio company stories offer excellent grounding in how deals and operational transformations actually unfold.",
+    "url": "https://www.acquired.fm"
+  },
+  {
+    "id": "res-009",
+    "title": "Invest Like the Best",
+    "author": "Patrick O'Shaughnessy",
+    "type": "podcast",
+    "level": "Expert",
+    "description": "Long-form interviews with elite investors across private equity, venture, and public markets. Episodes with PE practitioners cover portfolio construction, sourcing, and the intellectual frameworks used by top funds. Best absorbed after you have solid foundations in fund mechanics and valuation.",
+    "url": "https://www.joincolossus.com/podcast/invest-like-the-best"
+  },
+  {
+    "id": "res-010",
+    "title": "Berkshire Hathaway Annual Letter (2022)",
+    "author": "Warren Buffett",
+    "type": "annual-letter",
+    "level": "Beginner",
+    "description": "Buffett's annual letters are the most widely read investor communications in the world — and for good reason. While Berkshire is not a PE fund, the letters contain the clearest plain-English explanations of business quality, capital allocation, and owner-operator thinking. The 2022 letter is a strong entry point.",
+    "url": "https://www.berkshirehathaway.com/letters/2022ltr.pdf"
+  },
+  {
+    "id": "res-011",
+    "title": "Blackstone Annual Letter to Limited Partners (2023)",
+    "author": "Steve Schwarzman",
+    "type": "annual-letter",
+    "level": "Intermediate",
+    "description": "Blackstone's LP letters describe macro themes driving deal activity, portfolio company performance, and strategic priorities across the firm's funds. Reading the GP's own communication to LPs is the closest you can get to seeing inside a fund's thinking without working there.",
+    "url": "https://ir.blackstone.com/annual-reports"
+  },
+  {
+    "id": "res-012",
+    "title": "KKR Global Macro Outlook",
+    "author": "Henry McVey, KKR",
+    "type": "annual-letter",
+    "level": "Expert",
+    "description": "KKR's annual macro and asset allocation outlook from their Chief Investment Officer. Covers credit markets, interest rate environments, LP allocation trends, and thematic investment opportunities. Demonstrates how major PE firms integrate macro analysis into deal activity and fund strategy.",
+    "url": "https://www.kkr.com/global-perspectives"
+  },
+  {
+    "id": "res-013",
+    "title": "Oaktree Capital: On the Couch",
+    "author": "Howard Marks",
+    "type": "annual-letter",
+    "level": "Expert",
+    "description": "Howard Marks's memos are legendary in the investment world for their clarity and depth. 'On the Couch' explores investor psychology, market cycles, and the nature of risk — concepts directly applicable to how PE investors think about entry timing, leverage, and exit conditions.",
+    "url": "https://www.oaktreecapital.com/insights/memo/on-the-couch"
+  },
+  {
+    "id": "res-014",
+    "title": "What Is Private Equity? — Investopedia",
+    "author": null,
+    "type": "article",
+    "level": "Beginner",
+    "description": "A clear, structured overview of private equity — covering fund types (buyout, growth, venture), the GP/LP structure, return mechanics, and the typical deal lifecycle. A reliable first read before engaging with more detailed material.",
+    "url": "https://www.investopedia.com/terms/p/privateequity.asp"
+  },
+  {
+    "id": "res-015",
+    "title": "How Private Equity Works — Harvard Business Review",
+    "author": "Steven Kaplan & Per Strömberg",
+    "type": "article",
+    "level": "Beginner",
+    "description": "A practitioner-oriented overview from two of the leading academic researchers on private equity. Covers how PE firms add value, how returns are generated, and how the industry has evolved. Written accessibly without requiring prior finance knowledge.",
+    "url": "https://hbr.org/2009/09/leveraged-buyouts-and-private-equity"
+  },
+  {
+    "id": "res-016",
+    "title": "The Economics of Private Equity Funds",
+    "author": "Andrew Metrick & Ayako Yasuda",
+    "type": "article",
+    "level": "Intermediate",
+    "description": "A rigorous academic paper on PE fund economics — decomposing management fees, carried interest, and co-investment rights to calculate the actual revenue model of a PE firm. Essential reading for understanding how GPs are incentivised and how fee structures affect LP net returns.",
+    "url": "https://doi.org/10.1093/rfs/hhp067"
+  },
+  {
+    "id": "res-017",
+    "title": "Private Equity Returns: A Review of the Evidence",
+    "author": "Robert Harris, Tim Jenkinson & Steven Kaplan",
+    "type": "article",
+    "level": "Intermediate",
+    "description": "Reviews the academic evidence on PE fund performance versus public markets. Covers IRR, PME methodology, and the persistence of top-quartile returns. Answers the central LP question: does private equity actually outperform after fees?",
+    "url": "https://doi.org/10.1017/S0022109014000660"
+  },
+  {
+    "id": "res-018",
+    "title": "Value Creation in Private Equity",
+    "author": "McKinsey & Company",
+    "type": "article",
+    "level": "Intermediate",
+    "description": "McKinsey's analysis of how PE returns have evolved from financial engineering toward operational improvement. Covers the decomposition of return drivers across vintages and geographies, and the growing importance of EBITDA growth versus multiple expansion.",
+    "url": "https://www.mckinsey.com/industries/private-equity-and-principal-investors/our-insights"
+  },
+  {
+    "id": "res-019",
+    "title": "The State of Private Markets — Q4 2023",
+    "author": "PitchBook",
+    "type": "article",
+    "level": "Expert",
+    "description": "PitchBook's quarterly private markets data report covering deal volume, valuations, fundraising, and exit activity. Reading current market reports is how PE professionals stay calibrated on market conditions. Free registration required.",
+    "url": "https://pitchbook.com/news/reports/q4-2023-global-private-market-fundraising-report"
+  },
+  {
+    "id": "res-020",
+    "title": "Demystifying the LBO — Goldman Sachs Insights",
+    "author": "Goldman Sachs",
+    "type": "article",
+    "level": "Expert",
+    "description": "Goldman's practitioner guide to leveraged buyout mechanics — covering debt structures, return attribution, and how modern LBOs differ from the 1980s version. Technical and detailed; assumes comfort with financial modelling and capital structure concepts.",
+    "url": "https://www.goldmansachs.com/insights/topics/private-equity"
+  }
+]
