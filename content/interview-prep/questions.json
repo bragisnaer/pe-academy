@@ -1,0 +1,142 @@
+[
+  {
+    "id": "pef-1",
+    "topicTag": "pe-fundamentals",
+    "category": "conceptual",
+    "question": "What is private equity and how does it differ from public market investing?",
+    "answer": "Private equity refers to investment in companies that are not listed on public stock exchanges. Unlike public market investors who buy shares through exchanges with continuous liquidity, PE investors commit capital for a fixed fund life (typically 10 years), take controlling or significant minority stakes, and actively work with management to create value. Returns are realised at exit rather than through daily price movements."
+  },
+  {
+    "id": "pef-2",
+    "topicTag": "pe-fundamentals",
+    "category": "technical",
+    "question": "What is the typical fund life of a private equity fund, and what happens at the end of it?",
+    "answer": "A standard PE fund has a 10-year life: a 5-year investment period during which the GP deploys capital, followed by a 5-year harvesting period during which portfolio companies are sold. At the end of the fund life the GP distributes proceeds to LPs and the fund winds down. Extensions of 1–2 years are common if assets remain unsold."
+  },
+  {
+    "id": "pef-3",
+    "topicTag": "pe-fundamentals",
+    "category": "behavioral",
+    "question": "Why do you want to work in private equity rather than investment banking or consulting?",
+    "answer": "Strong answers focus on three themes: (1) the longer investment horizon that allows you to see value creation play out over years rather than months; (2) the ownership mentality — working with portfolio company management as a genuine stakeholder rather than an external adviser; and (3) the analytical depth required to underwrite a single business completely rather than executing many smaller transactions."
+  },
+  {
+    "id": "fs-1",
+    "topicTag": "fund-structure",
+    "category": "conceptual",
+    "question": "What is the difference between a General Partner and a Limited Partner in a PE fund?",
+    "answer": "The General Partner (GP) is the fund manager — it makes investment decisions, manages portfolio companies, and is personally liable for the fund's debts. GPs typically commit 1–3% of total fund capital alongside LPs. Limited Partners are the capital providers (pension funds, endowments, sovereign wealth funds, family offices). LPs have limited liability capped at their committed capital and do not participate in day-to-day management."
+  },
+  {
+    "id": "fs-2",
+    "topicTag": "fund-structure",
+    "category": "technical",
+    "question": "What is carried interest and how is it calculated?",
+    "answer": "Carried interest ('carry') is the GP's performance fee — typically 20% of profits above a preferred return (hurdle rate, usually 8%). A simplified example: a $500M fund returns $900M. After returning $500M of capital to LPs plus $40M of preferred return (8%), the remaining $360M of profit is split 80/20: LPs receive $288M, the GP receives $72M as carry. The GP only earns carry after LPs have received their capital and hurdle return."
+  },
+  {
+    "id": "fs-3",
+    "topicTag": "fund-structure",
+    "category": "behavioral",
+    "question": "How would you explain the GP/LP structure and fee model to a sceptical pension fund trustee?",
+    "answer": "Frame it as alignment of incentives: management fees (typically 2% of committed capital) cover operating costs only — they do not make GPs wealthy. The real upside for GPs comes from carry, which is paid only after LPs recover all capital plus a guaranteed return. This means the GP earns outsized reward only when LPs earn outsized reward. The structure turns the GP into a genuine co-investor rather than a fee-extracting service provider."
+  },
+  {
+    "id": "dc-1",
+    "topicTag": "deal-concepts",
+    "category": "conceptual",
+    "question": "What is a leveraged buyout (LBO) and what are the primary sources of return?",
+    "answer": "An LBO is the acquisition of a company using a significant proportion of debt (typically 50–70% of purchase price) alongside equity. The three primary return drivers are: (1) EBITDA growth — increasing the company's earnings through operational improvement or revenue growth; (2) multiple expansion — selling the company at a higher EV/EBITDA multiple than the entry multiple; (3) debt paydown — as the company uses cash flows to repay acquisition debt, the equity value increases even if enterprise value is unchanged."
+  },
+  {
+    "id": "dc-2",
+    "topicTag": "deal-concepts",
+    "category": "technical",
+    "question": "Walk me through the key financial statements you would build in an LBO model.",
+    "answer": "An LBO model requires three integrated financial statements: (1) Income Statement — projects revenue, EBITDA, D&A, EBIT, interest expense (driven by the debt schedule), taxes, and net income; (2) Balance Sheet — reflects asset base, the debt structure at entry and its amortisation, and equity; (3) Cash Flow Statement — derives free cash flow available for debt repayment by adjusting net income for non-cash items and working capital changes. The debt schedule tracks each tranche's opening balance, interest, and repayment. All three statements must balance and link to each other."
+  },
+  {
+    "id": "dc-3",
+    "topicTag": "deal-concepts",
+    "category": "behavioral",
+    "question": "Describe a time you had to evaluate a complex decision with incomplete information. How does that apply to deal analysis?",
+    "answer": "Strong answers draw on a real example — an academic project, internship, or case competition — where you identified the key unknowns, made explicit assumptions, stress-tested them, and reached a decision with a clear articulation of what would need to be true for the decision to be wrong. In deal context this maps directly to investment thesis development: the thesis must survive the worst-case assumption set, not just the base case."
+  },
+  {
+    "id": "rm-1",
+    "topicTag": "return-metrics",
+    "category": "conceptual",
+    "question": "What is the difference between IRR and MOIC, and which is more important in PE?",
+    "answer": "MOIC (Multiple on Invested Capital) measures the total value returned relative to capital invested, regardless of time: MOIC = total value / invested capital. IRR (Internal Rate of Return) is the annualised rate of return that discounts all cash flows to NPV zero — it accounts for the time value of money. In PE both matter: MOIC shows absolute return (2x vs 3x), IRR shows the efficiency of capital deployment over time. A 3x in 3 years (IRR ~44%) is far better than a 3x in 10 years (IRR ~12%). LPs and GPs use IRR as the primary metric for fund benchmarking, but MOIC catches cases where high-IRR deals are small and low-IRR deals are large."
+  },
+  {
+    "id": "rm-2",
+    "topicTag": "return-metrics",
+    "category": "technical",
+    "question": "A fund buys a company for €100M, holds it for 5 years, and sells it for €250M. What is the MOIC and approximate IRR?",
+    "answer": "MOIC = €250M / €100M = 2.5x. For IRR, use the rule of thumb: 2x in 5 years ≈ 15% IRR; 3x in 5 years ≈ 25% IRR. 2.5x in 5 years falls between those benchmarks, approximately 20% IRR. Precise calculation: IRR = (250/100)^(1/5) – 1 = 2.5^0.2 – 1 ≈ 20.1%. This is a solid return above the typical 8% preferred return hurdle."
+  },
+  {
+    "id": "rm-3",
+    "topicTag": "return-metrics",
+    "category": "behavioral",
+    "question": "How would you explain to a non-financial stakeholder why a 20% IRR is considered a strong private equity return?",
+    "answer": "Compare to accessible benchmarks: the long-run average return of the S&P 500 is roughly 10% per year. A PE fund targeting 20% IRR is aiming to double the public market return — which is why LPs accept 10-year illiquidity and pay 2-and-20 fees. Frame it in terms of doubling time: at 20% IRR, money doubles in approximately 3.6 years (Rule of 72: 72 / 20). At 10% public markets, money doubles in 7.2 years. The extra return compensates LPs for illiquidity, concentration risk, and complexity."
+  },
+  {
+    "id": "pef-4",
+    "topicTag": "pe-fundamentals",
+    "category": "technical",
+    "question": "What types of companies make ideal LBO targets?",
+    "answer": "Ideal LBO targets have: (1) stable, predictable cash flows — debt must be serviced from operations; (2) strong market position or defensible niche — competitive moat protects margins under leverage; (3) limited capex requirements — asset-light models generate more free cash flow for debt paydown; (4) clear operational improvement levers — cost reduction, pricing power, or M&A bolt-on opportunity; (5) experienced management or identifiable management upgrade path. Companies with cyclical revenues, high capex, or commodity pricing are poor LBO candidates."
+  },
+  {
+    "id": "fs-4",
+    "topicTag": "fund-structure",
+    "category": "technical",
+    "question": "What is a capital call and what happens if an LP fails to meet one?",
+    "answer": "A capital call (drawdown) is the GP's formal request for LPs to transfer a portion of their committed capital — typically triggered by a new investment or fund expense. LPs are usually given 10 business days to fund. Failure to meet a capital call (becoming a 'defaulting LP') triggers severe contractual penalties: the LP's interest may be diluted, transferred at a discount to other LPs, or forfeited, and the GP may sue for the uncalled amount. Defaulting LPs also lose the right to participate in future distributions until the default is cured."
+  },
+  {
+    "id": "dc-4",
+    "topicTag": "deal-concepts",
+    "category": "conceptual",
+    "question": "What is the difference between enterprise value and equity value in a buyout context?",
+    "answer": "Enterprise value (EV) represents the total value of a business, attributable to all capital providers — both debt and equity. Equity value represents only the portion attributable to equity holders. The relationship is: Equity Value = Enterprise Value – Net Debt (total debt minus cash). In an LBO, the PE firm acquires the enterprise at a certain EV (the purchase price), funds it with a mix of debt and equity, and at exit the equity value is EV minus any remaining debt. Debt paydown during the hold period directly increases the equity value even if EV is unchanged."
+  },
+  {
+    "id": "rm-4",
+    "topicTag": "return-metrics",
+    "category": "technical",
+    "question": "What is the DPI, RVPI, and TVPI metrics and how are they used to evaluate a PE fund?",
+    "answer": "DPI (Distributions to Paid-In Capital) measures cash actually returned to LPs: DPI = cumulative distributions / paid-in capital. A DPI of 1.0x means LPs have got their money back; above 1.0x means they are in profit on realised proceeds. RVPI (Residual Value to Paid-In) measures the current value of unrealised investments: RVPI = NAV of remaining portfolio / paid-in capital. TVPI (Total Value to Paid-In) = DPI + RVPI — the all-in MOIC. Early in a fund's life TVPI is dominated by RVPI (unrealised); mature funds shift toward DPI as exits occur. LPs prefer high DPI over high RVPI because unrealised value can evaporate."
+  },
+  {
+    "id": "pef-5",
+    "topicTag": "pe-fundamentals",
+    "category": "conceptual",
+    "question": "What are the main value creation levers PE firms use during the hold period?",
+    "answer": "PE firms create value through three categories of levers: (1) Financial engineering — using leverage to amplify equity returns and structuring the balance sheet to minimise cost of capital; (2) Operational improvement — cutting costs, improving working capital, pricing optimisation, operational efficiency, and procurement savings; (3) Strategic transformation — entering new markets, launching new products, completing bolt-on acquisitions to build scale, or repositioning the business for a higher exit multiple. The most durable returns come from operational and strategic improvements; financial engineering alone is insufficient in a competitive market."
+  },
+  {
+    "id": "dc-5",
+    "topicTag": "deal-concepts",
+    "category": "technical",
+    "question": "What is a precedent transaction analysis and how does it differ from a comparable company analysis?",
+    "answer": "Precedent transaction analysis (deal comps) values a company by looking at multiples paid in recent M&A transactions for similar companies. It inherently includes a control premium (buyer pays above market price for control) and reflects prevailing credit conditions at the time of each deal. Comparable company analysis (trading comps) values a company against publicly traded peers on current market multiples — it reflects minority, liquid valuations with no control premium. In PE, transaction comps are often used to defend entry pricing, while trading comps establish a market floor. Deal comps typically produce higher valuations because of the embedded control premium."
+  },
+  {
+    "id": "fs-5",
+    "topicTag": "fund-structure",
+    "category": "conceptual",
+    "question": "What is a clawback provision and why does it matter to LPs?",
+    "answer": "A clawback provision requires the GP to return carry already distributed if, at the end of the fund's life, the GP has received more than its agreed share of total profits. This occurs when strong early exits produce carry payouts but later investments underperform, meaning the GP was over-distributed relative to the fund's true overall return. Clawbacks protect LPs by ensuring the GP only keeps carry it genuinely earned on the full portfolio. In practice, clawbacks can be difficult to enforce if the GP entity has distributed carry to individual partners who have spent it."
+  },
+  {
+    "id": "rm-5",
+    "topicTag": "return-metrics",
+    "category": "conceptual",
+    "question": "Why do PE returns look different depending on whether you use IRR or PME (Public Market Equivalent)?",
+    "answer": "IRR measures a fund's absolute return in isolation, but it can be inflated by the J-curve effect (early losses followed by strong exits), recycled capital, and the timing of cash flows — a fund that calls capital slowly may show a high IRR simply because capital sat at the LP longer. PME (Public Market Equivalent) benchmarks PE returns against what would have been earned by investing the same cash flows into a public index (e.g. S&P 500) on the same dates. PME answers the real question: did the GP add value versus just riding a bull market? A fund with a 20% IRR but a PME of 0.95x underperformed a passive index after fees."
+  }
+]
