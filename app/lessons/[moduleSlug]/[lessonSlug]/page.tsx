@@ -1,8 +1,10 @@
 import { notFound, redirect } from "next/navigation"
 import type { Metadata } from "next"
+import { Suspense } from "react"
 import { getLessons, getLessonBySlug } from "@/lib/content"
 import { MdxContent } from "@/components/mdx-content"
 import { MarkCompleteButton } from "@/components/mark-complete-button"
+import { NewsWidget } from "@/components/news-widget"
 import { getUnlockedLevelIds } from "@/lib/actions/progress"
 import { LEVELS } from "@/content/curriculum-taxonomy"
 
@@ -86,6 +88,11 @@ export default async function LessonPage({
       >
         <MdxContent code={lesson.body} withGlossary />
       </div>
+
+      {/* Contextual news widget */}
+      <Suspense fallback={null}>
+        <NewsWidget topicTag={lesson.topic_tag} />
+      </Suspense>
 
       {/* Mark complete — right-aligned on desktop, full-width on mobile */}
       <div className="flex justify-end mt-8">

@@ -94,6 +94,16 @@ export function LessonSidebar({
           <p className="text-xs text-zinc-500 text-center mt-1.5">Pass to unlock Level 2</p>
         </div>
 
+        {/* News link — sidebar footer */}
+        <div className="px-4 pb-4 pt-2">
+          <Link
+            href="/news"
+            className="flex items-center justify-center gap-2 w-full rounded-md text-zinc-400 hover:text-white hover:bg-zinc-800 text-sm font-medium px-4 py-2 transition-colors"
+          >
+            PE News &rarr;
+          </Link>
+        </div>
+
         {/* Locked placeholder modules */}
         {lockedModules.map((mod) => (
           <div key={mod.slug} className="mb-4">
