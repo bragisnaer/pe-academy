@@ -15,21 +15,12 @@ WHERE EXISTS (
 
 -- Schedule: ingest PE news every 6 hours
 --
--- IMPORTANT: Replace {PROJECT_REF} with your Supabase project reference ID
--- before applying this migration to a remote project.
---
--- Find your project ref in the Supabase dashboard URL:
---   https://supabase.com/dashboard/project/{PROJECT_REF}
---
--- Example resolved URL:
---   https://abcdefghijklmnop.supabase.co/functions/v1/ingest-news
---
 SELECT cron.schedule(
   'ingest-pe-news',                          -- job name (unique)
   '0 */6 * * *',                             -- every 6 hours at :00
   $$
   SELECT net.http_post(
-    url := 'https://{PROJECT_REF}.supabase.co/functions/v1/ingest-news',
+    url := 'https://njwgksqgqphieefszsbd.supabase.co/functions/v1/ingest-news',
     headers := '{"Content-Type": "application/json"}'::jsonb,
     body := '{}'::jsonb
   );
