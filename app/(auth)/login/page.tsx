@@ -60,8 +60,7 @@ export default function LoginPage() {
       setServerError('Incorrect email or password. Please try again.')
       setIsLoading(false)
     } else {
-      router.refresh()
-      router.push('/lessons')
+      window.location.replace('/dashboard')
     }
   }
 
