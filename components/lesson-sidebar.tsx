@@ -95,12 +95,32 @@ export function LessonSidebar({
         </div>
 
         {/* News link — sidebar footer */}
-        <div className="px-4 pb-4 pt-2">
+        <div className="px-4 pb-2 pt-2">
           <Link
             href="/news"
             className="flex items-center justify-center gap-2 w-full rounded-md text-zinc-400 hover:text-white hover:bg-zinc-800 text-sm font-medium px-4 py-2 transition-colors"
           >
             PE News &rarr;
+          </Link>
+        </div>
+
+        {/* Interview Prep link — sidebar footer */}
+        <div className="px-4 pb-2">
+          <Link
+            href="/interview-prep"
+            className="flex items-center justify-center gap-2 w-full rounded-md text-zinc-400 hover:text-white hover:bg-zinc-800 text-sm font-medium px-4 py-2 transition-colors"
+          >
+            Interview Prep &rarr;
+          </Link>
+        </div>
+
+        {/* Resources link — sidebar footer */}
+        <div className="px-4 pb-4">
+          <Link
+            href="/resources"
+            className="flex items-center justify-center gap-2 w-full rounded-md text-zinc-400 hover:text-white hover:bg-zinc-800 text-sm font-medium px-4 py-2 transition-colors"
+          >
+            Resources &rarr;
           </Link>
         </div>
 

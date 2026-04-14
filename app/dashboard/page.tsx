@@ -50,6 +50,18 @@ export default async function DashboardPage() {
           >
             News
           </Link>
+          <Link
+            href="/interview-prep"
+            className="text-sm text-zinc-400 hover:text-white transition-colors"
+          >
+            Interview Prep
+          </Link>
+          <Link
+            href="/resources"
+            className="text-sm text-zinc-400 hover:text-white transition-colors"
+          >
+            Resources
+          </Link>
           <form action="/auth/signout" method="post">
             <button
               type="submit"
