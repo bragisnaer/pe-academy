@@ -25,13 +25,13 @@ export function getLessonBySlug(moduleSlug: string, lessonSlug: string) {
 
 export function getLessonsByModule(moduleSlug: string) {
   return lessons
-    .filter((l) => l.module === moduleSlug)
+    .filter((l) => l.module === moduleSlug && !l.locked)
     .sort((a, b) => a.order - b.order);
 }
 
 export function getLessonsByLevel(level: number) {
   return lessons
-    .filter((l) => l.level === level)
+    .filter((l) => l.level === level && !l.locked)
     .sort((a, b) => a.order - b.order);
 }
 

@@ -247,7 +247,7 @@ export function LessonSidebar({
                     )
                   })}
 
-                  {/* Level Quiz node */}
+                  {/* Level Test node */}
                   <div className="relative z-10">
                     {allLessonsDone ? (
                       <Link
@@ -269,7 +269,7 @@ export function LessonSidebar({
                           />
                         </div>
                         <span className="text-xs font-semibold uppercase tracking-wider leading-snug">
-                          Level {level.number} Quiz
+                          Level {level.number} Test
                         </span>
                       </Link>
                     ) : (
@@ -278,7 +278,7 @@ export function LessonSidebar({
                           <div className="size-2 rounded-full bg-muted-foreground/25" />
                         </div>
                         <span className="text-xs font-semibold text-muted-foreground/40 uppercase tracking-wider leading-snug">
-                          Level {level.number} Quiz
+                          Level {level.number} Test
                         </span>
                       </div>
                     )}

@@ -12,7 +12,7 @@ import { LessonTOC } from "@/components/lesson-toc"
 import { ReadingProgress } from "@/components/reading-progress"
 import { getUnlockedLevelIds } from "@/lib/actions/progress"
 import { getCompletedLessons } from "@/lib/actions/lessons"
-import { LEVELS } from "@/content/curriculum-taxonomy"
+import { LEVELS, MODULES } from "@/content/curriculum-taxonomy"
 
 export async function generateMetadata({
   params,
@@ -65,6 +65,26 @@ export default async function LessonPage({
   const isCompleted = completedLessonUuids.includes(lesson.uuid)
   const readingTime = Math.max(1, Math.ceil(lesson.wordCount / 200))
 
+  // Cross-module next href: within module → next lesson; last in module → first
+  // lesson of next module; last module in level → level test splash.
+  let nextHref: string | undefined
+  if (nextLesson) {
+    nextHref = `/lessons/${moduleSlug}/${nextLesson.slugAsParams}`
+  } else {
+    const levelModules = MODULES
+      .filter((m) => m.levelNumber === lesson.level)
+      .sort((a, b) => a.order - b.order)
+    const currentModIndex = levelModules.findIndex((m) => m.slug === moduleSlug)
+    const nextMod = currentModIndex >= 0 ? levelModules[currentModIndex + 1] : undefined
+    if (nextMod) {
+      const nextModLessons = getLessonsByModule(nextMod.slug)
+      if (nextModLessons[0]) nextHref = `/lessons/${nextMod.slug}/${nextModLessons[0].slugAsParams}`
+    } else {
+      const levelMeta = LEVELS.find((l) => l.number === lesson.level)
+      if (levelMeta) nextHref = `/levels/${levelMeta.slug}/quiz`
+    }
+  }
+
   return (
     <article>
       <ReadingProgress />
@@ -113,7 +133,7 @@ export default async function LessonPage({
       <div id={LESSON_BOTTOM_SENTINEL_ID} aria-hidden="true" />
 
       <div className="flex justify-end mt-8">
-        <MarkCompleteButton lessonUuid={lesson.uuid} initialCompleted={isCompleted} />
+        <MarkCompleteButton lessonUuid={lesson.uuid} initialCompleted={isCompleted} nextHref={nextHref} />
       </div>
     </article>
   )

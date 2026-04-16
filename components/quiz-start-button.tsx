@@ -25,7 +25,7 @@ export function QuizStartButton({ levelId, levelSlug }: QuizStartButtonProps) {
       })
       if (!res.ok) {
         const err = await res.json().catch(() => ({}))
-        setError((err as { error?: string }).error ?? 'Failed to start quiz.')
+        setError((err as { error?: string }).error ?? 'Failed to start test.')
         setLoading(false)
         return
       }
@@ -46,7 +46,7 @@ export function QuizStartButton({ levelId, levelSlug }: QuizStartButtonProps) {
         disabled={loading}
         className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors disabled:opacity-60 disabled:pointer-events-none"
       >
-        {loading ? 'Starting…' : 'Start Quiz →'}
+        {loading ? 'Starting…' : 'Start Test →'}
       </button>
     </div>
   )

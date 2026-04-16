@@ -172,9 +172,10 @@ export async function getDashboardData(): Promise<DashboardData | null> {
     )
 
     if (firstIncomplete) {
+      const isFirstEver = currentLevel.completedCount === 0
       nextStep = {
         type: 'continue-lesson',
-        label: `Continue: ${firstIncomplete.title}`,
+        label: `${isFirstEver ? 'Start' : 'Continue'}: ${firstIncomplete.title}`,
         href: `/lessons/${firstIncomplete.module}/${firstIncomplete.slugAsParams}`,
       }
     } else {
@@ -186,12 +187,12 @@ export async function getDashboardData(): Promise<DashboardData | null> {
       }
     }
   } else if (!currentLevel.quizPassed) {
-    // State 2: All lessons done, quiz not yet passed
+    // State 2: All lessons done, test not yet passed
     const nextLevelNumber = currentLevel.levelNumber + 1
     nextStep = {
       type: 'take-quiz',
-      label: `Take the Level ${currentLevel.levelNumber} Quiz`,
-      description: `You've completed all Level ${currentLevel.levelNumber} lessons. Pass the quiz to unlock Level ${nextLevelNumber}.`,
+      label: `Take the Level ${currentLevel.levelNumber} Test`,
+      description: `You've completed all Level ${currentLevel.levelNumber} lessons. Pass the test to unlock Level ${nextLevelNumber}.`,
       href: `/levels/${currentLevel.levelSlug}/quiz`,
     }
   } else {

@@ -49,14 +49,15 @@ export default async function QuizSplashPage({
   const threshold = gate?.required_quiz_score_pct ?? 70
   const questionCount = 20
   const passMark = Math.ceil(questionCount * threshold / 100)
+  const estMinutes = questionCount
 
   return (
     <div className="bg-background min-h-screen text-foreground px-6 py-16 max-w-2xl mx-auto">
       <h1 className="text-3xl font-semibold text-foreground mb-2">
-        Level {level.number}: {level.name} Quiz
+        Level {level.number}: {level.name} Test
       </h1>
       <p className="text-muted-foreground mb-10">
-        {questionCount} questions &middot; Pass mark: {threshold}% ({passMark}/{questionCount})
+        {questionCount} questions &middot; ~{estMinutes} min &middot; Pass mark: {threshold}% ({passMark}/{questionCount})
       </p>
 
       <div className="bg-card border border-border rounded-lg p-6 mb-8">

@@ -215,7 +215,7 @@ export default async function QuizResultPage({
               href={`/levels/${levelSlug}/quiz`}
               className={buttonVariants({ variant: 'default' })}
             >
-              Retry Quiz
+              Retry Test
             </Link>
           )}
           <Link href="/dashboard" className={buttonVariants({ variant: 'outline' })}>

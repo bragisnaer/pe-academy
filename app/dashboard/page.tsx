@@ -31,8 +31,8 @@ export default async function DashboardPage() {
 
   // CTA button text by nextStep type
   const ctaText: Record<typeof data.nextStep.type, string> = {
-    'continue-lesson': 'Continue lesson →',
-    'take-quiz': 'Take quiz →',
+    'continue-lesson': 'Continue →',
+    'take-quiz': 'Take test →',
     'level-complete': 'Start next level →',
   }
 
@@ -122,7 +122,7 @@ export default async function DashboardPage() {
             <ol className="space-y-3">
               {[
                 'Work through Level 1 lessons at your own pace',
-                'Pass the Level 1 quiz to prove your knowledge',
+                'Pass the Level 1 test to prove your knowledge',
                 'Unlock Pro modules and advance to higher levels',
               ].map((step, i) => (
                 <li key={i} className="flex items-start gap-3">

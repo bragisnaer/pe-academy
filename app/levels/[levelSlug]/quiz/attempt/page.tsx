@@ -57,7 +57,7 @@ export default async function QuizAttemptPage({
   return (
     <div className="bg-background min-h-screen text-foreground px-6 py-12 max-w-3xl mx-auto">
       <h1 className="text-3xl font-semibold text-foreground mb-2">
-        Level {level.number}: {level.name} Quiz
+        Level {level.number}: {level.name} Test
       </h1>
       <p className="text-muted-foreground mb-10">
         {ordered.length} questions &middot; Pass mark: {threshold}%{' '}
