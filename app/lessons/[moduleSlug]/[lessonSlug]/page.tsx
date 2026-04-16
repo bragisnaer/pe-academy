@@ -119,13 +119,22 @@ export default async function LessonPage({
           </Link>
         ) : <div />}
         {nextLesson ? (
-          <Link href={`/lessons/${moduleSlug}/${nextLesson.slugAsParams}`}
-            className="flex flex-col gap-0.5 items-end text-right group max-w-[45%]">
-            <span className="text-xs text-muted-foreground">Next</span>
-            <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors line-clamp-2">
-              {nextLesson.title} →
-            </span>
-          </Link>
+          isCompleted ? (
+            <Link href={`/lessons/${moduleSlug}/${nextLesson.slugAsParams}`}
+              className="flex flex-col gap-0.5 items-end text-right group max-w-[45%]">
+              <span className="text-xs text-muted-foreground">Next</span>
+              <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                {nextLesson.title} →
+              </span>
+            </Link>
+          ) : (
+            <div className="flex flex-col gap-0.5 items-end text-right max-w-[45%]">
+              <span className="text-xs text-muted-foreground/50">Next up</span>
+              <span className="text-sm font-medium text-muted-foreground/50 line-clamp-2">
+                {nextLesson.title}
+              </span>
+            </div>
+          )
         ) : <div />}
       </nav>
 
