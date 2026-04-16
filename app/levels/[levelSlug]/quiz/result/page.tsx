@@ -130,7 +130,7 @@ export default async function QuizResultPage({
             </p>
             <p className="text-foreground/80 mt-1">
               {nextLevel
-                ? `You passed the Level ${level.number} quiz. ${nextLevel.name} is now available.`
+                ? `You passed the Level ${level.number} test. ${nextLevel.name} is now available.`
                 : `You passed the final level. Congratulations!`}
             </p>
           </div>
