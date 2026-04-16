@@ -142,7 +142,7 @@ export default async function LessonPage({
       <div id={LESSON_BOTTOM_SENTINEL_ID} aria-hidden="true" />
 
       <div className="flex justify-end mt-8">
-        <MarkCompleteButton lessonUuid={lesson.uuid} initialCompleted={isCompleted} nextHref={nextHref} />
+        <MarkCompleteButton lessonUuid={lesson.uuid} initialCompleted={isCompleted} nextHref={nextHref} readingTimeMinutes={readingTime} />
       </div>
     </article>
   )

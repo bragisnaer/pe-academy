@@ -6,19 +6,19 @@ import { CheckCircle2 } from "lucide-react"
 import { markLessonComplete } from "@/lib/actions/lessons"
 
 export const LESSON_BOTTOM_SENTINEL_ID = 'lesson-bottom-sentinel'
-const COUNTDOWN_SECONDS = 30
 
 export interface MarkCompleteButtonProps {
   lessonUuid: string
   initialCompleted: boolean
   nextHref?: string
+  readingTimeMinutes: number
 }
 
-export function MarkCompleteButton({ lessonUuid, initialCompleted, nextHref }: MarkCompleteButtonProps) {
+export function MarkCompleteButton({ lessonUuid, initialCompleted, nextHref, readingTimeMinutes }: MarkCompleteButtonProps) {
   const router = useRouter()
   const [completed, setCompleted] = React.useState(initialCompleted)
   const [pending, setPending] = React.useState(false)
-  const [secondsLeft, setSecondsLeft] = React.useState(COUNTDOWN_SECONDS)
+  const [secondsLeft, setSecondsLeft] = React.useState(readingTimeMinutes * 60)
   const [scrolled, setScrolled] = React.useState(false)
   const [timerClicks, setTimerClicks] = React.useState(0)
 
