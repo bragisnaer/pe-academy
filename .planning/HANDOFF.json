@@ -1,61 +1,44 @@
 {
   "version": "1.0",
-  "timestamp": "2026-04-16T12:19:02.445Z",
+  "timestamp": "2026-04-16T15:16:52.265Z",
   "phase": null,
-  "phase_name": "ad-hoc — quiz integrity + lesson gating",
+  "phase_name": "UAT & polish — quiz session system",
   "phase_dir": null,
   "plan": null,
   "task": null,
-  "total_tasks": 8,
+  "total_tasks": null,
   "status": "paused",
   "completed_tasks": [
-    {"id": 1, "name": "Result page hardcoded strings fixed (Level N Unlocked, dynamic pass mark, dead link)", "status": "done"},
-    {"id": 2, "name": "Per-topic randomization (selectPerTopic 4/topic, 2/topic for L11)", "status": "done"},
-    {"id": 3, "name": "LEVEL_UNLOCK_MAP extended to all 11 levels in submit route", "status": "done"},
-    {"id": 4, "name": "Import script (scripts/import-quiz-questions.js) — reads JSON, generates SQL", "status": "done"},
-    {"id": 5, "name": "Level 1 SQL (200q) generated + user ran it in Supabase SQL Editor", "status": "done"},
-    {"id": 6, "name": "Level 2 SQL (200q) generated — NOT YET RUN in Supabase", "status": "done"},
-    {"id": 7, "name": "level_gates pass marks set: 70/75/75/75/80/80/80/85/85/85/90%", "status": "done"},
-    {"id": 8, "name": "Quiz page Level 1 always accessible (no user_progress gate)", "status": "done"},
-    {"id": 9, "name": "Lesson page beginner slug bug fixed + correct prev-level redirect", "status": "done"},
-    {"id": 10, "name": "Sidebar beginner slug fixed (foundations)", "status": "done"},
-    {"id": 11, "name": "content/quiz/ folder structure created (level-1 through level-11)", "status": "done"}
+    {"id": 1, "name": "Quiz session system (attempt locking, tab detection, L3/L4 banks)", "status": "done", "commit": "2050627"},
+    {"id": 2, "name": "DB migrations: session schema + index + L2/L3/L4 question seeds run", "status": "done", "commit": "2050627"},
+    {"id": 3, "name": "UAT fixes: Coming Soon bug, auto-advance, Quiz→Test rename, onboarding, locked lesson filter", "status": "done", "commit": "7d63874"},
+    {"id": 4, "name": "Result page pass banner quiz→test", "status": "done", "commit": "f31c0a9"},
+    {"id": 5, "name": "force-dynamic on lessons layout + router.refresh() sidebar sync", "status": "done", "commit": "3238eb2"},
+    {"id": 6, "name": "Next lesson nav grayed out until completed", "status": "done", "commit": "3f4998b"},
+    {"id": 7, "name": "Reading-time-proportional timer capped at 60s", "status": "done", "commit": "e9f7f59"},
+    {"id": 8, "name": "Next lesson name in complete button, simplified bottom nav (previous only)", "status": "done", "commit": "6168b57"},
+    {"id": 9, "name": "Active lesson font distinction (unlocked lessons text-foreground/70)", "status": "done", "commit": "3238eb2"},
+    {"id": 10, "name": "Removed locked-questions rule from test splash", "status": "done", "commit": "8c43ed9"}
   ],
   "remaining_tasks": [
-    {"id": 12, "name": "DB migration — quiz_attempts: add status, question_ids JSONB, tab_switches; completed_at nullable", "status": "not_started"},
-    {"id": 13, "name": "POST /api/quiz/start — select 4/topic, create in-progress attempt, return locked questions", "status": "not_started"},
-    {"id": 14, "name": "Quiz splash page — rules, pass mark, one-sitting warning, Start Quiz button", "status": "not_started"},
-    {"id": 15, "name": "Quiz attempt page (/levels/[slug]/quiz/attempt?id=xxx) — loads locked questions", "status": "not_started"},
-    {"id": 16, "name": "QuizForm — tab visibility: warn banner on 1st switch, auto-submit on 3rd", "status": "not_started"},
-    {"id": 17, "name": "MarkCompleteButton — 30s countdown + scroll-to-90% both required before enabling", "status": "not_started"},
-    {"id": 18, "name": "Lesson page — force-dynamic + sequential gate (prev lesson must be completed)", "status": "not_started"},
-    {"id": 19, "name": "LessonSidebar — lock lessons ahead of first incomplete lesson", "status": "not_started"}
+    {"id": 11, "name": "Quiz answer length bias — user regenerating L1-L4 question banks next session", "status": "not_started"},
+    {"id": 12, "name": "Level 4 quiz content — 4 missing topics (legal, operational, esg, red-flags)", "status": "not_started"},
+    {"id": 13, "name": "Levels 5–11 quiz banks all empty", "status": "not_started"},
+    {"id": 14, "name": "Stripe integration (v3.0 primary goal)", "status": "not_started"},
+    {"id": 15, "name": "Legal pages — Terms + Privacy", "status": "not_started"}
   ],
   "blockers": [],
   "human_actions_pending": [
-    {"action": "Run supabase/migrations/20260416121330_level2_quiz_questions.sql in Supabase SQL Editor", "context": "Level 2 questions (200) generated, not yet in DB", "blocking": false}
+    {"action": "Regenerate L1–L4 question banks to fix answer length bias (correct answer is almost always the longest option — 19/20 by selecting longest every time)", "context": "Confirmed on both L1 and L2", "blocking": false}
   ],
   "decisions": [
-    {"decision": "Quiz flow: /quiz = splash, /quiz/attempt?id=xxx = live quiz", "rationale": "Clean separation; attempt_id in URL enables resume detection and session locking"},
-    {"decision": "Session locking via DB attempt (not sessionStorage)", "rationale": "Refresh = new random questions is exploitable; lock 20 question IDs in quiz_attempts at start time"},
-    {"decision": "Tab switches: warn banner on 1st, auto-submit on 3rd", "rationale": "User confirmed this UX; prevents indefinite alt-tabbing to notes"},
-    {"decision": "Mark complete requires 30s elapsed AND scroll past 90%", "rationale": "Time alone does not prove reading; both conditions prevent button-mashing"},
-    {"decision": "Sequential lesson gate server-side with force-dynamic", "rationale": "ISR page cannot do per-user gating reliably; force-dynamic required"},
-    {"decision": "Sidebar: completed accessible, first incomplete accessible, all ahead locked", "rationale": "Visual enforcement of sequential order; completed lessons remain reviewable"},
-    {"decision": "Pass marks: L1=70%, L2-4=75%, L5-7=80%, L8-10=85%, L11=90%", "rationale": "Escalating marks as knowledge expected to deepen"},
-    {"decision": "200 questions per level, 40 per topic, draw 4/topic = 20/attempt (L11: 10 topics x 2)", "rationale": "Anti-cheating randomization, answer-sharing useless"}
+    {"decision": "Quiz renamed to Test throughout UI; URLs kept as /quiz/", "rationale": "URLs are breaking changes; display text only", "phase": "UAT"},
+    {"decision": "Tab resume clears answers, keeps locked questions", "rationale": "User confirmed this is desired behaviour", "phase": "UAT"},
+    {"decision": "force-dynamic on lessons layout instead of router.refresh() alone", "rationale": "router.refresh() + router.push() had race condition causing stale sidebar", "phase": "UAT"},
+    {"decision": "Timer = min(readingTimeMinutes × 20s, 60s)", "rationale": "Proportional to lesson length, capped at 60s per user request", "phase": "UAT"},
+    {"decision": "Bottom nav: Previous only (subtle), Next removed", "rationale": "Complete button handles forward navigation with next lesson name inline", "phase": "UAT"}
   ],
-  "uncommitted_files": [
-    "app/api/quiz/submit/route.ts",
-    "app/lessons/[moduleSlug]/[lessonSlug]/page.tsx",
-    "app/levels/[levelSlug]/quiz/page.tsx",
-    "app/levels/[levelSlug]/quiz/result/page.tsx",
-    "components/lesson-sidebar.tsx",
-    "content/quiz/ (new folder structure + JSON files)",
-    "scripts/import-quiz-questions.js",
-    "supabase/migrations/20260416113313_level1_quiz_questions.sql",
-    "supabase/migrations/20260416121330_level2_quiz_questions.sql"
-  ],
-  "next_action": "Write DB migration for quiz_attempts schema changes (status, question_ids, tab_switches, nullable completed_at), then build /api/quiz/start, then quiz splash page, then attempt page, then QuizForm tab detection, then submit route update, then MarkCompleteButton timer+scroll, then lesson sequential gate, then sidebar locking.",
-  "context_notes": "Quiz randomization infrastructure complete. Next session is purely UX/integrity features. DB migration is the critical first step — everything else depends on it. Submit route update is small (verify attempt_id, update status). All other tasks are self-contained."
+  "uncommitted_files": [],
+  "next_action": "User to regenerate question banks (fix answer length bias using node scripts/import-quiz-questions.js for levels 1-4), then run new migrations in Supabase, then plan v3.0 milestone (Stripe + legal pages)",
+  "context_notes": "All UAT scenarios A-I complete. Platform functional end-to-end through Level 3. Level 4 has 2/6 quiz topics. Levels 5-11 have no quiz content. All changes committed and pushed to master."
 }
