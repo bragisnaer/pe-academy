@@ -19,7 +19,7 @@ export function MarkCompleteButton({ lessonUuid, initialCompleted, nextHref, nex
   const router = useRouter()
   const [completed, setCompleted] = React.useState(initialCompleted)
   const [pending, setPending] = React.useState(false)
-  const [secondsLeft, setSecondsLeft] = React.useState(Math.round(readingTimeMinutes * 20))
+  const [secondsLeft, setSecondsLeft] = React.useState(Math.min(Math.round(readingTimeMinutes * 20), 60))
   const [scrolled, setScrolled] = React.useState(false)
   const [timerClicks, setTimerClicks] = React.useState(0)
 
