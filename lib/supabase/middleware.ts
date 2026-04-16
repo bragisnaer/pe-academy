@@ -30,11 +30,11 @@ export async function updateSession(request: NextRequest) {
 
   if (user && authOnlyPaths.includes(pathname)) {
     const url = request.nextUrl.clone()
-    url.pathname = '/lessons'
+    url.pathname = '/dashboard'
     return NextResponse.redirect(url)
   }
 
-  const protectedPaths = ['/lessons']
+  const protectedPaths = ['/dashboard', '/lessons']
   const isProtected = protectedPaths.some(p => pathname === p || pathname.startsWith(p + '/'))
 
   if (!user && isProtected) {
