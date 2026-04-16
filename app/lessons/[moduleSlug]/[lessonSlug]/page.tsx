@@ -68,8 +68,10 @@ export default async function LessonPage({
   // Cross-module next href: within module → next lesson; last in module → first
   // lesson of next module; last module in level → level test splash.
   let nextHref: string | undefined
+  let nextTitle: string | undefined
   if (nextLesson) {
     nextHref = `/lessons/${moduleSlug}/${nextLesson.slugAsParams}`
+    nextTitle = nextLesson.title
   } else {
     const levelModules = MODULES
       .filter((m) => m.levelNumber === lesson.level)
@@ -78,10 +80,16 @@ export default async function LessonPage({
     const nextMod = currentModIndex >= 0 ? levelModules[currentModIndex + 1] : undefined
     if (nextMod) {
       const nextModLessons = getLessonsByModule(nextMod.slug)
-      if (nextModLessons[0]) nextHref = `/lessons/${nextMod.slug}/${nextModLessons[0].slugAsParams}`
+      if (nextModLessons[0]) {
+        nextHref = `/lessons/${nextMod.slug}/${nextModLessons[0].slugAsParams}`
+        nextTitle = nextModLessons[0].title
+      }
     } else {
       const levelMeta = LEVELS.find((l) => l.number === lesson.level)
-      if (levelMeta) nextHref = `/levels/${levelMeta.slug}/quiz`
+      if (levelMeta) {
+        nextHref = `/levels/${levelMeta.slug}/quiz`
+        nextTitle = `Level ${levelMeta.number} Test`
+      }
     }
   }
 
@@ -107,42 +115,23 @@ export default async function LessonPage({
         <NewsWidget topicTag={lesson.topic_tag} />
       </Suspense>
 
-      <nav aria-label="Lesson navigation"
-        className="flex items-start justify-between gap-4 mt-12 pt-8 border-t border-border">
-        {prevLesson ? (
+      {prevLesson && (
+        <div className="mt-12 pt-8 border-t border-border">
           <Link href={`/lessons/${moduleSlug}/${prevLesson.slugAsParams}`}
-            className="flex flex-col gap-0.5 group max-w-[45%]">
-            <span className="text-xs text-muted-foreground">Previous</span>
-            <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors line-clamp-2">
+            className="flex flex-col gap-0.5 group w-fit">
+            <span className="text-xs text-muted-foreground/60">Previous</span>
+            <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors line-clamp-1">
               ← {prevLesson.title}
             </span>
           </Link>
-        ) : <div />}
-        {nextLesson ? (
-          isCompleted ? (
-            <Link href={`/lessons/${moduleSlug}/${nextLesson.slugAsParams}`}
-              className="flex flex-col gap-0.5 items-end text-right group max-w-[45%]">
-              <span className="text-xs text-muted-foreground">Next</span>
-              <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors line-clamp-2">
-                {nextLesson.title} →
-              </span>
-            </Link>
-          ) : (
-            <div className="flex flex-col gap-0.5 items-end text-right max-w-[45%]">
-              <span className="text-xs text-muted-foreground/50">Next up</span>
-              <span className="text-sm font-medium text-muted-foreground/50 line-clamp-2">
-                {nextLesson.title}
-              </span>
-            </div>
-          )
-        ) : <div />}
-      </nav>
+        </div>
+      )}
 
       {/* Scroll sentinel — IntersectionObserver in MarkCompleteButton watches this */}
       <div id={LESSON_BOTTOM_SENTINEL_ID} aria-hidden="true" />
 
       <div className="flex justify-end mt-8">
-        <MarkCompleteButton lessonUuid={lesson.uuid} initialCompleted={isCompleted} nextHref={nextHref} readingTimeMinutes={readingTime} />
+        <MarkCompleteButton lessonUuid={lesson.uuid} initialCompleted={isCompleted} nextHref={nextHref} nextTitle={nextTitle} readingTimeMinutes={readingTime} />
       </div>
     </article>
   )

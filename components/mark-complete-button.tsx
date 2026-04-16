@@ -11,10 +11,11 @@ export interface MarkCompleteButtonProps {
   lessonUuid: string
   initialCompleted: boolean
   nextHref?: string
+  nextTitle?: string
   readingTimeMinutes: number
 }
 
-export function MarkCompleteButton({ lessonUuid, initialCompleted, nextHref, readingTimeMinutes }: MarkCompleteButtonProps) {
+export function MarkCompleteButton({ lessonUuid, initialCompleted, nextHref, nextTitle, readingTimeMinutes }: MarkCompleteButtonProps) {
   const router = useRouter()
   const [completed, setCompleted] = React.useState(initialCompleted)
   const [pending, setPending] = React.useState(false)
@@ -94,7 +95,7 @@ export function MarkCompleteButton({ lessonUuid, initialCompleted, nextHref, rea
   return (
     <button type="button" onClick={handleClick} disabled={pending} aria-label="Mark lesson complete"
       className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors disabled:opacity-70 disabled:pointer-events-none">
-      {pending ? 'Saving…' : nextHref ? 'Complete & continue →' : 'Mark complete'}
+      {pending ? 'Saving…' : nextHref ? `Complete & continue: ${nextTitle ?? 'Next'} →` : 'Mark complete'}
     </button>
   )
 }
