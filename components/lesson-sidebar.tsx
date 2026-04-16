@@ -229,7 +229,7 @@ export function LessonSidebar({
                                       ? "bg-muted/30 text-foreground"
                                       : isCompleted
                                         ? "text-muted-foreground hover:text-foreground hover:bg-muted/70"
-                                        : "text-foreground hover:bg-muted/70"
+                                        : "text-foreground/70 hover:text-foreground hover:bg-muted/70"
                                   )}
                                 >
                                   <div className="w-5 shrink-0 flex justify-center">

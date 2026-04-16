@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { LessonSidebar } from "@/components/lesson-sidebar"
 import { MobileSidebarToggle } from "@/components/mobile-sidebar-toggle"
 import { getCompletedLessons } from "@/lib/actions/lessons"
