@@ -4,69 +4,80 @@ import * as React from "react"
 import { CheckCircle2 } from "lucide-react"
 import { markLessonComplete } from "@/lib/actions/lessons"
 
+export const LESSON_BOTTOM_SENTINEL_ID = 'lesson-bottom-sentinel'
+const COUNTDOWN_SECONDS = 30
+
 export interface MarkCompleteButtonProps {
   lessonUuid: string
   initialCompleted: boolean
 }
 
-/**
- * MarkCompleteButton — optimistic UI button for marking a lesson complete.
- *
- * Idle state: primary fill button labelled "Mark complete".
- * Completed state: card fill, success CheckCircle2 icon, "Completed" label, disabled.
- *
- * On click: immediately switches to completed state (optimistic), then calls
- * markLessonComplete server action. If the server action fails, reverts to idle.
- */
-export function MarkCompleteButton({
-  lessonUuid,
-  initialCompleted,
-}: MarkCompleteButtonProps) {
+export function MarkCompleteButton({ lessonUuid, initialCompleted }: MarkCompleteButtonProps) {
   const [completed, setCompleted] = React.useState(initialCompleted)
   const [pending, setPending] = React.useState(false)
+  const [secondsLeft, setSecondsLeft] = React.useState(COUNTDOWN_SECONDS)
+  const [scrolled, setScrolled] = React.useState(false)
+
+  const timerDone = secondsLeft === 0
+  const unlocked = initialCompleted || (timerDone && scrolled)
+
+  React.useEffect(() => {
+    if (initialCompleted) return
+    const interval = setInterval(() => {
+      setSecondsLeft((prev) => {
+        if (prev <= 1) { clearInterval(interval); return 0 }
+        return prev - 1
+      })
+    }, 1000)
+    return () => clearInterval(interval)
+  }, [initialCompleted])
+
+  React.useEffect(() => {
+    if (initialCompleted) return
+    const sentinel = document.getElementById(LESSON_BOTTOM_SENTINEL_ID)
+    if (!sentinel) return
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setScrolled(true); observer.disconnect() } },
+      { threshold: 0.1 }
+    )
+    observer.observe(sentinel)
+    return () => observer.disconnect()
+  }, [initialCompleted])
 
   async function handleClick() {
-    if (completed || pending) return
-
-    // Optimistic update — immediately show completed state
+    if (completed || pending || !unlocked) return
     setCompleted(true)
     setPending(true)
-
     const result = await markLessonComplete(lessonUuid)
-
     setPending(false)
-
-    if (result?.error) {
-      // Revert on error
-      setCompleted(false)
-    }
+    if (result?.error) setCompleted(false)
   }
 
   if (completed) {
     return (
-      <button
-        type="button"
-        disabled
-        aria-label="Lesson completed"
-        className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-card px-4 py-2 text-sm font-medium text-foreground cursor-default transition-colors duration-150 ease-in-out disabled:pointer-events-none"
-      >
-        <CheckCircle2
-          className="size-4 text-success"
-          aria-hidden="true"
-        />
+      <button type="button" disabled aria-label="Lesson completed"
+        className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-card px-4 py-2 text-sm font-medium text-foreground cursor-default disabled:pointer-events-none">
+        <CheckCircle2 className="size-4 text-success" aria-hidden="true" />
         Completed
       </button>
     )
   }
 
+  if (!unlocked) {
+    const hint = !timerDone
+      ? `Available in ${secondsLeft}s`
+      : 'Scroll to the end to continue'
+    return (
+      <button type="button" disabled aria-label={hint}
+        className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-card px-4 py-2 text-sm font-medium text-muted-foreground cursor-not-allowed disabled:pointer-events-none">
+        {hint}
+      </button>
+    )
+  }
+
   return (
-    <button
-      type="button"
-      onClick={handleClick}
-      disabled={pending}
-      aria-label="Mark lesson complete"
-      className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors duration-150 ease-in-out disabled:opacity-70 disabled:pointer-events-none"
-    >
+    <button type="button" onClick={handleClick} disabled={pending} aria-label="Mark lesson complete"
+      className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors disabled:opacity-70 disabled:pointer-events-none">
       Mark complete
     </button>
   )

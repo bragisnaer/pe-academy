@@ -16,6 +16,7 @@ export interface LevelProgress {
   totalCount: number
   percentage: number
   quizPassed: boolean
+  firstLessonHref: string | null
 }
 
 export interface RecentLesson {
@@ -64,6 +65,7 @@ export async function getDashboardData(): Promise<DashboardData | null> {
         .from('quiz_attempts')
         .select('level_id, passed')
         .eq('user_id', user.id)
+        .eq('status', 'completed')
         .eq('passed', true),
     ])
 
@@ -103,6 +105,11 @@ export async function getDashboardData(): Promise<DashboardData | null> {
 
     const quizPassed = passedQuizLevelIds.has(level.uuid)
 
+    const firstLesson = levelLessons[0]
+    const firstLessonHref = firstLesson
+      ? `/lessons/${firstLesson.module}/${firstLesson.slugAsParams}`
+      : null
+
     return {
       levelNumber: level.number,
       levelName: level.name,
@@ -113,6 +120,7 @@ export async function getDashboardData(): Promise<DashboardData | null> {
       totalCount,
       percentage,
       quizPassed,
+      firstLessonHref,
     }
   })
 

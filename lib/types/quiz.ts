@@ -24,15 +24,25 @@ export type QuizAttempt = {
   id: string
   user_id: string
   level_id: string
+  status: 'in_progress' | 'completed'
+  question_ids: string[] | null
+  tab_switches: number
   score: number
   total: number
   passed: boolean
   answers: { question_id: string; selected_index: number }[]
-  completed_at: string
+  completed_at: string | null
+}
+
+export type QuizStartResponse = {
+  attempt_id: string
+  questions: QuizQuestionPublic[]
 }
 
 export type QuizSubmitRequest = {
+  attempt_id: string
   level_id: string
+  tab_switches: number
   answers: { question_id: string; selected_index: number }[]
 }
 

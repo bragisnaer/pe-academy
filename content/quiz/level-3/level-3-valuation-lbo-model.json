@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "What is the primary purpose of an LBO model?",
+    "options": [
+      "To calculate the company's historical performance",
+      "To quantify returns (IRR, MOIC) under specific capital structure and exit assumptions, testing whether a proposed deal generates acceptable equity returns for the PE fund",
+      "To analyse the company's product lines",
+      "To create the annual report"
+    ],
+    "correct_index": 1,
+    "explanation": "LBO models quantify PE-specific returns: (1) Input: proposed entry EV, leverage, EBITDA projections, exit assumptions; (2) Output: IRR, MOIC, equity check required; (3) Decision support: does this deal meet fund return targets (typically 20-25% IRR, 2.0x+ MOIC)?; (4) Sensitivity analysis: how do returns change with different assumptions?; (5) Critical for: IC approval, deal structuring, LP commitment, debt sizing. LBO models are distinct from DCF (intrinsic value) and trading comps (market benchmarks) — they reflect PE-specific economics of leveraged acquisition with operational improvement."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "A PE firm is building an LBO model for a €400M acquisition. How are 'Sources and Uses of Funds' typically structured?",
+    "options": [
+      "Only sources matter",
+      "Sources: (1) Senior debt; (2) Junior/subordinated debt; (3) Equity (PE + rollover); (4) Other (mezzanine, vendor financing); Uses: (1) Purchase price; (2) Refinanced existing debt; (3) Transaction fees; (4) Working capital injection; Sources must equal Uses",
+      "Only uses matter",
+      "Sources and uses are unrelated"
+    ],
+    "correct_index": 1,
+    "explanation": "Sources and Uses table structure: Sources (where funding comes from): (1) Senior debt (typically 4-5x EBITDA); (2) Junior debt (mezzanine/second lien); (3) PE sponsor equity; (4) Rollover equity (management retained); (5) Other (vendor financing, etc.); Uses (where funding goes): (1) Purchase price (equity to sellers); (2) Refinance existing debt; (3) Transaction fees (advisory, legal, debt placement); (4) Working capital/bridge; (5) Minimum cash target. Sources must equal Uses — this is the fundamental accounting identity. Example: €400M deal might have Sources of 4.5x €40M EBITDA senior debt (€180M), 1.5x junior (€60M), €140M PE equity, €20M rollover = €400M total matching €400M EV."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model uses €40M LTM EBITDA at 10x entry. What is the entry EV, and how is the capital structure typically allocated?",
+    "options": [
+      "€400M total; all debt",
+      "€400M EV; typical structure: 50-65% debt (€200M-€260M at 5.0x-6.5x leverage) + 35-50% equity (€140M-€200M); actual split depends on business quality and market conditions",
+      "€400M all equity",
+      "€400M with random split"
+    ],
+    "correct_index": 1,
+    "explanation": "Capital structure for €400M LBO: Entry EV = €400M (10x × €40M EBITDA). Typical mid-market LBO allocation: (1) Senior debt: 4.5-5.5x EBITDA = €180M-€220M; (2) Junior/mezzanine: 0.5-1.5x EBITDA = €20M-€60M; (3) Equity: 35-50% of total = €140M-€200M; Total senior + junior debt: 5.0-7.0x EBITDA. Variations by business: (1) Recurring stable: higher leverage 6-7x, less equity; (2) Cyclical: lower leverage 4-5x, more equity; (3) Very stable: 7x+ for premium deals. The LBO model must validate: can the business service this debt? Is equity check reasonable? Does the combination generate target IRR?"
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model projects €40M EBITDA in Year 1 growing to €60M in Year 5 (10% CAGR). Entry is at 10x EBITDA (€400M EV). What does this imply for exit multiples to achieve target returns?",
+    "options": [
+      "Exit at any multiple",
+      "Scenarios: (1) Exit at 10x = €600M EV; (2) Exit at 9x = €540M EV (multiple compression); (3) Exit at 11x = €660M EV (multiple expansion); returns depend significantly on exit multiple assumption; conservative analysis assumes entry = exit multiple",
+      "Exit at 20x",
+      "Exit at 2x"
+    ],
+    "correct_index": 1,
+    "explanation": "Exit multiple scenarios for LBO: (1) Entry: 10x × €40M = €400M EV; (2) Exit at 10x × €60M = €600M EV (same multiple); (3) Exit at 11x × €60M = €660M EV (multiple expansion — 10% benefit); (4) Exit at 9x × €60M = €540M EV (multiple compression — 10% detriment). Returns analysis requires all scenarios. Conservative PE analysis: (1) Base case: entry = exit multiple (no expansion assumed); (2) Upside: moderate expansion; (3) Downside: modest compression. Don't rely on multiple expansion for returns — operational improvement should generate adequate returns even without multiple changes. This 'entry = exit' discipline separates skilled PE from luck."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model uses €200M senior debt at 5% interest. What is the annual interest expense, and how does this affect FCF for debt paydown?",
+    "options": [
+      "€10M — directly reducing available cash",
+      "€10M annual interest expense (€200M × 5%); this reduces cash available for discretionary debt paydown; combined with capex and working capital, constrains cash sweep to debt reduction",
+      "€5M — half of rate",
+      "€200M — principal"
+    ],
+    "correct_index": 1,
+    "explanation": "Interest expense calculation and impact: (1) Annual interest: €200M × 5% = €10M; (2) Tax shield: €10M × 25% tax = €2.5M tax savings (ATOI benefit); (3) After-tax cost: €7.5M annually; (4) Effect on FCF for debt paydown: reduces cash available from EBITDA; (5) Formula: Cash flow available for debt paydown = EBITDA - Interest - Tax - Capex - ∆WC - Mandatory Amortization. At €40M EBITDA and €10M interest: Available cash ~€25M (after tax, capex, WC assumed moderate). This cash reduces debt balance over time, creating deleveraging and enhancing returns."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model includes a 'cash sweep' of 75% of excess cash flow to debt paydown. How does this affect the model?",
+    "options": [
+      "Cash sweep reduces returns",
+      "Cash sweep forces excess cash (above minimum operating requirements, mandatory amortisation, interest) toward debt repayment. This accelerates deleveraging, reduces refinancing risk, increases exit equity value, and demonstrates discipline to lenders",
+      "Cash sweep is optional",
+      "Cash sweep always zero"
+    ],
+    "correct_index": 1,
+    "explanation": "Cash sweep mechanics in LBO models: (1) Excess cash (after maintenance capex, working capital, mandatory amortisation, minimum cash): subject to sweep; (2) Typically 50-75% swept to debt paydown; (3) Higher sweep percentages when leverage is elevated; (4) Accelerates debt reduction; (5) Reduces refinancing risk; (6) Increases exit equity value (lower exit debt = higher exit equity); (7) Signals lender discipline. Modelling: (1) Model available cash after operational needs; (2) Apply sweep percentage; (3) Track debt balance reduction; (4) Calculate exit debt position; (5) Derive exit equity = Exit EV - Exit Debt. Sophisticated models include sweep step-downs as leverage decreases."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model assumes 5-year hold, entry at €160M equity, exit equity of €500M. What is the MOIC and approximate IRR?",
+    "options": [
+      "MOIC: 3.1x, IRR: 26%",
+      "MOIC: 3.1x (€500M / €160M); IRR: (3.1)^(1/5) - 1 ≈ 25.4%; reflects strong equity returns driven by combination of EBITDA growth, multiple effects, and debt paydown",
+      "MOIC: 2x, IRR: 10%",
+      "MOIC: 5x, IRR: 50%"
+    ],
+    "correct_index": 1,
+    "explanation": "LBO return calculation: MOIC = Exit Equity / Entry Equity = €500M / €160M = 3.125x. IRR (for single cash flow): (Exit/Entry)^(1/Years) - 1 = 3.125^(1/5) - 1 = 1.254 - 1 = 25.4%. This is a strong return profile: (1) 3.1x MOIC in 5 years; (2) 25% IRR exceeds typical fund targets (20-25%); (3) Assumes all return occurs at exit. Note: interim cash distributions (dividends recap) would boost IRR further. Returns typically decompose: (1) EBITDA growth contribution; (2) Multiple expansion (or compression); (3) Debt paydown. Breaking down these drivers reveals the 'attribution' of returns."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model's returns break down into 3 components: EBITDA growth, multiple expansion, debt paydown. If EBITDA grew €15M at 10x constant multiple (€150M value), debt decreased €50M, and entry equity was €160M, what is the approximate return attribution?",
+    "options": [
+      "€150M from EBITDA growth + €50M from debt paydown = €200M of equity creation",
+      "€150M EBITDA growth contribution + €50M debt paydown contribution = €200M equity value added; total exit equity = €160M + €200M = €360M; if exit equity is higher than this, multiple expansion contributed the difference",
+      "€0 from each",
+      "Random values"
+    ],
+    "correct_index": 1,
+    "explanation": "Return attribution decomposition: (1) EBITDA growth contribution: €15M × 10x (exit multiple) = €150M; (2) Debt paydown contribution: €50M (directly reduces debt at exit, increasing equity); (3) Multiple expansion: if exit multiple > entry multiple, captures additional value; (4) Total: €160M entry + €200M growth + €50M debt paydown = €410M at same multiple. If actual exit equity is €500M, additional €90M from multiple expansion. Attribution analysis reveals: (1) Sources of value creation; (2) Quality of returns (operational vs market-driven); (3) Repeatability of model; (4) Risk profile of deal. Skilled PE firms show balanced attribution; lucky PE firms show multiple-dominated returns."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model assumes entry at 10x and exit at 9x (multiple compression). Entry EBITDA €40M, Exit EBITDA €55M. How does multiple compression affect returns?",
+    "options": [
+      "No effect",
+      "Exit EV: 9x × €55M = €495M. Entry EV: 10x × €40M = €400M. EBITDA growth contributed €150M (€15M × 10x at old multiple); Multiple compression destroyed €55M (9x-10x = -1x × €55M). Net: €95M EV growth from €400M to €495M, despite meaningful EBITDA growth",
+      "Always positive",
+      "Equivalent to EBITDA change"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiple compression analysis: (1) Entry: 10x × €40M = €400M EV; (2) Exit: 9x × €55M = €495M EV; (3) EV growth: only €95M despite €15M EBITDA growth; (4) EBITDA growth contribution: €15M × 10x = €150M; (5) Multiple compression: (9x - 10x) × €55M = -€55M destruction; (6) Net EV growth: €150M - €55M = €95M. This shows multiple compression can significantly offset EBITDA gains. For LBO returns: (1) Exit equity = Exit EV - Exit Debt; (2) Reduced exit EV directly reduces exit equity; (3) Lower returns despite operational improvement; (4) Why exit multiple assumption is critical. Conservative LBO models assume entry = exit multiple or test compression scenarios."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model has entry at 10x × €40M = €400M EV, 60% leverage (€240M debt, €160M equity). After 5 years at 10x × €60M = €600M exit, debt reduced to €140M, exit equity = €460M. What is the MOIC?",
+    "options": [
+      "3.875x — €460M / €160M",
+      "2.875x — €460M / €160M = 2.875x, reflecting 2.9x return multiple",
+      "2x — average growth",
+      "10x — multiple"
+    ],
+    "correct_index": 1,
+    "explanation": "MOIC calculation: Exit Equity / Entry Equity = €460M / €160M = 2.875x. Decomposition: (1) EV growth: €400M to €600M = €200M (50% increase); (2) Debt paydown: €240M to €140M = €100M reduction; (3) Exit equity: €600M - €140M = €460M; (4) Entry equity: €160M; (5) Equity growth: €460M - €160M = €300M. Sources of equity growth: (1) EBITDA growth (€20M × 10x = €200M EV benefit); (2) Debt paydown (€100M direct to equity); (3) Total equity growth of €300M. MOIC of 2.875x translates to IRR of approximately 23% over 5 years — meeting typical fund target of 20-25%."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model includes 'transaction fees' of 2.5% of EV. On a €500M deal, what are typical fees, and how are they funded?",
+    "options": [
+      "No fees needed",
+      "€12.5M in transaction fees (2.5% × €500M) including legal, advisory, financing; funded as part of 'Uses of Funds' alongside the purchase price; increases total capital required; reduces effective economic return",
+      "€5M",
+      "Always 5%"
+    ],
+    "correct_index": 1,
+    "explanation": "Transaction fees in LBO: (1) Typical range: 2-4% of EV; (2) €500M × 2.5% = €12.5M; (3) Components: legal fees (€2-3M), M&A advisory (€3-5M), accounting (€1-2M), debt arrangement fees (€3-5M), other (€1-2M); (4) Funded as Use of Funds — reduces cash available for purchase price or requires additional capital; (5) Included in LBO model's 'Sources and Uses' on Uses side; (6) Reduces effective economic return by full amount; (7) Some fees can be capitalised (amortized) but economically same cost. Sophisticated LBO models include transaction fees as material line item affecting returns and capital structure."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model shows a target IRR of 25%. Using a 5-year hold, what MOIC does this imply?",
+    "options": [
+      "Approximately 3.1x — (1 + 0.25)^5 = 3.05x",
+      "2x",
+      "5x",
+      "Cannot be calculated"
+    ],
+    "correct_index": 0,
+    "explanation": "Relationship between IRR and MOIC: (1) Over hold period (n years), MOIC = (1 + IRR)^n; (2) 25% IRR over 5 years: (1.25)^5 = 3.05x MOIC; (3) 20% IRR over 5 years: (1.20)^5 = 2.49x; (4) 15% IRR over 5 years: (1.15)^5 = 2.01x; (5) 30% IRR over 5 years: (1.30)^5 = 3.71x. This assumes: (1) Single cash flow at exit; (2) No interim distributions. With interim dividends (like recapitalisations): IRR higher for same MOIC because cash received earlier. Understanding this relationship helps: (1) Set return targets; (2) Benchmark different hold periods; (3) Evaluate deal structures that include interim distributions."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model's sensitivity analysis tests combinations of entry multiple and exit multiple. Why is this specifically important?",
+    "options": [
+      "No importance",
+      "Shows MOIC/IRR across different multiple scenarios: (1) Entry multiple varies with negotiation; (2) Exit multiple varies with market conditions; (3) Returns heavily dependent on both; (4) Sensitivity reveals break-even exit multiples; (5) Helps price discipline and risk assessment",
+      "Random test",
+      "Only for small deals"
+    ],
+    "correct_index": 1,
+    "explanation": "Entry × Exit multiple sensitivity: reveals return patterns across scenarios. Example two-dimensional table: rows = entry multiples (9x to 11x), columns = exit multiples (8x to 12x). Each cell shows IRR at that combination. Key insights: (1) Break-even exit multiple: where IRR equals target; (2) Margin of safety: how much exit compression is tolerable; (3) Upside scenarios: what exit gives premium returns; (4) Downside: what happens in worst case. For PE analysis: (1) Price discipline: don't overpay if exit multiples uncertain; (2) Risk assessment: understand tail scenarios; (3) LP communication: show analytical rigor; (4) IC review: comprehensive decision support."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model for a bolt-on acquisition candidate shows entry at 7x. Platform already holds at 10x multiple. What does this create?",
+    "options": [
+      "Nothing special",
+      "'Multiple arbitrage' — acquiring bolt-on at 7x then revaluing at 10x (platform multiple) at exit creates 3x EBITDA gain per bolt-on EBITDA, adding to operational value creation",
+      "Value destruction",
+      "Same as standalone"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiple arbitrage on bolt-on acquisitions: (1) Bolt-on acquired at 7x EBITDA; (2) Platform exits at 10x (applied to combined EBITDA); (3) Every €1M of bolt-on EBITDA: acquired for €7M, valued at €10M at exit = €3M value gain; (4) Buy-and-build strategy captures this arbitrage systematically; (5) Multiple arbitrage is largely risk-free once bolt-on is integrated (market conditions permitting). LBO model benefits: (1) Accelerated value creation; (2) Reduced reliance on operational synergies; (3) Enhanced returns; (4) Scaled platform value. Sophisticated PE firms build bolt-on pipelines and capture multiple arbitrage alongside organic value creation."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model includes 'rollover equity' from selling management retaining 15% of equity. How does this affect the PE firm's equity check?",
+    "options": [
+      "No effect",
+      "Rollover reduces PE's equity commitment: if total equity required is €180M and rollover is 15%, PE contributes 85% × €180M = €153M; rollover contributes €27M; aligns management with PE returns while reducing fund's capital deployment",
+      "Doubles equity check",
+      "Eliminates equity check"
+    ],
+    "correct_index": 1,
+    "explanation": "Rollover equity impact on equity check: (1) Total equity required: €180M (in example); (2) Rollover equity (management): 15% = €27M; (3) PE equity check: 85% = €153M; (4) PE owns 85% of company post-deal; (5) Management owns 15%. Strategic benefits: (1) Alignment: management has equity in value creation; (2) Reduces PE capital: €27M less to deploy, enabling more deals; (3) Retains management: incentivises continuity; (4) Positive signal: management willing to invest in the business; (5) Shared upside. Cost: PE gives up equity value corresponding to rollover percentage. Sophisticated LBO models include rollover in capital structure analysis."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model assumes debt is paid down linearly over 5 years. What is this assumption, and what drives it?",
+    "options": [
+      "Random assumption",
+      "Linear debt paydown: equal annual reduction in debt balance; driven by: (1) Cash sweep mechanisms; (2) Mandatory amortisation; (3) Projected free cash flow; typical LBO reduces debt 40-60% over hold period through operational cash generation",
+      "Doubles each year",
+      "Never changes"
+    ],
+    "correct_index": 1,
+    "explanation": "Linear debt paydown assumption in LBO: (1) Represents simplified modelling of actual debt reduction pattern; (2) Actual pattern driven by: Cash sweep (typically 50-75% of excess FCF), Mandatory amortisation (small for TLB, larger for TLA), Free cash flow generation, Discretionary prepayments; (3) Linear is simplification; actual paydown often uneven (strong years vs weak years); (4) Typical deleveraging: 40-60% over 5 years. Sophisticated models: (1) Build detailed cash flow waterfall; (2) Calculate actual debt paydown by year; (3) Include interest on declining balance; (4) Tracks debt by tranche; (5) Shows actual exit debt position. Simplified linear works for initial analysis."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model includes a 'dividend recapitalisation' in Year 3, extracting €100M of equity. How does this affect the return calculation?",
+    "options": [
+      "No effect on returns",
+      "Interim cash flow of €100M in Year 3: (1) Reduces total equity at risk over life; (2) Boosts IRR (cash received earlier); (3) MOIC calculated on total cash received; (4) Different from continuation holding — extracts value early. Shows IRR premium for interim distributions",
+      "Reduces MOIC",
+      "Requires more equity"
+    ],
+    "correct_index": 1,
+    "explanation": "Dividend recapitalisation impact on returns: (1) Interim cash: €100M received in Year 3 (before exit); (2) IRR significantly boosted: cash received earlier, reducing capital at risk over life; (3) MOIC: includes cumulative cash received (€100M dividend + exit equity); (4) Capital weighted: less equity at risk for less time; (5) Effective return: higher IRR than equivalent single-exit deal. Example: without dividend: 3x MOIC over 5 years = 24.6% IRR. With €100M dividend in Year 3 (out of €150M equity investment): IRR may rise to 32-35% even if total MOIC equivalent. Dividend recaps are common PE value capture mechanism."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model assumes the PE firm uses 5.5x EBITDA of senior debt. If EBITDA is €60M, what is total senior debt, and what constrains this decision?",
+    "options": [
+      "€330M — directly calculated; constrained by lender covenants, business quality, and credit market conditions",
+      "€330M senior debt; constraints include interest coverage ratios (typically 2.5x+ minimum), covenant tests, lender willingness given business characteristics, and market conditions",
+      "€60M",
+      "Unlimited leverage"
+    ],
+    "correct_index": 1,
+    "explanation": "Senior debt sizing constraints: (1) €60M EBITDA × 5.5x = €330M senior debt; (2) Interest coverage: €330M × 5% = €16.5M interest; €60M / €16.5M = 3.6x — acceptable; (3) Covenant tests: leverage ratio must stay within negotiated limits (e.g., 6.0x); (4) Lender willingness: quality of business, sector, jurisdiction affect appetite; (5) Market conditions: credit availability and spreads; (6) Cash flow generation: must service debt with margin of safety. Sophisticated LBO model includes: (1) Covenant testing; (2) Downside stress scenarios; (3) Interest coverage analysis; (4) Sensitivity to EBITDA changes; (5) Refinancing considerations during hold period."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model shows excellent base case returns but poor downside returns. How should this be interpreted?",
+    "options": [
+      "Accept the deal on base case",
+      "Risk-return mismatch: base case returns may be satisfactory but downside scenarios show unacceptable losses. Evaluate: (1) Probability of downside; (2) Mitigation capacity; (3) Reserve capital; (4) Deal structure; consider alternative deal structures or decline if risk-adjusted returns inadequate",
+      "Always decline",
+      "Downside is irrelevant"
+    ],
+    "correct_index": 1,
+    "explanation": "Risk-adjusted return analysis: (1) Base case returns matter but not alone; (2) Downside returns equally important for risk assessment; (3) Evaluation: probability of downside scenarios, ability to mitigate (operational levers, cost cutting, refinancing), reserve capital for downside support, deal structure options (earnouts, rollover, covenant structures); (4) Decision framework: base case 25% IRR + downside 10% IRR (with acceptable probability) = attractive risk-return; base case 25% IRR + downside -15% IRR = unattractive due to loss risk; (5) Alternative structures: lower leverage, earnouts, covenants providing downside protection. Don't evaluate LBOs on base case alone — downside analysis prevents over-aggressive deals."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model's exit assumes sale to strategic buyer at 11x. Alternative assumption is sale to another PE firm at 9.5x. How do these compare?",
+    "options": [
+      "Always pick strategic",
+      "Strategic typically higher (synergies); PE-to-PE lower (financial only); model both for realistic range; actual exit depends on: market conditions, strategic buyer availability, business fit, competitive dynamics; conservative assumption uses PE-to-PE (more predictable)",
+      "Same multiple",
+      "Always pick PE"
+    ],
+    "correct_index": 1,
+    "explanation": "Strategic vs. PE exit multiples in modelling: (1) Strategic buyer (synergy-capable): 11x typical — includes synergy premium, strategic value; (2) PE buyer (financial-only): 9.5x typical — pure financial valuation; (3) Difference: 1.5x reflects synergy premium; (4) Both scenarios relevant depending on market conditions. Conservative LBO modelling: (1) Base case uses PE-to-PE multiple (9.5x) as anchor; (2) Strategic exit scenario provides upside case; (3) Captures realistic exit dynamics; (4) Don't assume strategic buyers always available. For IC: show both exit scenarios; document assumption choice; explain reasoning. Exit multiple assumption drives valuation — make it conservative or explain the assumption."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model includes a 'tax shield' from interest expense. How does this affect returns?",
+    "options": [
+      "No effect",
+      "Interest expense is tax-deductible, reducing taxable income and cash taxes. Example: €10M interest × 25% tax = €2.5M tax savings annually. Over 5-year hold: €12.5M + compound effect. Increases returns by reducing tax drain",
+      "Increases taxes",
+      "Eliminates taxes"
+    ],
+    "correct_index": 1,
+    "explanation": "Tax shield from leverage: (1) Interest expense: tax-deductible; (2) Annual tax savings: Interest × Tax Rate; (3) Example: €10M interest × 25% tax = €2.5M annually; (4) Over 5-year hold: ~€12.5M cumulative benefit; (5) Compound effect: tax savings reinvested or reduce debt; (6) Increases cash flow to equity; (7) Supports larger debt loads (after-tax cost less than pretax). Important considerations: (1) Interest deductibility limits (BEAT, CFC rules, Pillar 2); (2) Debt structure affects deductibility; (3) International tax considerations. Tax shield is a real source of LBO value creation, though increasingly constrained by global tax reforms."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model's base case assumes 8% EBITDA growth. What operational levers typically drive this growth?",
+    "options": [
+      "Random growth",
+      "Common growth levers: (1) Revenue growth (market share, geography, new products); (2) Price optimisation; (3) Customer retention improvement; (4) Margin expansion (cost management, mix shift); (5) Bolt-on acquisitions; (6) Operational efficiencies",
+      "Only revenue",
+      "Only cost cutting"
+    ],
+    "correct_index": 1,
+    "explanation": "LBO growth levers: (1) Revenue growth: new customers, geographic expansion, new products, market share gains, price increases; (2) Margin expansion: cost management, operational improvements, supply chain optimisation, procurement leverage, mix shift to higher-margin segments; (3) M&A: bolt-on acquisitions creating multiple arbitrage and scale; (4) Operational efficiencies: automation, process improvements, technology upgrades; (5) Customer retention: reducing churn, expanding wallet share. For LBO model: (1) Decompose growth by lever; (2) Ensure levers are actionable and backed by operational plans; (3) Model timing and magnitude; (4) Include execution risk; (5) Show connection to value creation. Unrealistic growth assumptions undermine LBO credibility."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model shows a 'break-even exit multiple' at which IRR equals target. What does this calculation reveal?",
+    "options": [
+      "Random break-even",
+      "Minimum exit multiple at which deal meets target IRR. E.g., target 22% IRR requires 9.0x exit multiple. If current entry at 10x and base case exit at 10x = 22.5% IRR — comfortable margin. If entry at 10.5x requires 10x exit to hit 22% — limited margin of safety",
+      "Random value",
+      "Never calculated"
+    ],
+    "correct_index": 1,
+    "explanation": "Break-even exit multiple analysis: (1) Determines minimum exit multiple for target IRR; (2) Example: target 22% IRR, 5-year hold, €150M entry equity, €60M exit EBITDA; back-solve: required exit equity = €150M × 1.22^5 = €410M; required exit EV = €410M + €100M exit debt = €510M; break-even multiple = €510M / €60M = 8.5x; (3) Gap analysis: current peer multiple - break-even = margin of safety; (4) If 8.5x break-even and peer trading at 10x: 1.5x margin; (5) If 9.5x break-even and peer trading at 10x: 0.5x margin — thin. Break-even analysis supports price discipline and risk assessment."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model shows potential returns at different entry multiples. How does this support deal negotiation?",
+    "options": [
+      "Not helpful",
+      "Provides quantitative justification for pricing decisions: (1) Shows returns at different prices; (2) Identifies price at which deal becomes marginal; (3) Supports negotiating position; (4) Documents analysis for IC review; enables walking away from overpriced deals",
+      "Only for public deals",
+      "Random negotiation"
+    ],
+    "correct_index": 1,
+    "explanation": "Pricing sensitivity for negotiation: (1) Model shows returns at 9x, 10x, 11x, 12x entry; (2) Each entry multiple produces different IRR/MOIC; (3) Identifies price ceiling where returns become marginal or negative; (4) Documents analytical basis for pricing decisions; (5) Supports IC review with quantitative justification; (6) Enables walking away from overpriced deals. Negotiation application: (1) Target price where returns are strong; (2) Document flexibility at slightly higher prices; (3) Establish walk-away threshold; (4) Negotiate from position of clarity. Without this analysis, PE firms may overpay in competitive auctions; with it, disciplined pricing maintained."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model includes management equity programme (MEP) granting management 5% of equity pool. How does this affect returns?",
+    "options": [
+      "No effect",
+      "Management takes 5% of equity pool at exit: (1) Creates dilution of fund returns; (2) But aligns management with value creation; (3) Typical 5-10% of equity for senior team; (4) Structured with vesting and leaver provisions; (5) Essential for executing operational improvement plans",
+      "Eliminates fund returns",
+      "Random allocation"
+    ],
+    "correct_index": 1,
+    "explanation": "Management equity programme in LBO model: (1) 5% equity to management team at exit (or through dividend recap); (2) Dilutes fund returns by corresponding amount; (3) Typical structure: 5-10% of equity pool for senior management team; (4) Aligns management with value creation outcomes; (5) Structured with: vesting periods, leaver provisions (good/bad), performance hurdles; (6) Essential for attracting and retaining talented management; (7) Modelled as dilution in returns calculation. Typical example: MOIC 3.0x before MEP; 2.85x after 5% MEP dilution; 2.7x after 10% dilution. Critical trade-off: dilution cost vs. execution benefit of aligned management."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model assumes 5-year hold period. What factors might justify a shorter (3-year) or longer (7-year) hold?",
+    "options": [
+      "Random choice",
+      "Shorter (3-year): strong exit market, fully executed value creation plan, favorable market cycle. Longer (7-year): slower transformation, better exit opportunity later, market cycle timing, continued value creation runway",
+      "Always 5 years",
+      "Only short holds"
+    ],
+    "correct_index": 1,
+    "explanation": "Hold period determinants: (1) 3-year hold: Fast value creation (quick wins), Strong exit market (IPO window, strategic demand), Well-defined exit path (strategic buyer identified), Value creation largely complete; (2) 5-year hold (standard): Typical value creation timeline, Standard PE fund economics, Balanced timing; (3) 7-year hold: Complex operational transformation required, Market cycle timing favorable later, Continued value creation runway, Longer sector consolidation cycle. For LBO model: (1) Test multiple hold periods; (2) Optimise exit timing by return profile; (3) Consider fund life (10-year life limits indefinite holding); (4) Factor market cycle into decision. Hold period flexibility affects returns significantly."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model's sources and uses table shows €500M of sources but €480M in uses. What might explain the €20M difference?",
+    "options": [
+      "Error — must balance",
+      "Sources should equal Uses (basic accounting); €20M gap likely due to: (1) Incorrect calculation; (2) Missed item (transaction fees, working capital buffer, minimum cash); (3) Required reconciliation; investigate and correct before finalising",
+      "Random gap",
+      "Ignore the gap"
+    ],
+    "correct_index": 1,
+    "explanation": "Sources equal Uses is the fundamental LBO equation. A €20M gap indicates: (1) Missing item in Uses: transaction fees (typically 2-4% of EV = €10-20M), working capital buffer, minimum cash requirement, refinancing of existing debt; (2) Missing item in Sources: accidental omission; (3) Calculation error: formula or reference error; (4) Structural issue: deal needs restructuring. Reconciliation process: (1) List all sources (debt tranches, equity, rollover, other); (2) List all uses (purchase price, debt refinancing, fees, cash); (3) Verify each line calculation; (4) Ensure total debt reflects appropriate leverage; (5) Equity check: total uses - debt - other sources. Correct before any further analysis — gaps undermine LBO model integrity."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model shows IRR 25% at 5-year hold vs 20% at 7-year hold. What does this comparison reveal?",
+    "options": [
+      "Always shorter hold is better",
+      "Shorter hold typically shows higher IRR mathematically (same MOIC/shorter time = higher IRR); this analysis supports earlier exit decisions when operational value creation is complete and exit conditions are favorable",
+      "Random variation",
+      "No meaningful comparison"
+    ],
+    "correct_index": 1,
+    "explanation": "Hold period IRR comparison: (1) Shorter hold generally yields higher IRR when returns are similar (MOIC constant); (2) Mathematical relationship: MOIC = (1+IRR)^n, so for same MOIC, shorter n = higher IRR; (3) Example: 3x MOIC over 5 years = 25% IRR; 3x MOIC over 7 years = 17% IRR; (4) Difference significant: 5% IRR difference matters for fund economics; (5) Strategic decision: take 5-year exit vs. wait for larger exit at year 7. Factors favouring shorter hold: (1) Completed value creation; (2) Strong market conditions; (3) Attractive exit pricing. Factors favouring longer hold: (1) Incomplete transformation; (2) Better expected market conditions. LBO model optimises hold period based on projected returns and probabilities."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model for a cyclical business shows different returns under different economic scenarios. How should results be presented to the IC?",
+    "options": [
+      "Only base case",
+      "Scenario analysis: (1) Base case (normal conditions); (2) Recession scenario (downturn impact); (3) Boom scenario (favorable conditions); (4) Probability-weighted expected return; (5) Range of outcomes and stress testing; gives IC realistic risk assessment",
+      "Only best case",
+      "Random scenarios"
+    ],
+    "correct_index": 1,
+    "explanation": "Scenario analysis for cyclical businesses: (1) Base case: assumed economic trajectory during hold; (2) Recession scenario: economic downturn impact on EBITDA, multiples, debt service; (3) Boom scenario: favorable conditions; (4) Mild downturn scenario: intermediate case; (5) Probability-weighted expected return. For cyclicals, economic sensitivity is substantial: (1) Top-line: demand drops in recession; (2) Margins: pricing pressure, utilization declines; (3) Multiples: cyclical compression during downturns; (4) Debt service: stressed during weakness. IC presentation shows: (1) All scenarios with probabilities; (2) Key risks and mitigants; (3) Downside protection strategies; (4) Cycle timing decisions; (5) Appropriate leverage for cyclical exposure."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model shows returns stress test on capital structure. What typically drives the analysis?",
+    "options": [
+      "Random testing",
+      "Capital structure decisions: (1) Higher leverage amplifies returns if plan works but multiplies downside risk; (2) Lower leverage reduces return amplification but provides margin of safety; (3) Test various debt levels; (4) Optimise for risk-adjusted returns; (5) Consider covenant headroom in downside scenarios",
+      "Only for large deals",
+      "No value added"
+    ],
+    "correct_index": 1,
+    "explanation": "Capital structure stress testing: (1) Test different leverage levels (4x, 5x, 6x, 7x); (2) Each level produces different IRR/MOIC profile; (3) Higher leverage: more amplification both up and down; (4) Lower leverage: less amplification but more resilience; (5) Evaluation: trade-off between return amplification and risk. Key considerations: (1) Covenant headroom in downside scenarios; (2) Interest coverage ratio at various levels; (3) Cash flow sufficiency for debt service; (4) Refinancing risk; (5) Value creation opportunity from deleveraging. Optimisation: find leverage that maximises risk-adjusted returns (not just absolute returns). Excess leverage creates downside risk disproportionate to upside benefits."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model identifies the 'payback period' for the PE equity investment. What does this mean?",
+    "options": [
+      "Random metric",
+      "Time required for cumulative distributions to equal initial equity investment. E.g., €150M equity invested; €75M dividend in Year 3; Total distributions = €75M by Year 3 (50% payback); full payback at exit in Year 5. Indicator of capital deployment efficiency",
+      "Same as IRR",
+      "Never calculated"
+    ],
+    "correct_index": 1,
+    "explanation": "Payback period in LBO: (1) Tracks cumulative distributions vs. equity investment; (2) €150M equity invested; (3) Interim distributions (dividend recap): €75M in Year 3 = 50% payback; (4) Exit equity: €400M in Year 5 = full payback + 2.67x additional return; (5) Total payback time: 3 years for 50%; full payback at exit. Significance: (1) Measures capital efficiency; (2) Reflects risk reduction as distributions received; (3) Different from IRR but complementary; (4) Early distributions reduce capital at risk; (5) Useful for LP communication showing capital return timing. Sophisticated LBO models track both partial and full payback timing."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model assumes no management equity in initial analysis, then adjusts for 8% MEP. How much does this affect MOIC and IRR?",
+    "options": [
+      "No effect",
+      "Management takes 8% of equity: (1) MOIC reduced by 8% (PE gets 92% instead of 100%); (2) IRR reduced proportionally; (3) €300M pre-MEP MOIC × 0.92 = €276M MOIC; on €100M equity, 3x becomes 2.76x; (4) IRR drops from 24.6% to 22.5%; (5) Economic alignment cost is meaningful",
+      "Increases returns",
+      "Eliminates returns"
+    ],
+    "correct_index": 1,
+    "explanation": "MEP impact quantification: (1) PE share: 100% - 8% = 92% of equity value; (2) MOIC dilution: original 3x × 0.92 = 2.76x MOIC (8% reduction); (3) IRR dilution (compounded effect): IRR drops from 24.6% to approximately 22.5% (5 years); (4) Dollar impact: on €100M equity, difference is €24M less in returns; (5) Trade-off: dilution cost vs. management motivation benefit; (6) Required for execution. Typical MEP structures: 5-10% for senior management; 10-15% for broader leadership. LBO model typically includes MEP as standard assumption; sensitivity analysis on MEP size shows impact. Don't underestimate MEP impact on returns in aggressive deals."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model includes 'terminal value' assumptions similar to DCF. What's different about LBO exit vs DCF terminal?",
+    "options": [
+      "They are identical",
+      "LBO exit uses defined exit period (5-year typical) with specific multiple; DCF terminal is perpetuity with perpetual growth rate. LBO exit reflects specific PE hold period; DCF terminal reflects infinite ownership; both approaches valid for different purposes",
+      "LBO uses perpetuity",
+      "Only DCF matters"
+    ],
+    "correct_index": 1,
+    "explanation": "LBO exit vs. DCF terminal differences: (1) LBO exit: defined 5-year period (or chosen hold); exit multiple (e.g., 10x EBITDA); specific cash flow timing; reflects PE-specific economic; (2) DCF terminal: perpetual (no defined end); perpetual growth rate (1-3%); reflects infinite business ownership. Both approaches valid: (1) LBO suitable for PE analysis (defined hold, specific exit); (2) DCF suitable for intrinsic valuation (infinite ownership); (3) Complementary views. LBO model benefits: (1) Matches PE economics; (2) Specific exit cash flow; (3) Realistic hold period. DCF benefits: (1) Intrinsic valuation anchor; (2) Ignores specific PE timing; (3) Cross-check for LBO exit multiple."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model's primary output is the 'cash-on-cash multiple' over hold period. How does this differ from IRR?",
+    "options": [
+      "They are the same",
+      "Cash-on-cash multiple = Total distributions / Equity invested (simple ratio). IRR = time-weighted return (accounts for cash flow timing). Interim distributions boost IRR more than cash-on-cash. Both metrics needed for full return picture",
+      "Different data sources",
+      "Random variation"
+    ],
+    "correct_index": 1,
+    "explanation": "Cash-on-cash multiple vs. IRR: (1) Cash-on-cash (MOIC): Total Distributions / Equity Invested; simple multiple; doesn't account for timing; (2) IRR: time-weighted return accounting for when cash received; interim distributions boost IRR more than MOIC; (3) Example: €100M invested; €300M total distributions over 5 years — MOIC = 3.0x; IRR = 24.6% if all at exit; (4) With €100M dividend in Year 2: MOIC still 3.0x but IRR rises to ~28% because cash received earlier; (5) Both metrics needed: MOIC measures absolute return; IRR measures time efficiency of return. For LBO analysis: LP communication uses both; fund returns reflect combined effects."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model's exit value is predominantly driven by a specific assumption. Which is typically most impactful?",
+    "options": [
+      "Random variable",
+      "Exit multiple: typically drives largest portion of exit value sensitivity. 10% exit multiple change: ~€50M on €500M deal (+/-10%). EBITDA growth also important but typically smaller range than multiple uncertainty. Debt paydown is significant but bounded",
+      "Interest rate only",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Exit value sensitivity drivers: (1) Exit multiple: typically largest single driver. 10% multiple change can shift exit value by 10%; on €500M deal = €50M; (2) EBITDA growth: meaningful impact, but typically smaller range (5-10% vs. multiple uncertainty which can be 20-30%); (3) Debt paydown: important but bounded by operating cash flow; (4) Hold period: affects exit multiple scenario but less than multiple itself. Prioritisation: (1) Exit multiple deserves most sensitivity analysis; (2) EBITDA projections second priority; (3) Capital structure third. Sophisticated LBO models: run primary sensitivities on exit multiple, EBITDA growth, then layer in capital structure tests."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model shows 'implied leverage ratio' at exit of 1.8x (down from 6x entry). What does this mean?",
+    "options": [
+      "Random value",
+      "Successful deleveraging: €60M exit EBITDA × 1.8x = €108M exit debt (down from €240M entry debt). €132M of debt repaid during hold. Represents successful value creation through cash flow generation",
+      "Dramatic debt growth",
+      "No significance"
+    ],
+    "correct_index": 1,
+    "explanation": "Implied exit leverage interpretation: (1) Exit EBITDA: €60M; (2) Exit leverage: 1.8x = €108M exit debt; (3) Entry debt: 6x × €40M = €240M; (4) Debt paydown: €240M - €108M = €132M paid down over hold; (5) Sources of paydown: operating cash flow, dividend timing, refinancing. Significance: (1) Healthy deleveraging from aggressive entry to conservative exit; (2) Sustainable capital structure at exit; (3) Supports exit multiple (lower debt = higher equity value); (4) Flexibility for next buyer (PE or strategic); (5) Evidence of operational strength. Strong deleveraging profile is a key indicator of successful PE operations."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model's 'returns bridge' shows decomposition of equity value growth. What are the typical components?",
+    "options": [
+      "Random components",
+      "Return components: (1) EBITDA growth contribution (growth × entry multiple); (2) Multiple expansion/contraction (change in multiple × exit EBITDA); (3) Debt paydown; (4) Management dilution; (5) Dividend recaps (if any); each component quantified, showing value creation sources",
+      "Only EBITDA",
+      "Unclear components"
+    ],
+    "correct_index": 1,
+    "explanation": "LBO return bridge components: (1) EBITDA growth: incremental EBITDA × entry multiple (captures operational improvement valued at original price); (2) Multiple expansion: change in multiple × exit EBITDA (captures market-driven value); (3) Multiple compression: (negative) if exit < entry; (4) Debt paydown: reduction in debt directly adds to equity value; (5) Management equity dilution: (negative) shifts value to management; (6) Dividend recap (if any): cash received during hold. Total: sums to complete equity value growth. Useful for: (1) IC presentation (clear value attribution); (2) LP communication; (3) Learning (what drove returns); (4) Process improvement (replicating winners)."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model shows €100M equity invested, €400M equity at exit, €20M interim dividend in Year 3. What's the true IRR considering both distributions?",
+    "options": [
+      "24.6% — ignoring interim",
+      "Approximately 25-28% IRR — interim dividend accelerates returns. Exact calculation: NPV = 0 where discount rate balances -€100M initial investment with +€20M Year 3 dividend and +€400M Year 5 exit equity; interim cash lifts IRR above simple 24.6%",
+      "100%",
+      "50%"
+    ],
+    "correct_index": 1,
+    "explanation": "IRR with interim distributions: (1) Equity invested: €100M (Year 0); (2) Dividend: €20M (Year 3); (3) Exit equity: €400M (Year 5); (4) IRR where NPV = 0; (5) Without interim dividend: 4x MOIC over 5 years = 32% IRR. With interim dividend: 4.2x MOIC, but cash received earlier; (6) IRR ~33-35%: slightly higher than 32% because €20M received in Year 3 rather than compounding to exit. Mathematical effect: interim distributions always boost IRR vs. holding until exit for same total distribution. Sophisticated LBO models compute IRR precisely using Newton-Raphson iteration or Excel's IRR function."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model shows returns analysis for a carve-out target. What unique considerations apply?",
+    "options": [
+      "No difference from standard LBOs",
+      "Carve-out specifics: (1) Stand-alone costs (not previously borne by target); (2) IT systems separation costs; (3) Personnel transfers; (4) Customer relationship management; (5) Transition services agreements; (6) New finance function setup; (7) Operational separation risks; meaningfully affects FCF projections",
+      "Only price matters",
+      "Identical to platform deals"
+    ],
+    "correct_index": 1,
+    "explanation": "Carve-out LBO specific considerations: (1) Stand-alone costs: G&A, IT, finance functions previously shared with parent now required standalone; typical cost addition: 3-8% of revenue; (2) IT separation: significant costs to separate systems, data, infrastructure; (3) Personnel transfers: legal, employment, retention costs; (4) Customer relationships: transition management; (5) Transition services agreements (TSAs): temporary arrangements with parent; (6) Finance function: new reporting, compliance, systems. LBO model adjustments: (1) Lower starting EBITDA reflecting standalone costs; (2) Incorporated transition costs in year 1-2; (3) Realistic FCF projections; (4) Additional equity buffer for execution risk. Getting standalone cost assumptions right is critical."
+  },
+  {
+    "topic_tag": "valuation-lbo-model",
+    "question": "An LBO model presentation to IC includes multiple scenarios. What's the typical structure?",
+    "options": [
+      "Only base case",
+      "(1) Base case: expected outcomes; (2) Upside: favorable conditions; (3) Downside: adverse scenarios; (4) Bull case: optimistic but plausible; (5) Bear case: stress scenario; each with assumption descriptions; shows range of plausible returns and risks",
+      "Only best case",
+      "Random scenarios"
+    ],
+    "correct_index": 1,
+    "explanation": "LBO IC presentation scenarios: (1) Base case: expected trajectory, moderate assumptions; target 20-25% IRR; (2) Upside case: favorable conditions — stronger growth, margin improvement, multiple expansion; 30%+ IRR possible; (3) Downside case: adverse scenarios — compression, weaker operations; 10-15% IRR; (4) Bear case: stress scenario — significant deterioration; potentially negative returns; (5) Bull case: optimistic but plausible — exceptional execution; higher than base. Each scenario: specific assumption set, return metrics (IRR, MOIC), key risks/drivers. IC evaluation: (1) Risk-adjusted expected return; (2) Downside risk assessment; (3) Margin of safety; (4) Portfolio fit; (5) LP communication implications. Structured scenario presentation demonstrates analytical rigor."
+  }
+]

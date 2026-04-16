@@ -142,9 +142,10 @@ export default async function DashboardPage() {
           <div className="space-y-2">
             {data.levels.map((level) =>
               level.unlocked ? (
-                <div
+                <Link
                   key={level.levelUuid}
-                  className="bg-card rounded-lg px-4 py-3 flex items-center gap-4"
+                  href={level.firstLessonHref ?? '/dashboard'}
+                  className="bg-card rounded-lg px-4 py-3 flex items-center gap-4 hover:bg-card/80 transition-colors"
                 >
                   <span className="text-xs font-medium text-muted-foreground w-6 shrink-0 text-right">
                     {level.levelNumber}
@@ -165,7 +166,7 @@ export default async function DashboardPage() {
                   <span className="text-xs text-muted-foreground shrink-0 w-24 text-right">
                     {level.completedCount}/{level.totalCount} lessons
                   </span>
-                </div>
+                </Link>
               ) : (
                 <div
                   key={level.levelUuid}

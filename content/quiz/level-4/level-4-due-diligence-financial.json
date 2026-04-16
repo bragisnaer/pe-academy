@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm commissions Financial Due Diligence (FDD) on a target. What is the primary objective of FDD distinct from the annual audit?",
+    "options": [
+      "To verify the audit opinion",
+      "To validate the sustainable earnings, assess quality of adjustments, normalise working capital, and identify accounting matters that affect the transaction — all specific to the M&A context, not the audit opinion",
+      "To replace the audit",
+      "To evaluate management"
+    ],
+    "correct_index": 1,
+    "explanation": "FDD purpose vs. audit: (1) FDD: transaction-specific analysis for PE decision-making; assesses sustainable earnings, quality of adjustments, normalised working capital, debt-like items; informs pricing, structuring, post-close actions. (2) Annual audit: financial statement accuracy and GAAP/IFRS compliance; broader but less deal-specific. Scope differences: (1) FDD focuses on EBITDA quality, adjustments, WC normalisation; (2) Audit focuses on financial statement compliance; (3) FDD deeper in specific areas (EBITDA, WC, debt-like items); (4) Audit broader in scope (all financial statements). Deliverables: (1) FDD report: QofE, WC analysis, debt-like items, financial projections review; (2) Audit: financial statement opinion. FDD is prerequisite for sophisticated PE transactions."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD team produces a 'Quality of Earnings' (QofE) report. What core analyses does this typically contain?",
+    "options": [
+      "Only revenue review",
+      "(1) Trailing twelve-month (TTM) EBITDA analysis; (2) Adjustments review (one-time items, normalisations); (3) Revenue recognition testing; (4) Cost classification review; (5) Related party transactions; (6) Management accounts reconciliation; (7) Run-rate analysis; (8) Sustainable earnings view",
+      "Only expenses",
+      "Random analysis"
+    ],
+    "correct_index": 1,
+    "explanation": "Quality of Earnings (QofE) report components: (1) TTM EBITDA analysis: period-by-period trending with variance explanations; (2) Adjustments review: validates management's adjustments, identifies additional normalisations; (3) Revenue recognition testing: timing, cutoffs, accounting policies, channel stuffing; (4) Cost classification: operating vs. non-operating, one-time vs. recurring; (5) Related party transactions: economic substance, pricing normalisation; (6) Management accounts reconciliation: tie to audit, identify differences; (7) Run-rate analysis: future sustainable EBITDA; (8) Seasonal/cyclical normalisation. Output: (1) Buyer-adjusted EBITDA view; (2) Gap to seller's presentation; (3) Recommended EBITDA for valuation; (4) Risk factors identified; (5) Post-close considerations. QofE typically produces 50-200 page report depending on deal complexity."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD identifies €4M of 'management adjustments' excluded from EBITDA. How is each evaluated?",
+    "options": [
+      "Accept all",
+      "Rigorous evaluation: (1) Is the item truly one-time or non-recurring?; (2) Quantification validated?; (3) Will it reoccur in buyer's hands?; (4) Is it disguising ongoing costs?; (5) Documentation supports adjustment?; each adjustment validated specifically, not accepted in bulk",
+      "Reject all",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Management adjustment evaluation: (1) One-time vs. recurring: truly exceptional events vs. ongoing cost disguised; (2) Quantification: is amount supported by documentation?; (3) Buyer-specific: will adjustment persist for PE buyer?; (4) Transparency: is the adjustment disclosed or hidden?; (5) Trend analysis: does the item appear every year (indicating recurring)?; (6) Business context: does adjustment make operational sense?. Valid adjustments: (1) Completed facility consolidation with documented savings; (2) Owner-related expenses that will cease; (3) Non-recurring legal settlements; (4) Transaction-specific costs; (5) Completed restructuring programs. Invalid adjustments: (1) Annual 'restructuring' costs; (2) Ongoing compliance costs called one-time; (3) Projected (not realised) savings; (4) Management salaries called excessive; (5) Normal operating variability."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD normalises 'working capital' as part of the SPA. What does 'normalised' mean?",
+    "options": [
+      "Average working capital",
+      "Working capital level that reflects normal operating conditions, typically: (1) 12-24 month average of historical; (2) Adjusted for non-recurring items; (3) Reflective of business steady-state; (4) Agreed between buyer and seller; (5) Protects buyer from seller manipulation",
+      "Random amount",
+      "Always €0"
+    ],
+    "correct_index": 1,
+    "explanation": "Normalised working capital in SPA: (1) Purpose: reflect 'normal' operating WC, not seller's manipulated position at closing; (2) Methodology: calculate 12-24 month average of actual WC; (3) Adjustments: remove non-recurring items (one-time inventory buildup, unusual AR spike); (4) Normalisation: reflects sustainable WC given current business scale; (5) Agreement: buyer and seller agree on 'target' WC in SPA; (6) Closing mechanism: actual WC at closing vs. target, price adjusted for difference. Example: (1) 12-month average WC: €25M; (2) Adjusted for one-time items: €23M; (3) SPA target: €23M; (4) Closing actual: €20M; (5) Price adjustment: reduce purchase price by €3M (shortfall below target). Protection: (1) Prevents pre-sale manipulation; (2) Ensures buyer receives 'normal' business; (3) Aligns parties on operating expectations."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD identifies 'debt-like items' in the target's balance sheet. Examples include:",
+    "options": [
+      "Only bank debt",
+      "Multiple types: (1) Pension deficits; (2) Tax payables (uncontested); (3) Contingent liabilities; (4) Earnouts from prior acquisitions; (5) Operating lease liabilities (post-IFRS 16); (6) Deferred compensation; (7) Uncashed dividends; (8) Provisions for onerous contracts",
+      "Random items",
+      "Only trade payables"
+    ],
+    "correct_index": 1,
+    "explanation": "Debt-like items (DLI) - items treated as debt in EV bridge: (1) Pension deficits: unfunded obligations to retirees; (2) Tax payables: uncontested taxes owed; (3) Contingent liabilities: warranty claims, guarantees, litigation provisions; (4) Earnouts from prior acquisitions: remaining purchase consideration; (5) Operating lease liabilities (IFRS 16): future lease commitments; (6) Deferred compensation: management incentive obligations; (7) Provisions: onerous contracts, environmental obligations, warranty reserves; (8) Customer deposits/advances (sometimes); (9) Related party loans. Treatment: (1) Added to debt in EV bridge; (2) Deducted from equity value; (3) Affects pricing negotiation; (4) Buyer assumes or requires settlement. Sophisticated FDD teams identify DLI that seller may exclude; typical findings can be €5-20M on mid-market deals."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD examines 'revenue recognition' practices. What issues might be flagged?",
+    "options": [
+      "Random issues",
+      "Common concerns: (1) Revenue recognised before services delivered (bill-and-hold, consignment); (2) Percentage-of-completion manipulation; (3) Side agreements altering terms; (4) Channel stuffing; (5) Renewal/extension policy changes; (6) Contract modifications; (7) Aggressive interpretation of accounting standards",
+      "Only fraud",
+      "Only timing"
+    ],
+    "correct_index": 1,
+    "explanation": "Revenue recognition red flags in FDD: (1) Bill-and-hold: revenue recognised before shipment; tests include risk transfer verification; (2) Consignment: recognised when inventory moves to distributor, not when sold to end customer; (3) Percentage-of-completion: accelerated revenue in long-term contracts; (4) Side agreements: unofficial terms that alter revenue (return privileges, payment terms); (5) Channel stuffing: inventory pushed to distributors at period-end; (6) Renewal policies: changes in how renewals counted; (7) Contract modifications: aggressive treatment of amendments; (8) Round-tripping: selling and repurchasing. FDD testing: (1) Contract review — sample significant contracts; (2) Cut-off testing — year-end revenue timing; (3) Customer confirmations — verify receipt; (4) Return analysis — post-period returns; (5) Channel inventory — distributor stock levels; (6) Trend analysis — unusual patterns. Red flags trigger deeper investigation."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD analyses cost classification. They identify €2M of 'selling expenses' classified as 'cost of goods sold.' What's the impact?",
+    "options": [
+      "No impact",
+      "Classification affects gross margin, opex, and key ratios: (1) €2M shifted decreases GM by 2pp (on €100M revenue); (2) Increases opex by 2pp; (3) Affects EBITDA: unchanged if both are operating; (4) Changes peer comparisons; (5) Shouldn't affect total EBITDA, but affects operational metrics",
+      "Only revenue",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Cost classification impact analysis: (1) COGS vs. Opex: economically same (both operating expenses), but affects ratios differently; (2) €2M shifted from Opex to COGS: (a) Gross margin decreases by 2%; (b) Operating expense ratio decreases; (c) EBITDA unchanged (both are operating costs); (3) Peer comparison issues: if peers classify similarly, ratios compare correctly; if not, direct comparison misleads; (4) Industry norms: (a) Some industries recognise selling costs as COGS (where directly allocated); (b) Others classify in Opex; (5) Key question: is classification consistent with industry norms? Aggressive classification: moving costs to improve key metrics (gross margin often primary target). Analysis: (1) Industry benchmarking; (2) Peer comparison; (3) Historical consistency; (4) Management rationale; (5) Impact on operational metrics."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD reviews 'related party transactions.' The target pays €3M annually to a property company owned by the founder. How is this treated?",
+    "options": [
+      "Accept as legitimate",
+      "Investigate: (1) Market-based rent comparison; (2) Terms of lease (arm's length?); (3) Impact on EBITDA (may be above or below market); (4) Post-transaction arrangement (will it continue?); (5) Normalise if below or above market; (6) Include in SPA representations",
+      "Reject",
+      "Random treatment"
+    ],
+    "correct_index": 1,
+    "explanation": "Related party transaction analysis: (1) Current payment: €3M annual rent; (2) Benchmark analysis: what would similar property rent for externally? (comparison to market rates); (3) If below market (e.g., €1.5M): target is subsidising — normalise EBITDA down by difference; (4) If above market (e.g., €4M): inflating expenses — adjust up, seller extracting excess; (5) Post-transaction: must clarify if relationship continues (ownership change may affect); (6) SPA considerations: (a) Representations about related parties; (b) Post-closing relationships; (c) Transition services agreements. Common related party transactions: (1) Rent to owner-controlled entities; (2) Consulting fees to family members; (3) Above-market salaries; (4) Service contracts with affiliates; (5) Loans with non-market terms. Sophisticated FDD normalises all to market-equivalent to understand true operating economics."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD analyses the target's 'management accounts' against the audited financial statements. What discrepancies warrant investigation?",
+    "options": [
+      "Accept audit only",
+      "Investigate: (1) Material differences; (2) Classification differences; (3) Timing differences; (4) Reconciliation approach; (5) Audit adjustments pattern; (6) Management reporting quality; systematic differences may indicate controls issues or earnings management",
+      "Accept management only",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Management accounts vs. audit reconciliation: (1) Material differences: amounts >5% of EBITDA warrant investigation; (2) Classification differences: how items categorised may differ; (3) Timing: month-end cutoff differences; (4) Reconciliation: typical process — monthly management accounts reconciled to audit at year-end; (5) Audit adjustments pattern: significant audit adjustments annually suggest weak controls. Investigations include: (1) What drove the difference? (classification, timing, accounting choice); (2) Was audit correct? (typically yes, unless audit quality concerns); (3) Does management have different view? (sophisticated accounting vs. errors); (4) Are controls adequate to produce reliable data? Implications: (1) Reliability of financials for valuation; (2) Post-close controls strengthening; (3) Management team capability assessment; (4) Risk factors. Well-managed companies have clean reconciliations; problematic ones have frequent adjustments."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD validates management's 'financial projections.' What comprehensive approach is typical?",
+    "options": [
+      "Accept projections",
+      "Multi-dimensional validation: (1) Historical trend analysis; (2) Bottom-up validation (revenue by customer/product); (3) Assumption testing; (4) Sensitivity analysis; (5) Comparable company benchmarking; (6) Management track record; (7) Industry growth rates; (8) Scenario analysis; rigorous reality check",
+      "Random testing",
+      "Only historical"
+    ],
+    "correct_index": 1,
+    "explanation": "Financial projection validation: (1) Historical trend analysis: is projection consistent with 3-year trajectory?; (2) Bottom-up: build revenue by customer/product — can it be achieved?; (3) Assumption testing: key drivers validated (growth, margin, capex); (4) Sensitivity analysis: impact of changing key variables; (5) Comparable benchmarking: peer growth rates, margin trends; (6) Management track record: have they delivered past projections?; (7) Industry growth: is projection aligned with market; (8) Scenario analysis: base, upside, downside scenarios; (9) Root cause analysis: what drives delta between historical and projected?. FDD typical findings: (1) Projections slightly optimistic (most common); (2) Hockey stick growth assumptions; (3) Margin improvement assumptions; (4) Working capital assumptions aggressive. Adjustment: FDD typically produces 'realistic' projections that may be 5-15% below management's aspirational case."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD identifies the target's 'budget vs. actual' performance. Historical achievement: 85% of budget. What does this suggest?",
+    "options": [
+      "Exceeds expectations",
+      "Below-budget achievement indicates: (1) Aspirational budgeting (pattern of missing); (2) Management overcommits in projections; (3) Actual performance more reliable indicator than budget; (4) PE due diligence should: apply haircut to current projections; validate against historical achievement rate",
+      "Random",
+      "Pure performance"
+    ],
+    "correct_index": 1,
+    "explanation": "Budget vs. actual analysis: (1) 85% achievement: chronic below-budget pattern; (2) Interpretation: management tends to overcommit; (3) For projection validation: apply 15% haircut to current projections for baseline case; (4) Comparison to best-in-class: companies achieve 95-105% of budget consistently. Implications: (1) Management projection credibility reduced; (2) Valuation: use conservative projections; (3) Investment thesis: acknowledge execution risk; (4) Post-close: new budget discipline, performance management; (5) Incentive structures: tied to realistic metrics. PE response: (1) Build model with historical achievement rate; (2) Consider management replacement if chronic underperformance; (3) Improve forecasting processes; (4) Implement budget rigor. Reliable forecasting is a capability that must be developed; pattern of underperformance is a risk factor."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD reviews the target's 'inventory' for quality. Aging analysis shows 25% of inventory >180 days old. What analysis follows?",
+    "options": [
+      "Ignore aging",
+      "Investigate: (1) Obsolescence provisions adequate; (2) Markdown exposure; (3) Sell-through rate analysis; (4) Write-down required at closing; (5) Inventory turnover trend; (6) Industry comparison; (7) Impact on working capital normalisation; (8) Potential EBITDA adjustment",
+      "Random",
+      "Only size"
+    ],
+    "correct_index": 1,
+    "explanation": "Inventory aging analysis: (1) 25% inventory >180 days: high — potentially obsolete or slow-moving; (2) Obsolescence provisions: are reserves adequate?; (3) Industry benchmark: target 5-15% typically acceptable; 25% is red flag; (4) Analysis required: (a) Age brackets (0-30, 31-90, 91-180, >180 days); (b) Sell-through rates by age; (c) Recent write-downs; (d) Customer contracts with old inventory; (e) Obsolescence provisions relative to aged inventory. PE implications: (1) Pre-closing write-down may be required: €Xm; (2) EBITDA normalization: if inventory has been slow-moving for years, reported EBITDA may be overstated; (3) Working capital normalisation: target should be adjusted downward for 'normal' inventory level; (4) Post-closing: inventory optimization program, potential write-downs. Inventory issues often discovered in FDD; affects pricing and post-closing actions."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD identifies the target's 'deferred revenue' liability grew 40% over 2 years. What does this suggest?",
+    "options": [
+      "Accounting error",
+      "Growing deferred revenue indicates: (1) Increasing prepayment from customers; (2) Business model shift toward subscription; (3) Strong customer commitment; (4) Future revenue visibility; (5) Favorable cash flow dynamics; (6) Could enhance valuation; but: (1) Accounting policy changes; (2) Customer concentration; require investigation",
+      "Negative trend",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Deferred revenue analysis: (1) Growing deferred revenue: customers paying upfront for future services; (2) Positive implications: (a) Business model strength (customers commit); (b) Cash flow advantages (receive payment before service); (c) Revenue visibility (committed future revenue); (d) Higher valuations (recurring revenue multiplier); (3) Validate: (a) Contract terms — genuine prepayment vs. accounting treatment; (b) Customer base — concentrated or diversified prepayment; (c) Accounting policy consistency — no changes inflating balance; (d) Product/service quality — customers willing to prepay. PE thesis: (1) Subscription business model typically prefers premium; (2) Deferred revenue supports LBO thesis; (3) Working capital calculation: treat as non-debt-like item; (4) Enterprise value bridge: exclude from debt-like items. Deferred revenue growth signals business model strength — a positive indicator requiring validation."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD examines 'accounts receivable' quality. Target has €25M AR with 50% over 60 days past due. What concerns does this raise?",
+    "options": [
+      "Excellent collection",
+      "Significant concerns: (1) Collection risk: high proportion past due indicates payment issues; (2) Bad debt exposure: €12.5M may be uncollectable; (3) Business quality concern: customers not paying on time; (4) Working capital normalisation: AR may need adjustment; (5) EBITDA impact if write-downs required",
+      "Random age",
+      "Healthy"
+    ],
+    "correct_index": 1,
+    "explanation": "Accounts receivable aging analysis: (1) 50% AR >60 days past due: extremely concerning; (2) Healthy businesses: typically <20% of AR past due; (3) Aging brackets: 0-30 days (acceptable), 31-60 (investigate), 61-90 (concerning), 91+ (bad debt risk). Analyses required: (1) Bad debt reserves: adequate for exposure?; (2) Customer payment history: pattern analysis; (3) Customer financial health: can they pay?; (4) Contract terms: payment terms fair?; (5) Collection processes: adequate? (6) Historical write-offs: level and trend. Implications: (1) Potential write-downs needed; (2) Working capital overstated; (3) Revenue quality concerns; (4) Business model issues (customers unhappy, disputes, or financial distress); (5) Pricing negotiations. PE response: (1) Price adjustment for AR quality; (2) Cash collection program; (3) Customer relationship improvement; (4) Working capital discipline. Critical FDD finding."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD reviews the target's 'financial controls.' They find monthly close takes 25 days post-period. What does this reveal?",
+    "options": [
+      "Efficient process",
+      "Weak controls: (1) Industry best-in-class: 3-5 days; (2) 25 days indicates: complex process, manual work, weak technology, staffing issues; (3) Risks: outdated financial information, weak decision-making, errors in reporting; (4) Post-closing action: finance transformation required",
+      "Random",
+      "Best practice"
+    ],
+    "correct_index": 1,
+    "explanation": "Monthly close timeline analysis: (1) Best-in-class: 3-5 days; (2) Average: 10-15 days; (3) Poor: 20-30+ days; (4) 25 days is very slow; (5) Indicators of weak controls. Root causes: (1) Manual processes: spreadsheet-dependent; (2) ERP/accounting technology gaps; (3) Inadequate staffing; (4) Complex organisation structure; (5) Multiple systems/integrations; (6) Year-end-only closing discipline; (7) Weak subsidiary reporting. Implications: (1) Outdated management information; (2) Weak decision-making; (3) Error risk in reporting; (4) Poor tax optimization opportunity; (5) Compliance risk. Post-closing PE actions: (1) Finance transformation: implement monthly close acceleration; (2) Technology investment: automation, integration; (3) Staffing evaluation; (4) Process reengineering; (5) Target: reduce to 5-7 days within 12 months. Typical PE value creation lever."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD identifies 'off-balance-sheet' arrangements. Examples include:",
+    "options": [
+      "Only public debt",
+      "Multiple items: (1) Operating leases (pre-IFRS 16); (2) Synthetic leases; (3) Guarantees for affiliated entities; (4) Letters of credit; (5) Supplier financing arrangements; (6) Factoring/securitisation; (7) Joint venture commitments; (8) Contingent liabilities not recognised",
+      "Random",
+      "None"
+    ],
+    "correct_index": 1,
+    "explanation": "Off-balance-sheet (OBS) arrangements: (1) Operating leases (if pre-IFRS 16 treatment applicable): lease commitments for property, equipment; significant amounts may exist; (2) Synthetic leases: lease arrangements designed to keep debt off balance sheet; (3) Guarantees: target guaranteeing obligations of affiliated entities; (4) Letters of credit: contingent obligations to pay if conditions met; (5) Supplier financing: extended payment terms creating unseen obligations; (6) Factoring/securitisation: selling AR to get cash but with recourse; (7) Joint venture commitments: capital contribution requirements; (8) Environmental obligations: contingent but material. FDD must: (1) Review all contracts and commitments; (2) Identify off-balance-sheet items; (3) Quantify impact; (4) Assess risk of crystallisation; (5) Include in SPA representations; (6) Consider in EV bridge as debt-like. Hidden OBS items can materially affect deal economics."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD analyses the target's 'tax compliance.' What areas receive focus?",
+    "options": [
+      "Only past taxes",
+      "Comprehensive review: (1) Tax positions (aggressive vs. defensible); (2) Transfer pricing arrangements; (3) Uncertain tax positions (UTPs); (4) Recent audits and controversies; (5) Jurisdictions and related risks; (6) Permanent differences and deferred taxes; (7) Net operating losses utilization; (8) Recent tax law changes",
+      "Random",
+      "Only US taxes"
+    ],
+    "correct_index": 1,
+    "explanation": "Tax DD scope: (1) Tax positions: aggressive or defensible on major issues?; (2) Transfer pricing: intercompany transactions priced appropriately?; (3) Uncertain tax positions (UTPs): identified, quantified, and disclosed?; (4) Recent audits: findings, settlements, outstanding items; (5) Jurisdictions: tax exposure by country/state; (6) Permanent differences: tax provisions reflecting economic reality?; (7) Net operating losses (NOLs): available and restricted in post-transaction; (8) Recent tax law changes: impact on target?. Areas of concern: (1) Pending audits; (2) Large UTPs indicating dispute risk; (3) Aggressive transfer pricing; (4) Unrecorded liabilities; (5) Withholding tax exposure on cross-border. Output: (1) Tax liability estimate (including UTPs); (2) Tax structuring recommendations; (3) Risk quantification; (4) SPA tax indemnities; (5) Post-closing planning. Tax DD often conducted by specialist (e.g., Big Four tax teams)."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD identifies 'segment reporting' issues. The target has 3 segments but consolidated EBITDA. Why is segment reporting important?",
+    "options": [
+      "Ignore segments",
+      "Segment reporting reveals: (1) Profitability by business line; (2) Growth rates by segment; (3) Cost allocation methodology; (4) Segment interdependencies; (5) Carve-out complexity; (6) Individual segment valuation; critical for sum-of-parts analysis and operational understanding",
+      "Only revenue",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Segment reporting importance: (1) Profitability per segment: some segments subsidising others; (2) Growth trajectories: different segments growing at different rates; (3) Cost allocations: how shared costs attributed to segments; (4) Interdependencies: customer overlap, operational integration; (5) Individual performance: identify winners and losers; (6) Sum-of-parts valuation: each segment at appropriate multiple. Analysis approach: (1) Segment-level P&L reconstruction; (2) Cost allocation methodology; (3) Transfer pricing between segments; (4) Customer concentration by segment; (5) Growth vs. investment balance; (6) Segment-specific risks. PE implications: (1) Portfolio analysis: consider keeping/divesting segments; (2) Valuation multiples differ by segment; (3) Investment allocation: focus on high-return segments; (4) Exit options: sell individual segments or as bundle. Comprehensive segment analysis often reveals opportunities not apparent in consolidated view."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD reviews 'capital expenditure' history and projections. Historical capex average 4% of revenue; projection shows 3% going forward. What's the analysis?",
+    "options": [
+      "Accept",
+      "Investigate: (1) Is 3% realistic or underfunding?; (2) Historical maintenance vs. growth breakdown; (3) Industry benchmark (3-5% typical?); (4) Replacement cycle (deferred capex bills coming); (5) Technology upgrade needs; (6) Competitive requirements; (7) Normalisation for realistic level",
+      "Random",
+      "Reject"
+    ],
+    "correct_index": 1,
+    "explanation": "Capital expenditure analysis: (1) Historical: 4% average; (2) Projected: 3%; (3) Reduction: 25% decrease; (4) Questions: Why declining? Is 3% sustainable? Is 4% historical inflated?. Investigation: (1) Capex composition: maintenance vs. growth split historically; (2) Asset age: older assets may need more capex, not less; (3) Technology obsolescence: new technology requirements; (4) Industry benchmarks: typical capex for peer group; (5) Deferred capex: any past years underinvested catching up?; (6) Specific planned projects: decommissioning or postponing?; (7) Competitive position: can target operate with less capex?. Implications: (1) If 3% underfunding, future issues; (2) If 3% realistic, favorable for valuation; (3) FCF impact: difference is €1% × revenue = meaningful; (4) Long-term sustainability concerns. FDD typically validates with: industry analysis, management discussions, asset audits, comparable company analysis."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD examines the target's 'audit quality.' What factors indicate audit quality?",
+    "options": [
+      "Only audit fee",
+      "Multiple factors: (1) Audit firm (Big 4 vs. mid-tier); (2) Audit partner experience in sector; (3) Auditor tenure (rotation); (4) Unqualified opinions in recent years; (5) Material weaknesses disclosed; (6) Auditor-client relationships (independence); (7) Pattern of audit adjustments; (8) Emphasis of matter paragraphs",
+      "Random",
+      "Only fee"
+    ],
+    "correct_index": 1,
+    "explanation": "Audit quality indicators: (1) Audit firm: Big 4 (Deloitte, EY, KPMG, PwC) typically higher quality than mid-tier (Grant Thornton, RSM, BDO) but exceptions exist; (2) Audit partner: experience in target's industry matters; (3) Tenure: auditor rotation (typically 7-10 years max) maintains independence; (4) Opinion history: unqualified ('clean') opinions across recent years; (5) Material weaknesses: none disclosed is positive; any identified need investigation; (6) Independence: pattern of consulting services can compromise independence; (7) Audit adjustments: magnitude and frequency reveal control effectiveness; (8) Emphasis paragraphs: substantive audit concerns highlighted; (9) Management letter: internal audit findings. Post-transaction: (1) Decide on audit firm retention or change; (2) Enhance audit committee; (3) Strengthen controls environment; (4) Improve reporting systems; (5) Investment in financial reporting quality."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD identifies 'restructuring costs' in three consecutive years. How is this treated?",
+    "options": [
+      "Accept as one-time",
+      "Treat as ongoing cost: (1) Recurring 'restructuring' indicates chronic transformation; (2) Not truly one-time despite labeling; (3) Include in normalised EBITDA; (4) Question management credibility; (5) Post-closing: address underlying issues driving continued restructuring",
+      "Exclude always",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Recurring 'restructuring costs' analysis: (1) Three consecutive years: not one-time by definition; (2) Pattern suggests: chronic transformation needs, management restructuring churn, ongoing operational issues; (3) Proper treatment: include in operating EBITDA; (4) Implications: (a) Management sophistication concern: why does restructuring keep happening?; (b) Business issues underneath; (c) EBITDA quality lower than reported (normalised). FDD adjustment: (1) Add back restructuring to EBITDA if management excluded; (2) Quantify recurring level; (3) Document pattern for IC review; (4) Factor into valuation. PE response: (1) Investigate root causes; (2) Develop transformation plan addressing structural issues; (3) Build operational stability; (4) Reduce ongoing restructuring over hold period; (5) Management accountability. 'Restructuring' becomes legitimate one-time only with: (1) Clear endpoint; (2) Measurable outcome; (3) Non-recurring nature validated; (4) Not being repeated next year."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD examines the target's 'management reporting package.' What does quality look like?",
+    "options": [
+      "Random format",
+      "High-quality package includes: (1) Monthly P&L vs. budget/prior year; (2) Balance sheet changes; (3) Cash flow statement; (4) KPI dashboard; (5) Segment reporting; (6) Customer/product analysis; (7) Variance explanations; (8) Forward look; (9) Operational metrics; (10) Capital allocation tracking",
+      "Only financials",
+      "Only one page"
+    ],
+    "correct_index": 1,
+    "explanation": "Management reporting package quality criteria: (1) Comprehensive P&L: monthly, YTD, prior year, budget comparisons; (2) Balance sheet: material changes explained; (3) Cash flow statement: operating, investing, financing; (4) KPI dashboard: operational metrics beyond financials; (5) Segment reporting: business line performance; (6) Customer analysis: top customers, concentration, retention; (7) Product analysis: performance by product/service; (8) Variance explanations: significant deviations explained; (9) Forward look: outlook for coming quarter/year; (10) Operational metrics: utilisation, efficiency, productivity; (11) Capital allocation: capex, acquisitions, debt paydown tracking. Quality indicators: (1) Timeliness (fast close); (2) Accuracy (reconciled to audit); (3) Transparency (honest reporting); (4) Forward-looking; (5) Actionable insights. PE assesses: (1) Current management reporting; (2) Gaps to improve; (3) Technology investments needed; (4) Team capability. Critical capability for PE value creation."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD reviews 'pension obligations' of the target. Defined benefit plan shows €15M deficit. How is this handled?",
+    "options": [
+      "Ignore",
+      "Multiple considerations: (1) Quantify exactly (actuarial valuation); (2) Funding requirements timeline; (3) Risk of deficit growth (market volatility, demographics); (4) Treatment as debt-like item in EV bridge; (5) SPA representations; (6) Potential settlement or transfer strategies",
+      "Random",
+      "Only size"
+    ],
+    "correct_index": 1,
+    "explanation": "Pension deficit DD analysis: (1) Current deficit: €15M at latest valuation; (2) Underlying assumptions: discount rate, expected return, longevity; (3) Sensitivity: impact of rate/return changes; (4) Funding requirements: timing of contributions; (5) Future growth risk: if assumptions change adversely; (6) Settlement strategies: plan freeze, buy-out, transfer to insurer. EV bridge treatment: (1) Deficit is debt-like item; (2) Subtract from EV to derive equity value; (3) Price negotiation: account for uncertainty; (4) Protection: SPA representations on pension; funding. Post-closing actions: (1) Plan review with actuary; (2) Funding strategy; (3) Employee communication; (4) Potential restructuring of plan; (5) Insurance/buy-out options; (6) Long-term de-risking. For PE: (1) Pension deficit reduces equity value; (2) Ongoing obligation management required; (3) Can be opportunity to reshape benefit structure. Material factor in mid-market and large deals."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD identifies 'customer contracts' requiring detailed review. What specific aspects warrant examination?",
+    "options": [
+      "Random review",
+      "Comprehensive analysis: (1) Contract terms and duration; (2) Pricing mechanisms and escalation; (3) Change of control provisions; (4) Termination rights; (5) Performance obligations; (6) Warranty/liability provisions; (7) Payment terms; (8) Exclusivity; (9) Renewal options; (10) Auto-termination clauses",
+      "Only price",
+      "Only revenue"
+    ],
+    "correct_index": 1,
+    "explanation": "Customer contract review focus: (1) Terms and duration: contract length, renewal clauses; (2) Pricing: mechanisms (fixed, escalating, indexed), pricing power; (3) Change of control: triggered by acquisition? requires consent? allows termination?; (4) Termination: conditions for either party to terminate; (5) Performance obligations: SLAs, delivery commitments; (6) Warranty/liability: exposure from contract performance; (7) Payment terms: credit risk, working capital; (8) Exclusivity: target's rights to compete; (9) Renewal options: guaranteed or discretionary; (10) Auto-termination: provisions that could trigger unexpectedly. Red flags: (1) Change of control provisions requiring consent; (2) Short remaining terms near exit; (3) Unfavorable termination rights; (4) Aggressive warranty/indemnity exposure; (5) Pricing lock at unfavorable levels; (6) Exclusivity limiting growth. Material contracts identified early; consent processes planned; valuation adjustments made accordingly."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD examines the target's 'IT systems for finance.' What indicates financial system weakness?",
+    "options": [
+      "Random assessment",
+      "Warning signs: (1) Multiple disconnected systems; (2) Heavy spreadsheet reliance; (3) Manual reconciliations; (4) Weak integration between GL, operations, commercial; (5) Limited reporting capabilities; (6) Outdated technology; (7) Customisation-dependent; (8) Single key person risk",
+      "Only age",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Financial IT weakness indicators: (1) Disconnected systems: separate GL, operational, commercial systems requiring manual bridging; (2) Spreadsheet reliance: critical calculations in Excel rather than systems; (3) Manual reconciliations: time-consuming, error-prone; (4) Weak integration: sales to finance, operations to accounting gaps; (5) Limited reporting: can't produce needed management information; (6) Outdated technology: old versions, poor user interfaces, unsupported; (7) Customisation dependence: hard-coded processes that are inflexible; (8) Single person knowledge: key employee with undocumented expertise. Implications: (1) Error risk in financial reporting; (2) Weak decision-making (slow, incomplete information); (3) Compliance risk; (4) Growth constraint (can't scale). Post-closing PE actions: (1) Financial IT assessment; (2) ERP modernization roadmap; (3) Integration improvement; (4) Reporting enhancement; (5) Talent investment. Typical capex: €2-10M over 12-24 months depending on size."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD identifies 'cost structure' issues. Fixed costs are 70% of total; industry average is 55%. What does this mean?",
+    "options": [
+      "Efficient",
+      "High fixed cost exposure: (1) Less flexibility in downturns; (2) Margin volatility with volume changes; (3) Higher operational leverage (good upside, bad downside); (4) Competitive pressure in weak markets; (5) Less ability to manage costs; (6) Higher exit multiples vulnerability if growth slows",
+      "Random",
+      "Always good"
+    ],
+    "correct_index": 1,
+    "explanation": "Fixed cost structure analysis: (1) 70% fixed vs 55% industry average; (2) Difference: 15 percentage points higher fixed exposure; (3) Operational leverage implications: (a) Amplified profitability when volume grows (upside); (b) Margin compression when volume declines (downside); (c) Less agility to manage costs. In downturns: (1) Revenue decline causes disproportionate EBITDA decline; (2) Margin compression significant; (3) Difficult to reduce fixed costs quickly; (4) Competitive position weakens (can't compete on price during downturn). Analysis: (1) Fixed cost breakdown (labor, rent, depreciation, other); (2) Variable cost ratio; (3) Scenario analysis with volume changes; (4) Capacity utilisation; (5) Cost flexibility. PE strategies: (1) Cost flexibility programs (variable labor, outsourcing); (2) Revenue stabilization (long-term contracts); (3) Operational hedges; (4) Cyclical adjustment of leverage. Higher fixed cost base requires lower leverage and more conservative analysis."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD analyses 'foreign currency' exposures. Target operates in 5 countries with 60% revenue outside home currency. What analysis is needed?",
+    "options": [
+      "Ignore FX",
+      "Comprehensive FX analysis: (1) Currency exposure by country; (2) Natural hedges (cost vs. revenue match); (3) Hedging policy; (4) Translation vs. transaction exposure; (5) Historical FX volatility impact; (6) Pricing power to pass through FX; (7) Financial statement translation effects; (8) Sensitivity analysis",
+      "Random",
+      "Only home currency"
+    ],
+    "correct_index": 1,
+    "explanation": "Foreign currency exposure DD: (1) Currency mix: 60% foreign reveals significant exposure; (2) Exposure types: (a) Transaction (invoices in foreign currency); (b) Translation (subsidiary financials in home currency); (c) Economic (competitive position from FX); (3) Natural hedges: revenue in currency matched by costs? Local operations effective hedges; (4) Hedging policy: what % of exposure hedged? What instruments?; (5) Historical impact: how has FX affected reported results?; (6) Pricing pass-through: can pricing absorb FX movements?; (7) Sensitivity: scenarios for 10-20% FX changes; (8) Asset/liability positions: foreign subsidiary equity exposure. Implications: (1) Reported earnings volatility from FX; (2) Working capital requirements affected; (3) Valuation considerations (DCF in multiple currencies); (4) Hedging costs; (5) Competitive positioning in downturns. PE FDD: (1) Quantify FX exposure; (2) Validate hedging; (3) Model FX scenarios; (4) Price reflects FX risk."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD identifies 'customer dependence' issues. Top customer represents 40% of revenue. What additional FDD analysis is needed?",
+    "options": [
+      "Ignore concentration",
+      "Customer-specific FDD: (1) Customer financial health (can they pay?); (2) Relationship strength (length, contract terms); (3) Recent payment history; (4) Industry dynamics affecting customer; (5) Potential alternatives for target; (6) Contract risk (termination, change of control); (7) Pricing and margin details",
+      "Only size",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Customer concentration FDD: (1) 40% from single customer: significant concentration; (2) Customer financial health: credit rating, payment history, industry condition, recent performance; (3) Relationship strength: duration (e.g., 10+ years), contract depth, integration; (4) Payment history: timely payments, disputes; (5) Customer's own customer dynamics: is their business thriving?; (6) Alternatives: what if customer exits? Are there replacements?; (7) Contract risk: change of control, termination rights, renewal terms; (8) Pricing dynamics: at-market pricing or concessions; (9) Relationship dependencies: specific products, services, geography. Red flags: (1) Customer in declining industry; (2) Recent contract renegotiation unfavorable; (3) Relationship relationship-dependent individual; (4) Alternative suppliers available; (5) Pricing pressure. PE response: (1) Full customer diligence; (2) Stress scenarios (customer loss); (3) Contract review for protective provisions; (4) Price reflects concentration risk; (5) Post-close diversification strategy."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD examines the target's 'budget process.' What processes indicate good budget discipline?",
+    "options": [
+      "Only annual budget",
+      "Strong process: (1) Annual detailed budget by department/segment; (2) Monthly vs. budget variance analysis; (3) Formal quarterly forecast updates; (4) Bottom-up and top-down reconciliation; (5) Executive review and approval; (6) Variance accountability; (7) Budget used for decision-making",
+      "Random",
+      "No budget needed"
+    ],
+    "correct_index": 1,
+    "explanation": "Strong budget process indicators: (1) Annual budget: detailed by department/segment/product; (2) Monthly variance analysis: actual vs. budget with explanations; (3) Quarterly forecast updates: acknowledge changes; (4) Bottom-up/top-down reconciliation: ground-level detail meets executive vision; (5) Executive review and approval: governance layer; (6) Variance accountability: managers responsible for their budgets; (7) Budget used for decision-making: investment decisions, hiring, pricing; (8) Performance tied to budget achievement. Weak process indicators: (1) Budget prepared only annually without updates; (2) No variance analysis or explanations; (3) No consequence for missing budget; (4) Budget disconnected from operations; (5) Short time horizons only; (6) Top-down without ground-level input. PE FDD assesses: (1) Current process quality; (2) Technology supporting; (3) Management capability; (4) Post-close improvements needed. Strong budget discipline enables PE value creation through performance management."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD reviews 'capital allocation' decisions. What patterns indicate management discipline?",
+    "options": [
+      "Random",
+      "Disciplined patterns: (1) ROIC analysis for capex decisions; (2) Hurdle rates for investments; (3) M&A discipline (not deal-mania); (4) Share buybacks at value-creating levels; (5) Debt paydown when appropriate; (6) Dividend policy alignment; (7) Consistent strategy over time",
+      "Only M&A",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Capital allocation discipline indicators: (1) Capex: ROIC-based decision framework, hurdle rates, post-completion reviews; (2) M&A: strategic rationale, valuation discipline, integration success rate; (3) Share buybacks: timing (price-based), opportunistic; (4) Debt paydown: leverage management, opportunistic refinancing; (5) Dividends: sustainable, policy-based; (6) R&D: growth investment or maintenance; (7) Consistency: strategic direction maintained over time; (8) Returns: track record of capital generating returns. Strong patterns: (1) ROIC consistently exceeds cost of capital; (2) M&A contributes to value (not destroying); (3) Buybacks support per-share value; (4) Debt managed to optimize structure; (5) Strategic consistency. Weak patterns: (1) Capex without return analysis; (2) M&A with poor success rate; (3) Value-destroying buybacks; (4) Excessive leverage without benefit. PE assessment: (1) Historical capital allocation track record; (2) Future opportunity quality; (3) Management capability for value-creating allocation."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD identifies 'transfer pricing' issues with cross-border operations. What are typical concerns?",
+    "options": [
+      "Ignore",
+      "Concerns: (1) Prices between subsidiaries at arm's length?; (2) Profit allocation across jurisdictions; (3) Tax authorities disputing pricing; (4) Transfer pricing documentation adequate; (5) Advance pricing agreements (APAs) in place; (6) Post-transaction planning implications",
+      "Random",
+      "Only taxes"
+    ],
+    "correct_index": 1,
+    "explanation": "Transfer pricing DD: (1) Arm's length principle: transactions between subsidiaries should be priced as if between unrelated parties; (2) Profit allocation: artificial concentration in low-tax jurisdictions; (3) Tax authority disputes: history and current status; (4) Documentation: comprehensive TP study required (OECD guidelines); (5) APAs: pre-agreements with tax authorities on pricing; (6) Country-by-country reporting: multi-jurisdictional transparency. Red flags: (1) Significant intercompany pricing without arm's length support; (2) Profit concentration in low-tax jurisdictions; (3) Active transfer pricing disputes; (4) Missing documentation; (5) Rapid changes in TP approach; (6) Customer-supplier relationships concentrated internationally. For PE: (1) Quantify exposure (potential tax liability if authorities challenge); (2) SPA representations for tax compliance; (3) Indemnities for pre-closing tax risks; (4) Post-closing TP review and adjustment; (5) Tax-efficient structure. Transfer pricing issues can be multi-hundred million dollar exposures in large multinational targets."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD reviews 'working capital' history. Historical WC averaged €25M; latest year €35M. What drove the growth?",
+    "options": [
+      "Random growth",
+      "Analyse components: (1) AR grew? (slower collections or revenue growth?); (2) Inventory grew? (sales decline or production increase?); (3) AP stable/declining? (payment timing changes?); (4) Seasonal or structural?; (5) Revenue growth vs. WC growth correlation; (6) Normalisation implications; understand fundamental vs. timing",
+      "Always good",
+      "Always bad"
+    ],
+    "correct_index": 1,
+    "explanation": "Working capital growth analysis: (1) €10M growth (40% increase) needs explanation; (2) Component breakdown: (a) AR growth — slower payment collection or just revenue growth?; (b) Inventory growth — poor inventory turns or strategic buildup?; (c) AP trends — paying faster or negotiating longer terms?; (3) Root cause analysis: (a) Underlying business change; (b) Operational improvement needed; (c) Seasonal timing; (d) Strategic decisions (customer terms, supplier relationships). Common causes: (1) Revenue growth: 40% WC growth on stable revenue = problematic; 40% WC growth on 40% revenue growth = proportional; (2) Operational issues: weak collections, inventory management; (3) Customer mix: larger enterprise customers with longer terms; (4) Supply chain: strategic inventory positioning. For SPA: (1) Set 'normalised' WC at appropriate level; (2) Protect buyer from unsustainable WC bloat; (3) Allow for legitimate revenue-related growth. Understanding drivers is essential before setting target."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD analyses 'cash flow conversion.' EBITDA is €50M but operating cash flow is €30M. Why the €20M gap?",
+    "options": [
+      "Random",
+      "Gap analysis: (1) Working capital investment €10M; (2) Capex €12M; (3) Cash taxes €5M; (4) Other non-cash items €3M in EBITDA; (5) Total: €30M cash flow from operations; (6) Bridge explains 60% conversion — below strong businesses (80%+)",
+      "Accounting error",
+      "Fraud"
+    ],
+    "correct_index": 1,
+    "explanation": "EBITDA to operating cash flow bridge: (1) EBITDA: €50M; (2) Changes in working capital: -€10M (AR/Inventory growth); (3) Capex: -€12M; (4) Cash taxes: -€5M (despite book tax expense may be different); (5) Other non-cash items: -€3M (stock-based comp, pension, etc.); (6) Operating Cash Flow: €20M? Actually should be EBITDA - capex - cash taxes - WC change (conceptually). Cash Flow Conversion = OCF / EBITDA = 60% (below strong businesses 80%+). Analysis required: (1) Each adjustment explained; (2) Trend over 3 years; (3) Comparison to peers; (4) Legitimate business reasons for gap; (5) Opportunity for improvement. Implications: (1) Below 70% conversion may signal: high capex, aggressive accounting, working capital drain; (2) Valuation adjustment: investors pay more for high cash conversion businesses; (3) Opportunity: PE can improve conversion through operational initiatives. Sophisticated FDD quantifies gap components precisely."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD identifies 'revenue concentration' issue. Top 10 customers at 80% of revenue. Post-closing, one top customer gives notice. How does PE handle?",
+    "options": [
+      "Ignore",
+      "Contingent outcomes: (1) SPA representations: seller warranted no material customer losses; could be breach; (2) Indemnification claim; (3) Actual loss depends on recoverability; (4) Business plan adjustment needed; (5) Response determines outcome; (6) Strategic customer retention efforts",
+      "Random",
+      "Accept loss"
+    ],
+    "correct_index": 1,
+    "explanation": "Post-closing customer loss handling: (1) SPA review: seller warranted no material customer losses in representations; (2) Breach analysis: does notice trigger a breach?; (3) Indemnification claim: if breach proven, seek damages; (4) Valuation impact: estimate lost EBITDA × multiple; (5) Operational response: (a) Customer retention efforts; (b) Alternative account development; (c) Cost flexibility measures; (6) Business plan adjustment: realistic projections. Process: (1) Legal review: SPA terms, representation accuracy; (2) Evidence gathering: why did customer leave? Signal before closing?; (3) Indemnification: file claim with supporting documentation; (4) Settlement negotiation: typically partial recovery; (5) Operational reality: customer loss happens regardless of SPA outcome. Long-term implications: (1) Customer concentration risk now materialized; (2) Business plan requires revision; (3) Future deals: enhanced DD on customer concentration; (4) Premium for diversified customer bases. PE learning experience that informs future deals."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD analyses the target's 'earnings quality.' What indicators suggest high earnings quality?",
+    "options": [
+      "Random",
+      "High quality indicators: (1) Strong cash conversion (OCF ≈ EBITDA - capex); (2) Consistent accounting policies; (3) Minimal one-time adjustments; (4) Low management discretion in reporting; (5) Stable revenue patterns; (6) Operating cash flow growing with earnings; (7) Conservative provisioning",
+      "Only amount",
+      "Only trend"
+    ],
+    "correct_index": 1,
+    "explanation": "Earnings quality indicators: (1) Cash conversion: operating cash flow closely matches (or exceeds) EBITDA less capex; conversion >80% indicates high quality; (2) Accounting consistency: same policies applied over time; (3) Minimal adjustments: few non-recurring items; sustainable earnings close to reported; (4) Low management discretion: conservative accounting choices; minimal manipulation of reserves or accruals; (5) Revenue patterns: smooth, recurring, predictable; no unusual spikes; (6) Cash flow growth: correlates with earnings growth; (7) Conservative provisioning: adequate reserves for future obligations. Low quality indicators: (1) Cash flow below EBITDA consistently; (2) Frequent accounting policy changes; (3) Many 'one-time' adjustments year after year; (4) Aggressive accounting estimates; (5) Volatile revenue patterns; (6) Cash flow diverging from earnings; (7) Insufficient provisioning. PE pays premium for high-quality earnings; applies discounts for low-quality. Critical FDD conclusion affecting deal economics."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD identifies 'tax structuring' opportunities pre-acquisition. What examples are typical?",
+    "options": [
+      "No opportunities",
+      "Multiple opportunities: (1) Holding company structures; (2) Acquisition entity structure; (3) Interest deductibility optimization; (4) Tax loss utilisation; (5) Jurisdiction selection; (6) Step-up in asset basis; (7) Post-transaction planning alignment",
+      "Random",
+      "Only tax avoidance"
+    ],
+    "correct_index": 1,
+    "explanation": "Tax structuring opportunities in PE transactions: (1) Holding company: Luxembourg, Cayman, Delaware for tax efficiency; (2) Acquisition entity: LLC vs. corporation vs. partnership; (3) Interest deductibility: maximise legal interest deduction on acquisition debt; (4) Tax losses: carry forward opportunities from target; (5) Jurisdiction: choose tax-efficient structure; (6) Step-up: asset purchase vs. stock purchase treatment; (7) Post-transaction: tax-efficient operating structure. Considerations: (1) Tax efficiency vs. complexity; (2) Compliance costs; (3) LP tax-ability (tax-exempt vs. taxable); (4) Regulatory approval if cross-border; (5) Operational efficiency vs. tax optimization. Tax DD: (1) Comprehensive tax specialist engagement; (2) Model tax efficiency of different structures; (3) Pre-clearance with tax authorities if needed; (4) Document rationale for structures; (5) Ongoing tax management plan. Sophisticated PE firms invest significantly in tax optimization — can meaningfully enhance returns without operational changes."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD produces a 'pro-forma' income statement. What is the purpose?",
+    "options": [
+      "Random reconstruction",
+      "Purpose: (1) Show target 'as if' acquired at beginning of period; (2) Incorporate normalised operations; (3) Include expected synergies or adjustments; (4) Support valuation based on forward view; (5) Compare consistently across scenarios; (6) LBO model foundation; bridge from current to future state",
+      "Only history",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Pro-forma income statement purpose: (1) Shows business 'as if' PE had owned from start of period; (2) Normalises: removes non-recurring items, owner-specific expenses; (3) Adjusts for acquisition effects: interest on new debt, amortisation of intangibles, management changes; (4) Supports: (a) Valuation analysis (what does acquired business look like?); (b) LBO model (base for projections); (c) Banker presentations; (d) IC decisions; (e) LP communication. Typical adjustments: (1) Remove non-recurring items; (2) Normalise owner salary; (3) Adjust interest expense for new capital structure; (4) Add intangible amortisation from step-up; (5) Reflect standalone costs if carve-out; (6) Include expected synergies (if applicable). Pro-forma vs. adjusted EBITDA: (1) Pro-forma shows fuller P&L perspective; (2) Adjusted EBITDA shows earnings base. Both important for PE analysis — complementary views."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD identifies 'contingent consideration' on the target. Examples include:",
+    "options": [
+      "Random",
+      "Contingent items: (1) Earnouts from prior acquisitions; (2) Performance-based bonuses; (3) Deferred compensation; (4) Contingent tax payments; (5) Legal settlement contingencies; (6) Regulatory approvals; (7) Milestone-based payments; (8) Escrow claims",
+      "Only taxes",
+      "Only cash"
+    ],
+    "correct_index": 1,
+    "explanation": "Contingent consideration types: (1) Earnouts: contingent payments from prior acquisitions based on target achievement; (2) Performance bonuses: employee incentives conditional on metrics; (3) Deferred compensation: future payouts based on tenure, performance; (4) Contingent tax: uncertain tax positions (UTPs); (5) Legal settlements: potential payments pending; (6) Regulatory: compliance costs contingent on rulings; (7) Milestones: acquisition earnouts, joint venture payments; (8) Escrow: funds held pending resolution. Treatment: (1) Quantify probability-adjusted expected value; (2) Include in debt-like items for EV bridge; (3) SPA representations; (4) Seller indemnities. Analysis: (1) Contract terms and conditions; (2) Achievement probability; (3) Timing expectations; (4) Likely amounts; (5) Risk factors. Proper FDD: (1) Identifies all contingent items; (2) Quantifies expected value; (3) Negotiates treatment; (4) Clarifies post-closing responsibility."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD evaluates the target's 'recurring revenue' quality. What distinguishes high-quality recurring revenue?",
+    "options": [
+      "Any recurring",
+      "Quality factors: (1) Long-term contracts (5+ years); (2) High renewal rates (95%+); (3) Contract escalators; (4) Customer diversification within base; (5) Service quality driving retention; (6) Switching costs; (7) Strategic importance to customers; (8) Payment terms (upfront, multi-year)",
+      "Only subscriber count",
+      "Only revenue"
+    ],
+    "correct_index": 1,
+    "explanation": "High-quality recurring revenue criteria: (1) Duration: long-term contracts (5+ years) vs. month-to-month; (2) Retention: 95%+ gross retention; (3) Escalators: annual pricing increases built in; (4) Diversification: broad customer base within recurring segment; (5) Service quality: drives retention; (6) Switching costs: integration creates lock-in; (7) Strategic importance: customer's business depends on service; (8) Payment: upfront vs. monthly billing; (9) Pricing power: ability to raise prices without losing customers. Types of recurring revenue: (1) Subscription (SaaS, licenses); (2) Maintenance contracts; (3) Long-term service contracts; (4) Retainer arrangements; (5) Partnership agreements; (6) Dealer/franchise fees. Valuation implications: (1) High-quality recurring: premium multiples (12-20x+); (2) Low-quality recurring: standard multiples; (3) Non-recurring: discount to blended multiples. For PE: (1) Recurring revenue anchors LBO thesis; (2) Validate retention, not just contract terms; (3) Track indicators over hold period."
+  },
+  {
+    "topic_tag": "due-diligence-financial",
+    "question": "A PE firm's FDD analyses 'M&A history' of the target. What questions arise from historical acquisitions?",
+    "options": [
+      "Random",
+      "Key questions: (1) Integration success rate; (2) Synergies realized vs. projected; (3) Purchase prices vs. current values; (4) Organisational impact; (5) Pending earnouts; (6) Related party conflicts; (7) Integration debt; (8) Future M&A capacity",
+      "Only prices",
+      "Only count"
+    ],
+    "correct_index": 1,
+    "explanation": "Historical M&A analysis: (1) Integration success: were acquired businesses successfully integrated?; (2) Synergy realisation: planned synergies actually achieved?; (3) Purchase prices vs. values: were deals at appropriate prices?; (4) Organisational impact: cultural integration, retention; (5) Pending earnouts: obligations from prior deals; (6) Related party conflicts: deals with affiliated entities; (7) Integration debt: cost overruns, transition issues; (8) Future M&A capacity: organisational capability. Analysis framework: (1) Review each major acquisition: rationale, terms, outcome; (2) Assess integration patterns; (3) Measure synergy capture against projections; (4) Evaluate overall acquisition discipline; (5) Quantify financial impact. PE implications: (1) Strong M&A track record: platform potential, bolt-on capability; (2) Weak M&A: concerns about capability, past problems; (3) Pending issues: must address in SPA. Sophisticated FDD reviews 5-10 year M&A history to understand target's capabilities and legacies."
+  }
+]

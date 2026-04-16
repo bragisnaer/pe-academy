@@ -123,16 +123,14 @@ export default async function ModuleOverviewPage({
             {sortedFsLessons.map((lesson) => {
               const isCompleted = completedLessonUuids.includes(lesson.uuid)
               return (
-                <li key={lesson.uuid}>
+                <li key={lesson.uuid} className="flex">
                   <Link
                     href={`/lessons/${moduleSlug}/${lesson.slugAsParams}`}
-                    className="flex items-center justify-between px-4 py-3.5 text-sm text-muted-foreground hover:text-foreground hover:bg-card/50 transition-colors group"
+                    className="flex flex-1 items-center justify-between px-4 min-h-[52px] text-sm text-muted-foreground hover:text-foreground hover:bg-card transition-colors"
                   >
-                    <span className="group-hover:text-foreground transition-colors">
-                      {lesson.title}
-                    </span>
+                    <span>{lesson.title}</span>
                     {isCompleted && (
-                      <CheckCircle2 className="size-4 shrink-0 text-success" aria-hidden="true" />
+                      <CheckCircle2 className="size-4 shrink-0 text-success ml-3" aria-hidden="true" />
                     )}
                   </Link>
                 </li>

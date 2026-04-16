@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A PE firm is conducting commercial due diligence on a €400M industrial target. What is the primary purpose of CDD?",
+    "options": [
+      "To verify financial statements only",
+      "To validate the investment thesis — market attractiveness, competitive position, growth prospects, customer relationships — through independent analysis rather than accepting management's view",
+      "To negotiate price",
+      "To structure the deal"
+    ],
+    "correct_index": 1,
+    "explanation": "Commercial DD purpose: (1) Validate investment thesis independently; (2) Assess market attractiveness (size, growth, structure); (3) Evaluate competitive position (moats, share, differentiation); (4) Analyse customer dynamics (concentration, retention, satisfaction); (5) Validate growth assumptions (realistic, drivers, sustainability); (6) Identify risks (disruption, cyclicality, regulation). CDD is conducted by specialist consultants (Bain, McKinsey, L.E.K., OC&C, BCG) providing independent view. Complements: Financial DD (validates earnings), Legal DD (contracts, litigation), Operational DD (processes). CDD forms critical input to IC decision — often the difference between doing the deal and walking away."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team is evaluating market size for a specialised industrial services market. What approaches are typically used?",
+    "options": [
+      "Only published industry reports",
+      "Multiple approaches: (1) Top-down (industry reports, market research); (2) Bottom-up (customer demand analysis); (3) Supply-side (competitor revenue aggregation); (4) Triangulation across methods; sophisticated analysis uses multiple approaches",
+      "Random estimation",
+      "Only competitor data"
+    ],
+    "correct_index": 1,
+    "explanation": "Market sizing approaches: (1) Top-down: Industry reports (Euromonitor, IBISWorld, Statista), government data, trade associations; (2) Bottom-up: Analyse customer spending patterns, interview customers, sum from demand side; (3) Supply-side: Aggregate competitor revenues, capacity analysis; (4) Triangulation: Compare all three approaches for consistency. Example: specialised industrial services market: (1) Top-down: €15B global market per industry report; (2) Bottom-up: €12-18B based on customer interviews and spending analysis; (3) Supply-side: €13-17B based on top 20 competitors; (4) Triangulated estimate: €14-16B. Best CDD uses multiple approaches with explicit methodology. Single-source estimates often biased or outdated."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team identifies that the target's market is growing at 12%, while GDP grows at 2.5%. What does this suggest?",
+    "options": [
+      "Growth is always sustainable",
+      "Fast growth exceeds GDP significantly, suggesting: (1) Structural growth drivers (demographics, technology, regulation); (2) Market penetration increasing; (3) Value migration; (4) Category expansion; but: (1) Sustainability questions; (2) Competitive response will come; (3) Investment tailwind, but plan for normalization",
+      "Random market behaviour",
+      "Declining market"
+    ],
+    "correct_index": 1,
+    "explanation": "Fast-growth market analysis: (1) 12% vs 2.5% GDP = 4.8x GDP multiple; (2) Structural drivers to identify: demographics (aging population, consumer behaviour), technology (adoption, disruption), regulation (compliance, mandates), value migration (from alternatives); (3) Growth sustainability assessment: how long can growth rate continue?; (4) Competitive response: high growth attracts new entrants, capital, innovation; (5) Tailwind vs. headwind for target. For PE: (1) Faster growth supports investment thesis; (2) Multiple expansion potential if growth drives multiple premium; (3) Operational scaling critical; (4) Eventually growth normalizes (mean reversion to lower rates). Plan for multi-year investment horizon with adjustment for maturation."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD analysis reveals the target has 15% market share in a fragmented market (top 5 players at 45%). What competitive positioning does this represent?",
+    "options": [
+      "Dominant position",
+      "Top-tier player in fragmented market: (1) Not dominant (45% top 5 suggests no monopoly); (2) Strong position among competitive set; (3) Consolidation opportunity exists; (4) Scale advantages developing; (5) Bolt-on potential; fragmented market supports buy-and-build strategies",
+      "Market leader",
+      "Niche player"
+    ],
+    "correct_index": 1,
+    "explanation": "Market positioning analysis: (1) Target: 15% share; (2) Top 5 total: 45% share; (3) Target in top 5 but not dominant; (4) Market fragmentation: remaining 55% held by smaller players; (5) Consolidation opportunity: target could be platform for M&A roll-up. PE implications: (1) Fragmented market: supports buy-and-build strategy; (2) Smaller competitors as bolt-on targets; (3) Scale advantages build over time; (4) Customer relationships transfer; (5) Cost synergies from consolidation; (6) Market leadership becomes achievable. Strategic positioning: (1) Use target as platform; (2) Accelerate share gain through acquisitions; (3) Operational excellence as differentiator; (4) Target 25-30% share through consolidation; (5) Exit at meaningful multiple premium."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team is evaluating customer concentration. The target's top 5 customers represent 65% of revenue. What does this reveal?",
+    "options": [
+      "Healthy diversification",
+      "Significant concentration risk: (1) Customer loss could materially impact business; (2) Negotiation leverage with concentrated customers; (3) Relationship-dependence; (4) Potential for contract/pricing erosion; (5) Requires detailed analysis of each top customer's health, contract terms, relationship strength",
+      "Low risk",
+      "Random concentration"
+    ],
+    "correct_index": 1,
+    "explanation": "Customer concentration analysis: (1) Top 5 at 65% revenue: HIGH concentration; (2) Thresholds: <30% (diversified), 30-50% (moderate), >50% (high), >70% (very high); (3) Risk factors: loss of major customer, contract renegotiation, customer financial distress, relationship-dependent. Detailed analysis required: (1) Each top customer's revenue contribution; (2) Relationship strength, switching costs; (3) Contract terms, renewal timing; (4) Customer's financial health; (5) Strategic importance to customer; (6) Historical retention patterns. PE protective measures: (1) Structured deal: price reflects concentration risk; (2) Contracts at favourable renewal; (3) Customer lock-in through integration; (4) Diversification strategy post-acquisition; (5) Premium valuation for high-quality anchor customers."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team conducts 'voice of customer' interviews. What is the primary value?",
+    "options": [
+      "Pleasant conversation",
+      "Direct customer perspectives on: (1) Product/service quality; (2) Pricing satisfaction; (3) Switching likelihood; (4) Relationship strength; (5) Competitor comparison; (6) Future demand signals; cross-validates management's narrative; uncovers hidden risks or opportunities",
+      "Random information",
+      "Only for marketing"
+    ],
+    "correct_index": 1,
+    "explanation": "Voice-of-customer (VOC) interviews value: (1) Direct customer input: unfiltered, independent perspectives; (2) Quality assessment: real customer experience; (3) Pricing validation: sensitivity, satisfaction; (4) Switching likelihood: retention evidence; (5) Relationship depth: loyalty, length of relationship, renewal likelihood; (6) Competitor comparison: strength vs. alternatives; (7) Future demand: signals for growth/decline. Methodology: (1) 15-30 interviews per customer segment; (2) Structured questionnaire; (3) Independent interviewer (consultant); (4) Anonymity for candor; (5) Comparative scoring; (6) Triangulation with management. Critical insight sources: customer concerns not shared with management, relationship deterioration, emerging demand changes, competitor evaluation."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD analysis identifies a target's 'competitive moat.' What typical elements support moat assessment?",
+    "options": [
+      "Random factors",
+      "Moat factors: (1) Scale advantages (cost structure); (2) Switching costs (customer lock-in); (3) Network effects (platform value); (4) Brand and intellectual property; (5) Regulatory barriers; (6) Proprietary technology; (7) Talent concentration; (8) Contract structures; strength determines competitive durability",
+      "Only price",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Competitive moat assessment: (1) Scale advantages: cost structure benefits at volume (volume discounts, overhead leverage); (2) Switching costs: customer lock-in through integration, training, transition costs; (3) Network effects: platform value grows with user/customer base; (4) Brand/IP: reputation, patents, trademarks creating barriers; (5) Regulatory barriers: licenses, certifications, compliance requirements; (6) Proprietary technology: unique capability, development expertise; (7) Talent concentration: key personnel, relationships; (8) Contract structures: long-term agreements, exclusive relationships. Assessment: (1) Multiple moats stronger than single; (2) Sustainability: will moat persist 5-10 years?; (3) Erosion risk: technology, new entrants, regulatory change; (4) Strength relative to competitors; (5) Investment required to maintain. Durable moats support premium valuations."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team analyses the target's pricing power. The target has raised prices 3% annually for 5 years with minimal customer loss. What does this demonstrate?",
+    "options": [
+      "Normal market behaviour",
+      "Strong pricing power: (1) Customers accept price increases; (2) Market position enables premium pricing; (3) Differentiated product/service; (4) Limited substitute pressure; (5) Could sustain pricing in inflation environment; fundamental quality indicator",
+      "Weak position",
+      "Customer vulnerability"
+    ],
+    "correct_index": 1,
+    "explanation": "Pricing power analysis: (1) Consistent 3% annual price increases; (2) Minimal customer loss (validates acceptance); (3) Indicates: strong differentiation, customer value recognition, limited substitute pressure, sticky customer relationships; (4) Testing: (a) Review customer complaints; (b) Competitor pricing trends; (c) Customer churn rates; (d) Contract structures; (e) Industry pricing dynamics. PE implications: (1) Premium valuation multiples; (2) Inflation resilience (can pass through cost increases); (3) Margin sustainability; (4) Structural competitive advantage. Comparison: weaker pricing power targets have customer losses when prices raised, price sensitivity in contracts, limited differentiation. Sustained pricing power over multiple years is strong indicator of durable competitive advantage."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team identifies that the target's revenue is 70% recurring (subscription/long-term contracts). How does this affect PE investment thesis?",
+    "options": [
+      "No effect",
+      "Strong recurring revenue base supports: (1) Predictability of cash flows; (2) Higher valuation multiples (typically 1-3x premium); (3) Better leverage capacity; (4) More stable business through cycles; (5) Reduced risk of sudden revenue loss; fundamental quality indicator supporting LBO suitability",
+      "Reduces attractiveness",
+      "Random impact"
+    ],
+    "correct_index": 1,
+    "explanation": "Recurring revenue analysis: (1) 70% recurring base: strong foundation; (2) Benefits: predictable cash flows (visibility), higher valuations (1-3x multiple premium), stability through cycles, greater leverage capacity; (3) Renewal rates: critical to validate recurring base; (4) Customer concentration within recurring base; (5) Contract terms and durations. Typical patterns: (1) SaaS: 90%+ recurring; (2) Services: 50-80% recurring; (3) Distribution: variable but often 60-80% recurring customer relationships; (4) Manufacturing: 30-60% recurring. For PE analysis: (1) Higher recurring = premium valuation; (2) Supports more leverage; (3) Smoother cash flow profile; (4) Lower operational risk; (5) Attractive exit profile. Validation: historical retention, contract terms, customer satisfaction."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team evaluates the target's distribution/channel model. The target sells 60% direct-to-customer and 40% through distributors. What analysis is appropriate?",
+    "options": [
+      "Ignore channel",
+      "Channel analysis: (1) Channel profitability comparison; (2) Distributor relationships strength; (3) Channel conflict (direct vs. distributor); (4) Channel evolution trends; (5) Customer preference; (6) Distribution economics (gross to net); fundamental to understanding business model",
+      "Only direct",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Channel model analysis: (1) Profitability by channel: direct typically higher margin (keep distributor margin), but distributor provides scale; (2) Relationship assessment: long-standing distributors with exclusivity valuable; (3) Channel conflict: direct competing with distributors creates tensions; (4) Channel evolution: digital direct-to-consumer transition; (5) Customer preference: digital natives prefer direct; (6) Economics: distributor margins (typically 10-25% of revenue), incentives, inventory. Strategic questions: (1) Is mix optimal? (2) Is channel evolving in target's favour?; (3) Are distributor relationships durable?; (4) Opportunity to shift mix post-acquisition?; (5) Digital transformation implications. Sophisticated CDD includes channel economics, competitive positioning, and evolution trends."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team analyses the target's geographic footprint. 80% of revenue is domestic; target has modest international presence. What does this reveal?",
+    "options": [
+      "Diversified",
+      "Concentrated geographic risk: (1) Dependence on single economy; (2) Currency risk limited but economic cycle exposure high; (3) Growth potential: international expansion opportunity; (4) Market maturity: domestic often mature; (5) Operational simplicity but growth ceiling; analysis includes expansion potential and international strategy",
+      "Perfect balance",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Geographic analysis: (1) 80% domestic concentration: exposure to single economy; (2) Economic cycle risk: downturn in primary market impacts 80% of revenue; (3) Growth constraint: mature domestic markets grow slowly; (4) Currency risk: limited (single currency exposure); (5) International potential: 20% international shows feasibility; expansion opportunity. Expansion analysis: (1) Target markets for growth; (2) Competitive landscape internationally; (3) Regulatory differences; (4) Infrastructure requirements; (5) Investment needed; (6) Management capability; (7) Strategic fit. PE thesis: (1) Use platform status to expand internationally; (2) Capital deployment for expansion; (3) Margin pressure initially but scale benefits long-term; (4) Exit with international presence at premium valuation; (5) Multiple arbitrage on internationalized business."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team identifies emerging technology disruption in the target's industry. How does this affect the analysis?",
+    "options": [
+      "Ignore technology trends",
+      "Scenario analysis: (1) Disruption timeline (when becomes material); (2) Impact assessment (who wins/loses); (3) Target's response capability; (4) Investment required to adapt; (5) Alternative scenarios including exit timing; (6) Mitigation or positioning strategy",
+      "Always avoid",
+      "Random response"
+    ],
+    "correct_index": 1,
+    "explanation": "Technology disruption analysis: (1) Timeline: when does disruption become material? 5-10 years typical; (2) Impact assessment: (a) Who benefits? (b) Who loses?; (3) Target's capability: (a) Current technology adoption; (b) R&D resources; (c) Management awareness and response; (4) Investment required: capex, technology licensing, acquisitions; (5) Scenarios: (a) Successful adaptation; (b) Gradual decline; (c) Disruption capture; (d) Failed adaptation; (6) Mitigation: (a) Acquire emerging competitors; (b) Develop capabilities; (c) Exit before decline. Strategic response: (1) Proactive adaptation; (2) Operational transformation; (3) M&A for capability; (4) Potential exit timing before disruption; (5) Risk adjustment in valuation. Disruption shouldn't always prevent investment but requires clear response."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team examines the target's 'new customer acquisition' economics. What's typically measured?",
+    "options": [
+      "Random metrics",
+      "Customer acquisition cost (CAC): total sales and marketing spend / new customers acquired. Indicators: CAC trend, sales efficiency (Magic Number), customer lifetime value vs CAC, payback period; reveals business's ability to grow profitably",
+      "Only headcount",
+      "Only revenue"
+    ],
+    "correct_index": 1,
+    "explanation": "Customer acquisition economics: (1) Customer Acquisition Cost (CAC): total S&M spend / new customers; (2) CAC trend: rising (bad) or stable/declining (good); (3) Sales efficiency (Magic Number): ARR gained / S&M spend; >1 is efficient; (4) Customer Lifetime Value (LTV): revenue per customer × retention period / discount rate; (5) LTV:CAC ratio: 3x+ is healthy; (6) Payback period: months to recoup CAC. Red flags: (1) Rising CAC over time; (2) LTV:CAC below 3x; (3) Payback period >2-3 years; (4) Sales efficiency <0.7. Green flags: (1) Declining CAC through scale; (2) LTV:CAC >5x; (3) Payback <18 months; (4) Efficient sales model (digital, direct). These metrics reveal whether growth is profitable and sustainable."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team analyses customer retention patterns. Annual retention is 85%, while best-in-class peers achieve 95%. What does this gap suggest?",
+    "options": [
+      "No difference",
+      "Meaningful gap: (1) 10 percentage point difference is material; (2) Suggests weaker customer satisfaction, product differentiation, or service quality; (3) Opportunity: improvement to peer levels adds value; (4) Risk: continued attrition depresses performance; (5) Value creation lever for PE: retention improvement initiatives",
+      "Excellent performance",
+      "Random variation"
+    ],
+    "correct_index": 1,
+    "explanation": "Retention gap analysis: (1) Target: 85% retention; (2) Best-in-class: 95%; (3) Gap: 10 percentage points; (4) Impact: target loses 15% annually vs. 5%; over 5 years: (a) 95% retention: compounds to ~78%; (b) 85% retention: compounds to ~44%. Significant long-term impact. Analysis: (1) Root causes — product, service, pricing, support?; (2) Customer segment patterns — which lose retention?; (3) Churn drivers — competitive, satisfaction, changing needs?; (4) Customer lifetime value implications. PE opportunity: (1) Value creation: improve retention from 85% to 90-92%; (2) Revenue impact: meaningful incremental; (3) Margin benefit: lower customer acquisition required; (4) Higher valuation at exit; (5) Operational initiatives: customer success programs, service improvements, product enhancements."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team evaluates the target's sales team effectiveness. Quota attainment is 60%, compared to 75% best-in-class. What does this suggest?",
+    "options": [
+      "Excellent performance",
+      "Sales effectiveness issue: (1) Below best-in-class by meaningful margin; (2) Possible causes: poor sales enablement, quota setting issues, product-market fit problems, compensation structure, talent gaps; (3) Opportunity: sales optimisation adds meaningful revenue; (4) Critical PE value creation lever",
+      "Normal variation",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Sales effectiveness gap analysis: (1) 60% quota attainment vs 75% best-in-class; (2) Impact: if quota represents targeted revenue, 15pp gap is meaningful; (3) Root causes to investigate: (a) Quota setting — unrealistic targets?; (b) Sales enablement — training, tools, collateral?; (c) Product-market fit — right product for market?; (d) Compensation structure — aligned with goals?; (e) Talent gaps — recruiting and retention?; (f) Sales management — leadership, processes?. PE improvement opportunities: (1) Better sales training and enablement; (2) Improved CRM and sales tools; (3) Talent upgrade where needed; (4) Compensation restructuring; (5) Process improvements; (6) Performance management discipline. Quick wins possible in 6-12 months with focused investment and attention."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team identifies 3 main competitors with similar offerings. What's the key analysis?",
+    "options": [
+      "Only price comparison",
+      "Comprehensive competitive analysis: (1) Market share trends over time; (2) Capability comparison (product, service, operational); (3) Customer base differences; (4) Financial performance comparison; (5) Strategic direction; (6) Recent actions (acquisitions, products); (7) Relative strengths and weaknesses",
+      "Random analysis",
+      "Only competitor names"
+    ],
+    "correct_index": 1,
+    "explanation": "Competitive analysis framework: (1) Market share trends: stable, gaining, or losing; (2) Financial comparison: revenue, margins, growth rates, returns; (3) Capability comparison: product depth, service quality, technology, scale; (4) Customer base: similarities and differences; (5) Strategic direction: where are competitors heading?; (6) Recent actions: acquisitions, new products, market entries; (7) Pricing positioning: premium, mid-market, value; (8) Strengths and weaknesses assessment. Key insights: (1) Is target gaining or losing share? (direction matters); (2) What are target's relative advantages?; (3) What are main threats?; (4) Strategic positioning vs. competitors. Sophisticated CDD goes beyond simple peer benchmarking to understand dynamic competitive positioning and trajectory."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team analyses the target's product/service portfolio. Portfolio has 3 core products plus 2 non-core legacy products. What does this reveal?",
+    "options": [
+      "No significance",
+      "Portfolio complexity indicates: (1) Resource dilution (managing non-core drains attention); (2) Legacy products may distract from growth; (3) Rationalisation opportunity (divest non-core); (4) Simplification benefit (focus); (5) Operational efficiency gains post-rationalisation; classic PE value creation lever",
+      "Always diversify",
+      "Random composition"
+    ],
+    "correct_index": 1,
+    "explanation": "Portfolio rationalisation analysis: (1) 3 core + 2 non-core = 40% of products non-strategic; (2) Resource dilution: R&D, sales, operations resources spread thin; (3) Management attention: non-core distracts from growth opportunities; (4) Margin impact: often non-core lower margin; (5) Competitive focus: core products need full attention to compete. PE rationalisation actions: (1) Divest non-core to strategic buyer; (2) End-of-life legacy products gradually; (3) Reallocate resources to core; (4) Simplify organisation; (5) Improve operational efficiency. Benefits: (1) Revenue reallocation to higher-margin core; (2) Cost reduction from simplification; (3) Faster decision-making; (4) Cleaner valuation at exit; (5) Multiple expansion from focus. Classic early 100-day initiative for PE."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team is evaluating market cyclicality. The target's sector showed 20% revenue decline in 2008, 15% decline in 2020. What does this imply?",
+    "options": [
+      "Recession-proof",
+      "High cyclicality: 15-20% declines in downturns significant: (1) EBITDA volatility high; (2) Leverage needs to be conservative; (3) Downside scenarios need modelling; (4) Covenant risk in downturns; (5) Valuation discount for cyclicality; structural consideration for LBO suitability",
+      "Random performance",
+      "Neutral impact"
+    ],
+    "correct_index": 1,
+    "explanation": "Cyclicality analysis: (1) 2008: 20% decline (Great Recession); (2) 2020: 15% decline (COVID); (3) High cyclicality pattern; (4) EBITDA volatility proportional — margins typically squeeze in downturn, amplifying EBITDA volatility. LBO implications: (1) Conservative leverage: 3-4x EBITDA (vs 5-6x for stable); (2) Covenant cushion: need significant headroom; (3) Interest coverage: must survive downturn EBITDA; (4) Downside scenarios: -25% EBITDA stress test; (5) Multiple compression likely in downturns. Valuation impact: (1) Lower multiples than stable peers; (2) Discount for cyclical exposure; (3) Exit multiple timing critical (avoid peak). Strategic adjustments: (1) Revenue diversification; (2) Cost flexibility; (3) Fixed cost reduction; (4) Contract structuring; (5) International expansion for counter-cyclical exposure."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team identifies 'regulatory risk' as a concern. How is this assessed?",
+    "options": [
+      "Ignore regulation",
+      "Regulatory assessment: (1) Current regulatory framework; (2) Upcoming changes (anticipated legislation); (3) Political climate; (4) Industry lobbying effectiveness; (5) Compliance investments required; (6) Potential impact on business model; (7) Sector precedents; (8) Mitigation strategies",
+      "Only current rules",
+      "Random assessment"
+    ],
+    "correct_index": 1,
+    "explanation": "Regulatory risk assessment: (1) Current framework: what rules apply, compliance costs?; (2) Upcoming changes: identified proposals, likelihood of passage, timing; (3) Political climate: direction of policy (tightening, loosening); (4) Industry influence: lobbying effectiveness, political positioning; (5) Compliance investments: capex, IT, personnel for changes; (6) Business model impact: pricing power, customer behaviour, competitive position; (7) Sector precedents: how similar industries responded; (8) Mitigation: geographical shifts, product modifications, strategic moves. For PE analysis: (1) Regulatory risk affects long-term value; (2) Timing of regulation vs. hold period; (3) Compliance costs in modeling; (4) Pricing pass-through capability; (5) Exit buyer willingness. Heavy regulation often creates moats but also requires investment and vigilance."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team examines customer satisfaction scores. Net Promoter Score (NPS) is 35, compared to industry benchmark of 50. What does this suggest?",
+    "options": [
+      "Excellent performance",
+      "Below-average satisfaction: (1) 35 vs. 50 benchmark is meaningful gap; (2) Customer dissatisfaction affects retention, referrals, pricing power; (3) Drivers to investigate: product, service, pricing, support; (4) Improvement opportunity: move to 50+; (5) Value creation lever: service/product improvements",
+      "Best-in-class",
+      "Random measure"
+    ],
+    "correct_index": 1,
+    "explanation": "NPS interpretation: (1) NPS range: -100 (all detractors) to +100 (all promoters); (2) Target: 35 (positive but below benchmark); (3) Industry benchmark: 50 (strong); (4) Gap: 15 points is meaningful; (5) Category: 'average' performance vs 'good/excellent' for benchmark. Business impact: (1) Retention: lower NPS correlates with lower retention; (2) Referrals: fewer customer-to-customer endorsements; (3) Pricing power: satisfied customers accept price increases; (4) Growth: lower organic growth from customer base; (5) Revenue expansion: lower upsell rates. Value creation opportunities: (1) Service improvements; (2) Product enhancements; (3) Customer success programs; (4) Faster issue resolution; (5) Proactive communication. Moving NPS from 35 to 50 typically takes 12-24 months with focused initiatives."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team identifies the target has 5-year contracts with 70% of top customers. What does this reveal?",
+    "options": [
+      "Random pattern",
+      "Strong customer lock-in: (1) Revenue visibility for 5-year period; (2) Retention likely for contract duration; (3) Supports LBO thesis (predictable cash flow); (4) Higher valuation multiples; (5) Switching costs embedded; (6) Contract terms critical (renewal, pricing mechanisms)",
+      "Weak position",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Long-term contract analysis: (1) 5-year contracts with 70% of top customers: strong lock-in; (2) Revenue visibility: predictable for contract duration; (3) Retention: implicit commitment; (4) Switching costs: contractual obligations create inertia; (5) Supports LBO thesis: predictable cash flows for debt service. Contract terms matter: (1) Pricing mechanisms (fixed, escalation, indexed); (2) Renewal terms (automatic, negotiated); (3) Performance metrics; (4) Termination provisions; (5) Exclusivity. For PE analysis: (1) Contract roll-off timing during hold period; (2) Renewal success rates historically; (3) Pricing escalation clauses; (4) Strategic customer relationship strength beyond contract; (5) Value at stake in renewals. Premium for long-term contracts but investigate: are they profitable? Locked in at outdated pricing? Renewal risk?"
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team examines the target's digital transformation progress. Assessment shows moderate digital maturity vs. best-in-class. What's the interpretation?",
+    "options": [
+      "No action needed",
+      "Moderate gap represents: (1) Investment opportunity in digital capabilities; (2) Competitive risk from digital natives; (3) Operational efficiency opportunity; (4) Customer experience improvement; (5) Potential value creation lever; (6) Execution risk if transformation not managed",
+      "Perfect position",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Digital maturity analysis: (1) Moderate vs. best-in-class: meaningful gap; (2) Risk dimensions: (a) Competitive vulnerability to digital natives; (b) Customer expectations rising; (c) Operational efficiency gaps; (d) Employee experience concerns; (3) Opportunity dimensions: (a) Digital transformation investment; (b) Customer experience improvement; (c) Operational automation; (d) Data analytics capabilities. PE value creation: (1) Digital investment as value creation lever; (2) Typically €10-30M capex over 2-3 years; (3) Benefits: efficiency gains, customer experience, data insights; (4) Risks: execution complexity, cultural resistance, technology choices. Framework: (1) Current digital maturity audit; (2) Gap identification; (3) Investment roadmap; (4) Priority sequence; (5) Capability development plan; (6) Success metrics. Digital transformation is increasingly critical to value creation."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team evaluates the target's pricing strategy. The target uses cost-plus pricing with 25% margin standardised across products. What does this reveal?",
+    "options": [
+      "Optimal strategy",
+      "Suboptimal pricing: (1) Cost-plus ignores customer value perception; (2) Missing opportunities for premium pricing on differentiated products; (3) Value-based pricing could increase margins; (4) Market research reveals willingness-to-pay; (5) Significant value creation opportunity through pricing optimisation",
+      "Random pricing",
+      "Perfect approach"
+    ],
+    "correct_index": 1,
+    "explanation": "Pricing strategy analysis: (1) Cost-plus pricing: simple but suboptimal; (2) 25% margin standardised: missing product-specific value; (3) Inefficiencies: (a) Premium products underpriced; (b) Commodity products possibly overpriced; (c) Customer value unexplored. Value-based pricing opportunity: (1) Research customer willingness-to-pay; (2) Segment customers by value; (3) Price differentiation by product tier; (4) Premium products at premium prices; (5) Value products competitively priced. Impact: (1) Gross margin improvement: 3-5% typical; (2) Revenue growth from premium positioning; (3) Profit expansion through segmentation; (4) Customer alignment (pay for what they value). PE value creation lever: pricing optimisation is often among highest ROI initiatives. Requires: customer research, pricing analytics, sales training, implementation discipline."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team identifies the target's growth has slowed from 12% to 6% over 3 years. What analysis is warranted?",
+    "options": [
+      "Ignore the trend",
+      "Root cause analysis: (1) Market growth deceleration?; (2) Competitive pressure?; (3) Customer saturation?; (4) Product maturity?; (5) Management challenges?; (6) Execution issues?; (7) Pricing limits?; understanding cause determines whether deceleration is temporary or structural",
+      "Always decline",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Growth deceleration analysis: (1) 12% to 6% is material slowdown; (2) Multiple potential causes require investigation: (a) Market: is overall market slowing?; (b) Competitive: market share losses to competitors?; (c) Saturation: core customer base maturing?; (d) Product: core offerings reaching end-of-life?; (e) Management: leadership issues or strategic errors?; (f) Execution: operational challenges?; (g) Pricing: pushing against customer tolerance?. Analysis process: (1) Decompose growth by segment, customer, product; (2) Interview management on their view; (3) Customer research (VOC); (4) Competitive landscape analysis; (5) Market trend research. PE implications: (1) If temporary, opportunity to accelerate; (2) If structural, requires transformation thesis; (3) Pricing reflects growth reality; (4) Exit multiple considerations."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team analyses the target's 'market position' relative to competitors. What dimensions are typically assessed?",
+    "options": [
+      "Random dimensions",
+      "Multiple dimensions: (1) Market share and trend; (2) Revenue growth vs. peers; (3) Margin performance vs. peers; (4) Customer base (quality, concentration); (5) Product portfolio depth; (6) Brand and reputation; (7) Operational capabilities; (8) Management team; (9) Financial strength; (10) Strategic flexibility",
+      "Only revenue",
+      "Only market share"
+    ],
+    "correct_index": 1,
+    "explanation": "Market position assessment dimensions: (1) Market share: scale advantages, customer recognition; (2) Revenue growth: momentum vs. competition; (3) Margins: operational effectiveness, pricing power; (4) Customer base: quality (enterprise vs SMB), concentration, retention; (5) Product portfolio: depth and breadth; (6) Brand/reputation: awareness, preference; (7) Operational capabilities: technology, scale, efficiency; (8) Management team: talent, experience, capability; (9) Financial strength: balance sheet, access to capital; (10) Strategic flexibility: adaptation capability. Analysis framework: (1) Relative ranking on each dimension; (2) Weighted by importance; (3) Trend analysis (gaining, stable, declining); (4) Competitive response capability. Strong positioning across multiple dimensions supports premium valuation; weak position or declining trend raises concerns."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team evaluates the target's 'customer lifetime value' (LTV). LTV is €250K, CAC is €85K. What does this suggest?",
+    "options": [
+      "Unhealthy economics",
+      "Healthy economics: (1) LTV:CAC ratio = 2.94x (approaching healthy 3x threshold); (2) Customer acquisition profitable; (3) Revenue per customer sustainable; (4) Payback achievable; (5) Room for improvement — best-in-class LTV:CAC >5x",
+      "Random values",
+      "Perfect metrics"
+    ],
+    "correct_index": 1,
+    "explanation": "LTV:CAC analysis: (1) Ratio = €250K / €85K = 2.94x; (2) Threshold: 3x considered healthy; 5x+ is strong; <2x indicates unprofitable growth; (3) Interpretation: (a) Business generates €2.94 in value for every €1 invested in acquisition; (b) Payback period achievable; (c) Growth is profitable; (4) Improvement opportunities: (a) Increase LTV (retention, upsell, pricing); (b) Reduce CAC (efficiency, organic growth, referrals); (c) Move toward 5x ratio. PE analysis: (1) Current ratio supports investment thesis; (2) Improvement to 4-5x creates meaningful value; (3) Operational initiatives: customer success, product enhancements, sales efficiency; (4) Growth investment justified; (5) Competitive position sustainable. Metric triangulates with retention, pricing, sales effectiveness for comprehensive picture."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team identifies that the target has limited growth investment (R&D at 1% of revenue vs. industry 3-5%). What does this suggest?",
+    "options": [
+      "Efficient business",
+      "Underinvestment concern: (1) Industry invests 3-5% in R&D; (2) Target at 1% is meaningful underinvestment; (3) Risks: product obsolescence, competitive vulnerability, growth deceleration; (4) PE opportunity: increase investment, faster innovation; (5) Trade-off: short-term margin vs. long-term growth",
+      "Perfect efficiency",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "R&D underinvestment analysis: (1) Target 1% vs industry 3-5%; (2) Significant underinvestment; (3) Potential implications: (a) Aging product portfolio; (b) Competitive vulnerability to innovators; (c) Gradual market share erosion; (d) Declining growth rate trajectory; (e) Dependence on legacy products. PE response framework: (1) Invest in catch-up R&D; typically 2-3% increase; (2) Focus on impactful products; (3) M&A for capability acquisition; (4) Partnerships for technology access; (5) Management investment. Timeline: (1) Increased R&D: immediate margin impact; (2) Innovation results: 2-3 year timeline; (3) Revenue impact: lagged by additional 1-2 years; (4) Value creation over hold period. Balance: short-term margin vs. long-term sustainability. Sometimes undervaluation opportunity if turnaround thesis validated."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team is examining 'substitute threat' in the target's market. What analysis is performed?",
+    "options": [
+      "Only direct competitors",
+      "Comprehensive substitute analysis: (1) Direct substitutes (same function, different form); (2) Indirect substitutes (different approach to same need); (3) Customer alternatives (DIY, internal development, no-purchase); (4) Emerging technologies; (5) Market forces driving substitution; (6) Mitigation strategies",
+      "Random threats",
+      "No threats"
+    ],
+    "correct_index": 1,
+    "explanation": "Substitute threat analysis: (1) Direct substitutes: different products/services serving same customer need; (2) Indirect substitutes: different approaches to same problem; (3) Customer alternatives: Do-it-yourself (reduce demand), internal development (enterprise customers), no-purchase (delay or forgo); (4) Emerging technologies: disruptive capabilities; (5) Market dynamics: economic, demographic, social drivers of substitution; (6) Mitigation: product improvement, customer lock-in, value pricing. Example: traditional software vs. SaaS: (1) Customer wants software solution; (2) Direct substitute: competing traditional software; (3) Indirect substitute: open source tools; (4) Alternative: manual processes, outsourcing. Analysis reveals: (1) Near-term threats; (2) Long-term positioning risks; (3) Required strategic adaptation; (4) Investment priorities; (5) Business model evolution needs."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team evaluates the target's 'growth trajectory.' Historical revenue shows +8%, +6%, +4%, +2% over 4 years. What pattern is this?",
+    "options": [
+      "Steady growth",
+      "Decelerating growth pattern: consistent year-over-year decline in growth rate; signals: market saturation, competitive pressure, product maturity; future growth may approach zero or negative; concerning for PE investment thesis",
+      "Accelerating growth",
+      "Random pattern"
+    ],
+    "correct_index": 1,
+    "explanation": "Growth deceleration pattern analysis: (1) Declining growth rates: 8% → 6% → 4% → 2%; (2) Consistent deceleration suggests structural pattern; (3) Projection: likely continues toward 0%; (4) Causes to identify: (a) Market saturation; (b) Competitive intensification; (c) Product maturity/decline; (d) Pricing constraints; (e) Cyclical decline. Significance: (1) Declining growth reduces valuation multiples; (2) Exit multiple likely lower; (3) Return generation harder; (4) Value creation thesis must address growth. PE options: (1) Accelerate growth through investment (new products, markets, channels); (2) M&A for growth; (3) Cost programs to maintain margins despite slower growth; (4) Pricing optimisation; (5) International expansion. Reality check: (1) Many 'growth' businesses are actually decelerating; (2) Careful growth analysis essential; (3) Decline before value creation plan."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team analyses the target's revenue mix. 40% subscription-recurring, 30% project-based, 20% professional services, 10% one-time. What does this mix reveal?",
+    "options": [
+      "Perfect diversification",
+      "Mix reveals: (1) Moderate recurring base (40% subscription); (2) Significant variable business (50% project/professional); (3) Mixed business model; (4) Recurring could be strengthened; (5) Project business has volatility; (6) Valuation mix (multiples differ by revenue type)",
+      "Only recurring",
+      "All one-time"
+    ],
+    "correct_index": 1,
+    "explanation": "Revenue mix analysis: (1) Subscription (40%): recurring, predictable, high multiples; (2) Project-based (30%): variable, lower margins, moderate multiples; (3) Professional services (20%): typically project-linked, consistent with implementation; (4) One-time (10%): unpredictable, lowest multiples. Overall interpretation: (1) Only 40% purely recurring: moderate LBO candidate quality; (2) 50% variable business creates volatility; (3) Mixed valuation: composite of different multiples; (4) PE improvement: shift mix toward recurring. Strategic levers: (1) Convert project to subscription model; (2) Expand subscription products; (3) Customer contract restructuring; (4) Pricing model changes; (5) Recurring revenue from installed base. Impact: (1) Higher blended multiples; (2) Stronger leverage capacity; (3) Better cash flow predictability; (4) Premium exit valuation. Shifting mix over 5-year hold can significantly enhance value."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team identifies the target has a 'strategic advantage' in customer relationship. How is relationship strength assessed?",
+    "options": [
+      "Random assessment",
+      "Multi-dimensional assessment: (1) Length of relationships (years); (2) Contract structures; (3) Customer engagement frequency; (4) Expansion history (same customers buying more); (5) Referral patterns; (6) Customer participation in R&D; (7) Integration depth (technology, processes)",
+      "Only length",
+      "Only revenue"
+    ],
+    "correct_index": 1,
+    "explanation": "Customer relationship strength assessment: (1) Duration: long relationships (5+ years) indicate quality; (2) Contract structures: long-term, exclusive, multi-year; (3) Engagement: frequency, executive relationships; (4) Expansion: existing customers growing spend; (5) Referrals: willingness to refer; (6) Collaboration: participating in R&D, feedback; (7) Integration: technical/process integration creating switching costs. Example deep relationships: (1) 10+ year relationships; (2) Multi-year contracts; (3) Integrated technology platforms; (4) Joint product development; (5) Strong executive relationships at multiple levels; (6) Customer as reference for new prospects. Metrics: customer retention, NPS, expansion rates, contract renewal rates, customer lifetime value. Deep relationships are: (1) Significant competitive moat; (2) Difficult to replicate; (3) Revenue predictability; (4) Pricing power; (5) Strategic value. Well-documented strong relationships justify premium valuation."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team evaluates a target where management projects 20% revenue growth next year. How is this validated?",
+    "options": [
+      "Accept at face value",
+      "Rigorous validation: (1) Historical growth pattern; (2) Market growth rate; (3) Sales pipeline analysis; (4) Customer commitments; (5) Competitive dynamics; (6) Operational capacity; (7) Management track record; (8) Sector benchmarking; validated projection influences pricing and returns",
+      "Always reject",
+      "Random approach"
+    ],
+    "correct_index": 1,
+    "explanation": "Projection validation framework: (1) Historical growth pattern — consistent with projection?; (2) Market growth — target growing faster than market is realistic?; (3) Sales pipeline — quantity and quality of opportunities; (4) Customer commitments — signed contracts, letter of intent; (5) Competitive dynamics — is competitor losing share?; (6) Operational capacity — can the business scale?; (7) Management track record — have they delivered past projections?; (8) Sector benchmarking — is growth plausible for peers?; (9) Cyclical factors — is growth tailwind or headwind?. Assessment outcomes: (1) Validated: build into base case; (2) Partially validated: adjust to more realistic rate; (3) Not validated: conservative growth assumption. For LBO model: (1) Use conservative validated rate, not management's aspirational; (2) Upside case can include management number; (3) Returns based on realistic projections; (4) Margin of safety built in."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team identifies the target's 'growth drivers' include new product launches planned. What analysis is performed?",
+    "options": [
+      "Accept projections",
+      "Product launch analysis: (1) Product development stage; (2) Target market size; (3) Competitive positioning; (4) Differentiation; (5) Distribution readiness; (6) Pricing strategy; (7) Customer feedback/testing; (8) Launch timeline; (9) Revenue ramp assumptions; (10) Success probability",
+      "Random assessment",
+      "Only revenue"
+    ],
+    "correct_index": 1,
+    "explanation": "New product launch analysis: (1) Development stage: concept, prototype, alpha, beta, production; (2) Target market: size, growth, customer readiness; (3) Competitive positioning: differentiated, parity, follower; (4) Differentiation: why customers will buy; (5) Distribution: channels ready, salesforce trained; (6) Pricing strategy: premium, competitive, value; (7) Customer feedback: beta testing, pre-orders, pilot programs; (8) Launch timeline: realistic, dependency mapping; (9) Revenue ramp: first year, year 2-3 projections; (10) Success probability: based on development stage, market acceptance. Typical success rates: (1) Early stage: 20-40% commercial success; (2) Late stage/beta: 60-80%; (3) Pre-launch: 50-70%; (4) Launched with traction: 80-95%. CDD should: (1) Discount management projections; (2) Apply success probability; (3) Consider market reaction; (4) Include launch costs and risks; (5) Model realistic ramp."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team analyses 'market consolidation' trend. Top 10 players grew from 45% to 60% market share over 5 years. What does this indicate?",
+    "options": [
+      "Random variation",
+      "Meaningful consolidation: (1) Market shifting from fragmented to consolidated; (2) Scale advantages increasing; (3) Strategic buyers paying premiums for position; (4) M&A activity accelerated; (5) Platform opportunity for PE; (6) Consolidation wave likely to continue; (7) Valuation multiples may rise with consolidation",
+      "Always bad",
+      "Randomness"
+    ],
+    "correct_index": 1,
+    "explanation": "Consolidation trend analysis: (1) 45% → 60% = 15 percentage point shift toward concentration; (2) Suggests: strategic consolidators active, scale benefits apparent, market maturing; (3) Remaining 40% still fragmented: opportunity for further consolidation; (4) Valuation implications: premium multiples for consolidators. PE platform strategy: (1) Select target with consolidation position; (2) Buy-and-build through bolt-ons; (3) Capture scale benefits; (4) Multiple arbitrage: bolt-ons at 6-8x, exit at 10-12x platform; (5) Strategic exit at premium valuation. Risks to monitor: (1) Regulatory pushback (antitrust); (2) Execution (integration challenges); (3) Price increases from consolidation; (4) Customer resistance; (5) Technology disruption during consolidation. Sophisticated PE firms build platforms in consolidating markets: significant value creation but execution intensive."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team identifies that a key competitor is 'strategically pivoting' away from the target's segment. How does this affect analysis?",
+    "options": [
+      "Ignore",
+      "Favorable development: (1) Reduced competitive intensity; (2) Market share opportunity; (3) Customer migration potential; (4) Pricing power improvement; (5) Strategic positioning strengthens; but: (1) Understand why competitor pivoting; (2) Timing of their exit; (3) Market reaction",
+      "Neutral",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Competitor pivot analysis: (1) Direct benefit: reduced competition in target's segment; (2) Market share opportunity: capture customers previously served by departing competitor; (3) Pricing improvement: fewer competitors supports premium pricing; (4) Strategic positioning: gap in market created. Caveats: (1) Why is competitor leaving? (Might indicate sector issues); (2) Timing of their exit (how long until market impact); (3) What takes their place? (New entrants, substitutes?); (4) Customer loyalty (do customers follow departing competitor?). For PE investment: (1) If validated market dynamic, favorable; (2) Valuation should reflect improved position; (3) Strategic opportunity to gain share; (4) Pricing power enhancement; (5) Potential customer acquisition. Combined with other factors: competitor pivots can reinforce positive investment thesis. Track execution of competitor's pivot and market reaction to validate thesis."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team's analysis culminates in an 'investment thesis' document. What does this typically include?",
+    "options": [
+      "Random observations",
+      "Comprehensive thesis: (1) Market opportunity; (2) Target's competitive advantages; (3) Customer relationships and retention; (4) Growth drivers; (5) Value creation plan; (6) Key risks and mitigants; (7) Financial projections; (8) Exit thesis; (9) Supporting evidence; (10) Confidence factors",
+      "Only projections",
+      "Random"
+    ],
+    "correct_index": 1,
+    "explanation": "Investment thesis document structure: (1) Executive summary: key insights; (2) Market opportunity: size, growth, dynamics; (3) Target's competitive advantages: moats, market position; (4) Customer relationships: quality, retention, satisfaction; (5) Growth drivers: specific levers, validation; (6) Value creation plan: specific initiatives, timeline; (7) Key risks: identified with mitigants; (8) Financial projections: based on validated assumptions; (9) Exit thesis: likely buyers, timing, multiples; (10) Confidence factors: why we believe this investment works; (11) Conditions: what must be true for success; (12) Walk-away factors: red flags that would change decision. Purpose: (1) IC decision-making; (2) LP communication; (3) Team alignment; (4) Monitoring framework; (5) Post-close guide. Sophisticated firms produce rigorous thesis documents. Weak thesis: investment often struggles; strong thesis: higher success rate."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team presents findings to the IC. What format is appropriate?",
+    "options": [
+      "Only verbal",
+      "Formal presentation: (1) Executive summary; (2) Market analysis; (3) Competitive positioning; (4) Customer insights; (5) Growth drivers; (6) Risk analysis; (7) Investment thesis; (8) Supporting data; (9) Q&A preparation; provides comprehensive foundation for IC decision",
+      "Random",
+      "Only charts"
+    ],
+    "correct_index": 1,
+    "explanation": "CDD IC presentation structure: (1) Executive summary (1-2 slides): recommendation, key findings, thesis; (2) Market analysis: size, growth, dynamics, structure; (3) Competitive positioning: strengths, weaknesses, relative position; (4) Customer insights: voice-of-customer, retention, quality; (5) Growth drivers: specific levers, validation, projections; (6) Risk analysis: identified risks, severity, mitigants; (7) Investment thesis: why this deal, why now; (8) Supporting data: detailed analyses, comparisons, evidence; (9) Financial implications: valuation, projections, returns; (10) Q&A preparation: anticipate tough questions. Format: (1) Clear, data-driven; (2) Focuses on decision-relevant insights; (3) Balances findings (positive and negative); (4) Allows IC to challenge and explore; (5) 30-60 minute typical. Strong CDD presentation builds IC confidence; weak presentation raises doubts. Quality of analysis and presentation both matter."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team identifies the target's customer 'churn rate' at 12% annually. How does this affect valuation?",
+    "options": [
+      "No effect",
+      "Material impact: (1) 12% churn = 88% retention; (2) Below typical PE target of 90%+; (3) Implications: revenue visibility, customer acquisition cost, growth efficiency; (4) Valuation multiple discount; (5) Value creation opportunity through retention improvement; (6) Focus area post-acquisition",
+      "Random",
+      "Unrelated"
+    ],
+    "correct_index": 1,
+    "explanation": "Churn rate analysis: (1) 12% annual churn = 88% retention; (2) Benchmarks: SaaS 95-99% gross retention; Services 85-95%; Industrial 90-95%; (3) 12% is at lower end of acceptable range; (4) Impact: (a) Revenue visibility reduced; (b) Customer acquisition cost (CAC) higher (constantly replacing lost customers); (c) Growth efficiency lower (net new growth = gross new - churn). Valuation implications: (1) Revenue multiple discount for higher churn; (2) EBITDA multiple discount reflecting cash flow volatility; (3) Value creation opportunity: reduce churn from 12% to 6-8%. PE improvement program: (1) Customer success investment; (2) Product enhancements; (3) Service quality improvements; (4) Customer segmentation; (5) Proactive retention; (6) Pricing flexibility. 5% reduction (12% to 7%) on €100M revenue: €5M annually in retained revenue; at 10x multiple = €50M enterprise value gain."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team evaluates the target's 'expansion revenue' from existing customers. Current expansion: 8% of existing customer base annually. What's the interpretation?",
+    "options": [
+      "Random",
+      "Meaningful expansion: (1) Customers spending more over time is healthy; (2) 8% growth shows upsell/cross-sell success; (3) Contributes to net revenue retention (expansion - churn); (4) Valuation support; (5) Operational lever: can be accelerated through account management, product expansion",
+      "Poor performance",
+      "Unhealthy"
+    ],
+    "correct_index": 1,
+    "explanation": "Expansion revenue analysis: (1) 8% annual expansion from existing base: meaningful; (2) Components: upsell (higher tiers), cross-sell (new products), volume growth (more of same); (3) Net Revenue Retention (NRR) = 100% + Expansion - Churn; 12% churn + 8% expansion = 96% NRR; (4) Benchmarks: best SaaS >130% NRR; average 100-110%; (5) Value creation potential: (a) Accelerate expansion through better account management; (b) New product launches; (c) Pricing optimization; (d) Customer success programs. PE value creation: (1) Current 96% NRR; (2) Target improvement to 110-120% NRR; (3) Revenue impact meaningful over 5-year hold; (4) Multiple expansion on improved metrics. Sophisticated analysis links: (1) NRR to valuation multiples; (2) Operational initiatives to financial impact; (3) Customer segment analysis; (4) Long-term customer economics."
+  },
+  {
+    "topic_tag": "due-diligence-commercial",
+    "question": "A CDD team reviews competitor win/loss data. Target wins 55% of head-to-head deals. What does this represent?",
+    "options": [
+      "Weak position",
+      "Win rate above 50% indicates: (1) Strong competitive position; (2) Value proposition advantage; (3) Winning in competitive situations; (4) Opportunity for further improvement (65-70% typical for leaders); (5) Positive indicator for PE investment",
+      "Random variation",
+      "Always weak"
+    ],
+    "correct_index": 1,
+    "explanation": "Win rate analysis: (1) 55% win rate in head-to-head: above 50% threshold; (2) Interpretation: value proposition works against competitors; (3) Benchmarks: (a) Market leaders: 65-75%; (b) Strong competitors: 55-65%; (c) Competitive parity: 45-55%; (d) Weaker position: <45%. Analysis depth: (1) Win rate by competitor (identify weaker vs. stronger rivals); (2) Win rate by deal size (small vs large); (3) Win rate by segment (customer types); (4) Win/loss themes (features, pricing, service, relationships); (5) Trend over time (improving or declining). PE insights: (1) Current 55% is respectable; (2) Opportunity to push to 65%+; (3) Improvement areas: product, sales effectiveness, pricing; (4) Value creation initiatives: strengthening value proposition, sales training. Higher win rates: stronger market position, premium valuation, easier growth. Win/loss analysis essential for understanding competitive reality."
+  }
+]

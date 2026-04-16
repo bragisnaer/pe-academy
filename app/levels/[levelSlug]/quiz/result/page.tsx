@@ -6,11 +6,31 @@ import { buttonVariants } from '@/components/ui/button'
 
 // Human-readable labels for topic_tags across all levels.
 const TOPIC_LABELS: Record<string, string> = {
+  // Level 1
   'pe-fundamentals': 'PE Fundamentals',
   'fund-structure': 'Fund Structure',
   'key-players': 'Key Players',
   'deal-concepts': 'Deal Concepts',
   'return-metrics': 'Return Metrics',
+  // Level 2
+  'financial-analysis-statements': 'Financial Statements',
+  'financial-analysis-ebitda': 'EBITDA & Normalisation',
+  'financial-analysis-enterprise-value': 'Enterprise Value',
+  'financial-analysis-debt': 'Debt & Capital Structure',
+  'financial-analysis-cashflow': 'Cash Flow Analysis',
+  // Level 3
+  'valuation-dcf': 'DCF Valuation',
+  'valuation-trading-comps': 'Trading Comps',
+  'valuation-precedent-transactions': 'Precedent Transactions',
+  'valuation-in-practice': 'Valuation in Practice',
+  'valuation-lbo-model': 'LBO Model',
+  // Level 4
+  'due-diligence-commercial': 'Commercial Due Diligence',
+  'due-diligence-financial': 'Financial Due Diligence',
+  'due-diligence-legal': 'Legal Due Diligence',
+  'due-diligence-operational': 'Operational Due Diligence',
+  'due-diligence-esg': 'ESG Due Diligence',
+  'due-diligence-red-flags': 'Red Flags & Deal Killers',
 }
 
 // Next.js 16: both params and searchParams are Promises.
@@ -198,7 +218,7 @@ export default async function QuizResultPage({
               Retry Quiz
             </Link>
           )}
-          <Link href="/lessons" className={buttonVariants({ variant: 'outline' })}>
+          <Link href="/dashboard" className={buttonVariants({ variant: 'outline' })}>
             Back to Lessons
           </Link>
         </div>
