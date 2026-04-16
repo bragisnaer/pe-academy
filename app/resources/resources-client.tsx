@@ -39,8 +39,8 @@ export function ResourcesClient({ resources }: ResourcesClientProps) {
             aria-pressed={activeLevel === level}
             className={
               activeLevel === level
-                ? "px-4 py-1.5 rounded-full text-sm font-medium bg-white text-black"
-                : "px-4 py-1.5 rounded-full text-sm font-medium bg-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-700 transition-colors"
+                ? "px-4 py-1.5 rounded-full text-sm font-medium bg-primary text-primary-foreground"
+                : "px-4 py-1.5 rounded-full text-sm font-medium bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 transition-colors"
             }
           >
             {level}
@@ -51,12 +51,12 @@ export function ResourcesClient({ resources }: ResourcesClientProps) {
       {/* Resource list */}
       <div className="space-y-4">
         {filtered.map((resource) => (
-          <div key={resource.id} className="bg-zinc-900 rounded-lg p-5 space-y-2">
+          <div key={resource.id} className="bg-card rounded-lg p-5 space-y-2">
             <div className="flex flex-wrap items-start gap-2 mb-1">
-              <span className="inline-block text-xs font-medium text-zinc-400 uppercase tracking-wider px-2 py-0.5 rounded bg-zinc-800">
+              <span className="inline-block text-xs font-medium text-muted-foreground uppercase tracking-wider px-2 py-0.5 rounded bg-muted">
                 {resource.type}
               </span>
-              <span className="inline-block text-xs font-medium text-zinc-400 uppercase tracking-wider px-2 py-0.5 rounded bg-zinc-800">
+              <span className="inline-block text-xs font-medium text-muted-foreground uppercase tracking-wider px-2 py-0.5 rounded bg-muted">
                 {resource.level}
               </span>
             </div>
@@ -66,25 +66,25 @@ export function ResourcesClient({ resources }: ResourcesClientProps) {
                   href={resource.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white font-medium hover:text-zinc-300 transition-colors underline underline-offset-2"
+                  className="text-foreground font-medium hover:text-foreground/80 transition-colors underline underline-offset-2"
                 >
                   {resource.title}
                 </a>
               ) : (
-                <p className="text-white font-medium">{resource.title}</p>
+                <p className="text-foreground font-medium">{resource.title}</p>
               )}
               {resource.author && (
-                <p className="text-sm text-zinc-400 mt-0.5">{resource.author}</p>
+                <p className="text-sm text-muted-foreground mt-0.5">{resource.author}</p>
               )}
             </div>
-            <p className="text-sm text-zinc-400 leading-relaxed">{resource.description}</p>
+            <p className="text-sm text-muted-foreground leading-relaxed">{resource.description}</p>
           </div>
         ))}
       </div>
 
       {/* Empty state */}
       {filtered.length === 0 && (
-        <p className="text-zinc-400 text-sm">No resources found for this level.</p>
+        <p className="text-muted-foreground text-sm">No resources found for this level.</p>
       )}
     </div>
   )

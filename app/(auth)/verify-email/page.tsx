@@ -29,28 +29,28 @@ function VerifyEmailContent() {
 
   return (
     <div className="flex flex-col gap-4">
-      <Card className="bg-zinc-900 border-zinc-800">
+      <Card className="bg-card border-border">
         <CardHeader className="pb-0 pt-8 px-6">
-          <h1 className="text-2xl font-semibold text-white leading-tight">
+          <h1 className="text-2xl font-semibold text-foreground leading-tight">
             Verify your email
           </h1>
         </CardHeader>
         <CardContent className="px-6 pb-8 pt-4 flex flex-col gap-4">
-          <p className="text-base text-zinc-400 leading-relaxed">
+          <p className="text-base text-muted-foreground leading-relaxed">
             We&apos;ve sent a verification link to {email || 'your email address'}. Click the link in your email to activate your account.
           </p>
 
-          <p className="text-sm text-zinc-500">
+          <p className="text-sm text-muted-foreground/70">
             Didn&apos;t receive it?{' '}
             {resendState === 'sent' ? (
-              <span className="text-zinc-400">Verification email resent.</span>
+              <span className="text-muted-foreground">Verification email resent.</span>
             ) : resendState === 'error' ? (
-              <span className="text-red-500">Something went wrong. Try again.</span>
+              <span className="text-destructive">Something went wrong. Try again.</span>
             ) : (
               <button
                 onClick={handleResend}
                 disabled={resendState === 'sending'}
-                className="text-white underline underline-offset-4 hover:text-zinc-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="text-foreground underline underline-offset-4 hover:text-foreground/80 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {resendState === 'sending' ? 'Sending...' : 'Resend verification email'}
               </button>
@@ -66,14 +66,14 @@ export default function VerifyEmailPage() {
   return (
     <Suspense fallback={
       <div className="flex flex-col gap-4">
-        <Card className="bg-zinc-900 border-zinc-800">
+        <Card className="bg-card border-border">
           <CardHeader className="pb-0 pt-8 px-6">
-            <h1 className="text-2xl font-semibold text-white leading-tight">
+            <h1 className="text-2xl font-semibold text-foreground leading-tight">
               Verify your email
             </h1>
           </CardHeader>
           <CardContent className="px-6 pb-8 pt-4">
-            <p className="text-base text-zinc-400">Loading...</p>
+            <p className="text-base text-muted-foreground">Loading...</p>
           </CardContent>
         </Card>
       </div>

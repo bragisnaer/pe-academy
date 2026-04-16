@@ -43,5 +43,8 @@ next-env.d.ts
 # velite build output
 .velite
 
+# curriculum import staging (unzipped source files, not committed)
+/_curriculum-import
+
 .vercel
 .env*.local

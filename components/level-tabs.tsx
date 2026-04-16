@@ -24,7 +24,7 @@ export function LevelTabs({ activeLevel = 1, onLevelChange, unlockedLevelNumbers
   const unlockedSet = new Set(unlockedLevelNumbers ?? [1])
 
   return (
-    <div className="flex items-center border-b border-white/10 px-4">
+    <div className="flex items-center border-b border-border px-4">
       {TABS.map((tab) => {
         const isLocked = !unlockedSet.has(tab.level)
         const isActive = tab.level === activeLevel && !isLocked
@@ -34,7 +34,7 @@ export function LevelTabs({ activeLevel = 1, onLevelChange, unlockedLevelNumbers
             <button
               key={tab.level}
               type="button"
-              className="flex h-10 items-center gap-1 px-3 text-sm font-normal text-zinc-600 cursor-not-allowed select-none"
+              className="flex h-10 items-center gap-1 px-3 text-sm font-normal text-muted-foreground cursor-not-allowed select-none"
               aria-disabled="true"
               tabIndex={-1}
               title={getLockedTooltip(tab.level)}
@@ -51,8 +51,8 @@ export function LevelTabs({ activeLevel = 1, onLevelChange, unlockedLevelNumbers
             type="button"
             className={`flex h-10 items-center px-3 text-sm font-normal transition-colors ${
               isActive
-                ? "text-white border-b-2 border-white"
-                : "text-zinc-400 hover:text-white"
+                ? "text-foreground border-b-2 border-primary"
+                : "text-muted-foreground hover:text-foreground"
             }`}
             onClick={() => onLevelChange?.(tab.level)}
           >

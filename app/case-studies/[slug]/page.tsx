@@ -49,7 +49,7 @@ export default async function CaseStudyPage({
 
   return (
     <article>
-      <h1 className="text-3xl font-semibold text-white mb-4">{cs.title}</h1>
+      <h1 className="text-3xl font-semibold text-foreground mb-4">{cs.title}</h1>
 
       {/* Topic tag badges */}
       {cs.topic_tags.length > 0 && (
@@ -63,7 +63,7 @@ export default async function CaseStudyPage({
               <Link
                 key={tag}
                 href={href}
-                className="inline-flex items-center rounded-full border border-white/10 bg-zinc-900 px-3 py-1 text-xs text-zinc-400 hover:text-white hover:border-white/20 transition-colors"
+                className="inline-flex items-center rounded-full border border-border bg-card px-3 py-1 text-xs text-muted-foreground hover:text-foreground hover:border-border transition-colors"
               >
                 {module ? module.title : tag}
               </Link>
@@ -73,19 +73,19 @@ export default async function CaseStudyPage({
       )}
 
       {/* Summary */}
-      <p className="text-base text-zinc-300 leading-relaxed mb-8 border-l-2 border-white/20 pl-4 italic">
+      <p className="text-base text-foreground/80 leading-relaxed mb-8 border-l-2 border-border pl-4 italic">
         {cs.summary}
       </p>
 
       {/* MDX body */}
       <div
         className={[
-          "text-base text-zinc-400 leading-relaxed",
-          "[&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:text-white [&_h2]:mt-8 [&_h2]:mb-4",
+          "text-base text-muted-foreground leading-relaxed",
+          "[&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:text-foreground [&_h2]:mt-8 [&_h2]:mb-4",
           "[&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2",
-          "[&_li]:text-zinc-400",
-          "[&_blockquote]:border-l-2 [&_blockquote]:border-white/20 [&_blockquote]:pl-4 [&_blockquote]:text-zinc-300 [&_blockquote]:italic [&_blockquote]:my-4",
-          "[&_strong]:text-white [&_strong]:font-semibold",
+          "[&_li]:text-muted-foreground",
+          "[&_blockquote]:border-l-2 [&_blockquote]:border-border [&_blockquote]:pl-4 [&_blockquote]:text-foreground/80 [&_blockquote]:italic [&_blockquote]:my-4",
+          "[&_strong]:text-foreground [&_strong]:font-semibold",
           "[&_p]:mb-4",
         ].join(" ")}
       >

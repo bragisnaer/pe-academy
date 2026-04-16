@@ -35,8 +35,8 @@ export default async function ResourcesPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-12">
-      <h1 className="text-3xl font-semibold text-white mb-2">Resources</h1>
-      <p className="text-zinc-400 mb-8">Curated reading and listening for every stage of your PE journey.</p>
+      <h1 className="text-3xl font-semibold text-foreground mb-2">Resources</h1>
+      <p className="text-muted-foreground mb-8">Curated reading and listening for every stage of your PE journey.</p>
       <ResourcesClient resources={resources} />
     </div>
   )

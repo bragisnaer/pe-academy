@@ -61,26 +61,26 @@ export default function ResetPasswordPage() {
 
   return (
     <div className="flex flex-col gap-4">
-      <Card className="bg-zinc-900 border-zinc-800">
+      <Card className="bg-card border-border">
         <CardHeader className="pb-0 pt-8 px-6">
-          <h1 className="text-2xl font-semibold text-white leading-tight">
+          <h1 className="text-2xl font-semibold text-foreground leading-tight">
             {sentEmail ? 'Check your email' : 'Reset your password'}
           </h1>
         </CardHeader>
         <CardContent className="px-6 pb-8 pt-6">
           {sentEmail ? (
-            <p className="text-base text-zinc-400 leading-relaxed">
+            <p className="text-base text-muted-foreground leading-relaxed">
               We&apos;ve sent a password reset link to {sentEmail}. Follow the link to set a new password.
             </p>
           ) : (
             <>
-              <p className="text-base text-zinc-400 mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 Enter your email and we&apos;ll send you a reset link.
               </p>
 
               {serverError && (
-                <Alert className="mb-4 border-red-500/50 bg-red-500/10">
-                  <AlertDescription className="text-red-500 text-sm">
+                <Alert className="mb-4 border-destructive/50 bg-destructive/10">
+                  <AlertDescription className="text-destructive text-sm">
                     {serverError}
                   </AlertDescription>
                 </Alert>
@@ -93,12 +93,12 @@ export default function ResetPasswordPage() {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-sm text-zinc-300">Email address</FormLabel>
+                        <FormLabel className="text-sm text-foreground/80">Email address</FormLabel>
                         <FormControl>
                           <Input
                             type="email"
                             placeholder="you@example.com"
-                            className="bg-zinc-800 border-zinc-700 text-white placeholder:text-zinc-500"
+                            className="bg-muted border-border text-foreground placeholder:text-muted-foreground"
                             {...field}
                           />
                         </FormControl>
@@ -110,7 +110,7 @@ export default function ResetPasswordPage() {
                   <Button
                     type="submit"
                     disabled={isLoading}
-                    className="w-full min-h-[44px] bg-white text-zinc-900 hover:bg-zinc-100 font-medium mt-2"
+                    className="w-full min-h-[44px] bg-primary text-primary-foreground hover:bg-primary/90 font-medium mt-2"
                   >
                     {isLoading ? (
                       <>
@@ -128,9 +128,9 @@ export default function ResetPasswordPage() {
         </CardContent>
       </Card>
 
-      <p className="text-center text-sm text-zinc-400">
+      <p className="text-center text-sm text-muted-foreground">
         Back to{' '}
-        <Link href="/login" className="text-white underline underline-offset-4 hover:text-zinc-200">
+        <Link href="/login" className="text-foreground underline underline-offset-4 hover:text-foreground/80">
           Sign in
         </Link>
       </p>

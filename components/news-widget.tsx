@@ -30,8 +30,8 @@ export async function NewsWidget({ topicTag }: NewsWidgetProps) {
   }
 
   return (
-    <aside className="border-t border-white/10 mt-8 pt-6">
-      <p className="text-sm font-semibold text-zinc-400 uppercase tracking-wider mb-4">
+    <aside className="border-t border-border mt-8 pt-6">
+      <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">
         In the news: {TOPIC_TAG_LABELS[topicTag] ?? topicTag}
       </p>
       <ul className="space-y-3">
@@ -41,11 +41,11 @@ export async function NewsWidget({ topicTag }: NewsWidgetProps) {
               href={article.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white text-sm font-medium hover:underline"
+              className="text-foreground text-sm font-medium hover:underline"
             >
               {article.title}
             </a>
-            <p className="text-zinc-400 text-xs mt-0.5">
+            <p className="text-muted-foreground text-xs mt-0.5">
               {article.source_name}
               {article.published_at && (
                 <> &middot; {formatRelativeTime(new Date(article.published_at))}</>

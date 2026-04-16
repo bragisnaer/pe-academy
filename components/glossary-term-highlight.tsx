@@ -12,7 +12,7 @@ export interface GlossaryTermHighlightProps {
 /**
  * GlossaryTermHighlight — wraps the first occurrence of a glossary term in a
  * lesson with a dotted underline and a tooltip showing its definition.
- * Styling follows the UI-SPEC: text-white underline decoration-dotted decoration-zinc-400 cursor-help.
+ * Styling follows the UI-SPEC: text-foreground underline decoration-dotted decoration-muted-foreground cursor-help.
  */
 export function GlossaryTermHighlight({
   term,
@@ -22,7 +22,7 @@ export function GlossaryTermHighlight({
   return (
     <GlossaryTooltip term={term} definition={definition}>
       <span
-        className="text-white underline decoration-dotted decoration-zinc-400 cursor-help"
+        className="text-foreground underline decoration-dotted decoration-muted-foreground cursor-help"
         data-glossary-term={term}
       >
         {children}

@@ -1,5 +1,47 @@
 import { defineCollection, defineConfig, s } from "velite";
 
+// ─── Helpers ────────────────────────────────────────────────────────────────
+
+function stripFrontmatter(raw: string): string {
+  return raw.replace(/^---[\s\S]*?---\s*\n?/, "")
+}
+
+function countWords(raw: string): number {
+  const text = stripFrontmatter(raw)
+    .replace(/```[\s\S]*?```/g, " ")         // code blocks
+    .replace(/`[^`]+`/g, " ")                // inline code
+    .replace(/!\[.*?\]\(.*?\)/g, " ")        // images
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // links — keep text
+    .replace(/^#{1,6}\s+/gm, "")             // heading markers
+    .replace(/[*_~>]/g, "")                  // formatting
+  return (text.match(/\S+/g) ?? []).length
+}
+
+export interface LessonHeading {
+  level: number
+  text: string
+  id: string
+}
+
+function extractHeadings(raw: string): LessonHeading[] {
+  const text = stripFrontmatter(raw)
+  const results: LessonHeading[] = []
+  const headingPattern = /^(#{2,3})\s+(.+)$/gm
+  let match = headingPattern.exec(text)
+  while (match !== null) {
+    const headingText = match[2].trim().replace(/[*_`~]/g, "")
+    const id = headingText
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, "")
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-")
+      .replace(/^-|-$/g, "")
+    results.push({ level: match[1].length, text: headingText, id })
+    match = headingPattern.exec(text)
+  }
+  return results
+}
+
 // ─── Collections ───────────────────────────────────────────────────────────
 
 const lessons = defineCollection({
@@ -15,12 +57,15 @@ const lessons = defineCollection({
       uuid: s.string(),
       locked: s.boolean().default(false),
       slug: s.slug("lessons"),
+      raw: s.raw(),
       body: s.mdx(),
     })
     .transform((data) => ({
       ...data,
       // Strip the "lessons/" prefix so slugAsParams is just "module/lesson"
       slugAsParams: data.slug.replace(/^lessons\//, ""),
+      wordCount: countWords(data.raw),
+      headings: extractHeadings(data.raw),
     })),
 });
 

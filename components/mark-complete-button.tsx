@@ -12,8 +12,8 @@ export interface MarkCompleteButtonProps {
 /**
  * MarkCompleteButton — optimistic UI button for marking a lesson complete.
  *
- * Idle state: white fill button labelled "Mark complete".
- * Completed state: zinc-800 fill, emerald CheckCircle2 icon, "Completed" label, disabled.
+ * Idle state: primary fill button labelled "Mark complete".
+ * Completed state: card fill, success CheckCircle2 icon, "Completed" label, disabled.
  *
  * On click: immediately switches to completed state (optimistic), then calls
  * markLessonComplete server action. If the server action fails, reverts to idle.
@@ -48,10 +48,10 @@ export function MarkCompleteButton({
         type="button"
         disabled
         aria-label="Lesson completed"
-        className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-zinc-800 px-4 py-2 text-sm font-medium text-white cursor-default transition-colors duration-150 ease-in-out disabled:pointer-events-none"
+        className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-card px-4 py-2 text-sm font-medium text-foreground cursor-default transition-colors duration-150 ease-in-out disabled:pointer-events-none"
       >
         <CheckCircle2
-          className="size-4 text-emerald-500"
+          className="size-4 text-success"
           aria-hidden="true"
         />
         Completed
@@ -65,7 +65,7 @@ export function MarkCompleteButton({
       onClick={handleClick}
       disabled={pending}
       aria-label="Mark lesson complete"
-      className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-medium text-zinc-950 hover:bg-white/90 transition-colors duration-150 ease-in-out disabled:opacity-70 disabled:pointer-events-none"
+      className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors duration-150 ease-in-out disabled:opacity-70 disabled:pointer-events-none"
     >
       Mark complete
     </button>

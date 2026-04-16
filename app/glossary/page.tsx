@@ -33,8 +33,8 @@ export default async function GlossaryPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-12">
-      <h1 className="text-3xl font-semibold text-white mb-2">Glossary</h1>
-      <p className="text-zinc-400 mb-8">
+      <h1 className="text-3xl font-semibold text-foreground mb-2">Glossary</h1>
+      <p className="text-muted-foreground mb-8">
         Key concepts from the PE Academy curriculum.
       </p>
 

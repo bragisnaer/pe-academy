@@ -45,14 +45,14 @@ export function GlossaryClient({ terms }: GlossaryClientProps) {
           placeholder="Filter terms…"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="max-w-sm bg-zinc-900 border-white/10 text-white placeholder:text-zinc-500"
+          className="max-w-sm bg-card border-border text-foreground placeholder:text-muted-foreground"
           aria-label="Filter glossary terms"
         />
         {query && (
           <button
             type="button"
             onClick={() => setQuery("")}
-            className="text-sm text-zinc-400 hover:text-white transition-colors"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             Clear filter
           </button>
@@ -61,7 +61,7 @@ export function GlossaryClient({ terms }: GlossaryClientProps) {
 
       {/* Empty state */}
       {letters.length === 0 && (
-        <p className="text-zinc-400">
+        <p className="text-muted-foreground">
           No matching terms. Try a shorter or different search.
         </p>
       )}
@@ -69,15 +69,15 @@ export function GlossaryClient({ terms }: GlossaryClientProps) {
       {/* Alphabetical letter groups */}
       {letters.map((letter) => (
         <div key={letter} className="mb-10">
-          <h2 className="text-2xl font-semibold text-white mb-3">{letter}</h2>
-          <Separator className="mb-6 bg-white/10" />
+          <h2 className="text-2xl font-semibold text-foreground mb-3">{letter}</h2>
+          <Separator className="mb-6 bg-border" />
           <dl className="space-y-6">
             {groups[letter].map((term) => (
               <div key={term.term}>
-                <dt className="text-base font-normal text-white mb-1">
+                <dt className="text-base font-normal text-foreground mb-1">
                   {term.term}
                 </dt>
-                <dd className="text-base text-zinc-400 leading-relaxed">
+                <dd className="text-base text-muted-foreground leading-relaxed">
                   {term.full_definition}
                 </dd>
               </div>

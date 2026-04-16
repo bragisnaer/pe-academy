@@ -57,7 +57,7 @@ export function GlossaryTooltip({
           id={tooltipId}
           role="tooltip"
           aria-label={`Definition of ${term}`}
-          className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 z-50 w-64 rounded bg-zinc-800 px-2 py-1.5 text-sm text-white shadow-lg pointer-events-none"
+          className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 z-50 w-64 rounded bg-card px-2 py-1.5 text-sm text-foreground shadow-lg pointer-events-none"
         >
           {definition}
         </span>

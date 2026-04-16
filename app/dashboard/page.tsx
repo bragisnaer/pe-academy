@@ -5,6 +5,7 @@ import { getDashboardData } from '@/lib/actions/dashboard'
 import { formatRelativeTime } from '@/lib/utils/format-relative-time'
 import { buttonVariants } from '@/components/ui/button'
 import { createClient } from '@/lib/supabase/server'
+import { AppNav } from '@/components/app-nav'
 
 export default async function DashboardPage() {
   // Auth guard — unauthenticated users are redirected to /login
@@ -16,6 +17,11 @@ export default async function DashboardPage() {
   if (!user) {
     redirect('/login')
   }
+
+  const displayName =
+    (user.user_metadata?.full_name as string | undefined)?.split(' ')[0] ??
+    user.email?.split('@')[0] ??
+    ''
 
   const data = await getDashboardData()
 
@@ -32,65 +38,53 @@ export default async function DashboardPage() {
 
   return (
     <>
-      {/* Navigation header */}
-      <header className="sticky top-0 z-50 h-14 flex items-center justify-between px-6 bg-zinc-950 border-b border-white/10">
-        <Link href="/dashboard" className="text-sm font-semibold text-white">
-          PE Academy
-        </Link>
-        <nav className="flex items-center gap-4">
-          <Link
-            href="/lessons/pe-fundamentals/what-is-private-equity"
-            className="text-sm text-zinc-400 hover:text-white transition-colors"
-          >
-            Curriculum
-          </Link>
-          <Link
-            href="/news"
-            className="text-sm text-zinc-400 hover:text-white transition-colors"
-          >
-            News
-          </Link>
-          <Link
-            href="/interview-prep"
-            className="text-sm text-zinc-400 hover:text-white transition-colors"
-          >
-            Interview Prep
-          </Link>
-          <Link
-            href="/resources"
-            className="text-sm text-zinc-400 hover:text-white transition-colors"
-          >
-            Resources
-          </Link>
-          <form action="/auth/signout" method="post">
-            <button
-              type="submit"
-              className="text-sm text-zinc-400 hover:text-white transition-colors"
-            >
-              Sign out
-            </button>
-          </form>
-        </nav>
-      </header>
+      <AppNav />
 
       <main className="max-w-4xl mx-auto px-6 py-12 space-y-10">
         {/* Section 1 — Page Header */}
         <div className="space-y-1">
-          <h1 className="text-3xl font-semibold text-white">Dashboard</h1>
-          <p className="text-sm text-zinc-400">Welcome back</p>
+          <h1 className="text-3xl font-semibold text-foreground">Dashboard</h1>
+          <p className="text-sm text-muted-foreground">
+            Welcome back{displayName ? `, ${displayName}` : ''}
+          </p>
         </div>
+
+        {/* Stat callout */}
+        {(() => {
+          const totalCompleted = data.levels.reduce((s, l) => s + l.completedCount, 0)
+          const totalLessons = data.levels.reduce((s, l) => s + l.totalCount, 0)
+          const pct = totalLessons > 0 ? Math.round((totalCompleted / totalLessons) * 100) : 0
+          return (
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+              <div className="bg-card rounded-xl p-5 border border-border">
+                <p className="text-3xl font-bold text-foreground tabular-nums">{totalCompleted}</p>
+                <p className="text-xs text-muted-foreground mt-1">Lessons completed</p>
+              </div>
+              <div className="bg-card rounded-xl p-5 border border-border">
+                <p className="text-3xl font-bold text-foreground tabular-nums">{pct}%</p>
+                <p className="text-xs text-muted-foreground mt-1">Overall progress</p>
+              </div>
+              <div className="bg-card rounded-xl p-5 border border-border col-span-2 sm:col-span-1">
+                <p className="text-3xl font-bold text-foreground tabular-nums">
+                  {data.levels.filter((l) => l.unlocked).length}
+                </p>
+                <p className="text-xs text-muted-foreground mt-1">Levels unlocked</p>
+              </div>
+            </div>
+          )
+        })()}
 
         {/* Section 2 — Next-Step CTA Card */}
         {data.nextStep.type === 'level-complete' ? (
-          <div className="bg-zinc-800 rounded-xl p-6 space-y-4">
-            <p className="text-sm font-semibold text-zinc-400 uppercase tracking-wider">
+          <div className="bg-card rounded-xl p-6 space-y-4">
+            <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">
               Level complete
             </p>
-            <h2 className="text-xl font-semibold text-white">
+            <h2 className="text-xl font-semibold text-foreground">
               {data.nextStep.label}
             </h2>
             {data.nextStep.description && (
-              <p className="text-sm text-zinc-400">{data.nextStep.description}</p>
+              <p className="text-sm text-muted-foreground">{data.nextStep.description}</p>
             )}
             <Link
               href={data.nextStep.href}
@@ -100,15 +94,15 @@ export default async function DashboardPage() {
             </Link>
           </div>
         ) : (
-          <div className="bg-zinc-800 rounded-xl p-6 space-y-4">
-            <p className="text-sm font-semibold text-zinc-400 uppercase tracking-wider">
+          <div className="bg-card rounded-xl p-6 space-y-4">
+            <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">
               Your next step
             </p>
-            <h2 className="text-xl font-semibold text-white">
+            <h2 className="text-xl font-semibold text-foreground">
               {data.nextStep.label}
             </h2>
             {data.nextStep.description && (
-              <p className="text-sm text-zinc-400">{data.nextStep.description}</p>
+              <p className="text-sm text-muted-foreground">{data.nextStep.description}</p>
             )}
             <Link
               href={data.nextStep.href}
@@ -119,24 +113,48 @@ export default async function DashboardPage() {
           </div>
         )}
 
+        {/* Onboarding — shown to users who haven't completed any lessons yet */}
+        {data.recentLessons.length === 0 && (
+          <div className="bg-card rounded-xl p-6 border border-border">
+            <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">
+              How it works
+            </p>
+            <ol className="space-y-3">
+              {[
+                'Work through Level 1 lessons at your own pace',
+                'Pass the Level 1 quiz to prove your knowledge',
+                'Unlock Pro modules and advance to higher levels',
+              ].map((step, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="size-6 rounded-full bg-primary/10 flex items-center justify-center text-xs font-semibold text-primary shrink-0 mt-0.5">
+                    {i + 1}
+                  </span>
+                  <span className="text-sm text-foreground">{step}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+        )}
+
         {/* Section 3 — Level Progress */}
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-white">Your Progress</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <h2 className="text-xl font-semibold text-foreground">Your Progress</h2>
+          <div className="space-y-2">
             {data.levels.map((level) =>
               level.unlocked ? (
                 <div
                   key={level.levelUuid}
-                  className="bg-zinc-800 rounded-xl p-6 space-y-3"
+                  className="bg-card rounded-lg px-4 py-3 flex items-center gap-4"
                 >
-                  <div className="flex items-center justify-between">
-                    <span className="text-xl font-semibold text-white">
-                      {level.levelName}
-                    </span>
-                  </div>
-                  <div className="bg-zinc-700 h-2 rounded-full w-full">
+                  <span className="text-xs font-medium text-muted-foreground w-6 shrink-0 text-right">
+                    {level.levelNumber}
+                  </span>
+                  <span className="text-sm font-medium text-foreground w-44 shrink-0 truncate">
+                    {level.levelName}
+                  </span>
+                  <div className="flex-1 bg-muted h-1.5 rounded-full min-w-0">
                     <div
-                      className="bg-white h-2 rounded-full transition-all duration-300"
+                      className="bg-primary h-1.5 rounded-full transition-all duration-300"
                       style={{ width: `${level.percentage}%` }}
                       role="progressbar"
                       aria-valuenow={level.percentage}
@@ -144,25 +162,28 @@ export default async function DashboardPage() {
                       aria-valuemax={100}
                     />
                   </div>
-                  <p className="text-sm text-zinc-400">
-                    {level.completedCount}/{level.totalCount} lessons complete
-                  </p>
+                  <span className="text-xs text-muted-foreground shrink-0 w-24 text-right">
+                    {level.completedCount}/{level.totalCount} lessons
+                  </span>
                 </div>
               ) : (
                 <div
                   key={level.levelUuid}
-                  className="bg-zinc-800/50 rounded-xl p-6 space-y-3 opacity-60"
+                  className="bg-card/50 rounded-lg px-4 py-3 flex items-center gap-4 opacity-50"
                 >
-                  <div className="flex items-center gap-2">
-                    <Lock className="size-4 text-zinc-600" aria-hidden="true" />
-                    <span className="text-xl font-semibold text-zinc-600">
+                  <span className="text-xs font-medium text-muted-foreground w-6 shrink-0 text-right">
+                    {level.levelNumber}
+                  </span>
+                  <div className="flex items-center gap-1.5 w-44 shrink-0">
+                    <Lock className="size-3 text-muted-foreground shrink-0" aria-hidden="true" />
+                    <span className="text-sm font-medium text-muted-foreground truncate">
                       {level.levelName}
                     </span>
                   </div>
-                  <div className="bg-zinc-700/50 h-2 rounded-full w-full" />
-                  <p className="text-sm text-zinc-600">
-                    Locked — pass the Level {level.levelNumber - 1} quiz to unlock
-                  </p>
+                  <div className="flex-1 bg-muted/50 h-1.5 rounded-full min-w-0" />
+                  <span className="text-xs text-muted-foreground shrink-0 w-24 text-right">
+                    Locked
+                  </span>
                 </div>
               )
             )}
@@ -171,19 +192,19 @@ export default async function DashboardPage() {
 
         {/* Section 4 — Recent Activity */}
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-white">Recent Activity</h2>
+          <h2 className="text-xl font-semibold text-foreground">Recent Activity</h2>
           {data.recentLessons.length > 0 ? (
             <ul className="space-y-1">
               {data.recentLessons.map((lesson, i) => (
                 <li
                   key={i}
-                  className="flex items-center justify-between py-3 border-b border-white/10 last:border-0"
+                  className="flex items-center justify-between py-3 border-b border-border last:border-0"
                 >
                   <div className="space-y-0.5">
-                    <p className="text-sm text-white">{lesson.lessonTitle}</p>
-                    <p className="text-xs text-zinc-400">{lesson.moduleName}</p>
+                    <p className="text-sm text-foreground">{lesson.lessonTitle}</p>
+                    <p className="text-xs text-muted-foreground">{lesson.moduleName}</p>
                   </div>
-                  <span className="text-xs text-zinc-400 shrink-0 ml-4">
+                  <span className="text-xs text-muted-foreground shrink-0 ml-4">
                     {formatRelativeTime(lesson.completedAt)}
                   </span>
                 </li>
@@ -191,10 +212,10 @@ export default async function DashboardPage() {
             </ul>
           ) : (
             <div className="py-8 text-center space-y-2">
-              <p className="text-sm text-zinc-400">No lessons completed yet.</p>
+              <p className="text-sm text-muted-foreground">No lessons completed yet.</p>
               <Link
                 href="/lessons/pe-fundamentals/what-is-private-equity"
-                className="text-sm text-white underline underline-offset-4 hover:text-zinc-300 transition-colors"
+                className="text-sm text-foreground underline underline-offset-4 hover:text-foreground/80 transition-colors"
               >
                 Start your first lesson →
               </Link>

@@ -5,14 +5,10 @@ import { Menu, X } from "lucide-react"
 import { LessonSidebar } from "@/components/lesson-sidebar"
 
 interface MobileSidebarToggleProps {
-  currentModuleSlug?: string
-  currentLessonSlug?: string
   completedLessonUuids?: string[]
 }
 
 export function MobileSidebarToggle({
-  currentModuleSlug,
-  currentLessonSlug,
   completedLessonUuids = [],
 }: MobileSidebarToggleProps) {
   const [open, setOpen] = useState(false)
@@ -44,7 +40,7 @@ export function MobileSidebarToggle({
     <>
       <button
         type="button"
-        className="md:hidden flex items-center justify-center size-9 rounded-md text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
+        className="md:hidden flex items-center justify-center size-9 rounded-md text-muted-foreground hover:text-foreground hover:bg-card transition-colors"
         aria-label="Menu"
         onClick={() => setOpen(true)}
       >
@@ -59,13 +55,13 @@ export function MobileSidebarToggle({
           {/* Drawer */}
           <div
             ref={drawerRef}
-            className="absolute left-0 top-0 h-full w-72 bg-zinc-900 border-r border-white/10 flex flex-col"
+            className="absolute left-0 top-0 h-full w-72 bg-sidebar border-r border-border flex flex-col"
           >
-            <div className="flex items-center justify-between px-4 h-14 border-b border-white/10">
-              <span className="text-sm font-semibold text-white">Curriculum</span>
+            <div className="flex items-center justify-between px-4 h-14 border-b border-border">
+              <span className="text-sm font-semibold text-foreground">Curriculum</span>
               <button
                 type="button"
-                className="flex items-center justify-center size-8 rounded-md text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
+                className="flex items-center justify-center size-8 rounded-md text-muted-foreground hover:text-foreground hover:bg-card transition-colors"
                 aria-label="Close menu"
                 onClick={() => setOpen(false)}
               >
@@ -74,8 +70,6 @@ export function MobileSidebarToggle({
             </div>
             <div className="flex-1 overflow-hidden">
               <LessonSidebar
-                currentModuleSlug={currentModuleSlug}
-                currentLessonSlug={currentLessonSlug}
                 completedLessonUuids={completedLessonUuids}
               />
             </div>

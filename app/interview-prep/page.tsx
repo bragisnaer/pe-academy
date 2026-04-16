@@ -50,10 +50,10 @@ export default async function InterviewPrepPage() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-950">
+    <div className="min-h-screen bg-background">
       <div className="max-w-4xl mx-auto px-6 py-12">
-        <h1 className="text-3xl font-semibold text-white mb-2">Interview Prep</h1>
-        <p className="text-zinc-400 mb-8">Practice PE interview questions organised by topic area.</p>
+        <h1 className="text-3xl font-semibold text-foreground mb-2">Interview Prep</h1>
+        <p className="text-muted-foreground mb-8">Practice PE interview questions organised by topic area.</p>
         <InterviewPrepClient grouped={grouped} topicLabels={topicLabels} />
       </div>
     </div>

@@ -139,6 +139,22 @@ function GlossaryParagraph({
 }
 
 /**
+ * Derives a stable heading ID from React children — same slug logic as
+ * velite.config.ts extractHeadings() so anchor links match TOC hrefs.
+ */
+function slugifyHeadingChildren(children: React.ReactNode): string {
+  const text = React.Children.toArray(children)
+    .map((c) => (typeof c === "string" ? c : ""))
+    .join("")
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "")
+}
+
+/**
  * Creates a set of MDX component overrides with per-page glossary term
  * tracking. Call this once per lesson page render — the seenTerms Set
  * accumulates across all paragraphs to ensure only first occurrence is highlighted.
@@ -153,6 +169,12 @@ export function createMdxComponents(): Record<string, React.ComponentType> {
   return {
     p: (props: React.HTMLAttributes<HTMLParagraphElement>) => (
       <GlossaryParagraph {...props} seenTerms={seenTerms} />
+    ),
+    h2: ({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
+      <h2 id={slugifyHeadingChildren(children)} {...props}>{children}</h2>
+    ),
+    h3: ({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
+      <h3 id={slugifyHeadingChildren(children)} {...props}>{children}</h3>
     ),
   }
 }

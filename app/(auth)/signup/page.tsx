@@ -70,16 +70,16 @@ export default function SignupPage() {
 
   return (
     <div className="flex flex-col gap-4">
-      <Card className="bg-zinc-900 border-zinc-800">
+      <Card className="bg-card border-border">
         <CardHeader className="pb-0 pt-8 px-6">
-          <h1 className="text-2xl font-semibold text-white leading-tight">
+          <h1 className="text-2xl font-semibold text-foreground leading-tight">
             Create your account
           </h1>
         </CardHeader>
         <CardContent className="px-6 pb-8 pt-6">
           {serverError && (
-            <Alert className="mb-4 border-red-500/50 bg-red-500/10">
-              <AlertDescription className="text-red-500 text-sm">
+            <Alert className="mb-4 border-destructive/50 bg-destructive/10">
+              <AlertDescription className="text-destructive text-sm">
                 {serverError}
               </AlertDescription>
             </Alert>
@@ -92,12 +92,12 @@ export default function SignupPage() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-sm text-zinc-300">Email address</FormLabel>
+                    <FormLabel className="text-sm text-foreground/80">Email address</FormLabel>
                     <FormControl>
                       <Input
                         type="email"
                         placeholder="you@example.com"
-                        className="bg-zinc-800 border-zinc-700 text-white placeholder:text-zinc-500"
+                        className="bg-muted border-border text-foreground placeholder:text-muted-foreground"
                         {...field}
                       />
                     </FormControl>
@@ -111,12 +111,12 @@ export default function SignupPage() {
                 name="password"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-sm text-zinc-300">Password</FormLabel>
+                    <FormLabel className="text-sm text-foreground/80">Password</FormLabel>
                     <FormControl>
                       <Input
                         type="password"
                         placeholder="At least 8 characters"
-                        className="bg-zinc-800 border-zinc-700 text-white placeholder:text-zinc-500"
+                        className="bg-muted border-border text-foreground placeholder:text-muted-foreground"
                         {...field}
                       />
                     </FormControl>
@@ -130,12 +130,12 @@ export default function SignupPage() {
                 name="confirmPassword"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-sm text-zinc-300">Confirm password</FormLabel>
+                    <FormLabel className="text-sm text-foreground/80">Confirm password</FormLabel>
                     <FormControl>
                       <Input
                         type="password"
                         placeholder="Repeat your password"
-                        className="bg-zinc-800 border-zinc-700 text-white placeholder:text-zinc-500"
+                        className="bg-muted border-border text-foreground placeholder:text-muted-foreground"
                         {...field}
                       />
                     </FormControl>
@@ -147,7 +147,7 @@ export default function SignupPage() {
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full min-h-[44px] bg-white text-zinc-900 hover:bg-zinc-100 font-medium mt-2"
+                className="w-full min-h-[44px] bg-primary text-primary-foreground hover:bg-primary/90 font-medium mt-2"
               >
                 {isLoading ? (
                   <>
@@ -163,9 +163,9 @@ export default function SignupPage() {
         </CardContent>
       </Card>
 
-      <p className="text-center text-sm text-zinc-400">
+      <p className="text-center text-sm text-muted-foreground">
         Already have an account?{' '}
-        <Link href="/login" className="text-white underline underline-offset-4 hover:text-zinc-200">
+        <Link href="/login" className="text-foreground underline underline-offset-4 hover:text-foreground/80">
           Sign in
         </Link>
       </p>

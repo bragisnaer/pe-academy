@@ -6,17 +6,17 @@ export default function CaseStudiesLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="min-h-screen bg-zinc-950">
+    <div className="min-h-screen bg-background">
       {/* Breadcrumb nav */}
       <nav
         className="max-w-3xl mx-auto px-6 pt-8 pb-0"
         aria-label="Breadcrumb"
       >
-        <ol className="flex items-center gap-2 text-sm text-zinc-400">
+        <ol className="flex items-center gap-2 text-sm text-muted-foreground">
           <li>
             <Link
               href="/lessons/pe-fundamentals/what-is-private-equity"
-              className="hover:text-white transition-colors"
+              className="hover:text-foreground transition-colors"
             >
               Curriculum
             </Link>
@@ -24,7 +24,7 @@ export default function CaseStudiesLayout({
           <li className="select-none" aria-hidden="true">
             /
           </li>
-          <li className="text-white">Case Studies</li>
+          <li className="text-foreground">Case Studies</li>
         </ol>
       </nav>
 
