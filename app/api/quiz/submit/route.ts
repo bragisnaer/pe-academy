@@ -5,7 +5,17 @@ import type { QuizSubmitRequest, QuizSubmitResponse } from '@/lib/types/quiz'
 // Maps a level UUID to the next level UUID that should be unlocked on passing.
 // Hardcoded server-side — not derived from client input (T-03-08 mitigation).
 const LEVEL_UNLOCK_MAP: Record<string, string> = {
-  '4d355fb9-493f-4101-9a9f-bc7ec6f85ca6': '3fc65f4e-c36e-4045-a7d3-583f8c5b8b07', // Level 1 → Level 2
+  '4d355fb9-493f-4101-9a9f-bc7ec6f85ca6': '68cca497-8e72-4064-9781-f387f05c8492', // Level 1  → Level 2
+  '68cca497-8e72-4064-9781-f387f05c8492': 'd348d0b0-a934-42b7-82ed-d95ce318cd15', // Level 2  → Level 3
+  'd348d0b0-a934-42b7-82ed-d95ce318cd15': '84f9bd80-690c-4b2e-845f-bac3459e09c7', // Level 3  → Level 4
+  '84f9bd80-690c-4b2e-845f-bac3459e09c7': '156004ab-c0e6-4690-9b7e-c695ccf5b16f', // Level 4  → Level 5
+  '156004ab-c0e6-4690-9b7e-c695ccf5b16f': 'ea48ac0c-0480-43dd-92d9-096a11ed3698', // Level 5  → Level 6
+  'ea48ac0c-0480-43dd-92d9-096a11ed3698': '1be0566b-703c-41ab-ac96-49b024417378', // Level 6  → Level 7
+  '1be0566b-703c-41ab-ac96-49b024417378': 'da8c23e6-04be-44ba-83e1-9bc07adb0bee', // Level 7  → Level 8
+  'da8c23e6-04be-44ba-83e1-9bc07adb0bee': '878b07fd-c020-4bea-94c2-3a13270a5772', // Level 8  → Level 9
+  '878b07fd-c020-4bea-94c2-3a13270a5772': 'cce5b1f3-b01d-492e-914d-3d3b8e447cce', // Level 9  → Level 10
+  'cce5b1f3-b01d-492e-914d-3d3b8e447cce': '37f39be5-11bd-43e6-b5dc-7366b920c3f4', // Level 10 → Level 11
+  // Level 11 has no next level — omitted intentionally
 }
 
 export async function POST(request: Request) {

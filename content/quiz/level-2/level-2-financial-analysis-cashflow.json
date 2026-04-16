@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A target reports 30 days payable (DPO), 45 days receivable (DSO), and 60 days of inventory (DIO). What is its cash conversion cycle?",
+    "options": [
+      "135 days — the sum of all working capital days",
+      "75 days — receivables plus inventory minus payables",
+      "45 days — equal to the days sales outstanding",
+      "15 days — the difference between payable and receivable days"
+    ],
+    "correct_index": 1,
+    "explanation": "Cash Conversion Cycle = DSO + DIO – DPO = 45 + 60 – 30 = 75 days. This measures how long cash is tied up in operations between paying suppliers and collecting from customers. A negative CCC (some subscription businesses achieve this) means the business operates on other people's cash; a high positive CCC means the business needs significant working capital investment to grow."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A manufacturing target carries 75 days of inventory, significantly above the industry average of 40 days. What risk does this create for a PE buyer?",
+    "options": [
+      "None — higher inventory is always beneficial for operations",
+      "Excess working capital tied up, potential obsolescence risk, and cash-flow drag that can impair debt service capacity",
+      "Reduced revenue visibility for customers",
+      "Increased tax liability on the acquired inventory"
+    ],
+    "correct_index": 1,
+    "explanation": "Inventory at 75 days vs 40 days industry means approximately €X million of excess cash tied up in stock. For a PE buyer, this creates multiple concerns: capital inefficiency (cash trapped rather than available for debt service), obsolescence risk (slow-moving stock may need write-downs), and operational signals (weak sales or production over-planning). Working capital optimisation is often an early value creation lever."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A target company has €40M EBITDA, €15M capex, €4M working capital increase, and cash taxes of €6M. What is the approximate free cash flow?",
+    "options": [
+      "€40M — FCF equals EBITDA",
+      "€15M — FCF equals EBITDA minus capex, minus working capital change, minus cash taxes",
+      "€25M — FCF excludes working capital changes",
+      "€55M — add all items together"
+    ],
+    "correct_index": 1,
+    "explanation": "FCF = EBITDA – Capex – Change in Working Capital – Cash Taxes = €40M – €15M – €4M – €6M = €15M. This is the cash generated after investments and taxes — available for debt service, distributions, or reinvestment. The 38% FCF conversion (€15M / €40M) is relatively weak; PE-suitable businesses typically achieve 50-70%. The gap between EBITDA and FCF reveals the real economic picture: headline earnings often overstate actual cash generation."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE buyer reviewing a target's capex notices that €3M is labelled 'maintenance' and €7M 'growth' out of €10M total. Why does this distinction matter?",
+    "options": [
+      "It's just accounting terminology with no impact",
+      "Maintenance capex preserves current EBITDA; growth capex generates future returns but reduces current FCF — understanding the mix affects both valuation and the debt serviceability analysis",
+      "Only maintenance capex affects financial analysis",
+      "Both categories reduce EBITDA equally"
+    ],
+    "correct_index": 1,
+    "explanation": "Maintenance capex is required to sustain current operations (replacement of worn equipment, routine facility upgrades). Growth capex funds expansion (new facilities, additional capacity). The distinction matters because: (1) Maintenance is non-discretionary and must continue; (2) Growth is discretionary and can be adjusted; (3) For LBO serviceability, the company must cover maintenance capex after interest — growth capex can theoretically pause during distress. 'Owner earnings' or 'free cash flow after maintenance capex' is a common alternative measure."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "The cash flow statement's operating activities section typically starts with which figure when using the indirect method?",
+    "options": [
+      "Revenue",
+      "Net income, adjusted for non-cash items (D&A, SBC) and changes in working capital",
+      "Total assets",
+      "Closing cash balance"
+    ],
+    "correct_index": 1,
+    "explanation": "The indirect method begins with net income and reconciles to operating cash flow through: (1) Adding back non-cash charges (depreciation, amortisation, stock-based compensation, impairments); (2) Subtracting non-cash income (gains on asset sales, equity income from associates); (3) Adjusting for working capital changes (AR increase = cash use; AP increase = cash source). This reconciliation exposes the link between accrual-based earnings and actual cash generation. The direct method lists cash receipts and payments by type; it's less common."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE buyer reviews a retailer's cash flow statement showing operating cash flow of €25M against net income of €30M. What working capital dynamics might explain this?",
+    "options": [
+      "Inventory has decreased, freeing up cash",
+      "Receivables are growing (customer sales outpacing collections) or inventory is building, consuming cash; a €5M working capital use reduces cash flow below net income despite the non-cash add-backs",
+      "Tax payments are unusual",
+      "The company is issuing new debt"
+    ],
+    "correct_index": 1,
+    "explanation": "Operating cash flow below net income typically signals working capital growth consuming cash. If the company added back €10M of D&A but operating cash flow is €25M on €30M net income, working capital consumed about €15M. Common causes: rising AR (customer collections lagging), inventory build (production exceeding sales), and other timing differences. In growing businesses, working capital consumption is normal. Concerning when AR growth significantly outpaces revenue growth — suggesting revenue recognition or collection deterioration."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A distressed retailer accelerates collections and stretches supplier payments to boost cash. How does this affect the working capital analysis in diligence?",
+    "options": [
+      "Nothing — working capital is always reported fairly",
+      "Pre-sale working capital manipulation (accelerating AR collection, stretching AP, reducing inventory) inflates cash and distorts the 'normal' working capital position; PE diligence must normalise to historical patterns or industry benchmarks",
+      "Inflated working capital benefits the buyer",
+      "Working capital cannot be manipulated"
+    ],
+    "correct_index": 1,
+    "explanation": "Pre-sale working capital manipulation is a classic seller tactic: accelerating AR collection (offering discounts or aggressive dunning), stretching AP (delaying supplier payments), or reducing inventory (running it down without restocking). This temporarily boosts cash position but leaves the business with an abnormal working capital base. PE buyers protect against this through SPA working capital adjustments and normalisation to a multi-period average — ensuring the buyer pays for a business with normal working capital, not an artificially depleted one."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A target's DSO (days sales outstanding) is 50 days on €300M of annual revenue. What is the implied accounts receivable balance?",
+    "options": [
+      "€41M — (50/365) × €300M",
+      "€50M — DSO multiplied by 1M",
+      "€15M — revenue divided by DSO",
+      "€150M — half of revenue"
+    ],
+    "correct_index": 0,
+    "explanation": "Accounts Receivable = (DSO / 365) × Revenue = (50 / 365) × €300M = €41.1M. This calculation shows how many euros of revenue are tied up in collections. A DSO of 50 days means customers take 50 days to pay on average. For PE analysis: (1) Lower DSO = better cash efficiency; (2) Rising DSO suggests payment issues or relaxed credit policy; (3) DSO stability matters for working capital predictability. Benchmarking against industry peers reveals whether the company has tight collections or is operationally weak."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A company's inventory turnover is 6x per year. What does this metric measure, and what does a value of 6 suggest?",
+    "options": [
+      "Inventory is counted 6 times per year",
+      "Inventory turns (COGS ÷ average inventory) = 6 means the company cycles through its inventory 6 times per year (approximately 60 days of inventory) — moderate efficiency; higher turns indicate faster movement",
+      "The company has 6 different product lines",
+      "Inventory has appreciated 6x"
+    ],
+    "correct_index": 1,
+    "explanation": "Inventory turnover = COGS / Average Inventory. A turnover of 6 means inventory cycles 6 times yearly (60 days average, since 365/6 ≈ 60). Higher turns suggest efficient inventory management (lower working capital tied up); lower turns may indicate slow-moving stock or overstocking. Benchmarking: retailers 5-15 turns; industrial 4-8; high-end manufacturing 2-4. Declining turnover is a warning sign — either demand is weakening or the company is accumulating inventory inefficiently. Strong PE targets maintain or improve turnover."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE target has DSO of 50 days, DPO of 35 days, DIO of 85 days. Calculate the cash conversion cycle and interpret.",
+    "options": [
+      "170 days — moderate for a manufacturer",
+      "100 days — DSO + DIO – DPO = 50 + 85 – 35 = 100 days; significant working capital investment required",
+      "35 days — equal to DPO",
+      "0 days — balanced"
+    ],
+    "correct_index": 1,
+    "explanation": "CCC = DSO + DIO – DPO = 50 + 85 – 35 = 100 days. This means cash is tied up for 100 days from paying suppliers to collecting from customers. For each €1 of COGS, 100 days of capital is invested. In revenue terms, CCC of 100 days on €300M annual COGS equals approximately €82M of working capital tied up. Reducing CCC by 10 days releases €8M of cash — a real value creation opportunity. PE firms often target CCC reduction through: faster collections (DSO), supplier negotiation (DPO), inventory optimisation (DIO)."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A company reports €100M revenue and €25M Net Working Capital. What is the working capital intensity?",
+    "options": [
+      "25% — working capital as a percentage of revenue",
+      "4% — revenue per working capital euro",
+      "75% — the inverse",
+      "Cannot be calculated"
+    ],
+    "correct_index": 0,
+    "explanation": "Working Capital Intensity = NWC / Revenue = €25M / €100M = 25%. This means the company invests €0.25 of working capital for every €1 of revenue. Higher intensity (e.g., 30%+) means more cash is tied up to support operations; lower intensity (e.g., 10%) is more capital-efficient. Services and subscription businesses often operate at low working capital intensity; manufacturing and distribution at higher. Growth drives working capital growth — a company doubling revenue typically needs approximately double the working capital. This is a key cash consumption during growth."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A growing company with 20% revenue growth and 25% working capital intensity will consume approximately how much working capital for each €1M of revenue growth?",
+    "options": [
+      "€0.05M",
+      "€0.25M — working capital grows with revenue at the intensity ratio",
+      "€1M",
+      "€4M"
+    ],
+    "correct_index": 1,
+    "explanation": "If working capital intensity is 25%, each €1M of revenue growth requires €0.25M of additional working capital. For a company growing from €100M to €120M (€20M growth): €20M × 25% = €5M working capital consumption. This drags free cash flow and is a real cost of growth often missed in headline EBITDA analysis. In LBO modelling, working capital consumption is subtracted from EBITDA to arrive at FCF for debt paydown. High-growth businesses with high working capital intensity have particularly challenging cash dynamics."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A seasonal business has working capital that swings from €20M in Q1 to €45M in Q3. How should a PE buyer analyse this pattern?",
+    "options": [
+      "Use the peak (€45M) for acquisition pricing",
+      "Understand the seasonality (typically revenue concentration patterns), use a normalised average for purchase price, and ensure closing adjustments protect against seasonal manipulation",
+      "Use only the lowest point",
+      "Ignore seasonality entirely"
+    ],
+    "correct_index": 1,
+    "explanation": "Seasonal working capital is common — retailers, agricultural businesses, tourism. Analysis requires: (1) Understanding the seasonality pattern (usually revenue concentration drives the peak); (2) Computing a normalised average across the cycle; (3) Ensuring the SPA's 'normalised working capital' closes at a level consistent with the position — not artificially depressed or elevated. A business that has historically averaged €30M working capital should close near this level; the seasonality doesn't change the fair transaction value."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A target's 3-year average capex is €15M, but the latest year shows €8M. What might this suggest to a PE buyer?",
+    "options": [
+      "The company is becoming more efficient",
+      "Potential deferred maintenance: the company may have reduced capex in the pre-sale year to boost reported cash flow and EBITDA, creating a hidden obligation for the buyer who may need to catch up investment",
+      "This pattern is always positive",
+      "Nothing — capex fluctuates normally"
+    ],
+    "correct_index": 1,
+    "explanation": "Pre-sale capex reduction is a common seller tactic. Reducing maintenance capex temporarily boosts reported cash flow and may improve adjusted EBITDA (if some capex appears as operating expense). However, the deferred investment creates future obligations: either catch-up capex post-acquisition or declining business performance. PE diligence analyses capex patterns over 3-5 years and separates maintenance from growth. An €8M recent year vs €15M historical average likely means €7M of maintenance has been deferred."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A business is described as 'capital-intensive' with capex at 10% of revenue vs industry average of 4%. What implications does this have for LBO suitability?",
+    "options": [
+      "Capital intensity is always preferred",
+      "High capex consumes cash that could otherwise service debt; 10% vs 4% means 6 percentage points of revenue being redirected to capex, reducing FCF available for debt paydown and constraining achievable leverage",
+      "Capital intensity doesn't affect LBO suitability",
+      "It's always a positive attribute"
+    ],
+    "correct_index": 1,
+    "explanation": "Capital intensity directly reduces FCF. A €200M revenue business with 10% capex consumes €20M per year for capex; at 4% it would consume €8M — a €12M difference per year. Over 5 years, that's €60M less available for debt paydown. This significantly affects: (1) Leverage capacity (lower for capital-intensive); (2) Return generation (slower deleveraging); (3) LBO suitability. Capital-intensive businesses can still be PE targets but require adjusted leverage, longer holds, or operational improvements to justify the investment."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A company's operating cash flow is €80M, while its reported net income is €30M and depreciation is €40M. What implications does this have for cash flow quality?",
+    "options": [
+      "Cash flow is artificially inflated",
+      "Strong cash flow quality: Net income of €30M + D&A of €40M = €70M expected operating cash flow; actual of €80M means working capital released €10M, reinforcing strong cash generation",
+      "The numbers are inconsistent",
+      "Cash flow is weaker than earnings"
+    ],
+    "correct_index": 1,
+    "explanation": "The cash flow bridge: Net Income + D&A + Working Capital Changes = Operating Cash Flow. €30M + €40M + €10M = €80M. This suggests strong cash flow quality — earnings convert to cash plus favorable working capital. This pattern indicates: (1) Real profitability (not just accounting); (2) Strong collection and inventory management; (3) Predictable cash generation. Reverse patterns (operating cash flow materially below net income + D&A) are concerning and warrant investigation of working capital dynamics."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE firm is evaluating 'Unlevered Free Cash Flow' versus 'Levered Free Cash Flow.' What's the distinction?",
+    "options": [
+      "They are identical measures",
+      "Unlevered FCF is cash flow before debt service (used for EV-based valuation); Levered FCF is after debt service (used for equity returns and dividend capacity)",
+      "Unlevered FCF is always larger",
+      "The two are unrelated"
+    ],
+    "correct_index": 1,
+    "explanation": "Unlevered FCF = EBITDA – Capex – Working Capital Change – Cash Taxes (before interest). This is cash available to all capital providers and is used for enterprise value valuation. Levered FCF = Unlevered FCF – Cash Interest – Mandatory Amortisation. This is cash available to equity holders for distributions or further debt paydown. The distinction matters for: (1) Valuation (EV uses unlevered); (2) Debt capacity analysis (levered shows serviceability); (3) Dividend recap sizing (levered shows extraction capacity)."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE firm analyses 'FCF yield' for target selection. If a target has €50M FCF and €400M enterprise value, what is the FCF yield and how does this inform decisions?",
+    "options": [
+      "12.5% — a measure of cash generation efficiency relative to enterprise value",
+      "25% — double the calculated ratio",
+      "€50M — the absolute FCF",
+      "Cannot be calculated"
+    ],
+    "correct_index": 0,
+    "explanation": "FCF Yield = FCF / Enterprise Value = €50M / €400M = 12.5%. This is the inverse of EV/FCF (which would be 8x here). FCF yield provides: (1) Cash generation per euro of investment; (2) Debt capacity indicator (lenders typically support debt up to 70-80% of unlevered FCF through interest cover tests); (3) Valuation sanity check against EBITDA-based multiples; (4) Return visibility. A 12.5% FCF yield is attractive vs cost of debt — the target generates enough cash to service debt AND grow."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A target's 'EBITDA-to-FCF conversion' is 75%. What does this measure, and how does it compare to typical PE targets?",
+    "options": [
+      "FCF is 75% of EBITDA, after deducting capex, taxes, and working capital — a strong conversion rate",
+      "FCF exceeds EBITDA by 75%",
+      "Only 25% of EBITDA converts to cash",
+      "The metric is meaningless"
+    ],
+    "correct_index": 0,
+    "explanation": "FCF Conversion = FCF / EBITDA = 75%. This means €0.75 of every EBITDA euro converts to free cash flow. Strong performers: 70-85% (indicates efficient working capital, modest capex, sustainable operations). Weak performers: below 60% (capital-intensive, high working capital, or one-time charges). For PE analysis: (1) High conversion validates LBO suitability; (2) Low conversion warrants investigation; (3) Improving conversion over time is a value creation signal. Targets <60% conversion may require adjusted leverage or different value creation thesis."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "An industrial target shows €40M operating cash flow, €45M capex, and no working capital change. Free cash flow is:",
+    "options": [
+      "€0 — operating cash flow equals capex",
+      "Negative €5M — capex exceeds operating cash flow",
+      "€85M — the sum of both",
+      "€45M — equal to capex"
+    ],
+    "correct_index": 1,
+    "explanation": "FCF = Operating Cash Flow – Capex = €40M – €45M = -€5M. Negative free cash flow means the business is consuming cash — spending more on capex than it generates operationally. This pattern is: (1) Dangerous for LBO candidates (no cash for debt service); (2) Common in growth/expansion phases (investing in future capacity); (3) A warning signal when combined with weak growth. Negative FCF requires: either the growth justifies the investment (VC/growth equity), or the business needs operational transformation before PE acquisition is viable."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE firm is testing 'FCF sensitivity' to input changes. What are the key drivers of FCF that typically receive scrutiny?",
+    "options": [
+      "Only EBITDA matters",
+      "Key drivers: (1) EBITDA (largest driver); (2) Working capital changes (% of revenue change); (3) Capex intensity (% of revenue); (4) Cash taxes; (5) Interest costs (for levered FCF); sensitivity analysis tests how FCF changes under adverse scenarios",
+      "Only revenue matters",
+      "Only capex matters"
+    ],
+    "correct_index": 1,
+    "explanation": "FCF sensitivity analysis varies key inputs to understand risk: (1) EBITDA decline (10%, 20%) — biggest single impact on FCF; (2) Working capital intensity changes — if competition forces relaxed terms; (3) Capex requirements — competitive pressure for reinvestment; (4) Tax rate changes — jurisdiction or rate changes; (5) Interest rates — floating rate debt exposure. Running sensitivities identifies where the business is most exposed and validates whether the LBO thesis holds under adverse conditions. Stress testing is a core part of debt sizing."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE firm's LBO model uses 'cash taxes' rather than 'book taxes' for FCF calculation. Why?",
+    "options": [
+      "Book taxes are not relevant",
+      "Cash taxes represent actual cash outflow (what the company pays); book taxes include deferred taxes that don't create current cash movement; for FCF and debt service analysis, actual cash is what matters",
+      "They are identical",
+      "Cash taxes are easier to calculate"
+    ],
+    "correct_index": 1,
+    "explanation": "Book taxes include both current cash taxes paid and deferred taxes (timing differences between book and tax accounting). For cash flow analysis: only cash taxes reduce available cash. Deferred tax adjustments are non-cash and don't affect debt service capacity. The difference matters: a company reporting €10M book taxes but paying €7M cash taxes has €3M more FCF than book income suggests. PE modelling uses cash taxes for FCF, debt capacity, and valuation. Accelerated depreciation benefits create deferred tax liabilities but preserve current cash."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A company's working capital includes trade receivables (€20M), inventory (€30M), and trade payables (€15M). What is the Net Working Capital?",
+    "options": [
+      "€65M — sum of all",
+      "€35M — current assets minus current liabilities related to operations = €20M + €30M – €15M",
+      "€5M — receivables minus payables",
+      "€50M — excluding payables"
+    ],
+    "correct_index": 1,
+    "explanation": "Net Working Capital = Operating Current Assets – Operating Current Liabilities = (AR + Inventory) – AP = (€20M + €30M) – €15M = €35M. This is operational working capital, excluding cash and short-term debt. NWC represents capital tied up in operations to generate revenue. Changes in NWC appear in operating cash flow: an increase uses cash; a decrease generates cash. For PE analysis: (1) Normalised NWC sets SPA adjustment baselines; (2) NWC changes drive cash flow; (3) Improving NWC efficiency is a value creation lever."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A target has 40 days sales outstanding (DSO). A PE value creation plan targets reducing DSO to 30 days. What is the cash impact assuming annual revenue of €240M?",
+    "options": [
+      "€0 — DSO reduction doesn't affect cash",
+      "€6.6M — a 10-day DSO reduction releases working capital of (10/365) × €240M",
+      "€30M — equal to the new DSO",
+      "€6.6M annually in perpetuity"
+    ],
+    "correct_index": 1,
+    "explanation": "Each day of DSO reduction releases: (1 day / 365) × Revenue = (1/365) × €240M = €658K. A 10-day reduction releases approximately €6.6M of cash (one-time). This cash is permanent once realised. Additional benefit: the reduction continues to benefit future growth. PE firms typically implement: (1) Credit policy tightening; (2) Faster invoicing and reminders; (3) Discounts for early payment; (4) Reviewing customer credit terms. Each day saved generates real value creation through better working capital management."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A software company reports €200M revenue with €10M of working capital. A manufacturer reports €200M revenue with €60M of working capital. Why the difference?",
+    "options": [
+      "The manufacturer is less efficient",
+      "Inherent business model difference: software has lower working capital intensity (digital delivery, often prepaid subscriptions); manufacturing requires inventory, receivables, and supply chain financing — fundamentally different capital requirements",
+      "The data is incorrect",
+      "Manufacturing is always cash-negative"
+    ],
+    "correct_index": 1,
+    "explanation": "Working capital intensity varies dramatically by business model: (1) Software/SaaS: 0-10% of revenue (digital delivery, upfront subscriptions); (2) Consulting: 15-25% (high DSO from corporate clients); (3) Distribution: 15-25% (inventory + receivables); (4) Manufacturing: 20-40% (inventory, AR, production cycles); (5) Heavy industrial: 30-50%. This structural difference affects: (1) Cash conversion; (2) Leverage capacity; (3) Growth cash consumption; (4) Valuation multiples. Software businesses support higher multiples partly because of their low working capital intensity."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A target claims 'working capital neutral' — stating that NWC will remain stable despite revenue growth. What questions should a PE buyer ask?",
+    "options": [
+      "None — take the claim at face value",
+      "Investigate: (1) What specific mechanisms keep NWC constant during growth? (2) Are customer/supplier terms genuinely stable? (3) Is the claim based on recent single-point data or multi-period trends? (4) Are there one-time effects distorting recent NWC?",
+      "Accept the claim if management has high integrity",
+      "Assume it's false automatically"
+    ],
+    "correct_index": 1,
+    "explanation": "Claims of 'working capital neutral' growth deserve scrutiny. Most businesses require working capital to scale with revenue. Exceptions exist (subscription software, some service models) but are rare. Investigation: (1) Is NWC truly flat across multiple periods of growth? (2) What drives the stability — payment terms? inventory turnover improvements? supplier financing? (3) Is the claim based on a single recent data point? (4) Are there one-time events (customer mix shift, unusual collections) making recent data misleading? Genuine WC-neutral growth is a significant competitive advantage."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE target generates €60M EBITDA and €45M FCF. The industry average FCF conversion is 65%. What conclusion can be drawn?",
+    "options": [
+      "The target is underperforming",
+      "FCF Conversion = €45M/€60M = 75% — above industry average, suggesting efficient working capital, appropriate capex levels, and genuine cash-generating capacity; a positive signal for LBO suitability",
+      "The target has accounting issues",
+      "The comparison is meaningless"
+    ],
+    "correct_index": 1,
+    "explanation": "FCF Conversion at 75% vs industry 65% is a favorable signal. It suggests: (1) Efficient working capital management; (2) Appropriate (not excessive) capex; (3) Sustainable cash generation; (4) Strong LBO candidate characteristics. PE buyers pay premium multiples for businesses with superior cash conversion because: more debt can be supported, faster deleveraging, higher return potential. Low conversion (below 60%) requires specific operational improvements to justify investment; high conversion validates the LBO thesis."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE firm's LBO plan includes a 'Working Capital Optimisation' initiative targeting €10M of cash release. What are the typical levers?",
+    "options": [
+      "Only cost reductions",
+      "(1) DSO reduction through tightened collections, faster invoicing, and credit policy changes; (2) Inventory optimisation through better planning, SKU rationalisation; (3) DPO extension through supplier negotiations; (4) Process improvements in order-to-cash cycle",
+      "Only revenue growth",
+      "Only capital structure changes"
+    ],
+    "correct_index": 1,
+    "explanation": "Working capital optimisation levers include: (1) DSO reduction: tighten collections, faster invoicing, reduce credit periods, automate dunning; (2) Inventory reduction: demand forecasting, SKU rationalisation, supplier consignment; (3) DPO extension: negotiate longer payment terms, use supply chain financing; (4) Process optimisation: reduce order-to-cash cycle time, eliminate errors and disputes. Each lever can release millions of euros of trapped cash. The combination typically delivers 5-15% working capital reduction within 12-18 months."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A target's cash flow statement shows 'Capex' as a large negative in Investing Activities. What distinguishes 'Maintenance Capex' from 'Growth Capex' in practice?",
+    "options": [
+      "They are indistinguishable",
+      "Maintenance capex sustains current operations (equipment replacement, facility upkeep); Growth capex funds expansion (new facilities, additional capacity, technology investments); the accounting distinction is often based on management judgement",
+      "Maintenance is always 50% of total capex",
+      "Growth capex is always discretionary"
+    ],
+    "correct_index": 1,
+    "explanation": "The distinction is operational rather than strictly accounting-defined: (1) Maintenance capex: Non-discretionary, required to sustain current business (replacing worn equipment, facility upkeep, routine IT refresh). Typically 50-70% of total capex for mature businesses. (2) Growth capex: Discretionary investments for future growth (new facilities, additional capacity, R&D-related equipment, technology platforms). Typically 20-40% for growing businesses. For LBO analysis: maintenance capex is a must; growth capex can be paused in distress. 'Owner earnings' = FCF after maintenance capex only."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE firm is evaluating 'D&A as a proxy for maintenance capex.' What are the limitations of this approach?",
+    "options": [
+      "D&A is always perfect proxy",
+      "D&A reflects historical investments spread over useful lives; maintenance capex reflects current replacement costs (inflation-adjusted) and actual investment requirements; D&A can significantly understate or overstate true maintenance needs",
+      "D&A is never related to capex",
+      "D&A should always be doubled"
+    ],
+    "correct_index": 1,
+    "explanation": "D&A-as-maintenance-capex proxy limitations: (1) Inflation: D&A reflects historical asset costs; current replacement costs are higher; (2) Asset life assumptions: accounting lives may not match economic useful lives; (3) Technology obsolescence: older assets (fully depreciated) may need replacement; (4) Growth investments: growth-related D&A inflates total D&A above maintenance needs; (5) Different mix: current asset mix may differ from historical base. For PE analysis: verify maintenance capex through management discussion, industry benchmarking, and bottom-up asset analysis rather than relying on D&A proxy."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A target has strong EBITDA growth of 15% but FCF growth of only 2%. What could explain this divergence?",
+    "options": [
+      "Working capital is rising faster than revenue, absorbing the EBITDA growth in cash consumption",
+      "The business is underperforming",
+      "Accounting methods are changing",
+      "All EBITDA growth converts to FCF"
+    ],
+    "correct_index": 0,
+    "explanation": "EBITDA growth of 15% vs FCF growth of 2% suggests cash consumption is absorbing the earnings growth. Possible causes: (1) Working capital intensification — receivables or inventory growing disproportionately; (2) Capex increase — growth investments consuming cash; (3) Cash tax increase — if the company's tax position is changing. For PE analysis: this pattern raises questions about sustainability and value creation. Strong EBITDA without FCF conversion creates LBO serviceability risks. The PE thesis would need to address: is the cash consumption investment for future FCF, or is it structural cash inefficiency?"
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE firm analyses 'Cash Conversion Ratio' — (EBITDA – Capex) / EBITDA. If EBITDA is €50M and capex is €15M, what is the ratio, and how does this compare to industry norms?",
+    "options": [
+      "70% — a typical range for moderate-capex businesses",
+      "30% — below average",
+      "100% — fully cash-generative",
+      "0% — unsustainable"
+    ],
+    "correct_index": 0,
+    "explanation": "Cash Conversion Ratio = (€50M – €15M) / €50M = 70%. Industry norms: (1) Software/SaaS: 85-95% (minimal capex); (2) Services: 80-90% (lower capex intensity); (3) Healthcare: 70-85% (moderate capex); (4) Manufacturing: 55-75% (higher capex); (5) Heavy industrial: 40-60% (very capital-intensive). A 70% cash conversion ratio positions this business at services/moderate manufacturing. For PE analysis: higher ratios support greater leverage and faster returns; lower ratios require longer holds and more operational transformation."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A target presents financials showing increasing capex as a percentage of revenue (from 3% to 6% over three years). What might this indicate?",
+    "options": [
+      "The company is becoming more efficient",
+      "Possible scenarios: (1) Growth investments (new facility, capacity expansion, technology upgrade) — often positive if generating returns; (2) Maintenance catch-up from prior underinvestment — neutral to negative; (3) Technology/regulatory compliance — required but potentially sustainable; requires deeper analysis to determine which",
+      "Capex is always a negative signal",
+      "The company has more cash available"
+    ],
+    "correct_index": 1,
+    "explanation": "Rising capex intensity (3% to 6% of revenue) requires interpretation: (1) Growth investments: new capacity, technology platform, geographic expansion — often positive if ROIC is healthy and returns materialize; (2) Maintenance catch-up: if prior years showed declining capex below industry norms, the increase may be fixing deferred issues; (3) Compliance-driven: environmental regulations, technology mandates — necessary but may not generate returns; (4) Industry shift: entire industry requiring higher investment. PE analysis investigates the drivers and evaluates whether increased investment will generate corresponding EBITDA growth."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE firm's LBO model projects cash flow over 5 years. What are the key uncertainties in these projections?",
+    "options": [
+      "Only interest rates",
+      "Key uncertainties: (1) EBITDA trajectory (growth, margin); (2) Working capital intensification; (3) Capex requirements (maintenance, growth); (4) Tax rate changes; (5) Interest rate volatility (floating rate debt); (6) Mandatory amortisation; (7) One-time events",
+      "Only revenue projections",
+      "No uncertainties exist"
+    ],
+    "correct_index": 1,
+    "explanation": "LBO cash flow modelling uncertainties: (1) EBITDA: growth projections, margin sustainability, potential downturns; (2) Working capital: intensification with growth, potential deterioration; (3) Capex: maintenance requirements, growth investment needs, compliance; (4) Cash taxes: jurisdictional changes, utilization of losses; (5) Interest: floating rate exposure, refinancing needs; (6) One-time events: acquisitions, divestitures, settlements; (7) Macro factors: recessions, regulatory changes. Sophisticated modelling includes sensitivities for each driver and downside scenarios."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE firm's exit analysis shows EV at exit of €600M based on 10x EBITDA. Net debt at exit is €150M, down from €250M at entry. How much of equity value growth came from debt paydown?",
+    "options": [
+      "All of it",
+      "€100M — the amount of debt paid down during the hold, translating directly to additional equity value at exit (ceteris paribus)",
+      "€200M — double the debt paydown",
+      "None"
+    ],
+    "correct_index": 1,
+    "explanation": "Debt paydown from €250M to €150M = €100M reduction. At exit, this €100M flows directly to equity value (EV – less debt = more equity). Entry equity: €EV_entry – €250M. Exit equity: €600M – €150M = €450M. If entry EV was €400M (10x €40M EBITDA), entry equity = €400M – €250M = €150M. Exit equity = €450M. Total equity growth = €300M; of this, €100M came from debt paydown, €200M from EBITDA growth + multiple effects. The debt paydown portion is roughly 33% of total equity value creation — consistent with typical PE deal attribution."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE target has historically reported working capital at year-end of €30M. In the year of sale, working capital is €18M. What does this pattern suggest?",
+    "options": [
+      "The company has become more efficient",
+      "Likely pre-sale working capital optimisation — seller has accelerated collections, stretched payables, or reduced inventory temporarily to boost cash position before the SPA; buyer must apply normalised working capital adjustment to prevent paying for an artificially depleted position",
+      "The data is incorrect",
+      "Lower working capital is always better"
+    ],
+    "correct_index": 1,
+    "explanation": "A €12M drop in working capital right before sale is highly suspicious. Possible causes: (1) Aggressive AR collection (discounts, pressure); (2) Extended supplier payment terms (stretching); (3) Inventory reduction (not restocking); (4) Customer prepayment acceleration. Post-sale, the business reverts to normal working capital, consuming €12M of cash. PE buyers must: (1) Require normalisation at closing based on historical average; (2) Structure SPA working capital adjustment; (3) Reduce purchase price for the abnormal depletion. Failing to do so effectively transfers €12M of value from buyer to seller."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE firm's value creation plan includes a 'Capex Rationalisation' initiative. What would this typically involve?",
+    "options": [
+      "Eliminating all capex",
+      "Reviewing capex decisions with ROIC analysis, eliminating lower-return projects, consolidating vendor relationships, shifting to outsourced solutions where appropriate, improving procurement practices — reducing capex without sacrificing operational capability",
+      "Doubling capex spend",
+      "Stopping all investments"
+    ],
+    "correct_index": 1,
+    "explanation": "Capex rationalisation levers: (1) ROIC analysis — evaluate each project for returns; eliminate low-return investments; (2) Vendor consolidation — procurement savings; (3) Make vs buy decisions — outsource where economical; (4) Technology/cloud alternatives — shift from capex to operational spending where appropriate; (5) Better project management — avoid cost overruns; (6) Deferred maintenance — only acceptable short-term. Well-executed capex rationalisation reduces total capex 10-25% without impairing operational capability, directly improving FCF and EBITDA-to-FCF conversion."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A target reports that its customer base includes three large customers accounting for 45% of revenue. What cash flow concerns does this concentration create?",
+    "options": [
+      "No cash flow concerns exist",
+      "Concentration creates multiple risks: (1) Collection risk if a major customer has payment issues; (2) Negotiation leverage against the company on payment terms; (3) Cash flow volatility if customers' needs fluctuate; (4) Potential DSO spikes during customer issues",
+      "Customer concentration reduces working capital",
+      "It improves cash collection"
+    ],
+    "correct_index": 1,
+    "explanation": "Customer concentration at 45% creates real cash flow risks: (1) Collection risk — if a major customer faces distress, 15%+ of revenue becomes uncertain; (2) Negotiation leverage — large customers can force extended payment terms (raising DSO); (3) Volatility — customer demand fluctuations directly impact cash flow; (4) Single-point-of-failure — loss of a major customer damages the business operationally and financially. PE diligence: (1) Assess each major customer's financial health; (2) Model downside scenarios; (3) Evaluate mitigation options (diversification, payment protection); (4) Build in risk premiums for concentration."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A subscription software business collects €20M in annual prepaid subscriptions on 1 January. What is the cash flow and working capital effect?",
+    "options": [
+      "€20M of revenue immediately, no cash effect",
+      "€20M cash inflow on 1 January increases cash balance; €20M is recorded as deferred revenue (liability) and recognised as revenue ratably over the subscription year — creating negative working capital that acts as a source of financing",
+      "€20M is recognised as revenue immediately",
+      "No effect until services are delivered"
+    ],
+    "correct_index": 1,
+    "explanation": "Subscription prepayments create favorable cash dynamics: (1) Cash inflow upfront: €20M collected on day 1; (2) Revenue recognition: ratable over 12 months (€1.67M per month); (3) Deferred revenue liability: decreases monthly as revenue is recognised; (4) Negative working capital contribution: deferred revenue is a non-debt liability funded by customer prepayments. This structure makes subscription businesses cash-flow-strong relative to reported earnings. Companies with growing subscription bases often have cash flow materially exceeding reported EBITDA — a key reason PE pays premium multiples for SaaS businesses."
+  },
+  {
+    "topic_tag": "financial-analysis-cashflow",
+    "question": "A PE firm is comparing two targets. Target A has stable FCF of €30M annually for 5 years. Target B has FCF of €10M, €45M, €30M, €20M, €40M over 5 years. Both average €29M. Why might the PE firm prefer Target A?",
+    "options": [
+      "Target B is always better",
+      "Predictable FCF (Target A) supports higher leverage, easier debt service, reduced covenant risk, and better LP communication; Target B's volatility creates refinancing risk, covenant stress, and uncertainty even with equivalent average cash flow",
+      "The averages are identical, so preference doesn't matter",
+      "Target B is more exciting"
+    ],
+    "correct_index": 1,
+    "explanation": "Predictable FCF is more valuable than equivalent volatile FCF for LBO purposes: (1) Leverage capacity: lenders accept more debt against stable cash flows; (2) Interest coverage: predictable cash ensures consistent debt service; (3) Covenant headroom: volatility creates risk of breach in weak years; (4) LP reporting: consistent performance is easier to communicate; (5) Refinancing: stable cash flow positions the company for favorable refinancing. Target B requires: lower leverage (to manage volatility), strong reserves for weak years, and careful covenant structuring — all reducing equity returns despite identical average FCF."
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "return-metrics",
+    "question": "Two investments both generate a 3.0x MOIC. Investment A returns capital in 4 years; Investment B returns capital in 9 years. Which is more attractive and why?",
+    "options": [
+      "Investment B — longer holds demonstrate stronger operational transformation",
+      "Investment A — faster return generates a higher IRR and frees capital for redeployment",
+      "They are equally attractive — MOIC is the definitive measure of PE performance",
+      "Investment B — longer hold periods command premium exit multiples"
+    ],
+    "correct_index": 1,
+    "explanation": "Both investments generate the same absolute multiple (3.0x), but Investment A delivers roughly 32% annualised returns versus approximately 13% for Investment B. Time matters because capital returned earlier can be redeployed. This is why MOIC alone is insufficient — it must be paired with IRR to evaluate PE performance."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund reports a gross IRR of 25% and a net IRR of 17%. What primarily explains the 8 percentage point gap?",
+    "options": [
+      "Taxes paid at the fund level before distribution to LPs",
+      "Management fees and carried interest paid to the GP",
+      "Currency translation losses on international investments",
+      "Valuation write-downs of underperforming portfolio companies"
+    ],
+    "correct_index": 1,
+    "explanation": "The gap between gross and net IRR reflects the GP's economic take: 2% annual management fees plus 20% carried interest on profits above the hurdle. The typical spread is 3-7 percentage points for well-performing funds, though it varies with fund size and fee structure. PE funds are pass-through entities for tax purposes in most jurisdictions."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "An LP is comparing two PE funds approaching year 6. Fund Alpha reports TVPI of 2.2x with DPI of 0.4x. Fund Beta reports TVPI of 1.9x with DPI of 1.3x. Which fund's performance is more certain and why?",
+    "options": [
+      "Fund Alpha — higher TVPI means superior total value creation",
+      "Fund Beta — most of its reported value has been realised as actual cash distributions",
+      "Both are equally certain since TVPI captures total fund performance",
+      "Fund Alpha — the larger unrealised portion indicates greater growth potential"
+    ],
+    "correct_index": 1,
+    "explanation": "DPI measures actual cash returned to LPs; RVPI (the difference between TVPI and DPI) is unrealised paper value that can deteriorate before exit. Fund Beta has distributed most of its value (1.3x of its 1.9x TVPI is realised), making its track record more certain. Fund Alpha's 2.2x TVPI depends heavily on unrealised valuations that must still be achieved through exits."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE firm reports an impressive 28% IRR on its latest fund. A sophisticated LP asks for the fund's Public Market Equivalent (PME) benchmark. What question is the LP trying to answer?",
+    "options": [
+      "Whether the fund's returns would have qualified for a stock market listing",
+      "How the fund's returns compare to investing the same cash flows in a public index",
+      "Whether the fund's valuations have been audited against public company standards",
+      "How the fund's IRR compares to the GP's historical track record"
+    ],
+    "correct_index": 1,
+    "explanation": "PME benchmarks PE returns against what an equivalent investment in a public index would have earned on the same cash flow dates. A PME above 1.0x means the PE fund outperformed the benchmark; below 1.0x means a passive index would have done better. A 28% IRR during a strong bull market may reflect beta rather than genuine alpha."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "What does the Internal Rate of Return (IRR) actually measure in a PE context?",
+    "options": [
+      "The total profit earned as a percentage of invested capital",
+      "The annualised rate of return that equates the present value of all cash inflows to the present value of all cash outflows",
+      "The simple average of annual returns over the holding period",
+      "The ratio of exit proceeds to initial investment"
+    ],
+    "correct_index": 1,
+    "explanation": "IRR is the discount rate that makes the net present value of all cash flows (both outflows and inflows) equal to zero. In PE, it captures both the absolute return and the time value of money — an IRR of 20% means the investment compounded at 20% annually across all cash flows. This sensitivity to timing is what makes IRR different from MOIC."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund assumes an investment will generate a 22% IRR over a 5-year hold. What is a critical limitation of using IRR to evaluate this projection?",
+    "options": [
+      "IRR does not account for the size of the investment",
+      "IRR implicitly assumes that interim cash flows can be reinvested at the same high rate (the 'reinvestment assumption'), which is rarely achievable in practice",
+      "IRR cannot be calculated without audited financial statements",
+      "IRR is always lower than the actual return"
+    ],
+    "correct_index": 1,
+    "explanation": "IRR's key limitation is the reinvestment assumption: the calculation mathematically assumes any interim cash flows earn the same IRR rate. In practice, capital returned in Year 2 rarely earns 22% when redeployed. This is why sophisticated LPs use Modified IRR (MIRR) or focus on MOIC alongside IRR. The assumption matters most for deals with heavy interim distributions."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE firm invests €50M in a portfolio company and exits 6 years later for €200M total proceeds. What is the approximate IRR?",
+    "options": [
+      "300% — the total return",
+      "Approximately 26% — the compound annual growth rate of capital",
+      "50% — the simple average annual return",
+      "16.7% — the total return divided by the holding period"
+    ],
+    "correct_index": 1,
+    "explanation": "For a single entry and single exit: IRR = (€200/€50)^(1/6) – 1 = (4.0)^0.167 – 1 = approximately 26%. This compound return reflects that €50M growing to €200M over 6 years requires compounding at about 26% annually. A simple 'total return divided by years' calculation (which gives 50%) is mathematically wrong because it ignores compounding."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund deploys €100M into an investment. After two years it exits for €180M. What is the IRR?",
+    "options": [
+      "Approximately 34% — reflecting the compound return over two years",
+      "80% — the total return percentage",
+      "40% — the simple average",
+      "1.8x — return multiple only"
+    ],
+    "correct_index": 0,
+    "explanation": "IRR = (€180/€100)^(1/2) – 1 = (1.8)^0.5 – 1 = 34.2%. This shorter hold generates higher IRR than a longer hold with the same money multiple because compounding is front-loaded. Note the same 1.8x MOIC over 4 years would be just 15.8% IRR. Time sensitivity is central to IRR's usefulness and limitations."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund has an MOIC of 2.5x. What does this specifically mean?",
+    "options": [
+      "The fund earned 250% annual returns",
+      "The fund generated $2.50 in total value for every $1.00 invested (on a gross basis, before fees and carry if reported at the deal level)",
+      "The fund's IRR is 2.5% annually",
+      "The fund operates 2.5 times larger than its peers"
+    ],
+    "correct_index": 1,
+    "explanation": "MOIC (Multiple on Invested Capital) measures total value returned as a multiple of capital invested. An MOIC of 2.5x means $1 invested returned $2.50 in total — $1 of capital returned plus $1.50 of profit. MOIC does not account for time — a 2.5x over 3 years and a 2.5x over 10 years look identical on MOIC but very different on IRR."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "At the fund level, TVPI and MOIC can differ. What's the difference between these two metrics?",
+    "options": [
+      "They are identical and often used interchangeably",
+      "TVPI (Total Value to Paid-In) measures all value including unrealised NAV against paid-in capital; MOIC at the fund level conceptually measures total distributions plus residual value against invested capital — the terms are often used synonymously",
+      "TVPI only measures cash distributions",
+      "MOIC excludes management fees"
+    ],
+    "correct_index": 1,
+    "explanation": "At the fund level, TVPI and MOIC are often used synonymously: both measure total value (cash distributions plus current NAV of unrealised investments) against invested or paid-in capital. Some industry conventions distinguish them slightly, but for practical purposes LPs use TVPI when discussing fund-level performance. TVPI = DPI + RVPI captures both realised and unrealised components."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "An LP's statement shows a fund with DPI of 1.5x. What does this tell the LP about their capital?",
+    "options": [
+      "The fund has lost 50% of their capital",
+      "For every €1 the LP contributed, they have received €1.50 back in actual cash distributions — they are fully capital-returned plus 50% in realised profit",
+      "The fund is worth 1.5 times its original size",
+      "The LP owes the GP additional capital"
+    ],
+    "correct_index": 1,
+    "explanation": "DPI (Distributions to Paid-In) measures cash actually returned divided by cash contributed. DPI of 1.5x means the LP has received full capital back plus 50% profit in realised distributions — cash in hand, not paper value. A DPI above 1.0x means the LP is 'house money' beyond this point. DPI is the most reliable performance metric because it cannot be inflated by optimistic NAV marks."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund reports TVPI of 2.0x at year 6, with DPI of 0.8x and RVPI of 1.2x. What does this tell an LP?",
+    "options": [
+      "The fund has fully distributed all its value",
+      "The fund has returned 80% of invested capital as cash, with 120% of invested capital remaining as unrealised paper value that still needs to be exited",
+      "The LP has lost money",
+      "The GP has stolen money"
+    ],
+    "correct_index": 1,
+    "explanation": "RVPI (Residual Value to Paid-In) = unrealised NAV / invested capital. TVPI = DPI + RVPI. Here: the LP has received 0.8x in cash distributions (DPI) and holds 1.2x in unrealised portfolio value (RVPI). Total paper value is 2.0x but only 40% is realised. As the fund matures, RVPI should convert to DPI through exits; failure to convert signals either delayed exits or overly optimistic valuations."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund has achieved DPI of 2.5x in year 8. What does this signal about the fund's performance quality?",
+    "options": [
+      "The fund has likely underperformed benchmark expectations",
+      "Strong realised performance — LPs have recovered 2.5x their capital in cash, a hallmark of a successful fund",
+      "The fund has returned too much too quickly",
+      "DPI of 2.5x is impossible"
+    ],
+    "correct_index": 1,
+    "explanation": "DPI of 2.5x by year 8 is exceptional — LPs have received 2.5x their invested capital in cash, already exceeding most fund targets on a pure distributed basis. This is 'realised' performance, not paper value, and is the most reliable indicator of true fund success. Any remaining RVPI adds to total return. DPI of 2.5x+ by year 8-10 is characteristic of top-decile funds."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "An LP is comparing two fund reports. Fund X shows TVPI of 1.8x with DPI of 0.3x in year 9. Fund Y shows TVPI of 1.8x with DPI of 1.5x in year 9. How should the LP interpret this?",
+    "options": [
+      "The funds have identical performance because TVPI is the same",
+      "Fund Y is far more credible — its TVPI is 83% realised versus Fund X's 17% realised; Fund X carries substantial unrealised value that may be optimistically marked",
+      "Fund X is performing better because it still has more value to realise",
+      "TVPI differences are more important than DPI differences"
+    ],
+    "correct_index": 1,
+    "explanation": "Same TVPI, very different quality. Fund Y has delivered most of its reported value as actual cash. Fund X's TVPI depends heavily on unrealised marks that must still be achieved through exits — by year 9, this is concerning. A fund late in its life with large unrealised RVPI may have valuation issues, weak exit markets, or holding problem assets that cannot be marketed. LPs discount TVPI by DPI share when evaluating aged funds."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A sophisticated LP evaluates PE fund performance against a Public Market Equivalent (PME) using the Kaplan-Schoar method. What is the output, and how is it interpreted?",
+    "options": [
+      "A dollar amount of outperformance",
+      "A multiple where 1.0x means PE matched the public index return; greater than 1.0x means PE outperformed, less means underperformed — on equivalent cash flows",
+      "The fund's beta coefficient",
+      "A required investment amount"
+    ],
+    "correct_index": 1,
+    "explanation": "KS-PME (Kaplan-Schoar PME) treats the public index as if it received the same capital calls and the same distribution timings as the PE fund. Output is a multiple: 1.2x means PE generated 20% more value than the public index would have on equivalent cash flows. Well-performing PE funds typically show PME of 1.1-1.3x; benchmarks below 1.0x suggest the LP would have been better off in the public index."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "An LP complains that the fund's published 18% IRR is 'inflated' by the use of a subscription credit line. What is the concern?",
+    "options": [
+      "Subscription lines charge excessive fees that reduce actual returns",
+      "Subscription lines defer LP capital calls — the fund borrows against LP commitments to fund investments, shortening the period capital is 'in' and mathematically boosting IRR without improving underlying performance",
+      "Subscription lines are illegal",
+      "Subscription lines only affect MOIC, not IRR"
+    ],
+    "correct_index": 1,
+    "explanation": "Subscription credit facilities let the GP fund investments with short-term borrowing before calling LP capital. Because IRR is time-sensitive, delaying when LP capital is 'deployed' mathematically boosts IRR (same dollar return over a shorter period). MOIC is unaffected. An 18% IRR with sub-lines might be only 14% without. Sophisticated LPs increasingly demand pre-sub-line IRR disclosure."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE firm's Fund III has achieved a realised gross IRR of 35% with MOIC of 2.8x, placing it above the 90th percentile of its vintage. What term describes this performance?",
+    "options": [
+      "Median",
+      "Top-decile — the fund is among the top 10% of comparable funds by performance",
+      "Bottom-quartile",
+      "Benchmark-matching"
+    ],
+    "correct_index": 1,
+    "explanation": "Percentile rankings describe performance relative to a peer group of similar-vintage funds. Top-decile = top 10% of funds; top-quartile = top 25%; median = 50th percentile; bottom-quartile = bottom 25%. Top-decile performance is the aspiration for most GPs and the primary draw for sophisticated LPs who concentrate capital with consistent outperformers. Benchmarks are published by Cambridge Associates, Preqin, Burgiss, and Pitchbook."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "An institutional LP allocates exclusively to 'top-quartile' PE managers. What does top-quartile mean, and why does this benchmark matter?",
+    "options": [
+      "Top-quartile means the largest 25% of funds by AUM",
+      "Top-quartile funds outperform 75% of their peers in a comparable vintage year cohort; the benchmark matters because PE returns are highly dispersed — the gap between top and bottom quartile often exceeds 20 percentage points of IRR",
+      "Top-quartile funds are the oldest 25%",
+      "Top-quartile has no accepted definition"
+    ],
+    "correct_index": 1,
+    "explanation": "Top-quartile funds rank in the top 25% of their vintage year cohort by IRR or MOIC. This benchmark matters enormously because PE returns are highly dispersed: top-quartile funds may return 2.5x+ MOIC while bottom-quartile funds return barely above 1.0x. Manager selection is the primary driver of LP returns in PE — far more than asset allocation. This is why sophisticated LPs invest heavily in GP due diligence."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A fund's 'cash-on-cash' return is often discussed in PE. What does this measure?",
+    "options": [
+      "The annual dividend yield on portfolio companies",
+      "The ratio of cash returned to cash invested, effectively synonymous with MOIC for realised deals",
+      "The interest rate on fund-level debt",
+      "The ratio of cash to total fund assets"
+    ],
+    "correct_index": 1,
+    "explanation": "Cash-on-cash return is the multiple of cash returned to cash invested — effectively the same as MOIC for fully realised deals. A 2.5x cash-on-cash return means every $1 invested returned $2.50 in cash. The term emphasises physical cash flows rather than paper returns. Investors use it interchangeably with money multiple or MOIC, especially for real estate and project investments."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund's return distribution across 20 portfolio companies shows 2 'home runs' (5-10x MOIC), 10 solid performers (1.5-3x MOIC), 6 break-even deals (around 1.0x MOIC), and 2 losses (below 1.0x). How does this distribution compare to typical PE fund outcomes?",
+    "options": [
+      "Unusually concentrated in losses — most funds have no money-losing deals",
+      "Representative of typical PE dispersion — a small number of outperformers drive disproportionate total returns, with roughly 15-25% of deals losing money in typical funds",
+      "Unusually high-performing — most funds have no home runs",
+      "Typical funds deliver uniform 2.0x returns across all deals"
+    ],
+    "correct_index": 1,
+    "explanation": "This distribution mirrors typical PE fund patterns: a small number of home runs drive disproportionate total returns (the 'Pareto' pattern), a cluster of solid middle performers, and 15-25% of deals either break even or lose money. Even top-quartile funds typically include loss-making investments. Fund performance depends heavily on avoiding total write-offs while producing 1-2 exceptional outcomes per 10-15 deals."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A fund's Net Asset Value (NAV) is used to calculate unrealised RVPI. How is NAV typically determined for portfolio companies?",
+    "options": [
+      "By the market price if the company is publicly traded",
+      "By quarterly valuations using DCF, comparable company multiples, and precedent transaction analysis, reviewed by auditors and increasingly by valuation committees",
+      "By the original purchase price throughout the hold",
+      "By the GP's personal judgment without methodology"
+    ],
+    "correct_index": 1,
+    "explanation": "Unrealised portfolio companies are valued quarterly using a combination of methods: comparable public company trading multiples, precedent M&A transaction multiples, DCF for companies with stable cash flows, and cost for very recent investments. Valuations are reviewed by external auditors and, in many funds, by dedicated valuation committees. Despite rigorous processes, unrealised NAV carries genuine uncertainty — two GPs can reach materially different valuations for the same business."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE firm's exit produces a 3.2x MOIC over 5 years. Return attribution analysis shows the breakdown: 45% from EBITDA growth, 25% from multiple expansion, 20% from debt paydown, 10% from other factors. What does this attribution tell us about the deal's quality?",
+    "options": [
+      "The deal is fundamentally flawed because returns depend on multiple drivers",
+      "The deal demonstrates balanced, high-quality value creation — driven substantially by operational improvement (EBITDA growth) rather than relying on market-driven factors like multiple expansion",
+      "The attribution indicates pure luck",
+      "The deal relied too heavily on debt paydown"
+    ],
+    "correct_index": 1,
+    "explanation": "Strong, balanced attribution is characteristic of high-quality PE deals. EBITDA growth (45%) reflects operational value creation by the GP and management — repeatable and defensible. Multiple expansion (25%) reflects exit environment. Debt paydown (20%) captures financial engineering. A deal heavily dependent on a single lever (especially multiple expansion) is fragile; a balanced attribution indicates the deal would have worked even if one lever disappointed."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE firm's deal generates a 4.0x MOIC over 5 years, but the attribution shows 80% came from multiple expansion (entry at 8x, exit at 14x) and only 20% from operational improvement. How should this result be interpreted?",
+    "options": [
+      "It is a strong result that reflects excellent GP skill",
+      "The return is satisfying but raises concerns about repeatability — multiple expansion depends on market conditions outside the GP's control, not on the GP's operational capabilities",
+      "Multiple expansion is always the highest-quality return driver",
+      "The result demonstrates skilled financial engineering"
+    ],
+    "correct_index": 1,
+    "explanation": "A 4.0x MOIC driven primarily by multiple expansion reflects favourable market conditions more than GP skill. The GP was correct about timing but the return depends on buyer competition, credit markets, and sector sentiment at exit. LPs value this less than an equivalent return driven by EBITDA growth because multiple-dependent returns are harder to repeat in future vintages. Repeatability is a core dimension of PE return quality."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund reports realised returns on five exited deals but has five more active investments. When evaluating the fund, what should an LP prioritise?",
+    "options": [
+      "Only realised returns matter",
+      "Both realised and unrealised metrics, recognising that realised returns are certain while unrealised values carry mark-to-market uncertainty",
+      "Only unrealised valuations matter",
+      "The ratio of realised to unrealised deals is irrelevant"
+    ],
+    "correct_index": 1,
+    "explanation": "Realised returns are certain cash flows that cannot be revised. Unrealised values are GP estimates subject to mark-to-market risk. A fund with strong realised track record and declining unrealised valuations is a warning sign. A fund with modest realised results but strong unrealised pipeline needs further investigation. LPs combine both views, weighted toward DPI as the realised component becomes larger."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "An LP asks for a fund's 'Since Inception' IRR. Why is this metric more reliable than a single year's reported return?",
+    "options": [
+      "It is easier to calculate",
+      "It captures the full fund performance including capital call timing, distribution timing, and NAV changes, providing a cumulative view — a single-year return can be distorted by timing or NAV revisions",
+      "It is required by regulators",
+      "It excludes fees"
+    ],
+    "correct_index": 1,
+    "explanation": "Since Inception IRR captures all cash flows (capital calls, distributions, current NAV) from fund launch through the reporting date. This provides a cumulative, time-weighted view of performance. Single-year returns can be distorted by the timing of calls/distributions, NAV revaluations, or one-off events. Since Inception IRR is the standard performance benchmark for PE funds."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE firm distributes €80M to LPs from a successful exit. Of this, the GP receives €12M as carry. What effective carry rate does this reflect assuming the carry was paid on the profit portion?",
+    "options": [
+      "15% carry rate",
+      "Depending on the fund's structure, approximately 20% carry on the €60M profit portion (€12M / €60M = 20%) if the capital returned was €20M",
+      "6% carry rate",
+      "80% carry rate"
+    ],
+    "correct_index": 1,
+    "explanation": "Assuming €20M was return of capital and €60M was profit, the €12M carry on €60M profit equals 20% — the standard PE carry rate. Carry is calculated on profit, not total distributions. The LP receives the remaining €48M of profit plus the €20M capital back, totalling €68M. This illustrates how carry aligns GP compensation with LP outcomes: no profit means no carry."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund's vintage 2018 performance is benchmarked against 2018 vintage peers rather than current-year comparables. Why is vintage-year benchmarking critical?",
+    "options": [
+      "Benchmarks are always arbitrary",
+      "PE performance is heavily dependent on entry conditions (multiples, credit availability, market cycle) — comparing funds of different vintages mixes very different underlying environments",
+      "Vintage year only matters for tax purposes",
+      "LPs cannot access vintage-year benchmarks"
+    ],
+    "correct_index": 1,
+    "explanation": "Vintage matters because PE performance is heavily shaped by entry conditions. 2009-vintage funds (deploying post-crisis at low multiples) typically outperform 2007-vintage funds (deploying at peak multiples). Comparing a 2018 fund to 2022 funds would mix very different entry environments. Vintage-year benchmarks — Cambridge Associates, Preqin, Burgiss — cluster funds by the year they began deploying and provide percentile rankings within that cohort."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "Cambridge Associates, Preqin, and Burgiss are three prominent sources of PE benchmark data. What do they provide?",
+    "options": [
+      "They provide capital directly to PE funds",
+      "They aggregate performance data from hundreds of funds to produce vintage-year benchmarks, showing median, top-quartile, and other percentile return thresholds that LPs use for comparison",
+      "They regulate PE fund performance",
+      "They audit PE fund returns"
+    ],
+    "correct_index": 1,
+    "explanation": "Cambridge Associates, Preqin, Burgiss (now part of MSCI), and Pitchbook aggregate performance data from hundreds of PE funds to produce vintage-year benchmarks. Outputs include median, top-quartile, and other percentile thresholds for IRR, MOIC, TVPI, and DPI. Their data is used by LPs for benchmarking, investment committee presentations, and allocation decisions. Each uses slightly different methodologies and fund samples, producing subtle benchmark variations."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE portfolio company with €20M EBITDA is sold for €200M. Entry had been €160M (10x EBITDA of €16M). During the hold, €40M of debt was repaid. Original equity was €60M. What equity value is realised at exit, and what MOIC is generated?",
+    "options": [
+      "€140M equity, 2.3x MOIC",
+      "€200M equity, 3.3x MOIC",
+      "€180M equity, 3.0x MOIC",
+      "€60M equity, 1.0x MOIC"
+    ],
+    "correct_index": 0,
+    "explanation": "Entry: €160M EV with €60M equity + €100M debt. Exit: €200M EV with remaining debt of €60M (€100M original – €40M paid down). Exit equity = €200M – €60M = €140M. MOIC = €140M / €60M = 2.33x. Even without EBITDA growth (€20M vs entry €16M = modest growth), debt paydown and some EBITDA increase produced a 2.3x equity return."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE firm quotes a 'gross deal IRR' of 32% but the 'fund net IRR' is 18%. Which represents what the LP actually earns and what factors cause the gap?",
+    "options": [
+      "Gross deal IRR is what LPs earn; the fund net IRR is a theoretical number",
+      "Fund net IRR (18%) is what LPs actually earn after management fees, carry, fund expenses, and the J-curve effect of fund cash flow timing; the gap is typical 10-15 percentage points for well-performing funds",
+      "Gross and net IRR are always identical for sophisticated funds",
+      "The gap only reflects taxes"
+    ],
+    "correct_index": 1,
+    "explanation": "Fund net IRR is what LPs actually earn — the true measure of LP experience. The gap (here 14 percentage points) reflects: management fees (reduce invested capital base), carried interest (reduces LP share of profits), fund expenses (audit, legal, operational), and the J-curve (time between LP capital calls and eventual distributions). Well-performing funds typically have 3-7 percentage point gap; this 14-point gap may reflect expensive fee structure or subscription line effects on gross IRR."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "An LP is evaluating whether a 2.2x MOIC over 7 years meets their return hurdle. What IRR does this approximately represent?",
+    "options": [
+      "Approximately 31%",
+      "Approximately 12%",
+      "Approximately 22%",
+      "Approximately 2%"
+    ],
+    "correct_index": 1,
+    "explanation": "IRR = (2.2)^(1/7) – 1 = approximately 11.9%. A 2.2x over 7 years compounds at about 12% annually. This illustrates that MOIC must always be contextualised with the hold period to calculate the true return: 2.2x over 3 years is 30% IRR, over 5 years is 17% IRR, over 7 years is 12% IRR. Longer holds compress IRR even when MOIC is identical."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund exits a portfolio company for €300M. The fund's cash flow history for this deal shows a €100M investment at year 0, a €30M dividend recapitalisation at year 3, and the €300M exit at year 5. How does the interim dividend affect returns compared to a pure hold-and-exit?",
+    "options": [
+      "It has no effect on IRR",
+      "The interim distribution at year 3 boosts IRR by shortening the effective time-weighted capital exposure, even though total MOIC increases only modestly",
+      "It reduces IRR because it delays the final exit",
+      "It has no effect on MOIC"
+    ],
+    "correct_index": 1,
+    "explanation": "Interim distributions significantly boost IRR. Without dividend: €100M → €300M over 5 years = 24.6% IRR, 3.0x MOIC. With €30M dividend at year 3 plus €300M exit: MOIC = 3.3x (€330M total / €100M), IRR approximately 27-28%. The interim cash flow reduces capital-at-risk time, accelerating the calculated return. This is why dividend recapitalisations are popular with GPs — they enhance reported IRR."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund reports 'realised IRR' of 28% on fully exited deals but 'total fund IRR' of 18% including unrealised positions. What does this comparison suggest?",
+    "options": [
+      "The fund has been manipulating returns",
+      "The fund has successfully exited its best deals first, leaving weaker performers in the remaining portfolio — a phenomenon sometimes called 'cream skimming' or natural exit order",
+      "The fund has underperformed",
+      "The two metrics are unrelated"
+    ],
+    "correct_index": 1,
+    "explanation": "Large gaps between realised and total fund IRR often indicate that strong deals exit first (either because strong businesses sell more easily, or because GPs rationally harvest winners quickly) while weaker deals linger. Sophisticated LPs analyse the trajectory: is the gap narrowing as more exits occur, or widening? A persistent gap suggests unrealised positions are overvalued or the remaining portfolio is genuinely weaker than early exits."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund generates a 25% gross IRR over 5 years. During that time, the S&P 500 generates 12% annualised. The fund's KS-PME is 1.35x. What does this tell us?",
+    "options": [
+      "The fund underperformed the S&P 500",
+      "The fund generated $1.35 for every $1.00 that an S&P investment would have returned on the same cash flow schedule — meaningful outperformance that captures the 'alpha' above public market beta",
+      "The fund outperformed by 35 percentage points",
+      "PME does not apply to buyout funds"
+    ],
+    "correct_index": 1,
+    "explanation": "PME of 1.35x indicates the fund outperformed the S&P by 35% in total value terms across the same cash flow schedule. This captures true 'alpha' — returns above what a passive public index position would have delivered on equivalent capital timing. Strong PME (typically 1.1-1.3x) is the benchmark that sophisticated LPs increasingly demand. A 25% IRR during a strong bull market without corresponding PME outperformance suggests beta rather than alpha."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE firm produces a fund-level performance bridge for LP reporting. Which components typically break down total fund value creation?",
+    "options": [
+      "Only EBITDA growth",
+      "EBITDA growth (operational improvement), multiple change (market expansion/compression), leverage/debt paydown, FX effects (for international investments), and dividend distributions during hold",
+      "Only management fee rebates",
+      "Only inflation adjustments"
+    ],
+    "correct_index": 1,
+    "explanation": "A value creation bridge decomposes total fund return: (1) EBITDA growth — what operational improvement added; (2) Multiple change — market-driven valuation shifts; (3) Debt paydown — leverage amplification; (4) FX effects for international deals; (5) Interim distributions during hold. This analysis reveals the source of returns and tests whether success is driven by skill (operational improvement) or market conditions (multiple expansion), affecting how LPs assess repeatability."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund's realised track record shows MOIC of 2.5x, IRR of 20%, and DPI of 2.0x by year 8. A new LP is evaluating whether to commit to the GP's next fund. What aspect of this track record is most important for the LP's decision?",
+    "options": [
+      "Only the IRR matters for fund selection",
+      "The consistency, repeatability, and attribution behind these returns — not just the headline numbers — because past performance only predicts future results if the team, strategy, and market conditions remain comparable",
+      "Only the MOIC matters",
+      "Only the DPI matters"
+    ],
+    "correct_index": 1,
+    "explanation": "Strong return metrics are necessary but insufficient. LPs investigate: Is the team stable? Are returns concentrated in a few outlier deals or broadly distributed? What drove returns (skill vs. market conditions)? Has the strategy changed? Does the fund size growth maintain focus? Superior historical returns with a departed team, changed strategy, or concentration in one lucky deal do not predict future outperformance. GP due diligence goes far beyond the headline numbers."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A pension fund's PE portfolio has a Target Date Weighted IRR of 14% (across all funds in its portfolio). What does this aggregate metric measure?",
+    "options": [
+      "A measure of retirement savings timing",
+      "The combined IRR across all PE fund commitments in the LP's portfolio, weighted by capital deployed and duration — the LP's actual PE-asset-class return",
+      "Only the most recent fund's IRR",
+      "A theoretical calculation unrelated to actual returns"
+    ],
+    "correct_index": 1,
+    "explanation": "At the LP portfolio level, the Target Date Weighted IRR (or 'portfolio IRR') aggregates returns across all fund commitments, weighted by capital invested and time. This represents the LP's actual asset-class return. The pension fund aggregates this across all its LP positions to determine whether PE has delivered against its target allocation. This aggregate perspective differs from fund-level IRRs because portfolio construction (vintage diversification, manager mix) affects total returns."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund's LPA defines carry on an 8% preferred return. If the fund generates an 8% IRR, what carry does the GP earn?",
+    "options": [
+      "20% of all fund profits",
+      "Zero — the GP only earns carry on returns above the preferred hurdle; an 8% IRR exactly meets (but does not exceed) the preferred return",
+      "8% of fund profits",
+      "The carry is double"
+    ],
+    "correct_index": 1,
+    "explanation": "Carry only applies to returns above the preferred return hurdle. If the fund generates exactly 8% IRR (meeting the preferred return), there is no excess profit to split — GP earns zero carry. This 'underwater' scenario sometimes occurs in weaker funds or vintages. LPs in this situation receive the 8% preferred return but no additional distributions. This structural feature protects LPs from paying carry on mediocre performance."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "A PE fund's annualised return during a bull market was 22% IRR; during a subsequent downturn, reported valuations declined. If no exits occurred during the downturn, what typically happens to reported IRR?",
+    "options": [
+      "IRR remains unchanged without exits",
+      "Reported IRR decreases as unrealised NAV is marked down, even without any realised losses — because IRR calculations include current NAV as a terminal value",
+      "IRR increases automatically",
+      "The fund must terminate"
+    ],
+    "correct_index": 1,
+    "explanation": "IRR calculations for live funds use current NAV as a 'terminal value' for unrealised positions. When market conditions decline, NAVs are typically reduced through lower multiple assumptions or EBITDA revisions, which reduces reported IRR even without any realised losses. This is why interim IRR is volatile and why sophisticated LPs focus on DPI (realised returns) as the more stable indicator. Realised IRR only changes with exits; total fund IRR moves with NAV revisions."
+  },
+  {
+    "topic_tag": "return-metrics",
+    "question": "Why do sophisticated LPs evaluate both IRR and MOIC when selecting PE funds, rather than focusing on either one alone?",
+    "options": [
+      "Because both metrics always produce the same conclusion",
+      "Because IRR captures time sensitivity (a better measure of capital efficiency) while MOIC captures total value creation (a better measure of absolute return); using only one can misrank funds",
+      "Because regulators require both to be reported",
+      "Because only MOIC matters for fund selection"
+    ],
+    "correct_index": 1,
+    "explanation": "IRR and MOIC answer different questions. IRR asks: how efficiently was capital deployed in time? MOIC asks: how much value did each dollar produce? A 30% IRR over 2 years (1.7x MOIC) is different from a 20% IRR over 7 years (3.6x MOIC) — both excellent but for different reasons. LPs use both: IRR for capital efficiency and compounding assessment, MOIC for total value creation. Using one alone can misrank funds with different hold periods."
+  }
+]

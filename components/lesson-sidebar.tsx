@@ -1,19 +1,16 @@
 import Link from "next/link"
+import { Lock } from "lucide-react"
 import { getLessonsByLevel } from "@/lib/content"
 import { MODULES, LEVELS } from "@/content/curriculum-taxonomy"
 import { LevelTabs } from "@/components/level-tabs"
 import { LessonSidebarItem } from "@/components/lesson-sidebar-item"
 
 interface LessonSidebarProps {
-  currentModuleSlug?: string
-  currentLessonSlug?: string
   completedLessonUuids?: string[]
   unlockedLevelIds?: string[]
 }
 
 export function LessonSidebar({
-  currentModuleSlug,
-  currentLessonSlug,
   completedLessonUuids = [],
   unlockedLevelIds = [],
 }: LessonSidebarProps) {
@@ -58,14 +55,11 @@ export function LessonSidebar({
 
           return (
             <div key={mod.slug} className="mb-4">
-              <div className="px-4 py-2 text-xs font-semibold text-zinc-400 uppercase tracking-wider">
+              <div className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                 {mod.title}
               </div>
               {lessons.map((lesson) => {
                 const lessonSlug = lesson.slugAsParams
-                const isActive =
-                  lesson.module === currentModuleSlug &&
-                  lessonSlug === currentLessonSlug
                 const isCompleted = completedLessonUuids.includes(lesson.uuid)
 
                 return (
@@ -73,7 +67,6 @@ export function LessonSidebar({
                     key={lesson.uuid}
                     title={lesson.title}
                     href={`/lessons/${lesson.module}/${lessonSlug}`}
-                    isActive={isActive}
                     isCompleted={isCompleted}
                     isLocked={false}
                   />
@@ -84,21 +77,21 @@ export function LessonSidebar({
         })}
 
         {/* Quiz CTA — shown below Level 1 lessons */}
-        <div className="px-4 pb-4 pt-2 border-t border-white/10 mt-2">
+        <div className="px-4 pb-4 pt-2 border-t border-border mt-2">
           <Link
-            href="/levels/beginner/quiz"
-            className="flex items-center justify-center gap-2 w-full rounded-md bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium px-4 py-2.5 transition-colors"
+            href="/levels/foundations/quiz"
+            className="flex items-center justify-center gap-2 w-full rounded-md bg-card hover:bg-card/80 text-foreground text-sm font-medium px-4 py-2.5 transition-colors"
           >
             Take Level 1 Quiz
           </Link>
-          <p className="text-xs text-zinc-500 text-center mt-1.5">Pass to unlock Level 2</p>
+          <p className="text-xs text-muted-foreground/70 text-center mt-1.5">Pass to unlock Level 2</p>
         </div>
 
         {/* News link — sidebar footer */}
         <div className="px-4 pb-2 pt-2">
           <Link
             href="/news"
-            className="flex items-center justify-center gap-2 w-full rounded-md text-zinc-400 hover:text-white hover:bg-zinc-800 text-sm font-medium px-4 py-2 transition-colors"
+            className="flex items-center justify-center gap-2 w-full rounded-md text-muted-foreground hover:text-foreground hover:bg-card text-sm font-medium px-4 py-2 transition-colors"
           >
             PE News &rarr;
           </Link>
@@ -108,7 +101,7 @@ export function LessonSidebar({
         <div className="px-4 pb-2">
           <Link
             href="/interview-prep"
-            className="flex items-center justify-center gap-2 w-full rounded-md text-zinc-400 hover:text-white hover:bg-zinc-800 text-sm font-medium px-4 py-2 transition-colors"
+            className="flex items-center justify-center gap-2 w-full rounded-md text-muted-foreground hover:text-foreground hover:bg-card text-sm font-medium px-4 py-2 transition-colors"
           >
             Interview Prep &rarr;
           </Link>
@@ -118,27 +111,27 @@ export function LessonSidebar({
         <div className="px-4 pb-4">
           <Link
             href="/resources"
-            className="flex items-center justify-center gap-2 w-full rounded-md text-zinc-400 hover:text-white hover:bg-zinc-800 text-sm font-medium px-4 py-2 transition-colors"
+            className="flex items-center justify-center gap-2 w-full rounded-md text-muted-foreground hover:text-foreground hover:bg-card text-sm font-medium px-4 py-2 transition-colors"
           >
             Resources &rarr;
           </Link>
         </div>
 
-        {/* Locked placeholder modules */}
+        {/* Pro modules — clickable title, no inline lesson list */}
+        <div className="px-4 pt-3 pb-1">
+          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">
+            Pro Modules
+          </p>
+        </div>
         {lockedModules.map((mod) => (
-          <div key={mod.slug} className="mb-4">
-            <div className="px-4 py-2 text-xs font-semibold text-zinc-600 uppercase tracking-wider">
-              {mod.title}
-            </div>
-            {mod.lessons.map((lesson) => (
-              <LessonSidebarItem
-                key={lesson.uuid}
-                title={lesson.title}
-                href="#"
-                isLocked={true}
-              />
-            ))}
-          </div>
+          <Link
+            key={mod.slug}
+            href={`/lessons/${mod.slug}`}
+            className="flex items-center justify-between px-4 py-2.5 text-sm text-muted-foreground/60 hover:text-muted-foreground hover:bg-card/30 transition-colors"
+          >
+            <span>{mod.title}</span>
+            <Lock className="size-3 shrink-0 text-muted-foreground/40" aria-hidden="true" />
+          </Link>
         ))}
       </div>
     </nav>

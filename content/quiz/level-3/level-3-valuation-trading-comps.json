@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE analyst is building a trading comparables analysis for a €200M revenue European industrial services target. What is the primary objective of this analysis?",
+    "options": [
+      "To determine the exact valuation of the target",
+      "To derive a market-based valuation range by applying peer company multiples to the target's metrics, providing a reality check against other methodologies",
+      "To identify acquisition candidates",
+      "To calculate the target's credit rating"
+    ],
+    "correct_index": 1,
+    "explanation": "Trading comparables analysis derives valuation ranges by applying peer company trading multiples (EV/EBITDA, EV/Revenue, P/E) to the target's metrics. The output is a valuation range, not a point estimate, because multiples vary across peers. Trading comps complement DCF, precedent transactions, and LBO analysis — each method has strengths and weaknesses. A football field visualisation shows ranges from each method, with convergence indicating robust valuation."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "When selecting peer companies for trading comparables, which factor is MOST important?",
+    "options": [
+      "Companies in the same geographic region only",
+      "Companies with similar business models, end-markets, growth profiles, margin structures, and capital intensity — even if geographically different",
+      "Companies of identical revenue size",
+      "The 50 largest companies in the broader sector"
+    ],
+    "correct_index": 1,
+    "explanation": "Peer selection prioritises economic comparability over geographic proximity. Key factors: (1) Business model similarity (products/services, customers); (2) End-market exposure (industrial, consumer, healthcare); (3) Growth profile (stable, growth, cyclical); (4) Margin structure (EBITDA margins); (5) Capital intensity (asset-light vs heavy). Secondary factors: geography, size. A US software peer is more comparable to a European SaaS target than a European traditional software company. Typical peer group: 6-15 companies selected for economic relevance."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE analyst finds the following EV/EBITDA multiples for 8 peer companies: 8.2x, 9.1x, 9.8x, 10.5x, 11.2x, 11.8x, 12.4x, 15.7x. Which statistical measure is typically most useful?",
+    "options": [
+      "Mean: 11.1x — the arithmetic average",
+      "Median: 10.9x — reduces impact of outliers (like the 15.7x observation) on the central tendency",
+      "Mode: there is no repeating value",
+      "Range: 8.2x to 15.7x"
+    ],
+    "correct_index": 1,
+    "explanation": "Median is typically preferred over mean for peer multiple analysis because it's less affected by outliers. Median of the 8 values: average of 4th and 5th observations (10.5x and 11.2x) = 10.85x. Mean: sum/8 = 11.1x, pulled up by the 15.7x outlier. Using the median provides a more robust central tendency. Best practice: report both mean and median, examine outliers, and typically apply the median to the target (with a range of, say, the 25th to 75th percentile). Outliers should be investigated — they may indicate genuinely different businesses or data errors."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A target generates €50M EBITDA. The peer group trades at a median EV/EBITDA of 10.5x. What is the implied enterprise value?",
+    "options": [
+      "€525M — median multiple times target EBITDA",
+      "€500M — rounded",
+      "€100M — peer multiple divided by target EBITDA",
+      "Cannot be calculated without net debt"
+    ],
+    "correct_index": 0,
+    "explanation": "Implied EV = Peer Median Multiple × Target EBITDA = 10.5 × €50M = €525M. This is the market-based enterprise value estimate based on trading comparables. Then: Equity Value = EV – Net Debt (and other bridge items). If target has €100M net debt: Equity Value = €525M – €100M = €425M. Sophisticated analysis uses a range (e.g., applying the 25th percentile to 75th percentile of peer multiples) to reflect valuation uncertainty rather than a single point estimate."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A peer company's LTM EBITDA is €120M and its EV is €1.2B. It has also reported NTM (next twelve months) EBITDA guidance of €144M. What are the LTM and NTM multiples?",
+    "options": [
+      "LTM: 10.0x; NTM: 8.3x — the NTM multiple is lower because EBITDA is expected to grow",
+      "LTM: 10.0x; NTM: 10.0x — they are always identical",
+      "LTM: 8.3x; NTM: 10.0x — reversed calculation",
+      "Cannot be calculated"
+    ],
+    "correct_index": 0,
+    "explanation": "LTM Multiple = EV / LTM EBITDA = €1.2B / €120M = 10.0x. NTM Multiple = EV / NTM EBITDA = €1.2B / €144M = 8.3x. The NTM multiple is lower because the denominator (expected EBITDA) is larger. Investors pay for future earnings — if growth is expected, current EV reflects higher forward expected earnings, making NTM multiples lower than LTM. When benchmarking a target, consistency matters: use either LTM or NTM throughout the analysis. NTM multiples are often preferred because they reflect forward-looking expectations that drive investment decisions."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A target has 25% EBITDA margins while peer median is 18%. How might this affect the applicable multiple?",
+    "options": [
+      "The multiple should be identical",
+      "The target may warrant a higher multiple than peer median — superior margins typically command premium valuations; adjustments in the range of 0.5-1.5 EBITDA turns above median are common",
+      "The multiple should be lower",
+      "Margin comparisons are meaningless"
+    ],
+    "correct_index": 1,
+    "explanation": "Superior margins typically warrant premium valuations because they indicate: (1) Better pricing power; (2) Scale efficiencies; (3) Operational excellence; (4) Higher profitability per revenue unit; (5) Better cash generation. Empirically, each percentage point of EBITDA margin advantage often translates to approximately 0.1-0.3x multiple premium. A 7-point margin advantage (25% vs 18%) could justify 0.7-2.0x multiple premium. However, context matters: (1) Is the margin advantage sustainable? (2) Does it reflect different business mix? (3) Are there quality-of-earnings concerns?"
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "What is a 'growth-adjusted multiple' approach to valuation?",
+    "options": [
+      "Ignoring growth entirely",
+      "Adjusting peer multiples based on relative growth rates — faster-growing companies command premium multiples, so applying peer median without growth adjustment may misvalue high-growth targets",
+      "Using only slow-growing peers",
+      "Multiplying growth rate by 10"
+    ],
+    "correct_index": 1,
+    "explanation": "Growth-adjusted multiples recognise that growth rates drive multiple premiums. Approach: (1) Calculate each peer's multiple and growth rate; (2) Run regression: Multiple = a + b × Growth Rate; (3) Apply the target's growth rate to the regression to derive its multiple. Example: if peers show Multiple = 6 + 0.4 × Growth %, and target grows 15%: Multiple = 6 + 0.4 × 15 = 12x. A simpler approach is to use peers with similar growth profiles. Growth adjustments are particularly important for technology and growth sectors where growth rates vary widely."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is analysing multiples for public companies that will be applied to a private target. What adjustment is often made?",
+    "options": [
+      "No adjustment — multiples are identical",
+      "A 'private company discount' (or conversely, 'liquidity discount') typically 15-25%, reflecting reduced marketability, smaller size, limited buyer universe, and increased risk for private investments",
+      "A premium of 30%",
+      "Double the multiple"
+    ],
+    "correct_index": 1,
+    "explanation": "Public vs private company differences create valuation adjustments: (1) Liquidity: public shares are daily tradable; private shares require finding buyers; (2) Size: public companies tend to be larger; (3) Transparency: public disclosure standards; (4) Buyer universe: public companies accessible to all investors; private companies to fewer. Typical discount: 15-25%. However, sophisticated PE firms don't apply blanket discounts — they consider each factor. Discounts may narrow for large, attractive private companies where PE competition is intense; they widen for small, niche, or distressed private businesses."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A peer company trades at EV/EBITDA of 15x but has significant net cash (rather than net debt). How should a PE analyst interpret this?",
+    "options": [
+      "The multiple is artificially inflated",
+      "Net cash vs net debt affects the EV calculation: EV = Equity + Debt – Cash. A company with net cash has EV lower than equity market cap, making the multiple look elevated — requires careful examination of capital structure when comparing",
+      "Ignore this peer",
+      "The multiple should be doubled"
+    ],
+    "correct_index": 1,
+    "explanation": "Capital structure affects multiple comparability. For a company with €500M equity market cap and €100M net cash: EV = €500M - €100M = €400M. If EBITDA is €40M, EV/EBITDA = 10x (not 12.5x if using equity market cap). Companies with different capital structures produce different multiples even for identical businesses. Best practice: (1) Calculate EV carefully (market cap + debt – cash + debt-like items – non-operating assets); (2) Use consistent methodology across all peers; (3) Note significant capital structure differences in interpretation."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE analyst is evaluating peers for a subscription software business. Beyond standard metrics, what SaaS-specific metrics are typically relevant?",
+    "options": [
+      "Only EV/EBITDA",
+      "Multiple SaaS metrics: EV/ARR (Annual Recurring Revenue), EV/Revenue, Rule of 40 (growth + EBITDA margin), gross retention rate, net revenue retention, magic number (revenue growth / sales and marketing investment)",
+      "Only revenue",
+      "Only net income"
+    ],
+    "correct_index": 1,
+    "explanation": "SaaS businesses have specific valuation metrics reflecting their recurring revenue nature: (1) EV/ARR: enterprise value divided by annualised recurring revenue; (2) Rule of 40: revenue growth % + EBITDA margin % should exceed 40%; (3) Net Revenue Retention: revenue from existing customers plus expansion minus churn; (4) Gross Retention: customer retention rate; (5) Magic Number: measures sales/marketing efficiency. Premium SaaS companies trade at 15-25x ARR; median at 8-15x. These metrics supplement traditional multiples for SaaS-specific analysis."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A target has €150M EBITDA with €75M net debt. Peer median EV/EBITDA is 11.5x. What is the implied equity value?",
+    "options": [
+      "€1,725M — multiple times EBITDA",
+      "€1,650M — (11.5x × €150M) - €75M net debt = €1,725M - €75M = €1,650M",
+      "€1,725M with no debt adjustment",
+      "Cannot be calculated"
+    ],
+    "correct_index": 1,
+    "explanation": "The calculation sequence: (1) Implied EV = Peer Median × Target EBITDA = 11.5 × €150M = €1,725M; (2) Implied Equity Value = Implied EV – Net Debt = €1,725M – €75M = €1,650M. This is the market-based equity valuation from trading comps. The PE firm would then compare this to other valuation methods (DCF, precedent transactions, LBO) to triangulate a reasonable valuation range. If entering at 10.5x EBITDA (below peer median), that represents either a negotiated discount or premium peer trading levels."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE analyst constructs a peer group and finds significant multiple dispersion: from 8x to 14x EV/EBITDA. How should this be interpreted?",
+    "options": [
+      "High confidence in the median value",
+      "The dispersion signals that peer companies are not truly homogeneous — there may be sub-segments, different growth profiles, or other distinguishing factors; the analyst should: (1) Investigate outliers; (2) Consider sub-groups; (3) Apply ranges rather than point estimates",
+      "The analysis is invalid",
+      "Use only the highest multiple"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiple dispersion (wide ranges) warrants investigation: (1) Sub-segments may exist (high growth vs mature, size differences, sector subtypes); (2) Idiosyncratic factors may apply to outliers; (3) Market sentiment varies for different types of companies. Analytical approach: (1) Identify what distinguishes high-multiple from low-multiple companies; (2) Sub-group the peers by key characteristics; (3) Apply narrower ranges based on more specific comparables; (4) Consider growth-adjusted multiple approach. A wide range (8-14x) with median of 11x provides less valuation precision than a tight range."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is analysing insurance brokers. Traditional EV/EBITDA multiples vary widely among peers (7x-14x). What alternative multiple might be more informative?",
+    "options": [
+      "Only EV/Revenue",
+      "For insurance brokers: EV/EBITDA may be more useful normalised for commission income; EV/Revenue could work if margins are consistent; but the most industry-specific metric may be EV per broker (productivity metric) or EV/Earned Premium",
+      "Always use P/E only",
+      "No industry-specific metrics exist"
+    ],
+    "correct_index": 1,
+    "explanation": "Industry-specific multiples can be more meaningful than generic metrics. For insurance brokers: (1) EV/EBITDA may be appropriate but needs normalisation for commission income accounting; (2) EV/Revenue if margins are stable across peers; (3) EV per broker (productivity metric) — reflects underlying capacity; (4) EV/Earned Premium (similar to EV/Revenue for the industry). Sophisticated analysis uses multiple industry-specific metrics alongside generic ones to triangulate valuation. This approach applies to many sectors: healthcare uses EV/Beds; utilities use EV/KWh; real estate uses cap rates."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE analyst observes that cyclical industries (industrials, cyclicals) show lower multiples than defensive industries (utilities, consumer staples). Why?",
+    "options": [
+      "Accounting differences",
+      "Cyclical industries have more volatile earnings, creating higher perceived risk; defensive industries have stable earnings, warranting premium multiples reflecting lower risk profiles",
+      "Regulatory differences only",
+      "Age of companies"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiple differences across industries reflect risk profiles: (1) Defensive (utilities, consumer staples, healthcare): stable earnings through economic cycles → lower risk → premium multiples (12-18x); (2) Cyclical (industrials, materials, financial services): earnings volatility → higher risk → lower multiples (8-12x); (3) Growth sectors (tech, biotech): higher growth potential but more uncertainty → varied multiples. For PE analysis: (1) Benchmarking against correct peer group is critical; (2) Multiple differences are economic, not arbitrary; (3) Cyclical adjustments important at different points in economic cycles."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is analysing peer multiples during a downturn, where peers are trading at depressed multiples of 7-8x compared to historical 10-12x. How should this affect valuation analysis?",
+    "options": [
+      "Use current depressed multiples only",
+      "Consider: (1) Current market environment; (2) Historical averages and ranges; (3) Through-cycle multiples (average across cycles); (4) Relative levels (peers vs. broader market); (5) Apply judgement — current may be temporary dislocation or reflect fundamental change",
+      "Use historical peak multiples only",
+      "Ignore cyclical considerations"
+    ],
+    "correct_index": 1,
+    "explanation": "Cyclical considerations affect valuation significantly. If current peer multiples are 7-8x vs. historical 10-12x, analysis should: (1) Understand why multiples have declined (macro dislocation? Sector issues? Business model shift?); (2) Use through-cycle averages for comparison; (3) Consider whether current is temporary (buy at the dip) or permanent (reset expectations); (4) Apply judgement based on cycle timing and sector fundamentals; (5) Range-bound with both current and historical multiples. Pure spot valuation risks overvaluing in peak markets and undervaluing in troughs."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A peer company's reported EBITDA is €80M, but includes €8M of one-time restructuring costs that have been added back in the reported figure. How should a PE analyst treat this?",
+    "options": [
+      "Use reported EBITDA as is",
+      "Verify whether peers consistently add back the same types of adjustments; if not, normalise the multiples to a consistent basis (either all reported or all adjusted) before applying to the target",
+      "Always use the lowest peer EBITDA",
+      "Ignore the adjustment"
+    ],
+    "correct_index": 1,
+    "explanation": "Consistency in multiple calculation is critical. If peer multiples use adjusted EBITDA (with restructuring add-backs), the target's multiple should also be calculated using adjusted EBITDA. Mixing reported peer multiples with adjusted target EBITDA inflates the implied valuation. Best practice: (1) Use consistent EBITDA definition across peers and target; (2) Examine company disclosures for normalisation approaches; (3) Develop QofE view for the target; (4) Align methodologies before comparing. Most sophisticated analyses use adjusted EBITDA for peers (reflecting sustainable earning power) matched with adjusted target EBITDA."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A target generates €100M revenue in a capital-intensive industry. Peer EV/Revenue multiples range from 1.5x to 3.5x. What's the most likely primary reason for the wide range?",
+    "options": [
+      "Different revenue growth rates and EBITDA margins among peers",
+      "Identical companies being valued differently",
+      "Random variation",
+      "Accounting differences only"
+    ],
+    "correct_index": 0,
+    "explanation": "EV/Revenue dispersion is typically driven by: (1) Revenue growth rates — faster-growing peers command higher multiples; (2) EBITDA margins — higher-margin peers command premiums (a company with 20% margin is worth more per revenue euro than one with 5%); (3) Business quality — recurring revenue vs project-based; (4) Capital intensity — asset-light vs asset-heavy. For capital-intensive industries, EV/Revenue can vary from 1.5x (low-margin commodity producer) to 3.5x (high-margin specialty player). Best practice: use EV/Revenue as a sanity check rather than primary metric; rely more on EV/EBITDA for valuation."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is evaluating a carve-out target — a business unit being sold by a larger corporate parent. How does trading comps analysis apply?",
+    "options": [
+      "Carve-outs cannot be valued using comps",
+      "Carve-outs are typically valued using trading comps of pure-play peers of the specific business, as parent company multiples reflect diversified portfolio economics not applicable to the carve-out",
+      "Use only parent company multiples",
+      "Apply a 50% discount"
+    ],
+    "correct_index": 1,
+    "explanation": "Carve-outs require peer analysis specific to the business being divested, not the parent's overall business. For example, if divesting a cybersecurity business from a larger tech parent: (1) Cybersecurity-specific peers' multiples apply; (2) Parent's diversified multiple doesn't; (3) Sub-sector dynamics (growth, margins, competitive position) matter. Considerations: (1) Peer selection focused on pure-play comparables; (2) Adjustments for any transition services or shared costs; (3) Stand-alone costs the business will incur; (4) Customer relationships and contract dynamics. Carve-out valuations often reflect 'right sizing' from parent overhead and related adjustments."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm's analysis shows peer multiples have expanded from 9x to 12x over 3 years. What does this 'multiple expansion' indicate?",
+    "options": [
+      "Nothing significant",
+      "Multiple expansion can reflect: (1) Better industry fundamentals; (2) Lower interest rates raising all asset values; (3) Increased capital flows; (4) Competitive dynamics making M&A more active; (5) Technology transformation; understanding drivers matters for whether this is sustainable or temporary",
+      "A market anomaly",
+      "Always a buy signal"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiple expansion (increasing multiples over time) has multiple potential drivers: (1) Industry fundamentals improving (stronger growth, better margins, better competitive position); (2) Macroeconomic factors (lower interest rates increase all asset values); (3) Capital flows into PE creating competitive bidding; (4) M&A activity increasing transaction comps; (5) Technology shifts creating new growth opportunities. For PE analysis: (1) Understand drivers; (2) Assess sustainability; (3) Position for either continued expansion (buy and hold) or compression (sell and recapitalise); (4) Apply appropriate multiples for current cycle position."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm's valuation analysis includes 'multiple compression' as a downside scenario. What does this mean?",
+    "options": [
+      "The company shrinks",
+      "Multiple compression means the target's exit multiple is lower than entry multiple — e.g., entering at 11x and exiting at 9x. This is a key PE risk: even if EBITDA grows, multiple compression reduces equity returns",
+      "Multiple compression is always positive",
+      "Multiple compression only affects debt"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiple compression is a key PE risk: a target acquired at 11x EBITDA might exit at 9x, directly reducing exit value. Example: €50M EBITDA × 11x = €550M entry EV; €60M EBITDA × 9x = €540M exit EV. Despite 20% EBITDA growth, exit EV declines 2%. Multiple compression can result from: (1) Market rotation (less interest in the sector); (2) Interest rate increases; (3) Deteriorating industry fundamentals; (4) Competition narrowing PE's edge; (5) Late cycle multiple peaks. PE analysis models compression scenarios (7-8x exit vs 10-11x entry) to assess downside risk."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE analyst is valuing a high-margin software business. Peer median EV/Revenue is 5.0x, EV/EBITDA is 18x. Target has €100M revenue and €35M EBITDA. What valuation range does this produce?",
+    "options": [
+      "€500M - €630M — from EV/Revenue (€500M) to EV/EBITDA (€630M)",
+      "€500M only",
+      "€630M only",
+      "Cannot be calculated"
+    ],
+    "correct_index": 0,
+    "explanation": "Both multiples produce valuation estimates: (1) EV/Revenue = 5.0x × €100M = €500M; (2) EV/EBITDA = 18x × €35M = €630M. The implied valuation range is €500-630M. The convergence or divergence between methods is informative: (1) Convergence → higher confidence; (2) Divergence → warrants investigation (different margin profile, different growth rates, peer comparability issues). In this case, the target may have higher margins than peer median (35% vs assumed peer average), explaining why EV/EBITDA gives higher value than EV/Revenue."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is analysing a consumer products company with peers trading at P/E multiples of 15-25x. Why is P/E less commonly used in PE than EV/EBITDA?",
+    "options": [
+      "P/E is never used",
+      "P/E is affected by capital structure (debt level reduces net income through interest expense), making comparisons across companies with different leverage difficult; EV/EBITDA is capital-structure-neutral, allowing cleaner peer comparison",
+      "P/E is only for regulated industries",
+      "P/E is always higher than EV/EBITDA"
+    ],
+    "correct_index": 1,
+    "explanation": "P/E vs EV/EBITDA: (1) P/E = Equity Price / Net Income. Net income is after interest and taxes, making it dependent on capital structure; (2) EV/EBITDA removes financing and tax effects. Two identical businesses with different debt levels produce different P/E multiples (higher leverage = higher P/E for same operations). EV/EBITDA would be identical. PE firms change capital structures post-acquisition, making P/E less relevant. P/E is still useful: (1) For public company investors; (2) For highly stable, steady-state businesses; (3) As a cross-check; but EV/EBITDA is the PE standard."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE analyst builds a trading comps model that references Bloomberg, Capital IQ, or FactSet data. What data challenges commonly arise?",
+    "options": [
+      "Data is always clean and accurate",
+      "Common challenges: (1) Different vendor methodologies for EBITDA calculation; (2) Reported vs. adjusted figures inconsistencies; (3) Fiscal year end differences requiring alignment; (4) Foreign currency translation issues; (5) Segment reporting variations; (6) Data timeliness (LTM end dates)",
+      "Only language barriers",
+      "Only interest rate calculations"
+    ],
+    "correct_index": 1,
+    "explanation": "Data vendors (Bloomberg, Capital IQ/Refinitiv, FactSet) require careful analysis: (1) EBITDA calculation may vary (Bloomberg might use adjusted; Capital IQ might use reported; analyst verification required); (2) Reported vs. adjusted EBITDA inconsistencies across peers; (3) Fiscal year end alignment (March 31 vs. December 31 requires adjustment); (4) FX translation if peers are in different currencies; (5) Segment data availability; (6) Timing of LTM periods. Best practice: (1) Verify data from primary sources (filings); (2) Apply consistent methodology; (3) Document all adjustments; (4) Sanity-check implied metrics."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm's analysis shows a target with 15% growth vs peer median 7% growth. What valuation implication does this typically have?",
+    "options": [
+      "The target should trade at peer median multiple",
+      "Higher growth typically warrants premium multiples; a target growing at 2x peer median growth rate might justify a 20-40% multiple premium, though growth-adjusted multiple analysis (via regression) provides a more rigorous approach",
+      "The target should trade at a discount",
+      "Growth is always offset by other factors"
+    ],
+    "correct_index": 1,
+    "explanation": "Growth premium considerations: (1) Superior growth typically commands 10-30% multiple premium; (2) The exact premium depends on how peers respond to growth; (3) Growth-adjusted regression analysis provides a rigorous approach: Multiple = α + β × Growth; (4) Applying growth to the target's implied multiple. Example: if peers show Multiple = 7 + 0.4 × Growth %, and target grows 15%: 7 + 6 = 13x. If peer median (growing 7%) trades at 9.8x, a target at 15% growth would command 13x — a 33% premium. Growth premium is bounded by sustainability — unsustainable growth commands less premium."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE analyst is valuing a European target and finds that European peer multiples are 1-2x higher than equivalent US peers. What might explain this?",
+    "options": [
+      "European companies are better",
+      "Possible factors: (1) Different cost of capital; (2) Different growth profiles; (3) Currency considerations (EUR weakness may raise US multiples); (4) Cyclical positioning; (5) Supply/demand dynamics in different PE markets; (6) Accounting and regulatory differences; cross-region comparison requires careful analysis",
+      "US companies are never comparable to European ones",
+      "Regulatory requirements differ"
+    ],
+    "correct_index": 1,
+    "explanation": "Cross-region multiple differences have multiple explanations: (1) Different cost of capital (US equity risk premium, country risk differentials); (2) Growth profiles (US tech has historically grown faster than European counterparts); (3) Currency considerations; (4) Cyclical positioning differences between regions; (5) PE market supply and demand (more PE capital in US chases more deals); (6) Accounting (IFRS vs GAAP) and regulatory differences. Best practice: (1) Understand the drivers of differences; (2) Apply region-appropriate peers; (3) Consider cross-border comparables if transaction involves cross-border buyers; (4) Adjust for specific factors rather than applying blanket discounts."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is analysing a target in a consolidating sector. Peer multiples have been rising. What does this pattern typically signal?",
+    "options": [
+      "Higher multiples are permanent",
+      "Consolidation dynamics often drive multiple expansion as: (1) M&A activity creates exit opportunities and transaction comparables; (2) Private capital flows increase; (3) Strategic buyers compete with PE firms; (4) Market structure shifts toward fewer, larger players",
+      "Multiples will always decline",
+      "Nothing can be inferred"
+    ],
+    "correct_index": 1,
+    "explanation": "Consolidation environments drive multiple expansion through multiple channels: (1) M&A creates exit pathways and transaction comparables; (2) Strategic buyers compete with PE (FAANG acquisitions in tech, pharma rollups in healthcare); (3) Private capital seeking deployment; (4) Market structure shifts reducing competition; (5) Scale benefits create value in larger companies. For PE firms: (1) Position early in consolidating sectors; (2) Build scale through bolt-ons; (3) Exit during active consolidation phases; (4) Watch for regulatory pushback when consolidation becomes excessive."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is analysing a pharmaceutical distribution target. Peer EV/EBITDA multiples are 8-12x. What industry-specific factors affect multiple selection?",
+    "options": [
+      "Only size",
+      "Factors: (1) Product mix (generic vs branded); (2) Customer mix (retail pharmacy, hospitals, specialty); (3) Geographic presence; (4) Payer/reimbursement exposure; (5) Technology investment; (6) Regulatory environment; (7) Scale and consolidation position",
+      "Only revenue",
+      "Only margin"
+    ],
+    "correct_index": 1,
+    "explanation": "Industry-specific factors in pharma distribution: (1) Product mix: generics (low margin, high volume) vs branded/specialty (high margin, high service); (2) Customer mix: hospital systems vs. retail pharmacy vs. specialty (affects relationships and margins); (3) Geographic presence: domestic vs. international; (4) Reimbursement environment: government payers, commercial insurers; (5) Technology and automation: efficiency advantages; (6) Regulatory: FDA, DEA compliance; (7) Scale: largest distributors (Cardinal, McKesson, AmerisourceBergen equivalents) capture benefits. Sophisticated analysis applies peer groups reflecting these characteristics rather than using sector-wide medians."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is analysing a specialty chemicals target. Peer multiples vary from 8-15x EBITDA. What factors most likely explain this wide range?",
+    "options": [
+      "Random variation",
+      "Factors: (1) Product specialty level (commodity vs highly specialised); (2) Sector exposure (specialty for semiconductors vs. basic industrial); (3) Growth profile; (4) Margin structure; (5) Cyclical positioning; (6) Geographic mix; peer group should be sub-divided by these factors",
+      "Only company size",
+      "Only regulatory differences"
+    ],
+    "correct_index": 1,
+    "explanation": "Specialty chemicals has significant multiple dispersion based on: (1) Product specialty: highly specialised (semiconductor chemicals) vs. broad (basic industrial chemicals) — 2-4x multiple difference; (2) End-market: tech, pharma, automotive each have different risk profiles; (3) Growth rates: some sub-sectors growing 8-10%, others 2-3%; (4) Margin structures: 10% vs 30% EBITDA margins; (5) Cyclicality: chemical cycles affect valuations; (6) Geography: US multiples may differ from European. Best practice: (1) Sub-divide peers by specialty level; (2) Match peer characteristics to target; (3) Apply appropriate range (not full 8-15x range for narrow target)."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is valuing a business that operates in three separate segments (Healthcare Services 40%, IT Services 35%, Manufacturing 25%). What valuation approach typically applies?",
+    "options": [
+      "Apply a single blended multiple",
+      "Sum-of-parts (SOTP) approach: value each segment separately using appropriate industry peer multiples, then sum the segment values to arrive at total business value",
+      "Use only the largest segment",
+      "Exclude the smallest segment"
+    ],
+    "correct_index": 1,
+    "explanation": "Sum-of-parts (SOTP) analysis values multi-segment businesses segment-by-segment: (1) Apply healthcare services peers to healthcare EBITDA (say 14x × €20M = €280M); (2) Apply IT services peers to IT EBITDA (say 10x × €18M = €180M); (3) Apply manufacturing peers to manufacturing EBITDA (say 8x × €13M = €104M); (4) Sum: €280M + €180M + €104M = €564M; (5) Add/subtract corporate adjustments. SOTP is useful when: (1) Segments have significantly different multiples; (2) Segments might be separable; (3) Peer multiples within one sector don't match target's blended mix. SOTP may trigger conglomerate discount if total is compared to consolidated multiple."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is considering a target where competitive dynamics have shifted significantly over the past 12 months. How should this affect trading comparable analysis?",
+    "options": [
+      "Use pre-shift multiples only",
+      "Consider: (1) How have peer multiples moved in response; (2) Does the target benefit or suffer from the shift; (3) Is this transition reflected in current multiples or still being priced in; (4) Model scenarios reflecting pre-shift and post-shift environments",
+      "Only use peers operating pre-shift",
+      "Ignore the shift"
+    ],
+    "correct_index": 1,
+    "explanation": "Competitive dynamic shifts require careful analysis: (1) Peer multiples typically reflect market's view of new reality; (2) Target's position: does shift benefit or hurt the target?; (3) Timing: is transition complete or ongoing?; (4) Sensitivity analysis: model scenarios reflecting old and new environments. Example: if AI disruption has pressured traditional software companies, peer multiples may have compressed; but a target well-positioned for AI might warrant less compression than peers. Sophisticated analysis incorporates competitive dynamics rather than applying blanket peer medians."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is analysing peer multiples in a sector with limited publicly traded companies. What alternative approaches apply?",
+    "options": [
+      "Trading comps cannot be used",
+      "Alternatives: (1) Use broader definition of peers (adjacent sectors with similar economics); (2) Rely more heavily on precedent transaction multiples; (3) Use international peers; (4) Apply DCF with stronger weighting; (5) Develop multiples from industry research and analyst reports",
+      "Only DCF applies",
+      "Use random multiples"
+    ],
+    "correct_index": 1,
+    "explanation": "Limited public peers is a common challenge, especially in mid-market or niche sectors: (1) Broaden peer definition: adjacent sectors with similar economic characteristics; (2) Use international peers: large European or US peers even if markets differ; (3) Rely on precedent transactions: private M&A deals provide alternative data; (4) Strong DCF analysis: use DCF as primary method with trading comps as secondary; (5) Industry research: analyst reports sometimes include multiple estimates; (6) Private company marks: some specialty data providers (Pitchbook, PrivCo) track private company valuations. Document methodology carefully given the limitations."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A target has 15% forecast growth and peers median is 8%. The PE firm is deciding whether to apply a premium multiple. What quantitative approach could validate this?",
+    "options": [
+      "Apply any premium",
+      "Regression analysis: plot peer growth rates against their multiples, determine the relationship, then apply the target's growth rate to the regression line — providing an empirically-grounded premium calculation",
+      "Use arbitrary premium",
+      "No premium justified"
+    ],
+    "correct_index": 1,
+    "explanation": "Growth-adjusted multiple regression: (1) Plot each peer's growth rate (x-axis) against their multiple (y-axis); (2) Calculate regression: Multiple = α + β × Growth; (3) Apply target's growth rate to derive implied multiple. Example: if peers show Multiple = 6 + 0.4 × Growth%, and target grows 15% vs peer median 8%: Target multiple = 6 + 0.4 × 15 = 12x. Peer median multiple = 6 + 0.4 × 8 = 9.2x. Premium = 12 - 9.2 = 2.8x (30% premium). This empirical approach beats arbitrary premium selection. Requires: (1) Sufficient data points; (2) Reasonable regression fit (R² > 0.5); (3) Growth differentiation justified by fundamentals."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is analysing a target in the industrial distribution sector. Peer EV/EBITDA is 7-9x. Current debt capacity suggests the LBO could support 5x leverage. What valuation does this produce?",
+    "options": [
+      "€500M on €75M EBITDA at 8x peer median",
+      "Approximately €600M (8x × €75M EBITDA); with 5x leverage of €375M of debt, equity check would be €225M; IRR analysis would then validate whether these terms generate acceptable returns",
+      "€500M with no equity consideration",
+      "Leverage irrelevant to valuation"
+    ],
+    "correct_index": 1,
+    "explanation": "Calculation chain: (1) EBITDA: €75M; (2) Multiple: 8x (peer median); (3) EV: 8x × €75M = €600M; (4) Debt: 5x × €75M = €375M; (5) Equity check: €600M - €375M = €225M. Then LBO return analysis: if EBITDA grows to €100M and exits at 9x = €900M; debt at exit (assuming paydown) = €200M; exit equity = €700M; MOIC = €700M / €225M = 3.1x. IRR calculation over 5-year hold provides return indicator. Trading comps establish the anchor valuation; LBO analysis validates whether the investment generates acceptable PE returns."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is analysing a target with €150M EBITDA in a mature industry. Peer median EV/EBITDA is 9.5x with a range of 8.2x-11.1x. What enterprise value range does this imply?",
+    "options": [
+      "€1,230M - €1,665M — peer range applied to target EBITDA",
+      "€1,425M only — peer median applied",
+      "€1,500M only",
+      "Cannot be calculated"
+    ],
+    "correct_index": 0,
+    "explanation": "Range analysis: (1) Low: 8.2x × €150M = €1,230M; (2) Median: 9.5x × €150M = €1,425M; (3) High: 11.1x × €150M = €1,665M. The implied EV range is €1,230M-€1,665M, a ±15% band around median. For decision-making: (1) Use point estimate only for specific comparison; (2) Present ranges for decision-making; (3) Apply narrower ranges within the peer range (e.g., 25th-75th percentile); (4) Add other method outputs to the football field. Most PE presentations show 25th-75th percentile range with median highlighted, providing meaningful valuation discipline while allowing judgement."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE analyst is analysing trading multiples for a target. Why should the analyst be cautious about 'cherry-picking' peers?",
+    "options": [
+      "Cherry-picking is always appropriate",
+      "Selecting only peers that support a desired valuation creates: (1) Confirmation bias; (2) Inability to defend analysis rigorously; (3) Peer group may not be economically representative; (4) Vulnerability to challenge in IC presentations or during deal negotiations",
+      "Cherry-picking maximises deal value",
+      "Peer selection has no effect"
+    ],
+    "correct_index": 1,
+    "explanation": "Cherry-picking peers (selecting only those that support a desired conclusion) is a serious analytical flaw: (1) Confirmation bias — selecting to support pre-formed views; (2) Analytical integrity — cannot defend the analysis rigorously; (3) Strategic vulnerability — challenged by IC members or opposing deal counsel; (4) Economic fallacy — multiples are only valid if peers are genuinely comparable. Best practices: (1) Build peer group based on economic characteristics before looking at multiples; (2) Apply transparent selection criteria; (3) Document rationale for inclusions and exclusions; (4) Test robustness with different peer groupings; (5) Be willing to adjust conclusions based on peer data."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE analyst is preparing a football field analysis showing valuation from multiple methods. What's the primary purpose?",
+    "options": [
+      "To confuse the IC",
+      "To visualise the valuation range across methods (trading comps, precedent transactions, DCF, LBO analysis) — identifying convergence zones that suggest robust valuation and divergence zones that warrant investigation",
+      "To hide analysis",
+      "To select the highest valuation"
+    ],
+    "correct_index": 1,
+    "explanation": "Football field analysis visualises valuation from multiple methods: (1) Trading comps (peer multiples applied to target); (2) Precedent transactions (M&A multiples); (3) DCF analysis; (4) LBO analysis. Each shows a range. Convergence (similar ranges across methods) suggests robust valuation. Divergence warrants investigation: why do methods disagree? Different methods emphasize different factors: comps reflect peers, transactions reflect M&A premiums, DCF reflects fundamentals, LBO reflects PE economics. Football field presents findings for IC discussion rather than a single point estimate. Standard in sophisticated PE analysis."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A peer company's multiple was 14x in 2021 and is 9x in 2024. How should a PE analyst interpret and apply this?",
+    "options": [
+      "Use 2021 multiple (peak market)",
+      "Evaluate: (1) What has caused the multiple contraction; (2) Is this target-specific or market-wide; (3) Are these conditions likely to persist; (4) Use through-cycle multiples or current conditions depending on holding period; avoid simple spot multiple application",
+      "Use 2024 multiple (current)",
+      "Average 2021 and 2024"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiple contraction from 14x to 9x (36% decline) warrants careful analysis: (1) What caused the contraction: sector-specific issues? broader market? interest rates?; (2) Is the target exposed to the same drivers?; (3) Sustainability of the contraction: will multiples recover or remain depressed?; (4) Holding period considerations: a long hold may benefit from cyclical recovery. For LBO entry: current multiples may represent opportunity (contraction creates lower entry) but also suggest exit multiple risk (if current persists). Sophisticated analysis models scenarios: exit at current multiples, exit at cyclical average, exit at pre-contraction levels."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is valuing a target alongside a planned merger with another portfolio company. How does this affect trading comps analysis?",
+    "options": [
+      "Trading comps don't apply to combined entities",
+      "Analysis should include: (1) Pre-merger target multiples; (2) Post-merger entity as a single business; (3) Potential synergies that affect multiples; (4) Scale benefits of combined entity; (5) Execution risk of integration",
+      "Use only target multiples",
+      "Apply double the multiple"
+    ],
+    "correct_index": 1,
+    "explanation": "Merger-related valuation considerations: (1) Pre-merger target valuation (stand-alone); (2) Combined entity valuation (synergies, scale, market position); (3) Multiple expansion potential if combined entity is more valuable as a platform; (4) Peer analysis may shift (larger combined entity compared to larger peers); (5) Execution risk: integration challenges, culture fit, synergy realisation timing; (6) Value attribution: how are synergies captured (equal split, relative contribution, control premium)? Deal teams model both stand-alone and combined scenarios to understand value creation potential."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE firm is considering a target in a 'special situation' (distressed, carve-out, family succession). How does this affect trading comps analysis?",
+    "options": [
+      "Trading comps cannot apply",
+      "Trading comps provide baseline; special situations typically justify: (1) Discount from peer median (execution risk); (2) Adjustments for expected operational improvements; (3) Consideration of buyer universe (strategic vs PE); (4) Specific assumptions matching the situation",
+      "Always use highest multiples",
+      "Ignore trading comps"
+    ],
+    "correct_index": 1,
+    "explanation": "Special situations (distressed, carve-out, family succession, divestiture) typically involve: (1) Trading comps provide valuation baseline; (2) Situation-specific factors warrant adjustments; (3) Discount from peer median reflects: execution risk, operational challenges, transitional costs, potential impairment; (4) Anticipated improvements may justify higher multiples if operational thesis is compelling; (5) Buyer universe affects competitive dynamics (strategic acquirers may bid higher than PE; distressed may have limited buyers). Adjustments typically 10-25% discount depending on situation specifics and operational thesis."
+  },
+  {
+    "topic_tag": "valuation-trading-comps",
+    "question": "A PE analyst prepares a final trading comps summary. What elements should be included for rigorous documentation?",
+    "options": [
+      "Just the final number",
+      "Complete documentation: (1) Peer selection criteria and rationale; (2) Data sources and as-of dates; (3) Peer multiples (both LTM and NTM where available); (4) Adjustments made to peer data; (5) Summary statistics (mean, median, percentiles); (6) Target-specific adjustments (premium or discount with rationale); (7) Implied valuation range",
+      "Only the median multiple",
+      "Only peer names"
+    ],
+    "correct_index": 1,
+    "explanation": "Rigorous trading comps documentation: (1) Peer selection: rationale for inclusion and exclusion; (2) Data sources: Bloomberg/Capital IQ/FactSet with as-of dates; (3) Multiples: calculated consistently, both LTM and NTM where applicable; (4) Adjustments: any normalisations documented; (5) Summary statistics: mean, median, 25th percentile, 75th percentile; (6) Target-specific adjustments: premium or discount with quantitative justification; (7) Implied valuation range; (8) Sensitivity analysis; (9) Cross-checks against other methods. This documentation supports IC review, LP communication, deal negotiation, and audit requirements."
+  }
+]

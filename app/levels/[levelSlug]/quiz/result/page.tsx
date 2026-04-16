@@ -4,7 +4,7 @@ import { LEVELS, MODULES, TAXONOMY } from '@/content/curriculum-taxonomy'
 import { createClient } from '@/lib/supabase/server'
 import { buttonVariants } from '@/components/ui/button'
 
-// Human-readable labels for each Level 1 topic_tag.
+// Human-readable labels for topic_tags across all levels.
 const TOPIC_LABELS: Record<string, string> = {
   'pe-fundamentals': 'PE Fundamentals',
   'fund-structure': 'Fund Structure',
@@ -46,18 +46,30 @@ export default async function QuizResultPage({
     redirect(`/levels/${levelSlug}/quiz`)
   }
 
-  // Fetch the attempt. Belt-and-suspenders: explicit user_id filter alongside RLS.
-  // T-03-07: RLS policy on quiz_attempts restricts SELECT to auth.uid() = user_id.
-  const { data: attempt, error: attemptErr } = await supabase
-    .from('quiz_attempts')
-    .select('id, score, total, passed, answers, completed_at')
-    .eq('id', attempt_id)
-    .eq('user_id', user.id)
-    .single()
+  // Fetch attempt + pass mark in parallel.
+  const [attemptResult, gateResult] = await Promise.all([
+    supabase
+      .from('quiz_attempts')
+      .select('id, score, total, passed, answers, completed_at')
+      .eq('id', attempt_id)
+      .eq('user_id', user.id)
+      .single(),
+    supabase
+      .from('level_gates')
+      .select('required_quiz_score_pct')
+      .eq('level_id', level.uuid)
+      .single(),
+  ])
 
-  if (attemptErr || !attempt) {
+  if (attemptResult.error || !attemptResult.data) {
     redirect(`/levels/${levelSlug}/quiz`)
   }
+
+  const attempt = attemptResult.data
+  const passMark = gateResult.data?.required_quiz_score_pct ?? 70
+
+  // Next level (if any) for unlock message.
+  const nextLevel = LEVELS.find((l) => l.number === level.number + 1)
 
   // Recompute topic_breakdown server-side from quiz_questions.
   // This avoids storing topic_breakdown in quiz_attempts and ensures
@@ -87,41 +99,46 @@ export default async function QuizResultPage({
     : 0
 
   return (
-    <div className="bg-zinc-950 min-h-screen text-white">
+    <div className="bg-background min-h-screen text-foreground">
       <div className="max-w-3xl mx-auto px-6 py-12">
 
         {/* Pass / Fail banner */}
         {attempt.passed ? (
-          <div className="bg-emerald-950 border border-emerald-800 rounded-lg p-6 mb-8 text-center">
-            <p className="text-2xl font-semibold text-emerald-400">Level 2 Unlocked!</p>
-            <p className="text-zinc-300 mt-1">
-              You passed the Level 1 quiz. Intermediate content is now available.
+          <div className="bg-card border border-border rounded-lg p-6 mb-8 text-center">
+            <p className="text-2xl font-semibold text-primary">
+              {nextLevel ? `Level ${nextLevel.number} Unlocked!` : 'Course Complete!'}
+            </p>
+            <p className="text-foreground/80 mt-1">
+              {nextLevel
+                ? `You passed the Level ${level.number} quiz. ${nextLevel.name} is now available.`
+                : `You passed the final level. Congratulations!`}
             </p>
           </div>
         ) : (
-          <div className="bg-red-950 border border-red-800 rounded-lg p-6 mb-8 text-center">
-            <p className="text-2xl font-semibold text-red-400">Keep Studying</p>
-            <p className="text-zinc-300 mt-1">
-              You need 70% (14/20) to unlock Level 2. Review the topics below and retake when
-              ready.
+          <div className="bg-card border border-border rounded-lg p-6 mb-8 text-center">
+            <p className="text-2xl font-semibold text-destructive">Keep Studying</p>
+            <p className="text-foreground/80 mt-1">
+              You need {passMark}% ({Math.ceil((passMark / 100) * attempt.total)}/{attempt.total}) to
+              unlock {nextLevel ? `Level ${nextLevel.number}` : 'the next level'}. Review the topics
+              below and retake when ready.
             </p>
           </div>
         )}
 
         {/* Score display */}
         <div className="text-center mb-8">
-          <p className="text-4xl font-bold text-white">
+          <p className="text-4xl font-bold text-foreground">
             {attempt.score}/{attempt.total}
           </p>
-          <p className="text-zinc-400 mt-1">{scorePct}% correct</p>
+          <p className="text-muted-foreground mt-1">{scorePct}% correct</p>
         </div>
 
         {/* Topic breakdown */}
-        <h2 className="text-lg font-semibold text-white mb-4">Topic Breakdown</h2>
+        <h2 className="text-lg font-semibold text-foreground mb-4">Topic Breakdown</h2>
         <div className="space-y-3">
           {Object.entries(breakdown).map(([tag, { correct, total }]) => {
             const pct = total > 0 ? Math.round((correct / total) * 100) : 0
-            const passing = pct >= 70
+            const passing = pct >= passMark
             const label = TOPIC_LABELS[tag] ?? tag
 
             // Look up review link for failed topics.
@@ -134,18 +151,18 @@ export default async function QuizResultPage({
 
             return (
               <div key={tag}>
-                <div className="flex items-center justify-between bg-zinc-900 rounded-lg px-4 py-3">
+                <div className="flex items-center justify-between bg-card rounded-lg px-4 py-3">
                   <div>
-                    <span className="text-white font-medium">{label}</span>
-                    <span className="text-zinc-400 text-sm ml-2">
+                    <span className="text-foreground font-medium">{label}</span>
+                    <span className="text-muted-foreground text-sm ml-2">
                       {correct}/{total}
                     </span>
                   </div>
                   <span
                     className={
                       passing
-                        ? 'bg-emerald-900 text-emerald-300 text-sm font-medium px-2.5 py-1 rounded'
-                        : 'bg-red-900 text-red-300 text-sm font-medium px-2.5 py-1 rounded'
+                        ? 'bg-primary/20 text-primary text-sm font-medium px-2.5 py-1 rounded'
+                        : 'bg-destructive/20 text-destructive text-sm font-medium px-2.5 py-1 rounded'
                     }
                   >
                     {pct}%
@@ -154,7 +171,7 @@ export default async function QuizResultPage({
                 {!passing && reviewHref && (
                   <a
                     href={reviewHref}
-                    className="text-xs text-zinc-400 hover:text-white mt-1 block pl-4"
+                    className="text-xs text-muted-foreground hover:text-foreground mt-1 block pl-4"
                   >
                     Review: {moduleMeta?.title} &rarr;
                   </a>
@@ -168,10 +185,10 @@ export default async function QuizResultPage({
         <div className="flex gap-4 justify-center mt-10">
           {attempt.passed ? (
             <Link
-              href="/lessons/intermediate-placeholder/coming-soon"
+              href="/dashboard"
               className={buttonVariants({ variant: 'default' })}
             >
-              Continue to Level 2 &rarr;
+              {nextLevel ? `Continue to Level ${nextLevel.number}` : 'Go to Dashboard'} &rarr;
             </Link>
           ) : (
             <Link

@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "An LBO's capital structure includes €300M of Senior Debt at 5%, €100M of Second Lien at 8%, and €50M of Mezzanine at 11% (with 3% PIK). What is the blended cash interest rate on the debt?",
+    "options": [
+      "Approximately 6.1%",
+      "Approximately 6.4%",
+      "Approximately 7.5%",
+      "Approximately 8%"
+    ],
+    "correct_index": 0,
+    "explanation": "Cash interest = (€300M × 5%) + (€100M × 8%) + (€50M × 8% cash component) = €15M + €8M + €4M = €27M. Blended cash rate = €27M / €450M total debt = 6.0%. The 3% PIK on mezzanine accrues to principal rather than being paid in cash. Understanding cash vs. total interest cost is critical for cash flow modelling — PIK preserves liquidity in early years but increases debt balance over time."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm is negotiating a Term Loan B (TLB) for its LBO. What are the typical key features of this debt instrument?",
+    "options": [
+      "Amortising over 3 years with bank lenders only",
+      "Bullet maturity at 7 years with nominal 1% per year amortisation, syndicated to institutional investors (CLOs, loan mutual funds), senior secured position",
+      "Convertible to equity automatically",
+      "No security or priority claim"
+    ],
+    "correct_index": 1,
+    "explanation": "Term Loan B is the most common leveraged loan instrument: bullet maturity (typically 7 years), minimal amortisation (often 1% per year, 99% at maturity), senior secured, floating rate (e.g., SOFR/EURIBOR + 400-500 bps), and syndicated to institutional investors. This structure maximises borrower cash flow retention during the hold period — most debt is repaid at exit, not during operations. TLB is distinct from Term Loan A (bank-held, more amortising) and high-yield bonds (bond-format, typically subordinated)."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE-backed company has €40M EBITDA and €240M of total debt. What is its leverage ratio, and how does this typically compare to mid-market LBO norms?",
+    "options": [
+      "6.0x — aligned with typical mid-market LBO leverage (4-7x)",
+      "4.0x — above typical LBO leverage",
+      "10.0x — extreme leverage requiring covenant waivers",
+      "2.4x — conservative industrial leverage"
+    ],
+    "correct_index": 0,
+    "explanation": "Leverage Ratio = Total Debt / EBITDA = €240M / €40M = 6.0x. This is within typical mid-market LBO norms (4-7x for stable businesses). The specific ratio acceptable depends on: business quality (stable recurring = supports higher), industry (defensive = higher; cyclical = lower), market conditions (credit availability), and interest coverage. Leverage above 7x typically requires exceptional business quality; below 5x may signal conservative underwriting or weak credit conditions."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "What are the typical seniority ranks in a levered capital structure from highest to lowest priority?",
+    "options": [
+      "Common equity, preferred equity, senior debt",
+      "Senior secured debt, senior unsecured/second lien, subordinated/mezzanine, preferred equity, common equity",
+      "Random order with no standard hierarchy",
+      "Only senior debt and equity exist"
+    ],
+    "correct_index": 1,
+    "explanation": "Priority waterfall (most senior to most junior): (1) Senior secured debt — first lien on assets, lowest risk, lowest rate; (2) Senior unsecured or second lien; (3) Subordinated/mezzanine debt — contractually subordinated, higher rate; (4) Preferred equity — dividend preference but no loan structure; (5) Common equity — residual claim. Each tier bears incrementally more risk and earns higher returns. In distress, recoveries follow this waterfall — senior claims are fully repaid before junior tiers receive anything."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A 'first lien' debt holder has what specific right compared to 'second lien' holders?",
+    "options": [
+      "No practical difference between first and second lien",
+      "First lien has priority claim on secured collateral — in a liquidation, first lien is repaid in full before second lien receives any collateral proceeds",
+      "First lien has lower interest rates because it has less security",
+      "Second lien has priority in bankruptcy"
+    ],
+    "correct_index": 1,
+    "explanation": "First lien debt has priority claim on specified collateral (typically substantially all the company's assets). In a liquidation, first lien lenders are repaid in full from collateral proceeds before second lien receives anything from the same collateral. This seniority allows first lien to bear less risk and demand lower interest rates (typically 4-6% over reference rate). Second lien holders take subordinated position, accepting higher rates (6-8% over reference rate) for the incremental risk."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE-backed company with €50M EBITDA pays €20M annual cash interest. What is the Interest Coverage Ratio (ICR), and how is this typically interpreted?",
+    "options": [
+      "0.4x — borderline insolvent",
+      "2.5x — moderate coverage; typical LBO minimum is 2.0-2.5x",
+      "5.0x — highly conservative coverage",
+      "Cannot be determined"
+    ],
+    "correct_index": 1,
+    "explanation": "ICR = EBITDA / Interest Expense = €50M / €20M = 2.5x. This means EBITDA is 2.5 times interest obligations, providing margin of safety. Typical LBO minimums are 2.0-2.5x; below 2.0x signals elevated risk. Above 4.0x suggests conservative structure or under-leveraged. ICR complements leverage ratios because it reflects actual debt service burden (which depends on interest rate, not just debt size). A company with 6x leverage and 3x ICR may be safer than one with 4x leverage and 1.8x ICR if rates differ significantly."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A leveraged loan contains a 'maintenance financial covenant' requiring Net Leverage below 6.0x, tested quarterly. What happens if the ratio exceeds 6.0x?",
+    "options": [
+      "The company is immediately liquidated",
+      "Covenant breach triggers a 'default' event, typically requiring the borrower to negotiate with lenders for a waiver, amendment, or equity cure — the lenders gain significant leverage and may charge fees, raise rates, or impose new conditions",
+      "The interest rate automatically decreases",
+      "Nothing — covenants are never enforced"
+    ],
+    "correct_index": 1,
+    "explanation": "Covenant breaches trigger 'default' events, giving lenders contractual rights: fee payments, rate increases, restrictive new conditions, and potential acceleration of the debt. In practice, sophisticated PE firms work with lenders to negotiate waivers or amendments — but this is a serious process involving: updated financial projections, explanation of breach causes, remediation plans, and often new costs. The credit facility may also include 'equity cure' rights allowing the PE sponsor to inject additional equity to remedy the breach."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE-backed company's credit facility includes both 'financial covenants' (maintenance tests) and 'incurrence covenants.' What distinguishes these?",
+    "options": [
+      "They are the same thing",
+      "Financial (maintenance) covenants are tested regularly (quarterly); incurrence covenants trigger only upon specific actions (additional debt, dividend payment, major acquisition)",
+      "Financial covenants apply to public companies only",
+      "Incurrence covenants test financial ratios annually"
+    ],
+    "correct_index": 1,
+    "explanation": "Maintenance covenants require ongoing compliance with ratios (leverage, coverage) tested quarterly or monthly regardless of company actions. Incurrence covenants only apply when specific actions occur: adding new debt, paying dividends, making acquisitions, or disposing of assets. 'Cov-lite' structures use incurrence covenants almost exclusively, giving borrowers more flexibility. Maintenance covenants provide lenders earlier intervention rights but are increasingly absent from large-cap leveraged loans."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm is comparing 'Senior Secured' debt to 'Senior Unsecured' debt. What is the practical difference?",
+    "options": [
+      "They are identical",
+      "Senior Secured has a specific lien on company assets; Senior Unsecured ranks equal to Senior Secured in the capital structure priority but does not have collateral security — typically commands a higher interest rate reflecting the incremental risk",
+      "Senior Unsecured is always senior to Senior Secured",
+      "Senior Secured has no interest rate"
+    ],
+    "correct_index": 1,
+    "explanation": "Both tiers rank senior in the capital structure, but Secured debt has collateral (specific liens on assets). In liquidation, secured lenders are paid first from collateral proceeds; unsecured claimants compete for remaining assets with other unsecured creditors. Secured typically pays 4-5% over reference rate; unsecured may pay 6-7% reflecting the incremental risk. Most LBOs use secured debt for the senior tranche; unsecured is more common in investment-grade corporate finance."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A 'High Yield Bond' compared to a 'Leveraged Loan' has what typical differences?",
+    "options": [
+      "They are the same instrument",
+      "Bonds typically have fixed rates (vs. floating for loans), longer bullet maturities (8-10 years vs. 7 years), call protection (prepayment penalties), and incurrence-only covenants (vs. maintenance tests for loans); bonds are securities, loans are lending instruments",
+      "High yield bonds have variable rates",
+      "Leveraged loans mature in less than a year"
+    ],
+    "correct_index": 1,
+    "explanation": "High yield bonds vs. leveraged loans key differences: (1) Rate: bonds are fixed, loans floating; (2) Maturity: bonds 8-10 years, loans 7 years; (3) Amortisation: bonds bullet, loans light amortisation; (4) Call protection: bonds have strong prepayment penalties, loans can be refinanced freely; (5) Covenants: bonds typically incurrence-only, loans may have maintenance; (6) Legal form: bonds are securities, loans are lending instruments. LBO financing typically uses loans for senior and bonds for subordinated tranches."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A company's credit facility includes a 'cash sweep' provision. What does this require?",
+    "options": [
+      "All cash on the balance sheet must be swept to shareholders",
+      "A percentage of excess cash flow (typically 50-75%) must be used for mandatory debt prepayment rather than retained on the balance sheet or distributed to shareholders",
+      "The lender can seize cash at any time",
+      "No effect on cash"
+    ],
+    "correct_index": 1,
+    "explanation": "Cash sweep provisions require the borrower to apply excess cash flow (above mandatory amortisation and interest) to mandatory debt prepayment. Typical levels: 75% sweep when leverage is high; stepping down to 50%/25%/0% as leverage decreases. This accelerates deleveraging and reduces lender risk. Cash sweeps are standard in most LBO facilities. Sophisticated PE firms negotiate 'leverage-based step-downs' that reduce the sweep as the company delevers."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "What is the purpose of a 'Revolving Credit Facility' (RCF) in an LBO financing structure?",
+    "options": [
+      "To fund the initial acquisition",
+      "To provide ongoing working capital funding and operational flexibility — the company can draw and repay as cash flow fluctuates, supporting seasonal working capital needs, bolt-on acquisitions, and general corporate flexibility",
+      "To replace equity capital",
+      "To provide long-term financing for capex"
+    ],
+    "correct_index": 1,
+    "explanation": "RCFs provide flexible working capital funding during the hold period. Typically sized at 10-15% of total debt package (e.g., €50M RCF alongside €350M term debt), they allow the company to draw and repay as needs fluctuate. RCFs are typically undrawn at closing (only commitment fees apply) and become active during seasonal peaks or opportunistic investments. They rank senior secured alongside term debt and include covenant protections. RCF availability is a key credit support feature for the business."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A mezzanine debt tranche carries 10% cash interest plus 4% PIK interest. What does 'PIK' mean?",
+    "options": [
+      "A transaction fee paid upfront",
+      "Payment-in-Kind — interest that accrues to principal rather than being paid in cash, compounding the debt balance over time and preserving liquidity in early years",
+      "Prepayment penalty",
+      "Principal insurance kickback"
+    ],
+    "correct_index": 1,
+    "explanation": "PIK (Payment-in-Kind) interest accrues to the principal balance rather than being paid in cash. A €100M mezzanine loan at 10% cash + 4% PIK: cash interest = €10M per year; PIK accrues €4M to principal (Year 2 starts at €104M, generating higher subsequent interest). This preserves liquidity during the hold period but increases the debt balance. PIK features are common in mezzanine and second lien tranches. They're valuable for cash-constrained businesses or when growth investment requires cash retention."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm is evaluating 'unitranche' financing versus separate senior and subordinated tranches. What advantage does unitranche offer?",
+    "options": [
+      "It's always the cheapest option",
+      "Unitranche combines senior and subordinated elements into one loan with a single lender, offering simpler execution (one lender, one document, faster closing), flexibility on structure, and predictable pricing — at a blended cost higher than pure senior but lower than layered senior + mezzanine",
+      "It eliminates all fees",
+      "It's unregulated"
+    ],
+    "correct_index": 1,
+    "explanation": "Unitranche advantages: (1) Single lender relationship — no inter-creditor complexity; (2) One set of documents — faster closing; (3) Flexibility on structure — customised for specific deal; (4) Predictable pricing at a blended rate (typically 6-8% for mid-market). Trade-offs: higher than pure senior cost (5%) but lower than senior + mezzanine layered (6-7% blended). Unitranche has become the dominant financing structure for European mid-market LBOs. Key providers: Ares, Golub, Antares, Apollo Credit, and other direct lending specialists."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE-backed company has €250M of Term Loan B and €50M of Mezzanine debt. The company's EBITDA falls unexpectedly and it breaches its leverage covenant. The PE sponsor decides to use an 'Equity Cure.' What does this involve?",
+    "options": [
+      "Converting all debt to equity",
+      "The PE sponsor injects additional equity that is treated as an addition to EBITDA for covenant calculation purposes — effectively 'curing' the breach through equity capital",
+      "Selling portfolio company shares publicly",
+      "Refusing to honor the debt"
+    ],
+    "correct_index": 1,
+    "explanation": "Equity cure provisions allow the PE sponsor to remedy covenant breaches by injecting additional equity that is added to EBITDA for covenant calculation. Example: company breaches 6.0x leverage by €10M of EBITDA shortfall; sponsor injects €10M × 6 = €60M equity to 'cure' the breach. Cures are typically limited (e.g., 5 times during the loan life), often capped in size, and cannot be used in consecutive periods. They're a valuable flexibility tool for PE firms but signal underlying operational challenges."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm is evaluating 'Term Loan A' (TLA) versus 'Term Loan B' (TLB) for an LBO. What distinguishes these?",
+    "options": [
+      "They are identical",
+      "TLA: held by banks, shorter maturity (5-6 years), more amortising (10% per year typical), lower spread; TLB: syndicated to institutional investors, longer bullet (7 years), minimal amortisation (1% per year), higher spread",
+      "TLA is always cheaper",
+      "TLB is for small businesses only"
+    ],
+    "correct_index": 1,
+    "explanation": "TLA vs TLB: (1) Holder: TLA by banks (can't sell secondarily), TLB syndicated to institutional investors (CLOs, loan funds); (2) Maturity: TLA 5-6 years, TLB 7 years; (3) Amortisation: TLA 10% per year + bullet, TLB 1% per year + bullet; (4) Pricing: TLA lower spread, TLB higher; (5) Covenants: TLA has maintenance, TLB often cov-lite. LBOs typically use TLB because its longer, less-amortising structure preserves cash for PE returns. TLA is more common in corporate banking relationships."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A company has €150M of LBO debt maturing in Year 7 of the PE hold. When is typical refinancing considered?",
+    "options": [
+      "At maturity in Year 7",
+      "Typically 1-2 years before maturity to avoid refinancing risk and lock in favorable rates if available; often combined with exit timing (refinance and dividend recap, or refinance to extend hold)",
+      "Never refinance",
+      "Only after Year 10"
+    ],
+    "correct_index": 1,
+    "explanation": "Debt refinancing is typically considered 1-2 years before maturity to avoid being forced into refinancing in unfavorable conditions. PE firms often coincide refinancing with strategic events: dividend recapitalisations (extract equity through new leverage), maturity extensions (continue hold period), rate optimisation (lower rates become available). Approaching maturity forces refinancing; planning gives flexibility. Deal exits also trigger debt refinancing or repayment from sale proceeds."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm considers a 'dividend recapitalisation' — issuing new debt to fund a dividend to the PE fund. What are the typical considerations?",
+    "options": [
+      "Dividend recaps are always done",
+      "Key considerations: (1) Maintain adequate credit metrics post-transaction; (2) Ensure the business can support higher leverage; (3) Lender consent and capacity; (4) Impact on future exit; (5) Signal to LPs; (6) Business performance stability sufficient to justify additional leverage",
+      "Dividend recaps require regulatory approval",
+      "Only public companies can do dividend recaps"
+    ],
+    "correct_index": 1,
+    "explanation": "Dividend recaps extract equity value during the hold by increasing debt to fund shareholder distributions. Done right, they extract 0.3-0.7x of invested equity. Considerations: (1) Post-transaction credit metrics must remain serviceable; (2) Business stability for incremental leverage; (3) Lender capacity and willingness; (4) Impact on later exit (higher debt = lower exit equity); (5) LP perception — excessive recaps can appear like extraction at the expense of future returns. Well-executed recaps enhance LP returns by accelerating distributions; poorly-executed ones destroy value."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A leveraged loan typically prices at 'SOFR + 450 bps' (basis points). What does this mean?",
+    "options": [
+      "A fixed rate of 4.5%",
+      "A floating rate: the current SOFR rate (benchmark borrowing rate) plus 4.50% (450 bps) margin; total rate varies as SOFR changes, exposing the borrower to interest rate volatility",
+      "A fixed rate of 4.50%",
+      "An equity kicker"
+    ],
+    "correct_index": 1,
+    "explanation": "Floating rate loans price at a benchmark (SOFR in US, EURIBOR in Europe) plus a margin. If SOFR is 5.25% and margin is 450 bps, the all-in rate is 9.75%. Rates reset periodically (typically every 1-3 months) as the benchmark changes. This exposes the borrower to interest rate risk: if SOFR rises, debt service costs increase. Sophisticated borrowers may hedge part of this exposure with interest rate swaps or caps. Margin compensates the lender for the credit risk above the benchmark."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm's debt covenants include 'Net Leverage must not exceed 6.5x at Q1, reducing to 6.0x at Q2, 5.5x at Q3, 5.0x thereafter.' What is this schedule?",
+    "options": [
+      "Irregular covenant structure",
+      "A 'step-down' covenant schedule — as the company deleverages and the PE plan matures, the covenant threshold tightens, providing lenders with progressively stricter tests; this creates deadline pressure on EBITDA improvement or debt paydown",
+      "A growth-based trigger",
+      "An unusual and poor structure"
+    ],
+    "correct_index": 1,
+    "explanation": "Step-down covenants are standard in LBO credit agreements. Early years allow higher leverage (typically 6.5x at Q1) reflecting the post-acquisition capital structure. Covenants tighten over time (reaching 5.0x by Year 3 or 4) pressuring the borrower to deleverage through EBITDA growth or debt paydown. This structure: (1) Aligns with the LBO plan's progression; (2) Provides lenders with tightening risk controls; (3) Creates discipline on the PE sponsor to execute the value creation plan. Deviations from the path trigger covenant discussions."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "Collateralised Loan Obligation (CLO) managers are the largest buyers of leveraged loans. What is a CLO?",
+    "options": [
+      "A private equity fund",
+      "A structured investment vehicle that pools leveraged loans and issues tranched securities (AAA, AA, A, BBB, BB, equity) to investors with different risk/return preferences; enables institutional capital to fund leveraged lending",
+      "A bank branch",
+      "A hedge fund strategy"
+    ],
+    "correct_index": 1,
+    "explanation": "CLOs pool leveraged loans into a diversified portfolio, then issue securities backed by that portfolio in tranches with different risk/return profiles. Investors: AAA tranche buyers (pension funds, insurance companies) get lowest return but highest priority on cash flows; equity tranche (specialised credit funds) gets highest return but first loss position. CLO managers (Blackstone Credit, Ares, KKR Credit, Apollo, CIFC) actively manage the underlying loan portfolio. CLOs are the largest buyers of leveraged loans (~70% of new issuance), making them the critical funding pool for LBO debt."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE-backed company's senior debt matures in 3 years, and refinancing is needed. What factors affect refinancing terms?",
+    "options": [
+      "Only interest rates",
+      "Multiple factors: (1) Current credit market conditions; (2) Business performance since original deal; (3) Remaining hold period and exit timing; (4) Credit metrics (leverage, coverage); (5) Sector sentiment; (6) Lender competition; (7) New deal structure needs (bolt-ons, distributions)",
+      "Only the company's EBITDA",
+      "Only the PE firm's reputation"
+    ],
+    "correct_index": 1,
+    "explanation": "Refinancing terms reflect multiple factors, not just absolute interest rates. Business performance (deleveraging achieved) improves terms; sector headwinds worsen them. Market conditions (credit spreads, institutional appetite) matter. Strategic needs: simple refinancing, extend-and-extract dividend recap, or bolt-on financing each favor different structures. Competitive lender dynamics can pressure margins down. Sophisticated PE firms use refinancing windows strategically: extending maturities when markets are favorable, extracting equity through recaps, or simply preserving optionality for exit."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE-backed company has €45M EBITDA and pays €6M capex. Its debt structure includes €160M Senior Debt (at 5%) + €40M Second Lien (at 7.5%). Cash taxes are €5M. What is the Free Cash Flow to Debt Paydown?",
+    "options": [
+      "Approximately €23M",
+      "Approximately €28M — EBITDA (€45M) less cash interest (€11M) less cash taxes (€5M) less capex (€6M) plus/minus working capital = approximately €23-25M",
+      "€45M — equal to EBITDA",
+      "€0M"
+    ],
+    "correct_index": 0,
+    "explanation": "Free Cash Flow for Debt Paydown = EBITDA – Cash Interest – Cash Taxes – Capex – Working Capital Change. Cash Interest = (€160M × 5%) + (€40M × 7.5%) = €8M + €3M = €11M. FCF = €45M – €11M – €5M – €6M = €23M (assuming working capital neutral). This is the annual amount available for debt paydown, assuming no reinvestment. Over a 5-year hold, this approximately €100M of cumulative debt reduction capacity (before any further cash generation improvements)."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A leveraged loan includes 'call protection' of 101% for the first 6 months. What does this mean?",
+    "options": [
+      "The borrower can call the debt at any time for 101% of face value",
+      "If the borrower prepays the loan (refinances) within the first 6 months, they must pay 101% of face value (1% premium above face) — discouraging early refinancing and compensating lenders for short-dated commitments",
+      "There's no call protection",
+      "The borrower can only call after 10 years"
+    ],
+    "correct_index": 1,
+    "explanation": "Call protection (or 'soft call') prevents borrowers from refinancing too quickly. '101 soft call for 6 months' means if the loan is prepaid within 6 months, the borrower pays 101% of face value (1% premium). After 6 months, par (100%) prepayment is allowed. Call protection: (1) Protects lenders who committed to the loan; (2) Prevents borrowers from extracting value by refinancing immediately; (3) Typical for leveraged loans (shorter periods) vs. high yield bonds (longer, often non-call for 3-4 years with complex schedules)."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm's LBO analysis includes 'debt sustainability' testing. What does this involve?",
+    "options": [
+      "Testing if lenders exist",
+      "Stress-testing the company's ability to service and repay debt under adverse scenarios: EBITDA decline, margin compression, working capital deterioration, higher interest rates; ensuring covenants hold and debt remains serviceable in downside cases",
+      "Confirming debt is legal",
+      "Verifying tax deductibility"
+    ],
+    "correct_index": 1,
+    "explanation": "Debt sustainability testing assesses resilience under stress: (1) 10-20% EBITDA decline — does ICR hold at 1.5x?; (2) Margin compression — can the business continue to delever?; (3) Working capital stress — does cash suffice for interest/amortisation?; (4) Interest rate rises — impact on floating rate debt; (5) Covenant headroom in each scenario. A capital structure that holds in base case but breaks in moderate downside is fragile. Sophisticated PE firms size debt based on stress tests, not just base case projections."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm's senior debt has a 'delayed draw' feature for bolt-on acquisitions. What is this?",
+    "options": [
+      "The loan is delayed by 6 months",
+      "The borrower commits to a total facility size at closing but can draw down portions over a specified future period (typically 12-24 months) for specific bolt-on acquisitions; saves the cost of re-underwriting for each acquisition",
+      "A form of interest rate hedge",
+      "A regulatory requirement"
+    ],
+    "correct_index": 1,
+    "explanation": "Delayed draw facilities provide flexibility for planned acquisitions. The borrower has €150M committed at closing but draws it over 12-24 months as bolt-ons complete. Benefits: (1) Avoids repeated underwriting and documentation for each acquisition; (2) Locks in pricing at closing; (3) Provides acquisition currency for the sponsor. Costs: (1) Commitment fees (0.3-0.5% of undrawn amount); (2) Covenants apply immediately to total committed amount; (3) Lender due diligence at closing on future acquisition pipeline. Common for buy-and-build strategies."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A company's credit agreement includes a 'Most Favored Nation' (MFN) clause. What does this typically mean?",
+    "options": [
+      "The borrower receives the lowest interest rate available",
+      "If the borrower issues new debt at a wider spread than the existing loan, the existing loan's margin increases to match — protecting lenders from being disadvantaged by future debt on more favorable terms",
+      "The lender is guaranteed to receive the highest rate",
+      "Foreign investors receive preferential treatment"
+    ],
+    "correct_index": 1,
+    "explanation": "MFN clauses protect existing lenders: if the borrower issues new debt at a spread more than a specified amount (e.g., 50 bps wider), the existing loan's margin steps up to reduce the gap. This prevents borrowers from issuing new debt that disadvantages existing lenders. MFN has become standard in leveraged loans, particularly cov-lite facilities where incurrence covenants are weaker. MFN 'sunset' provisions (expiring after 12-24 months) allow borrowers more flexibility after an initial protection period."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm is negotiating with banks vs. direct lenders for an LBO financing. What's the typical trade-off?",
+    "options": [
+      "Direct lenders always charge more than banks",
+      "Direct lenders: higher rates (+100-300 bps) but offer speed, execution certainty, bespoke structuring (unitranche, PIK, bolt-on financing), single-lender simplicity. Banks: lower rates via syndication but slower, less flexibility, tougher terms in adverse markets.",
+      "Banks are always more expensive",
+      "No meaningful difference exists"
+    ],
+    "correct_index": 1,
+    "explanation": "Banks (syndicated loan markets) vs. direct lenders trade-offs: Banks offer lower pricing (better rates via syndication to CLOs and loan funds) but: (1) slower execution; (2) less flexibility; (3) harder to get done in weak markets; (4) multiple lenders can complicate amendments. Direct lenders (Ares, Blackstone Credit, Apollo Credit, Golub) offer: higher pricing (100-300 bps premium) but speed, execution certainty, bespoke structures, single-lender relationships. PE firms choose based on deal priorities — pricing vs. certainty. European mid-market has shifted heavily toward direct lenders."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm's LBO debt ratios are benchmarked against industry norms. What is typical for a mid-market business services company?",
+    "options": [
+      "0-1x leverage",
+      "Leverage: 5-6x EBITDA; Coverage: 2.5-3.5x EBITDA/interest; Senior debt typically 75-85% of total debt stack; cash equity contribution: 30-45% of enterprise value",
+      "10x+ leverage always",
+      "Leverage varies randomly"
+    ],
+    "correct_index": 1,
+    "explanation": "Mid-market business services LBO norms (2024): (1) Leverage: 5.0-6.0x EBITDA for stable recurring services, 4.5-5.5x for project-based; (2) Interest coverage: 2.5-3.5x; (3) Senior debt share: 75-85% of debt stack (typically unitranche or TLB + RCF); (4) Cash equity: 30-45% of EV. Deviations require justification: higher leverage for exceptional recurring revenue; lower for volatile businesses. Benchmarking against recent comparable LBOs provides validation for proposed structure. Sector, size, and conditions create significant variation around these norms."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A company's credit agreement contains a 'Change of Control' provision. What does this typically do?",
+    "options": [
+      "Nothing — it's just legal boilerplate",
+      "Triggers default or mandatory prepayment if the PE sponsor sells the company to a new owner — ensuring lenders are protected from deterioration in credit quality or management under new ownership without their consent",
+      "Allows the lender to take control of the company",
+      "Automatically increases the interest rate"
+    ],
+    "correct_index": 1,
+    "explanation": "Change of Control provisions are standard in all credit facilities. Triggered by sale of the portfolio company to a new owner, they typically allow lenders to demand repayment in full (or trigger a put option requiring buyer assumption). Practical effect: debt is typically refinanced at sale, or the buyer negotiates assumption. Change of Control provisions ensure lenders can exit or re-underwrite under new ownership. They're why exit planning includes debt transition — PE firms manage refinancing alongside transaction processes."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm's LBO analysis includes a 'Base Case' and 'Downside Case' for debt modelling. Why is the downside case critical?",
+    "options": [
+      "It's just for show",
+      "The downside case tests whether the debt structure is viable in adverse conditions — validating covenant headroom, interest coverage, and cash flow sufficiency under stress; failure in the downside case means the deal may not be viable at proposed leverage",
+      "Only the base case matters",
+      "Downside cases are optional"
+    ],
+    "correct_index": 1,
+    "explanation": "Downside case analysis: (1) Stress-tests EBITDA decline scenarios; (2) Validates covenant headroom under stress; (3) Confirms debt serviceability; (4) Tests equity cure needs; (5) Assesses refinancing risk. A debt structure that works in base case but breaks in moderate downside (15-20% EBITDA decline) is fragile. The PE firm should either size less debt, improve business quality, or walk from the deal. Sophisticated underwriters require multiple downside scenarios showing sufficient resilience — not just the base case."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE-backed company reports 'gross debt' of €300M and 'net debt' of €240M. What is the likely cause of the €60M difference?",
+    "options": [
+      "Accounting error",
+      "Cash and cash equivalents of €60M on the balance sheet — 'gross debt' is total debt outstanding; 'net debt' deducts cash that could theoretically be used for repayment",
+      "Management bonus accrual",
+      "Pension deficit"
+    ],
+    "correct_index": 1,
+    "explanation": "Net debt = Gross debt – Cash and Cash Equivalents. The €60M difference is the company's cash balance. Economic reality: gross debt is total indebtedness; net debt reflects what could theoretically be repaid if all cash were applied. For leverage analysis, net debt is typically used (gives a truer picture of economic debt burden). However, net debt has limitations: not all cash is 'free' (operating requirements), some cash is trapped (restricted cash, foreign subsidiaries), and cash is volatile. These considerations feed into the EV-to-equity bridge."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm's debt structure for an LBO can include 'second lien' or 'junior' tranches. Under what circumstances are these used?",
+    "options": [
+      "Never used in modern PE",
+      "When the senior debt alone is insufficient to fund the deal at the desired equity check — second lien provides additional debt capacity at higher pricing, often 300+ bps over senior; useful for larger deals or more aggressive structures",
+      "Only for distressed situations",
+      "Only in Europe"
+    ],
+    "correct_index": 1,
+    "explanation": "Second lien (or junior capital) fills the gap between what senior lenders will provide and the equity check target. Example: senior offers 5.0x EBITDA of debt but the sponsor targets 6.5x leverage. Junior tranches (mezzanine, second lien, or PIK) fill the 1.5x gap at higher cost (300+ bps over senior). Modern unitranche structures often combine these tiers into one facility. Junior tranches: (1) Reduce equity check; (2) Increase leverage and return amplification; (3) Higher pricing reduces FCF yield; (4) Decrease flexibility in later operational challenges."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm is assessing 'senior debt capacity' for an LBO. Which factors primarily drive senior debt capacity?",
+    "options": [
+      "Only the equity check size",
+      "Primary drivers: (1) EBITDA absolute size (larger = more capacity); (2) EBITDA stability (recurring = more capacity); (3) FCF conversion (cash-generative = more capacity); (4) Asset base (collateral = more capacity); (5) Sector dynamics; (6) Market conditions (credit availability)",
+      "Only the CEO's salary",
+      "Only the company's age"
+    ],
+    "correct_index": 1,
+    "explanation": "Senior debt capacity drivers: (1) EBITDA size — larger EBITDA supports more debt; (2) Stability — recurring revenue commands more debt capacity than cyclical; (3) FCF conversion — cash-generative businesses support more debt (same EBITDA); (4) Asset base — tangible assets increase collateral availability; (5) Sector dynamics — defensive sectors higher, cyclical lower; (6) Market conditions — credit availability affects lender willingness. Typical: mid-market stable recurring supports 5-6x senior; cyclical supports 4-5x; highly recurring/predictable may support 6-7x. The combination of these factors sets the ceiling."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm is designing the LBO debt structure. What is the typical optimal split between senior and junior debt?",
+    "options": [
+      "All senior, no junior",
+      "Typical mid-market LBO: 75-85% senior debt (including unitranche), 15-25% junior/subordinated — balancing cost (senior cheaper) with debt capacity (junior extends total leverage); structure varies by deal size and conditions",
+      "50-50 split always",
+      "All junior, no senior"
+    ],
+    "correct_index": 1,
+    "explanation": "Typical LBO debt structure: (1) 75-85% senior debt (unitranche or TLB + RCF) — lowest cost, first lien; (2) 15-25% junior debt (mezzanine, second lien, or high yield) — higher cost, extending leverage. Larger deals can support more layered structures (TLB + 2L + HY bonds). Smaller deals often use pure unitranche (one tier). The split reflects: desired total leverage, senior debt capacity, cost optimisation, and market appetite. Structure drives cost — every basis point of junior debt is 2-3x more expensive than senior."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE-backed company's credit agreement includes 'amendment' and 'consent' requirements. What do these enable?",
+    "options": [
+      "They do nothing",
+      "The borrower can seek modifications to the credit facility — change rates, extend maturity, amend covenants, sell assets, add debt — requiring specified lender consent thresholds (typically majority, supermajority, or unanimous depending on the action)",
+      "They automatically increase interest rates",
+      "They eliminate all lender rights"
+    ],
+    "correct_index": 1,
+    "explanation": "Credit agreements define amendment/consent requirements: some actions require simple majority (50%), others supermajority (66.67%), others unanimity. Typical: rate changes (simple majority), release of collateral (supermajority), adding new tranches (typically protected by most favored nation and incurrence covenants). Amendments are how companies negotiate flexibility — extending maturity, relaxing covenants, permitting acquisitions. Fees are typically paid to consenting lenders. Sophisticated PE sponsors engage in 'amend and extend' proactively to improve terms during the hold period."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE-backed company's Debt/EBITDA declined from 6.5x at Year 1 to 4.2x at Year 4. What likely drove this deleveraging?",
+    "options": [
+      "Only debt paydown",
+      "Combination of: EBITDA growth (increasing the denominator) and debt paydown (reducing the numerator) — typical for well-executed LBOs where the company grows earnings while applying cash flow to debt reduction",
+      "Only regulatory changes",
+      "Only exchange rates"
+    ],
+    "correct_index": 1,
+    "explanation": "Deleveraging from 6.5x to 4.2x (2.3x reduction) typically comes from two levers: (1) EBITDA growth — €35M growing to €50M reduces leverage from 6.5x to 4.6x at same debt level; (2) Debt paydown — €50M reduction on €227M original drops leverage by about 1.4x at constant EBITDA. The actual decomposition depends on specific numbers. Understanding deleveraging decomposition matters for attribution: EBITDA growth reflects operational success; debt paydown reflects cash generation and financial discipline. Both together demonstrate a well-executed LBO."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "Debt at a PE-backed company is typically paid in what priority order during operations?",
+    "options": [
+      "Equity first, then debt",
+      "Operational priorities first (interest payments, mandatory amortisation, working capital, essential capex), then voluntary debt prepayment/distributions based on covenant flexibility and sponsor decisions",
+      "Only first lien, never subordinated",
+      "Random order"
+    ],
+    "correct_index": 1,
+    "explanation": "Cash flow priority during operations: (1) Essential operations (working capital, capex required to maintain the business, taxes); (2) Interest on all debt tranches (mandatory under covenants); (3) Mandatory amortisation (typically minimal for TLB: 1% per year); (4) Discretionary uses — voluntary debt prepayment (junior tranches first), bolt-ons, or distributions. In distress, this priority changes — senior lenders may force all cash to debt service. Normal operating hierarchy ensures the business operates while debt is serviced."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm considers whether to refinance existing debt 18 months into the hold. What justifies this decision?",
+    "options": [
+      "Refinancing is never justified",
+      "Opportunity to: (1) Capture rate improvements if credit markets have tightened; (2) Extract dividends through dividend recap if credit metrics allow; (3) Extend maturities for optionality; (4) Optimise structure for ongoing operational needs",
+      "Only regulatory requirements",
+      "Only cash flow issues"
+    ],
+    "correct_index": 1,
+    "explanation": "Mid-hold refinancing opportunities: (1) Rate reduction — if spreads have tightened since original deal; (2) Dividend recap — extract €X00M of equity through higher leverage; (3) Maturity extension — add 2-3 years of optionality beyond the original maturity; (4) Structural optimisation — replace expensive junior tranches with cheaper senior. Costs: fees, covenant renegotiation, LP disclosure. Decisions involve: hold period remaining, exit planning, market conditions, LP alignment. Well-executed mid-hold refinancings significantly enhance LP returns by optimising capital cost during the hold."
+  },
+  {
+    "topic_tag": "financial-analysis-debt",
+    "question": "A PE firm's LBO financing package includes a 'delayed draw term loan' (DDTL) of €50M available for 18 months. Upon drawdown, what commitment fees typically apply in the undrawn period?",
+    "options": [
+      "No fees apply on undrawn amounts",
+      "Commitment fees of approximately 0.3-0.5% per annum on the undrawn balance, compensating lenders for the reserved capacity that cannot be deployed elsewhere",
+      "The full interest rate applies on undrawn amounts",
+      "Fees are only paid at maturity"
+    ],
+    "correct_index": 1,
+    "explanation": "DDTLs (and RCFs) charge commitment fees on undrawn amounts — typically 0.3-0.5% per annum. The lender has reserved capital capacity it cannot deploy elsewhere and charges for this optionality. On a €50M DDTL over 18 months at 0.4%, the cost is approximately €300K before any drawdown. Once drawn, full interest applies. This structure: (1) Provides the borrower with flexibility; (2) Compensates lenders for reserved capacity; (3) Creates cost discipline (borrowers don't commit to larger facilities than needed)."
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "What does a Discounted Cash Flow (DCF) analysis fundamentally measure?",
+    "options": [
+      "The current market value of a company's assets",
+      "The present value of expected future free cash flows, discounted at a rate reflecting the risk of those cash flows",
+      "The company's annual revenue",
+      "The historical cost of the business"
+    ],
+    "correct_index": 1,
+    "explanation": "DCF calculates enterprise value as the present value of future unlevered free cash flows. The methodology: (1) Project FCF for explicit period (typically 5-10 years); (2) Calculate terminal value for cash flows beyond explicit period; (3) Discount both at WACC (for unlevered FCF) or cost of equity (for levered FCF); (4) Sum to derive enterprise value. DCF is fundamental valuation — it values the business based on expected economics rather than market-derived multiples. It provides independent verification of multiples-based approaches."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE firm is building a DCF model. What is the typical 'explicit forecast period'?",
+    "options": [
+      "1 year",
+      "5-10 years, covering a period long enough for the business to reach steady-state operations but short enough for meaningful projections",
+      "30 years",
+      "No explicit period required"
+    ],
+    "correct_index": 1,
+    "explanation": "Explicit forecast period choice: (1) Typically 5-10 years; (2) Long enough for business to reach steady-state (maturing growth rates, stable margins, normalised capex); (3) Short enough for reasonable projection accuracy — beyond 10 years, projections become increasingly speculative; (4) Sector-specific considerations: fast-changing industries shorter; stable industries longer. For mid-market PE analysis, 5-year projections often sufficient (matches typical hold period). Beyond explicit period, terminal value captures the value of cash flows into perpetuity."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A DCF's terminal value represents what proportion of total enterprise value in a typical 10-year DCF?",
+    "options": [
+      "10-20%",
+      "60-80% — terminal value often dominates because cash flows grow and are extended into perpetuity",
+      "Less than 5%",
+      "Always 50%"
+    ],
+    "correct_index": 1,
+    "explanation": "Terminal value typically represents 60-80% of total enterprise value in DCF — this is a fundamental property: (1) Cash flows grow over time (real + inflationary); (2) Terminal captures all perpetuity cash flows; (3) Even discounted, extended stream of growing cash flows dominates 5-10 years of explicit forecast. This concentration in terminal value means: (1) Terminal growth assumption drives enterprise value; (2) Small changes in terminal growth rate have large effects; (3) Terminal assumptions deserve scrutiny; (4) Sensitivity analysis focuses on terminal assumptions and WACC."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst calculates terminal value using the 'Gordon Growth' (perpetuity growth) formula. What is the mathematical relationship?",
+    "options": [
+      "TV = FCF × (1 + g)",
+      "TV = FCF × (1 + g) / (WACC - g) — where g is perpetual growth rate",
+      "TV = FCF / (WACC + g)",
+      "TV = FCF × (1 + WACC) / g"
+    ],
+    "correct_index": 1,
+    "explanation": "Gordon Growth terminal value formula: TV = FCF × (1 + g) / (WACC - g). Components: (1) FCF: final explicit period cash flow (or steady-state FCF); (2) g: perpetual growth rate (typically 1-3% for mature businesses, tied to long-term GDP growth and inflation); (3) WACC: cost of capital; (4) (WACC - g): difference between cost of capital and growth rate — drives TV magnitude. Example: FCF = €50M, g = 2%, WACC = 10%: TV = €50M × 1.02 / 0.08 = €637M. Small changes: g = 3% (instead of 2%): TV = €51.5M / 0.07 = €736M — 16% higher."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst's DCF uses an 'exit multiple' method for terminal value instead of perpetuity growth. How does this differ?",
+    "options": [
+      "They produce identical results",
+      "Exit multiple TV = Terminal EBITDA × Exit Multiple (e.g., 10x). This approach reflects market-based valuation at exit rather than fundamental cash flow growth assumptions; cross-checks against perpetuity growth",
+      "Exit multiple is never used",
+      "Only perpetuity is valid"
+    ],
+    "correct_index": 1,
+    "explanation": "Exit multiple terminal value: TV = Terminal EBITDA × Exit Multiple. Advantages: (1) Market-based — reflects current market multiples; (2) Easier to benchmark against peer multiples; (3) Consistent with acquisition environments; (4) Often preferred by PE firms for LBO analysis. Limitations: (1) Assumes market conditions persist; (2) Multiple may not reflect long-term fundamentals; (3) Sensitive to market cycle. Best practice: (1) Use both methods; (2) Compare results (they should be broadly consistent); (3) If divergent, investigate drivers; (4) DCF integrated with LBO often uses exit multiple matched to entry multiple assumption."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "The terminal year EBITDA in a DCF is €75M. If exit multiple is 10x and the terminal year is Year 5, what is the terminal value?",
+    "options": [
+      "€750M (undiscounted)",
+      "€750M × (1 + WACC)^(-5) — discounted to present value; e.g., at 10% WACC, PV = €466M",
+      "Cannot be calculated",
+      "€75M"
+    ],
+    "correct_index": 1,
+    "explanation": "Terminal value at exit multiple: (1) Terminal EBITDA: €75M; (2) Exit multiple: 10x → TV at end of Year 5 = €750M; (3) Present value: TV / (1 + WACC)^5; (4) At 10% WACC: €750M / 1.61 = €466M; (5) At 12% WACC: €750M / 1.76 = €426M. The discount factor significantly reduces terminal value magnitude. This is the present value of the terminal value, which is then added to the present value of explicit period cash flows to get enterprise value. Sensitivity to WACC and exit multiple is critical in PE DCF analysis."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "What is the Weighted Average Cost of Capital (WACC)?",
+    "options": [
+      "The cost of debt only",
+      "The weighted average of the company's cost of equity and after-tax cost of debt, reflecting the blended cost of all capital — used to discount unlevered free cash flows in DCF",
+      "The company's interest rate",
+      "The dividend rate"
+    ],
+    "correct_index": 1,
+    "explanation": "WACC formula: WACC = (E/V × Re) + (D/V × Rd × (1-T)), where: (1) E = equity market value; (2) D = debt market value; (3) V = E + D (total capital); (4) Re = cost of equity; (5) Rd = cost of debt; (6) T = tax rate. WACC represents the blended cost of capital given the capital structure. Used to discount unlevered FCF in DCF analysis. Typical ranges: (1) 7-10% for stable businesses; (2) 10-14% for more risky/cyclical; (3) Varies by industry, country, growth, and leverage."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "What is the 'Capital Asset Pricing Model' (CAPM) formula for cost of equity?",
+    "options": [
+      "Re = Rf + Beta × (Market Return - Rf)",
+      "Re = Market Return × Beta",
+      "Re = Dividend / Share Price",
+      "Re = Risk-free rate only"
+    ],
+    "correct_index": 0,
+    "explanation": "CAPM cost of equity: Re = Rf + β × (Rm - Rf), where: (1) Rf = risk-free rate (typically 10-year government bond yield); (2) β (beta) = sensitivity to market movements; (3) Rm - Rf = equity risk premium (ERP); typically 4-6% for developed markets; (4) Example: Rf = 4%, β = 1.2, ERP = 5%: Re = 4% + 1.2 × 5% = 10%. This is the return required by equity investors given the market risk profile. Higher beta = higher required return. Private company beta typically estimated from public comparables and unlevered/relevered for target's capital structure."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst is estimating beta for a private company. Which approach is typically used?",
+    "options": [
+      "Use the public market beta directly",
+      "(1) Select public peer companies; (2) Calculate each peer's levered beta; (3) Unlever each peer beta (remove their capital structure effect); (4) Take median unlevered beta; (5) Re-lever to target's own capital structure",
+      "Set beta at 1.0",
+      "Use regression of target's returns"
+    ],
+    "correct_index": 1,
+    "explanation": "Unlevered/relevered beta process for private companies: (1) Select comparable public peers; (2) Calculate each peer's current levered beta (from regression of peer stock returns against market); (3) Unlever each peer beta using: Beta_unlevered = Beta_levered / [1 + (D/E × (1-T))]; (4) Take median unlevered beta across peers (removing capital structure noise); (5) Re-lever for target's actual capital structure: Beta_levered = Beta_unlevered × [1 + (D/E × (1-T))]. This produces a capital-structure-adjusted beta specific to the target. Addresses the lack of direct market data for private companies."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst is estimating the 'equity risk premium' (ERP) for WACC calculation. What is a typical range?",
+    "options": [
+      "1-2%",
+      "4-6% for developed markets, with emerging markets typically higher; represents the premium investors demand above the risk-free rate to hold market-risk equity",
+      "15-20%",
+      "Zero"
+    ],
+    "correct_index": 1,
+    "explanation": "Equity risk premium (ERP): (1) Developed markets: 4-6% historical and current; (2) Emerging markets: higher (8-10%+) due to currency risk, political risk, liquidity; (3) Different estimation methods: historical, implied (from stock prices), surveys. Most common: 5% for developed markets (US, UK, Germany, France). Sources: (1) Damodaran (NYU): regularly publishes ERPs; (2) Surveys of valuation professionals; (3) Implied from market prices. For PE analysis: (1) Use consistent ERP across analyses; (2) Country-adjust for emerging market targets; (3) Document the assumption clearly."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst is calculating cost of debt for WACC. What approach is typically used?",
+    "options": [
+      "Current interest rate being paid on existing debt",
+      "Current (market) yield on company's debt or comparable credit ratings — reflects what the market would charge today; not historical rates from earlier debt issues",
+      "Historical average rate",
+      "Zero"
+    ],
+    "correct_index": 1,
+    "explanation": "Cost of debt methodology: (1) Current market yield on company's outstanding debt (if publicly traded); (2) For private companies: yield on bonds with comparable credit ratings; (3) Published corporate credit spreads over risk-free rate; (4) For LBO targets: yield at which new debt would be issued. Not historical rates: those reflect past conditions, not current market. Adjustments: (1) After-tax basis (debt interest is tax-deductible): After-tax cost = Pre-tax × (1-T); (2) Use weighted average if multiple debt tranches with different rates; (3) Reflect current capital structure, not historical."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A target has 40% debt and 60% equity capital structure. Cost of equity is 12% and after-tax cost of debt is 5%. What is WACC?",
+    "options": [
+      "8.0% — blended rate based on capital structure weights",
+      "17.0% — sum of cost components",
+      "11.0% — average of both costs",
+      "Cannot be calculated"
+    ],
+    "correct_index": 0,
+    "explanation": "WACC calculation: WACC = (Equity weight × Cost of Equity) + (Debt weight × After-tax Cost of Debt) = (0.6 × 12%) + (0.4 × 5%) = 7.2% + 2.0% = 9.2%. This represents the blended cost of capital. Lower than 12% equity cost (due to cheaper debt); higher than 5% debt cost (due to cost of equity). Capital structure affects WACC: more debt = lower WACC (up to optimal point), but increases risk of financial distress. For PE analysis: (1) Use target company's capital structure (or sector norms); (2) Apply sensitivity to WACC inputs; (3) Document assumptions."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst uses 'unlevered free cash flow' (UFCF) for DCF. Why is this preferred over levered FCF?",
+    "options": [
+      "They are identical",
+      "UFCF excludes financing effects (interest, debt repayments), providing a capital-structure-neutral cash flow to discount with WACC — consistent with the EV-to-cash flow matching principle",
+      "UFCF is always higher",
+      "UFCF requires no projections"
+    ],
+    "correct_index": 1,
+    "explanation": "UFCF vs. Levered FCF: (1) UFCF = EBITDA – Tax – Capex – ∆WC (before interest and financing); (2) Levered FCF = UFCF – Interest – Mandatory Debt Repayment. For DCF: UFCF matches with WACC (capital-structure-neutral cash flow with cost of all capital). Using Levered FCF with WACC would double-count financing costs. Using UFCF with WACC = Enterprise Value. Equity value derivation: EV – Net Debt. Alternative: use Levered FCF discounted at cost of equity to get Equity Value directly. Consistency matters: match cash flow type to appropriate discount rate."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst is applying a 'mid-year convention' to their DCF. What does this adjust?",
+    "options": [
+      "The timing of revenue recognition",
+      "Assumes cash flows are generated evenly throughout the year, so they are discounted as if received mid-year rather than year-end — increases present value slightly by discounting for only half the year",
+      "The tax rate",
+      "The revenue recognition method"
+    ],
+    "correct_index": 1,
+    "explanation": "Mid-year convention: (1) Standard DCF assumes cash flows at year-end (discount factor: 1/(1+WACC)^N where N = year number); (2) Mid-year convention assumes cash flows distributed evenly (discount factor: 1/(1+WACC)^(N-0.5)); (3) Mid-year produces slightly higher present value (about 5% higher at 10% WACC); (4) Reflects that cash is generated throughout the year, not just at year-end; (5) More common in PE than standard year-end convention; (6) Sensitivity relatively small but noticeable. Best practice: document which convention is used; be consistent across analyses."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A DCF produces enterprise value of €1,200M. Net debt is €300M. What is equity value?",
+    "options": [
+      "€900M — EV minus net debt",
+      "€1,500M — EV plus net debt",
+      "€1,200M — same as EV",
+      "Cannot be calculated"
+    ],
+    "correct_index": 0,
+    "explanation": "DCF produces enterprise value (what the business is worth to all capital providers). Equity value = EV – Net Debt = €1,200M – €300M = €900M. Additional adjustments may include: (1) Debt-like items (pension deficit, earn-outs, contingent liabilities); (2) Non-operating assets (surplus cash, investments); (3) Minority interest; Full bridge: Equity Value = EV – Net Debt – Debt-Like Items + Non-Operating Assets – Minority Interest. This bridge connects the DCF's EV output to the actual equity price. For PE analysis, the final equity value is what matters for purchase price and return calculations."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A DCF assumes 2% perpetual growth and 10% WACC. What enterprise value multiple of terminal EBITDA would this imply, assuming terminal FCF is 60% of terminal EBITDA?",
+    "options": [
+      "10x — the inverse of WACC",
+      "Approximately 7.5x — calculated as [FCF/EBITDA × (1+g) / (WACC-g)] = [0.6 × 1.02 / 0.08]",
+      "2x — growth rate",
+      "Cannot be calculated"
+    ],
+    "correct_index": 1,
+    "explanation": "Implied terminal multiple: (1) Terminal TV = FCF × (1+g) / (WACC-g); (2) Terminal EBITDA multiple = TV / EBITDA; (3) If FCF = 60% × EBITDA, TV = 0.6 × EBITDA × 1.02 / 0.08; (4) TV / EBITDA = 0.6 × 1.02 / 0.08 = 7.65x. Checking assumptions: this 7.65x terminal multiple should match or approximate the exit multiple used in alternative terminal value calculation. If DCF implies 7.65x but market multiples suggest 10x, there's an inconsistency — either market is expecting higher growth/lower WACC, or DCF assumptions need adjustment. Implied multiples help cross-check DCF against market."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst's DCF is highly sensitive to WACC and terminal growth assumptions. What sensitivity analysis is typically performed?",
+    "options": [
+      "Test only WACC",
+      "Test multiple dimensions: (1) WACC ±100-200 basis points; (2) Terminal growth ±1%; (3) Exit multiple ±1-2x; (4) EBITDA growth rates; (5) Margin assumptions; (6) Two-dimensional sensitivity tables showing combined effects",
+      "Only test EBITDA",
+      "No sensitivity needed"
+    ],
+    "correct_index": 1,
+    "explanation": "DCF sensitivity analysis essentials: (1) WACC: ±100-200 basis points (reveals sensitivity to cost of capital); (2) Terminal growth: ±1% (reveals sensitivity to perpetual growth); (3) Exit multiple: ±1-2x (alternative terminal approach); (4) EBITDA growth: typical sensitivities; (5) Margin assumptions: key drivers; (6) Two-dimensional tables: WACC × Terminal Growth; WACC × Exit Multiple. Purpose: (1) Quantifies uncertainty; (2) Identifies key value drivers; (3) Provides range rather than point estimate; (4) Supports deal negotiation and IC discussion; (5) Identifies which assumptions most need challenge."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A DCF shows EV of €1,000M assuming 11% WACC. What happens to EV if WACC changes to 10%?",
+    "options": [
+      "EV decreases",
+      "EV increases because cash flows are discounted less, increasing present values; change depends on cash flow composition and timing",
+      "EV stays the same",
+      "EV becomes zero"
+    ],
+    "correct_index": 1,
+    "explanation": "Lower WACC → higher EV (inverse relationship): (1) All future cash flows are discounted less severely; (2) Present values increase across explicit period and terminal value; (3) Terminal value particularly sensitive (dominates 60-80% of total value). Approximate sensitivity: 1% decrease in WACC typically increases EV by 10-20% depending on cash flow profile. Example: EV at 11% WACC = €1,000M; at 10% WACC might be €1,150-1,200M. This shows: (1) Cost of capital matters enormously; (2) Monetary policy and interest rate changes significantly affect valuations; (3) Sensitivity analysis essential."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst is testing DCF sensitivity to growth assumptions. Revenue grows from €100M to €150M over 5 years. What does this imply about the CAGR?",
+    "options": [
+      "10% annually",
+      "Approximately 8.4% annual CAGR: (€150M/€100M)^(1/5) - 1 = 1.5^0.2 - 1 = 0.0845",
+      "50% total",
+      "1.5x growth"
+    ],
+    "correct_index": 1,
+    "explanation": "CAGR calculation: (Ending/Beginning)^(1/Years) – 1 = (€150M/€100M)^(1/5) – 1 = 1.5^0.2 – 1 ≈ 0.0845 = 8.4% annual CAGR. Verification: 100 × 1.084^5 ≈ 150. CAGR is the constant annual growth rate that would produce the observed total growth. Useful for: (1) DCF revenue growth modelling; (2) Comparing growth rates across companies; (3) Target growth modelling. Note: CAGR smooths year-over-year volatility and doesn't reflect varying annual rates."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst's DCF shows current-year FCF of €30M, growing at 8% annually for 5 years, then 3% perpetual growth. At 10% WACC, what is the approximate present value of explicit period cash flows?",
+    "options": [
+      "Approximately €142M — sum of PV of each year's discounted FCF",
+      "€300M — simple sum",
+      "€30M — just year 1",
+      "€150M — exactly"
+    ],
+    "correct_index": 0,
+    "explanation": "Explicit period PV calculation: Year 1: €30M / 1.1 = €27.3M; Year 2: €32.4M / 1.1² = €26.8M; Year 3: €35.0M / 1.1³ = €26.3M; Year 4: €37.8M / 1.1⁴ = €25.8M; Year 5: €40.8M / 1.1⁵ = €25.4M. Sum = approximately €131.6M. (Slight approximation due to discount factor precision, but roughly €130-145M range.) This represents explicit period present value. Terminal value (years 6+) is additional. Total EV = PV of explicit period + PV of terminal value. Typically terminal dominates: explicit period may contribute 20-30% of total EV."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst's DCF for a mature company assumes 3% perpetual growth. What does this assumption reflect?",
+    "options": [
+      "Company-specific growth rate",
+      "Long-term sustainable growth (typically 1-3% for mature businesses): matches long-term GDP growth, inflation expectations, and sustainable industry growth; perpetuity means forever, so must be sustainable long-term",
+      "Revenue growth this year",
+      "WACC"
+    ],
+    "correct_index": 1,
+    "explanation": "Perpetual growth rate (g) assumption: (1) Must be sustainable forever — cannot exceed economy's long-term growth rate; (2) Typical range: 1-3% for mature businesses; (3) Aligns with: long-term GDP growth (2-3%), expected inflation (2-3%), and productivity growth; (4) Higher g (4%+) requires compelling justification (e.g., emerging market target, technology); (5) Lower g (1-2%) for declining or cyclical industries; (6) g must be less than WACC (otherwise formula breaks down mathematically); (7) Consider: relative to industry growth, country growth, and business lifecycle stage."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A DCF analyst is forecasting capex for years 6+. What assumption typically applies in the terminal period?",
+    "options": [
+      "Continued growth capex",
+      "Normalised maintenance capex approximately equal to depreciation and amortisation — reflecting a steady-state where investment maintains but doesn't expand capital base",
+      "Zero capex",
+      "Maximum possible capex"
+    ],
+    "correct_index": 1,
+    "explanation": "Terminal period capex assumption: (1) Steady-state: maintenance capex ≈ D&A; (2) Reflects normalised replacement of depreciated assets; (3) Growth capex assumed minimal (business is mature); (4) Working capital grows minimally (tied to revenue growth at terminal rate); (5) Cash taxes roughly match book tax expense. For DCF quality: (1) If capex significantly different from D&A in terminal period, investigate why; (2) Capital-intensive businesses may have terminal capex > D&A (catching up); (3) Asset-light businesses may have capex < D&A. Terminal assumptions should be internally consistent and realistic."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A DCF assumes revenue growth of 15% for years 1-3, 10% for years 4-5, then 3% perpetual. Why does the rate decline over time?",
+    "options": [
+      "Random assumption",
+      "Businesses cannot grow faster than the economy indefinitely; rate decline reflects: (1) Competitive erosion; (2) Market saturation; (3) Regulatory pressures; (4) Productivity limits; (5) Convergence to long-term GDP growth. This 'fade' is standard DCF modelling practice",
+      "Growth rates always increase",
+      "Always 3%"
+    ],
+    "correct_index": 1,
+    "explanation": "Growth rate fade in DCF reflects economic reality: (1) No business grows faster than the economy indefinitely; (2) Competitive pressure erodes excess returns; (3) Market saturation limits growth; (4) Regulatory or demographic constraints emerge; (5) Productivity limits capacity expansion. Standard DCF pattern: (1) High growth early (5-15% range); (2) Moderate growth middle period (3-8%); (3) Terminal rate (1-3%); (4) Smooth transition between periods; (5) Terminal rate = long-term GDP growth. This 'convergence to GDP' is embedded in DCF modelling philosophy. Short-term outperformance is possible but unsustainable."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A DCF's terminal value assumes 3% perpetual growth. Terminal FCF is €60M. At 9% WACC, what is terminal value?",
+    "options": [
+      "€60M × 1.03 / 0.06 = €1,030M",
+      "€60M × (1 + 0.03) / (0.09 - 0.03) = €61.8M / 0.06 = €1,030M",
+      "€60M / 0.06 = €1,000M",
+      "Cannot be calculated"
+    ],
+    "correct_index": 1,
+    "explanation": "Terminal value calculation: TV = FCF × (1+g) / (WACC - g) = €60M × 1.03 / (0.09 - 0.03) = €61.8M / 0.06 = €1,030M. This is the terminal value at end of explicit period (needs to be discounted to present value: €1,030M / (1.09)^5 ≈ €669M if terminal starts at Year 5). Key observations: (1) The €60M × 1.03 is year after terminal (year 6 FCF); (2) The discount (WACC - g) drives TV magnitude: small changes here create large TV changes; (3) If g changes to 2%: TV = €61.2M / 0.07 = €874M — 15% decrease. Sensitivity to g is high."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst's DCF arrives at EV of €800M. Precedent transactions suggest EV of €900M-€1,000M. What might explain the difference?",
+    "options": [
+      "DCF is always wrong",
+      "Differences may reflect: (1) Different growth assumptions; (2) Different WACC; (3) Different terminal assumptions; (4) Market premium (control value) not captured in DCF; (5) Missing value drivers in projections; investigate specific drivers",
+      "Precedent transactions always wrong",
+      "Random variation"
+    ],
+    "correct_index": 1,
+    "explanation": "DCF vs. precedent transactions divergence investigation: (1) Growth assumptions: DCF may be more conservative than market expects; (2) WACC: market may apply lower discount rate; (3) Terminal assumptions: DCF may use conservative perpetual growth; (4) Control premium: market prices include control value DCF may not capture; (5) Operational improvements: PE buyer's thesis includes value creation not in DCF; (6) Information asymmetry: market knows things DCF doesn't. Best practice: (1) Investigate drivers of difference; (2) Stress-test DCF assumptions; (3) Consider market premium; (4) Reconcile methods before making decision. €200M gap is material — worth investigation."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst calculates 'implied EV/EBITDA' from DCF. If DCF gives EV of €700M and LTM EBITDA is €70M, what is the implied multiple?",
+    "options": [
+      "10.0x",
+      "10x — DCF's EV / LTM EBITDA provides multiple equivalence for cross-checking",
+      "7.0x",
+      "Cannot be calculated"
+    ],
+    "correct_index": 0,
+    "explanation": "Implied DCF multiple: EV / EBITDA = €700M / €70M = 10.0x. Use: (1) Cross-reference with peer trading multiples; (2) Validate DCF assumptions against market; (3) Reveal consistency with comparable transactions. If peer median is 10x and DCF implies 10x, alignment is strong. If DCF implies 7x but peers trade at 10x, investigate: DCF may be too conservative or peers may be overvalued. If DCF implies 14x vs 10x peers, DCF may be too aggressive. Implied multiple bridges DCF (fundamental) and market-based (comparable) valuation approaches."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A DCF's NPV becomes negative when WACC exceeds a certain level. What does this represent?",
+    "options": [
+      "The DCF is incorrect",
+      "The company's 'internal rate of return' on its operations — the discount rate at which NPV = 0 equals the company's IRR on operations; above this rate, the business does not generate positive NPV",
+      "Random mathematical result",
+      "A taxation issue"
+    ],
+    "correct_index": 1,
+    "explanation": "DCF NPV sensitivity to WACC: (1) At low WACC, NPV is high (positive); (2) As WACC increases, NPV decreases; (3) At some WACC level, NPV = 0 — this is the implied IRR of the business; (4) Above this level, NPV becomes negative. Implications: (1) Company's IRR = discount rate at NPV = 0; (2) If IRR < cost of capital, investment is value-destroying; (3) For DCF with positive NPV at standard WACC, the business generates value above cost of capital. For PE analysis: (1) Understand business's intrinsic IRR; (2) Compare to cost of capital; (3) Target businesses with IRR meaningfully above WACC for equity value creation."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A DCF is being performed for a high-growth company that recently IPO'd. What challenges exist in DCF valuation?",
+    "options": [
+      "No challenges",
+      "Challenges: (1) Limited financial history; (2) Uncertain long-term margins; (3) Growth trajectory uncertain; (4) Beta estimation difficult; (5) Sustainability of current growth; (6) Capex requirements at scale; wider ranges and scenario analysis required",
+      "Always easier than mature companies",
+      "DCF cannot apply"
+    ],
+    "correct_index": 1,
+    "explanation": "High-growth/early-stage DCF challenges: (1) Limited financial history: few years of data for trend analysis; (2) Uncertain long-term margins: growth investments may mask future profitability; (3) Growth trajectory: current growth rates unsustainable long-term; (4) Beta estimation: few peer comparables; (5) Capex requirements: scaling may require significant investment; (6) Growth-margin trade-offs: growth vs. profitability balance. Best practice: (1) Wider scenario ranges; (2) Multiple trajectory scenarios; (3) Monte Carlo simulation for complex cases; (4) Triangulate with VC methodology (e.g., growth-specific multiples); (5) Document uncertainties clearly. DCF becomes more reliable as businesses mature."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst notes their DCF's terminal growth rate of 2.5% is critical. What validates this assumption?",
+    "options": [
+      "Personal judgement only",
+      "Validation approaches: (1) Compare to long-term GDP growth of target's geography; (2) Industry-specific long-term growth patterns; (3) Sensitivity analysis showing impact; (4) Implied exit multiple check; (5) Alignment with comparable analysis; document rationale for chosen rate",
+      "Random guess",
+      "Always 5%"
+    ],
+    "correct_index": 1,
+    "explanation": "Terminal growth rate validation: (1) Long-term GDP growth: US ~2-2.5%, EU ~1-2%, emerging markets varies; (2) Industry-specific trends: e.g., healthcare 2-3% vs. utilities 1-2%; (3) Sensitivity: shows impact of ±0.5-1%; (4) Implied terminal multiple: consistency with peer multiples; (5) Long-term inflation expectations: typically 2-3% for developed markets; (6) Documentation: explain rationale with supporting data. For mature businesses, 2-3% reasonable; higher (3-4%) for growing industries; lower (1-2%) for declining or stable sectors. Defensible terminal rates are essential for rigorous DCF."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst's DCF uses 5-year projections. What's the best practice for projecting revenue beyond years 3?",
+    "options": [
+      "Assume same growth as years 1-3",
+      "Progressive fade: (1) Years 1-3: explicit projections based on deep business understanding; (2) Years 4-5: moderate growth trajectory reflecting sector maturity; (3) Year 5+: transition to terminal growth rate; (4) Smooth transition between periods; avoid sharp changes",
+      "Zero growth",
+      "Always 10%"
+    ],
+    "correct_index": 1,
+    "explanation": "DCF projection best practice: (1) Years 1-2: detailed forecasts from management guidance, sector trends, competitive analysis; (2) Years 3-5: based on underlying drivers, convergence to normal growth; (3) Year 5: transition year approaching terminal growth; (4) Year 6+: terminal growth rate (1-3%); (5) Smooth transitions: no sharp jumps between periods; (6) Margin normalization: steady-state margins by terminal. Example: Y1 20%, Y2 15%, Y3 10%, Y4 7%, Y5 5%, Y6+ 3%. This gradual fade reflects competitive convergence and economic maturation. Sharp transitions suggest modeling inconsistencies."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst's DCF shows an enterprise value with a wide range (€800M - €1,400M) across sensitivity analysis. How should this range be interpreted?",
+    "options": [
+      "Use only the midpoint",
+      "Wide range reflects: (1) Uncertainty in key assumptions (WACC, terminal growth, exit multiple); (2) Sensitivity to assumption changes; (3) Valuation is not a single number but a range of reasonable outcomes; (4) Management team should focus on the drivers that create the range",
+      "Random error",
+      "Analysis is invalid"
+    ],
+    "correct_index": 1,
+    "explanation": "DCF range interpretation: (1) Wide ranges are normal in DCF — reflect genuine uncertainty; (2) Ranges quantify: assumption sensitivity, key value drivers, valuation uncertainty; (3) For decision-making: apply probabilities to scenarios, focus on drivers. €800M-€1,400M range (~75% spread) shows meaningful uncertainty. Typical decision approach: (1) Base case: €1,100M (median/most likely); (2) Upside: €1,400M (favourable conditions); (3) Downside: €800M (adverse conditions); (4) Assess probability of each; (5) Consider downside protection (can the deal work at €800M?); (6) Build margin of safety: don't enter at upside scenarios."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst is considering 'real vs nominal' cash flows in DCF. What matters?",
+    "options": [
+      "Always use real",
+      "Consistency between cash flows and discount rate: nominal cash flows with nominal discount rate; real cash flows with real discount rate. Nominal is typically used in practice — projects include inflation in both cash flows and WACC",
+      "Always use nominal only",
+      "They are the same"
+    ],
+    "correct_index": 1,
+    "explanation": "Real vs nominal cash flows: (1) Nominal: includes inflation; future cash flows are stated in future dollars/euros; discount at nominal WACC (includes inflation premium); (2) Real: excludes inflation; cash flows in today's purchasing power; discount at real WACC (excludes inflation); (3) Consistency is essential: match cash flows to discount rate; (4) Nominal is standard in practice: projections include inflation pass-through, WACC includes market interest rates (which include inflation expectations); (5) Approximate relationship: Nominal = Real + Inflation. For PE analysis: use nominal consistently; ensure inflation is reflected in both cash flow growth and WACC."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst is considering 'country risk' for a DCF of a target in Central Europe. How might this be reflected?",
+    "options": [
+      "Ignore country risk",
+      "Country risk premium added to WACC or ERP: typical adjustment 100-300 basis points for emerging European markets, higher for higher-risk countries; reflects political, economic, and currency risks not captured in standard WACC",
+      "Reduce WACC",
+      "Apply to cash flows only"
+    ],
+    "correct_index": 1,
+    "explanation": "Country risk premium (CRP) adjustment: (1) Added to standard WACC to reflect additional risks in target country; (2) Typical ranges: emerging Europe 100-300 bps, emerging Asia 150-400 bps, Latin America 200-400 bps; (3) Methodology: compare sovereign bond yields, credit default swap spreads, country risk ratings; (4) Alternative approach: adjust ERP rather than adding separately; (5) Currency considerations may also apply. For Central European target: add 100-200 bps to developed-market WACC. Example: if base WACC = 9%, country-adjusted WACC = 10.5-11%. This reduces DCF value, reflecting additional risk investors require for the country exposure."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst's DCF uses EBITDA-based exit multiple of 10x for terminal value. What assumptions does this reflect?",
+    "options": [
+      "Random multiple selection",
+      "Assumes: (1) Market-based exit valuation; (2) Consistency with peer multiples at exit; (3) Operational EBITDA as valuation base; (4) Market environment similar to current; exit multiple should be validated against peer trading multiples and exit scenarios",
+      "Always use 5x",
+      "Maximum market multiple"
+    ],
+    "correct_index": 1,
+    "explanation": "Exit multiple terminal value assumptions: (1) Market-based exit: assumes target can be sold at multiples consistent with peer levels; (2) Operational EBITDA: strategic/PE buyers price on operational EBITDA (validated); (3) Market environment: current multiples reasonably persist; (4) Peer alignment: exit multiple should be consistent with current peer trading; (5) Not peak multiples: use median or 25th percentile to be conservative. Validation approaches: (1) Compare to current peer trading multiples; (2) Historical sector multiples; (3) Range analysis; (4) Conservatism for downside protection. Don't assume peak multiples at exit."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst finds their DCF assumes 8% EBITDA growth for 5 years, then terminal. Over 5 years, EBITDA grows from €40M to €59M. What portion of total EV comes from explicit period vs terminal?",
+    "options": [
+      "100% terminal",
+      "In typical DCF, explicit period contributes 20-30% of total EV, terminal value 70-80%; depends on growth rate (higher growth = larger explicit period) and WACC (higher WACC = reduced terminal); this distribution reflects extended cash flow contribution",
+      "50-50",
+      "100% explicit"
+    ],
+    "correct_index": 1,
+    "explanation": "Typical DCF value distribution: (1) Explicit period (5 years): 20-30% of total EV; (2) Terminal value: 70-80% of total EV. The explicit period captures near-term specific projections; terminal captures all cash flows into perpetuity (which mathematically dominates). This distribution means: (1) Terminal assumptions drive EV; (2) Sensitivity analysis focuses on terminal assumptions; (3) Defending DCF requires defending terminal inputs; (4) Short-term projections matter less proportionately. For PE analysis: validating terminal growth (2-3%), WACC (by industry), and exit multiple (vs peers) is critical. Over-optimism in terminal assumptions is a common DCF error."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst's DCF shows significant value creation potential. What validates whether this is realistic?",
+    "options": [
+      "Trust the projections",
+      "Validation: (1) Compare projected growth to sector/peer growth; (2) Verify margin assumptions against peer benchmarks; (3) Capex assumptions realistic for sector; (4) Cash tax treatment correct; (5) Terminal assumptions defensible; (6) Scenario analysis shows reasonable range; (7) Implied multiples consistent with peers",
+      "Validation not needed",
+      "Only use management projections"
+    ],
+    "correct_index": 1,
+    "explanation": "DCF validation checklist: (1) Growth: Does projected growth exceed sector? Is it justified by market share gains, product extensions, geographic expansion? (2) Margin: Are margins converging to sector averages or stable at current (possibly advantaged) levels? (3) Capex: Is capex consistent with historical patterns and sector benchmarks? (4) Working capital: Is WC growth consistent with revenue expansion? (5) Cash taxes: Using actual historical effective tax rates? (6) Terminal value: Defensible growth (1-3%) and exit multiple (vs peers)? (7) Implied multiple: Does DCF EV / EBITDA match peer multiples? Each assumption requires validation. Sophisticated DCFs run sensitivity tests on each key assumption."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst's DCF produces an EV of €650M while precedent transactions indicate €750M - €850M. What conclusion can be drawn?",
+    "options": [
+      "DCF is always wrong",
+      "Difference suggests: (1) Different growth assumptions between DCF and market; (2) DCF may be overly conservative; (3) Market reflects strategic premiums not in DCF; (4) DCF is useful floor value; (5) Final valuation likely between DCF and market methods; (6) Investigate drivers of difference",
+      "Precedent transactions always wrong",
+      "Take average only"
+    ],
+    "correct_index": 1,
+    "explanation": "DCF below precedent transactions analysis: (1) Different growth assumptions: market expects higher growth than DCF models; (2) Market premium: strategic buyers pay synergies and strategic value not in DCF; (3) Different WACC: market may have lower discount rate; (4) Terminal assumptions: DCF may be conservative; (5) Information asymmetry: market knows things DCF doesn't; (6) DCF as floor: fundamental value below which transactions shouldn't close. For final valuation: (1) Consider both DCF and precedent; (2) DCF provides floor; (3) Market provides ceiling for premium-sensitive buyers; (4) PE's relevant value likely close to DCF; (5) Investigate gap before finalising offer price."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst's DCF uses a 'three-stage' valuation model. What are the three stages?",
+    "options": [
+      "Entry, hold, exit",
+      "Stage 1: High growth period (first 3-5 years); Stage 2: Transition period (years 5-10, growth fading); Stage 3: Stable/terminal period (perpetual growth rate); three-stage approach captures realistic business lifecycle",
+      "Past, present, future",
+      "Revenue, costs, profit"
+    ],
+    "correct_index": 1,
+    "explanation": "Three-stage DCF model: (1) Stage 1 (Years 1-3 or 1-5): High growth period; detailed projections; company-specific growth drivers; can exceed long-term sustainable rates. (2) Stage 2 (Years 4-10): Transition/fade period; growth declining toward terminal; competitive convergence; margin convergence. (3) Stage 3 (Years 11+): Stable/terminal; perpetual growth rate; terminal multiples; steady state. This approach captures: (1) Realistic business lifecycle; (2) Convergence to long-term sustainable values; (3) Smooth transition between growth stages; (4) Better than simple two-stage (high growth + terminal). Used for businesses with clear growth trajectories and maturation patterns."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst is presenting DCF alongside a football field. Why is this presentation common?",
+    "options": [
+      "Regulatory requirement",
+      "Football field shows valuation range across multiple methods (DCF, trading comps, precedent transactions, LBO analysis) visually; allows IC to see convergence or divergence, identify the valuation range, and make informed decisions on where to bid within the range",
+      "Optional decoration",
+      "Only for small deals"
+    ],
+    "correct_index": 1,
+    "explanation": "Football field analysis purpose: (1) Visual display: multiple valuation methods on single chart; (2) Each method shows range (low to high); (3) Convergence zones: overlap between methods suggests robust valuation; (4) Divergence zones: where methods disagree, warranting investigation; (5) Decision support: IC sees entire valuation picture, not just one method. Standard PE practice: (1) Shows DCF (range), trading comps (range), precedent transactions (range), LBO analysis (range); (2) Highlights preferred valuation zone; (3) Draws attention to where bid should position; (4) Clear communication of risk/opportunity; (5) Used in investment memos, IC presentations, deal negotiations."
+  },
+  {
+    "topic_tag": "valuation-dcf",
+    "question": "A PE analyst is considering scenario analysis beyond simple sensitivity. What's the advantage of scenario analysis?",
+    "options": [
+      "No advantage",
+      "Scenario analysis tests multiple variables simultaneously in coherent combinations (e.g., 'recession scenario' with lower growth, higher WACC, margin compression together) rather than isolated changes; more realistic representation of risk",
+      "Scenarios are random",
+      "Always worse than sensitivity"
+    ],
+    "correct_index": 1,
+    "explanation": "Scenario analysis vs. sensitivity: (1) Sensitivity: tests one variable at a time (e.g., WACC ±1%); (2) Scenario: combines multiple changes in coherent combinations representing realistic futures. Examples: (1) Base case: expected performance; (2) Upside: growth exceeds projections, margin expansion, lower WACC; (3) Downside: weaker growth, margin compression, higher WACC; (4) Recession: major operational and multiple compression; (5) Sector disruption: specific sector-relevant scenarios. Advantages: (1) More realistic — variables don't move independently in downturns; (2) Better risk understanding; (3) Identifies scenarios requiring mitigation; (4) Supports strategic planning."
+  }
+]

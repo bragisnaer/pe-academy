@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A target has an equity value of €420M, financial debt of €180M, cash of €40M, and an underfunded pension of €25M. What is the enterprise value?",
+    "options": [
+      "€560M — equity plus financial debt minus cash",
+      "€585M — equity plus financial debt plus pension deficit minus cash",
+      "€640M — the sum of all items",
+      "€600M — equity plus financial debt"
+    ],
+    "correct_index": 1,
+    "explanation": "EV = Equity Value + Net Debt + Debt-Like Items. Here: €420M + (€180M – €40M cash) + €25M pension = €585M. Pension deficits are debt-like items because they represent real economic obligations the buyer inherits. Excluding them understates the true cost of the acquisition and transfers hidden liability to the buyer."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "During SPA negotiation, a seller insists that 'normalised working capital' at closing be set at €12M, while the buyer's analysis suggests €18M is the true normalised level. What is the financial implication of this difference?",
+    "options": [
+      "It is a technical dispute with no cash impact",
+      "If the seller's number is accepted, the buyer effectively pays €6M extra at closing",
+      "If the seller's number is accepted, the seller transfers €6M of extra working capital",
+      "The difference only matters for tax reporting, not deal economics"
+    ],
+    "correct_index": 1,
+    "explanation": "The SPA's working capital adjustment mechanism reduces the purchase price if actual closing working capital is below the normalised level. If the 'normal' is set artificially low at €12M (vs. a true €18M), the seller keeps €6M of working capital the buyer will need to fund post-closing. This is why working capital is one of the most contentious areas in deal completion."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A PE firm acquires a business at an enterprise value of €400M (10x EBITDA of €40M). Over the hold period, EBITDA grows to €55M and €100M of debt is repaid. If the company is sold at the same 10x multiple, what is the equity value at exit, assuming entry debt of €250M?",
+    "options": [
+      "€400M — equity value always equals enterprise value at exit",
+      "€400M — 10x multiple applied to €40M EBITDA",
+      "€400M — €55M EBITDA x 10 multiple minus €150M remaining debt",
+      "€550M — the increase in EBITDA drives exit equity value"
+    ],
+    "correct_index": 2,
+    "explanation": "Exit EV = €55M x 10 = €550M. Remaining debt = €250M – €100M = €150M. Exit equity value = €550M – €150M = €400M. Compared to entry equity of €150M (€400M EV – €250M debt), this is a 2.7x MOIC — driven by EBITDA growth (€15M x 10 = €150M) and debt paydown (€100M), even with no multiple expansion."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A buyer is negotiating a deal where the seller proposes pricing the acquisition on equity value rather than enterprise value. Why would a sophisticated PE buyer resist this approach?",
+    "options": [
+      "Equity value is easier to manipulate through accounting adjustments",
+      "Enterprise value is capital-structure-neutral and creates a cleaner comparison across deals and multiples",
+      "Equity value is only appropriate for distressed transactions",
+      "Equity value excludes fixed assets, which are important to the buyer"
+    ],
+    "correct_index": 1,
+    "explanation": "Enterprise value treats the business as a whole (debt plus equity claims), making it comparable across companies with different capital structures. Equity value reflects a specific capital structure that will change in the acquisition. Pricing on EV allows the buyer to structure the financing independently of the acquisition price negotiation."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "What does Enterprise Value (EV) conceptually represent?",
+    "options": [
+      "The cash paid by the PE firm at closing",
+      "The total value of a business's operations, representing the sum of all capital provider claims (equity holders, debt holders, other financial stakeholders) — the value before how the business is financed",
+      "Only the equity portion of the business",
+      "The annual revenue of the company"
+    ],
+    "correct_index": 1,
+    "explanation": "Enterprise Value represents the total value of a business's operations as if acquiring all the claims on it — both equity and debt. EV is capital-structure-neutral: it answers 'what is the business worth?' independently of how it is financed. A company with €500M EV could have €500M equity and no debt, or €200M equity and €300M debt — the operating business value is the same."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "The fundamental bridge between Enterprise Value and Equity Value can be expressed as:",
+    "options": [
+      "EV = Equity Value + Revenue",
+      "Equity Value = EV – Net Debt – Debt-Like Items + Non-Operating Assets",
+      "Equity Value = EV + Net Debt",
+      "EV = Equity Value × Leverage Ratio"
+    ],
+    "correct_index": 1,
+    "explanation": "The EV-to-equity bridge subtracts net debt and debt-like items (pension deficits, certain contingent liabilities, deferred consideration) from EV to arrive at equity value — what the equity holders actually receive. Non-operating assets (surplus cash, non-core investments) are added because they're not reflected in the operating EV. This bridge is the heart of deal pricing: the buyer pays EV's equivalent in cash and assumed debt."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A company has €300M of financial debt and €45M of cash. What is its 'net debt'?",
+    "options": [
+      "€345M — the sum of debt and cash",
+      "€255M — debt minus cash",
+      "€300M — debt only, ignoring cash",
+      "€45M — cash only"
+    ],
+    "correct_index": 1,
+    "explanation": "Net Debt = Financial Debt – Cash = €300M – €45M = €255M. Net debt represents the economic debt obligation after netting available cash that could theoretically be used for repayment. For pricing purposes, net debt is deducted from EV to reach equity value. However, not all cash is 'free' — operating cash required to run the business is excluded from the netting calculation."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A target's balance sheet shows €50M of cash. The PE buyer's diligence reveals €15M is required for day-to-day operations (working capital cash), leaving €35M 'surplus.' How should cash be treated in the EV-to-equity bridge?",
+    "options": [
+      "All €50M is netted against debt (full netting)",
+      "Only the €35M of surplus cash should be netted against debt — the €15M of operating cash is needed to run the business and belongs with operations, not as a debt offset",
+      "No cash is netted",
+      "Cash is never included in the calculation"
+    ],
+    "correct_index": 1,
+    "explanation": "Not all cash is 'free' — a business requires minimum operating cash (e.g., float in the bank for weekly payroll, customer deposits, reserves). Sophisticated deal pricing distinguishes 'operating cash' (required for operations) from 'surplus cash' (excess). Only surplus cash is netted against debt. This prevents sellers from claiming all cash as a debt offset when some is genuinely required to operate. The buyer's QofE typically defines the operating cash threshold."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "Which of the following would typically be treated as a 'debt-like item' in the EV-to-equity bridge?",
+    "options": [
+      "Trade payables in the normal course of business",
+      "An underfunded pension obligation, an outstanding earn-out from a prior acquisition, and unrecognised tax liabilities from ongoing disputes",
+      "Inventory and receivables",
+      "Retained earnings"
+    ],
+    "correct_index": 1,
+    "explanation": "Debt-like items are obligations that resemble debt in economic substance even if not classified as financial debt on the balance sheet. Common examples: underfunded pensions (future cash obligations), earn-out liabilities from prior acquisitions, unrecognised tax obligations, onerous contracts, contingent liabilities with reasonable probability, and post-employment benefits. These are deducted from EV to determine equity value. Failing to identify debt-like items results in the buyer effectively assuming hidden obligations."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A target has €30M of operating lease commitments under IFRS 16 treatment. How does this affect the EV-to-equity bridge?",
+    "options": [
+      "No effect — operating leases are not considered debt",
+      "Under IFRS 16, operating leases are recognised as debt-like items and typically added to EV in the debt calculation; for EBITDA multiples, the decision depends on whether EBITDA is pre- or post-IFRS 16",
+      "Operating leases are subtracted from cash",
+      "Operating leases are ignored for private company transactions"
+    ],
+    "correct_index": 1,
+    "explanation": "Under IFRS 16 (effective 2019), operating leases are brought onto the balance sheet as right-of-use assets and lease liabilities. This means lease liabilities (previously off-balance-sheet) are now debt-like items in the EV-to-equity bridge. The complication is that lease payments, which previously appeared in EBITDA, are now replaced by depreciation and interest — so the multiplier matters. Sophisticated PE buyers adjust consistently to avoid double-counting or missing the impact."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A minority (non-controlling) interest of 10% exists in one of the target's subsidiaries. How does this affect the enterprise value calculation?",
+    "options": [
+      "Nothing — it's already included in equity value",
+      "The fair value of the minority interest (the 10% stake held by external parties) is typically added to EV because EV represents the total operations; the PE buyer pays for 100% of the subsidiary's operations even though they own only 90%",
+      "The minority interest is subtracted from cash",
+      "The minority interest converts to debt"
+    ],
+    "correct_index": 1,
+    "explanation": "When calculating EV from equity value, the minority (non-controlling) interest is added because it represents a claim on consolidated operations not owned by the parent. EV represents the total value of operations — you're pricing the business as if acquiring 100%. Even if the PE buyer only acquires the controlling stake, the business operates at 100%. Formula: EV = Equity Value + Net Debt + Minority Interest (fair value) + Debt-Like Items – Non-Operating Assets."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A target has a 30% investment in an associate company valued at €25M on the balance sheet. How is this treated in the EV calculation?",
+    "options": [
+      "Added to EV",
+      "Typically subtracted from EV (treated as a non-operating asset) because the associate's operations are not consolidated and the investment is a separate asset the buyer acquires — often excluded from operating EBITDA as well to maintain consistency",
+      "Multiplied by the EV multiple",
+      "Ignored entirely"
+    ],
+    "correct_index": 1,
+    "explanation": "Investments in associates (typically 20-50% stakes) are equity investments accounted for under the equity method. The associate's operations are not consolidated — the investment appears as a single line on the balance sheet, and income appears as 'share of associate's profit' in the P&L. For EV analysis: subtract the associate investment from the main EV calculation (it's a non-operating asset), and exclude associate income from operating EBITDA. Otherwise you're double-counting."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "The EV/EBITDA multiple is a common valuation tool. Why is it preferred over the Price/Earnings (P/E) ratio for PE analysis?",
+    "options": [
+      "EV/EBITDA is always higher than P/E",
+      "EV/EBITDA is capital-structure-neutral, while P/E is affected by debt level — a highly leveraged company will have lower P/E than an unleveraged one even if operations are identical",
+      "P/E is not used in PE",
+      "EV/EBITDA is only useful for tech companies"
+    ],
+    "correct_index": 1,
+    "explanation": "P/E (Price/Earnings) measures equity price per unit of after-tax earnings. It's affected by capital structure because higher leverage means higher interest expense, reducing net income and thus raising P/E for a given equity price. EV/EBITDA removes this distortion by using EV (includes debt) in the numerator and EBITDA (before interest) in the denominator. This makes it capital-structure-neutral and better suited for PE analysis where the buyer will change the capital structure."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A target's EV is €500M. Net debt is €150M, and minority interest is €25M. What is the equity value?",
+    "options": [
+      "€375M — EV minus net debt",
+      "€325M — EV minus net debt minus minority interest",
+      "€675M — EV plus net debt and minority interest",
+      "€525M — EV plus minority interest"
+    ],
+    "correct_index": 1,
+    "explanation": "Equity Value = EV – Net Debt – Minority Interest (+ Non-Operating Assets if applicable) = €500M – €150M – €25M = €325M. The minority interest is subtracted because it represents the portion of operations owned by external parties in subsidiaries — not accruing to the parent's equity holders. This €325M is what the parent's equity holders collectively receive if the business is sold at a €500M EV."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A target is valued at €800M EV. The company has €200M of debt, €80M of cash, and an underfunded pension of €40M. What equity value does the PE firm actually pay?",
+    "options": [
+      "€640M — EV less all items",
+      "€800M — the full EV",
+      "€680M — EV less debt plus cash less pension deficit = €800M – €200M + €80M – €40M",
+      "Cannot be determined"
+    ],
+    "correct_index": 2,
+    "explanation": "Equity Value = EV – Debt + Cash – Debt-Like Items = €800M – €200M + €80M – €40M = €640M. Wait, the correct answer is actually: EV – Net Debt – Debt-Like Items = €800M – (€200M – €80M) – €40M = €800M – €120M – €40M = €640M. Both formulations produce the same answer. The equity value of €640M is what equity holders receive; the buyer pays this plus assumes the €200M debt (net of €80M cash refund and covering €40M pension), totalling the €800M EV economically."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A PE-backed company has EV of €350M at acquisition. Four years later, EBITDA has grown 40% and the company has repaid €80M of debt. Enterprise value at exit is €520M (representing the same EV/EBITDA multiple). How does equity value change if entry debt was €200M?",
+    "options": [
+      "Equity value is unchanged",
+      "Entry equity was €150M (€350M – €200M); exit equity is €400M (€520M – €120M remaining debt); equity grew by €250M (2.7x MOIC) driven by EBITDA growth and debt paydown",
+      "Equity value decreases",
+      "Cannot be determined"
+    ],
+    "correct_index": 1,
+    "explanation": "Entry: EV €350M – Debt €200M = Equity €150M. Exit: EV €520M – Remaining Debt €120M (€200M – €80M paydown) = Equity €400M. MOIC = €400M / €150M = 2.67x. Even though EV only grew 49% (€350M to €520M), equity grew 167% — illustrating how leverage amplifies returns. EBITDA growth drives EV up, debt paydown reduces debt, and both flow through as equity value."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A PE buyer's 'locked box' deal structure fixes equity value at €300M based on the June balance sheet, with closing in October. What risk does this structure create for the buyer?",
+    "options": [
+      "No risk — everything is fixed",
+      "The buyer bears the risk of cash leakage between the locked box date and closing — deteriorating working capital, unusual dividends, or asset sales that reduce the value they receive relative to what was locked in",
+      "The seller pays less",
+      "The deal cannot close"
+    ],
+    "correct_index": 1,
+    "explanation": "A locked box structure fixes economic transfer from a historical balance sheet date (not closing). The purchase price is fixed; no post-closing adjustment. Between locked box date and closing, the seller operates the business 'for the buyer's benefit.' Risk for the buyer: value leaks from the locked box (poor working capital management, unusual transactions). The SPA requires the seller to warrant no 'leakage' — unusual dividends, above-market payments to affiliates, asset sales not in the ordinary course."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A 'completion accounts' deal structure involves calculating working capital, net debt, and cash at closing, then adjusting the purchase price accordingly. Compared to locked box, what is the key difference?",
+    "options": [
+      "Completion accounts involve no price adjustment",
+      "Completion accounts adjust the price based on actual closing date figures rather than a fixed historical amount — reducing the buyer's risk of value leakage but requiring post-closing reconciliation and potential disputes",
+      "Completion accounts are only used for large deals",
+      "Completion accounts cost less than locked box"
+    ],
+    "correct_index": 1,
+    "explanation": "Completion accounts (also called 'post-closing adjustments') true-up the purchase price based on actual closing-date working capital, cash, and net debt. The buyer pays/receives the difference between expected and actual. This structure protects buyers from value leakage but creates: (1) closing-date calculation complexity, (2) post-closing disputes about accounting treatment, (3) 30-90 day true-up window. Locked box is typically simpler; completion accounts are common for larger, more complex deals."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A target has €45M of 'deferred consideration' owed to the sellers of a business it acquired 18 months ago. How is this treated in the EV bridge?",
+    "options": [
+      "Excluded entirely",
+      "Treated as a debt-like item and deducted from EV when calculating equity value — this is essentially outstanding purchase price that the new buyer is inheriting",
+      "Added to cash",
+      "Multiplied by the EV multiple"
+    ],
+    "correct_index": 1,
+    "explanation": "Deferred consideration (vendor loans, earn-outs, holdbacks from prior acquisitions) represents purchase price for earlier deals that remains unpaid. The new PE buyer is effectively inheriting this obligation — it's debt-like. Treatment: subtract from EV to determine equity value. Similarly, earn-out liabilities contingent on future performance are typically treated as debt-like using an estimate of probable payout. This prevents the new buyer from double-counting prior acquisition costs."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A company has €25M of 'restricted cash' on its balance sheet held as collateral for a customer contract. How is this treated in the EV-to-equity bridge?",
+    "options": [
+      "Netted against debt as normal cash",
+      "Excluded from the debt netting calculation because it is not freely available to the company — it is pledged for a specific purpose and cannot be used for general corporate needs or debt repayment",
+      "Added to EV",
+      "Subtracted from EV"
+    ],
+    "correct_index": 1,
+    "explanation": "Restricted cash (escrows, collateral deposits, regulatory reserves, customer deposits in some sectors) is not freely available and cannot be used to offset debt. It's economically different from surplus cash. In the EV bridge, restricted cash is typically excluded from the cash netting calculation — meaning it doesn't reduce the debt burden. Only 'free' cash (surplus, unencumbered) qualifies for debt netting. The distinction preserves accurate economic accounting."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A target has €100M of 'preference shares' outstanding that pay a guaranteed 7% dividend and are redeemable in 5 years. How should these be treated in EV analysis?",
+    "options": [
+      "Treated as pure equity",
+      "Treated as debt-like (or 'quasi-equity') in the EV bridge — preference shares with dividend obligations and redemption features behave economically more like debt than common equity, and should be deducted from EV alongside financial debt",
+      "Ignored entirely",
+      "Added to cash"
+    ],
+    "correct_index": 1,
+    "explanation": "Preference shares with fixed dividends and redemption features are economically similar to debt, even though legally they are equity. Under modern analysis, they are typically treated as debt-like items in the EV bridge: subtracted from EV to determine common equity value. Classification depends on the specific terms: perpetual preference shares without redemption may be closer to equity; redeemable preference shares with cumulative dividends are closer to debt. The treatment affects both pricing and return calculations."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A target has €150M of convertible debt outstanding that converts to equity at €10/share. The company's current share price is €15. How should this be treated?",
+    "options": [
+      "Treated as pure debt",
+      "Treated as equity (because conversion is economically advantageous — the debt will likely convert rather than be repaid in cash), effectively reducing the current debt position but adding to the equity share count",
+      "Ignored",
+      "Added to EV twice"
+    ],
+    "correct_index": 1,
+    "explanation": "When convertible debt is 'in the money' (conversion advantageous to the holder), it will likely convert to equity rather than be repaid. In this case, treat it as equity: include the converted shares in the share count for equity value calculation. When convertible debt is 'out of the money,' treat it as debt. The distinction matters for both EV bridge accuracy and for understanding post-transaction share count in the PE firm's capital structure."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A target's EBITDA is €45M and it trades at a 10x EV multiple. What is the implied EV?",
+    "options": [
+      "€450M",
+      "€45M × 10 = €450M",
+      "€4.5M",
+      "€4,500M"
+    ],
+    "correct_index": 1,
+    "explanation": "EV = EV/EBITDA multiple × EBITDA = 10 × €45M = €450M. This is the fundamental arithmetic of multiple-based valuation. Sophisticated analysis goes beyond this simple calculation to: validate the EBITDA figure (adjusted vs reported), select appropriate multiples (LTM vs NTM, peer-based vs transaction-based), apply control/size premiums, and reconcile across valuation methodologies (DCF cross-check)."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "An LBO model uses LTM adjusted EBITDA of €30M. If the PE firm pays €270M at 9.0x, what is the equity check required assuming €180M of LBO debt is raised?",
+    "options": [
+      "€270M — full EV",
+      "€90M — EV minus the debt financing = €270M – €180M",
+      "€450M — EV plus debt",
+      "€180M — equal to the debt"
+    ],
+    "correct_index": 1,
+    "explanation": "Equity check = EV – Debt raised = €270M – €180M = €90M. This is the PE fund's equity investment at closing. The €180M of debt is raised from lenders; the remaining €90M comes from the fund's equity. Together they fund the €270M EV acquisition (plus transaction fees). The equity check directly determines return potential: every €1M of EBITDA growth times the exit multiple flows through to equity, amplified by the leverage ratio."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A PE buyer calculates an initial 'LBO-based' maximum EV. What does this represent?",
+    "options": [
+      "The absolute minimum price the seller will accept",
+      "The maximum EV the buyer can pay while still generating an acceptable IRR (typically 20-25%) given specific assumptions about debt, EBITDA growth, and exit multiple",
+      "The price a public market investor would pay",
+      "The book value of the company"
+    ],
+    "correct_index": 1,
+    "explanation": "LBO-based maximum EV works backward from required returns: given a target IRR (say 22%), projected EBITDA growth, expected exit multiple, and debt capacity, what is the maximum entry EV that still delivers the target IRR? This is the PE firm's 'ability to pay' ceiling — they shouldn't bid above this level regardless of market conditions. Comparable public/deal multiples are reference points; LBO math sets the discipline. If market pricing exceeds LBO-derived max, the PE firm must walk away or cut the target return."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A target's balance sheet shows €220M of 'long-term debt' and €15M of 'current portion of long-term debt.' How are both treated in the net debt calculation?",
+    "options": [
+      "Only long-term debt is included",
+      "Both are treated as debt for net debt calculation — current portion is debt that simply becomes due within 12 months; economically it's the same obligation, just nearer to repayment",
+      "Only the current portion is included",
+      "Neither is considered debt"
+    ],
+    "correct_index": 1,
+    "explanation": "Total financial debt includes all interest-bearing obligations regardless of maturity: short-term debt, current portion of long-term debt, long-term debt, bonds, notes, etc. The 'current portion' is simply long-term debt that becomes due within 12 months — it's the same debt, just reclassified by maturity on the balance sheet. All of it is deducted in the EV-to-equity bridge. Only truly non-interest-bearing trade payables are excluded from debt."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A PE buyer adjusts EV for 'non-operating assets' such as excess real estate or investment securities. Why?",
+    "options": [
+      "To inflate the EV",
+      "Non-operating assets don't contribute to operating EBITDA, so they shouldn't be valued using the operating EV multiple; they are valued separately at fair market value and added to the operating EV to arrive at total EV",
+      "To hide the acquisition cost",
+      "Non-operating assets are always excluded from EV"
+    ],
+    "correct_index": 1,
+    "explanation": "Non-operating assets (excess real estate not used in operations, investment securities, non-core subsidiaries) don't generate the EBITDA being multiplied. Valuing them at the operating multiple would double-count or mis-price. Instead: (1) value operating business using EV/EBITDA on operating EBITDA; (2) value non-operating assets separately at market value (e.g., real estate appraisals, investment marks); (3) sum to total enterprise value. This 'sum-of-parts' approach prevents valuation errors."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "During diligence, a buyer discovers €20M of 'off-balance-sheet' operating lease commitments that the seller claims are 'non-debt.' Under modern PE analysis, how are these treated?",
+    "options": [
+      "Ignored as non-debt",
+      "Under IFRS 16 and modern analysis, operating leases are treated as debt-like items in the EV bridge — if not already on the balance sheet, the PE buyer adjusts the deal pricing to reflect this commitment",
+      "Tripled for conservatism",
+      "Added to working capital"
+    ],
+    "correct_index": 1,
+    "explanation": "Post-IFRS 16, operating leases are brought onto the balance sheet as liabilities. For private deals where accounting may lag, the PE buyer adjusts manually: €20M of lease commitments represents a real financial obligation that reduces the equity value. Treatment: add to the debt figure in the EV bridge, or deduct the lease liability from EV to reach equity value. Consistency matters — if lease expense was added back to EBITDA, the corresponding liability must appear in the bridge."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A seller presents a target at '€450M EV' based on 10x LTM EBITDA of €45M. The buyer's QofE reduces adjusted EBITDA to €40M. What is the implied EV at the same multiple?",
+    "options": [
+      "€450M — remains the same",
+      "€400M — €40M × 10 = €400M, a €50M reduction due to the lower EBITDA",
+      "€500M — multiplied by a different factor",
+      "Cannot be calculated"
+    ],
+    "correct_index": 1,
+    "explanation": "EV = 10 × €40M = €400M, not €450M. This illustrates why EBITDA accuracy matters so much in deal pricing. A €5M QofE adjustment translates to €50M of EV reduction (€5M × 10x). This is why QofE is fundamental to PE deal pricing: seemingly small adjustments compound through the multiple. Negotiations often revolve around whose EBITDA view is accepted. Sophisticated buyers avoid walking away when QofE reveals €5M less EBITDA; they negotiate the price accordingly."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A PE buyer is structuring a deal where the seller will retain 20% equity (rollover equity). How does this affect the EV calculation?",
+    "options": [
+      "The rollover reduces the EV",
+      "The EV calculation is unchanged; the rollover reduces the PE firm's equity check by 20% (the seller retains €X of the €Y required equity), but the business is still acquired at the same total EV",
+      "The rollover eliminates the need for debt",
+      "The EV doubles"
+    ],
+    "correct_index": 1,
+    "explanation": "Rollover equity doesn't change the EV — the business is still being acquired at the same enterprise value. What changes is the funding mix: the required equity check is split between the PE fund and the rollover seller. If €100M equity is needed and the seller rolls 20%, the fund invests €80M and the seller retains €20M of equity in the new business. This aligns incentives (seller still has skin in the game) while reducing the PE firm's own capital deployment."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A target's 'cash and cash equivalents' line is €85M. Closer review reveals €60M is in an overseas subsidiary with €12M in withholding tax if repatriated, and €15M is 'trapped' in a regulated subsidiary requiring regulatory approval to extract. What is the effective cash position for EV purposes?",
+    "options": [
+      "€85M — the reported cash balance",
+      "Approximately €58M or less — accounting for tax friction (€12M withholding on €60M) and regulatory constraints on €15M that may not be freely available",
+      "€0 — cash is never freely available",
+      "Double the amount for flexibility"
+    ],
+    "correct_index": 1,
+    "explanation": "Not all cash is equal. Repatriation tax friction, regulatory restrictions, and operational requirements reduce the economic value of cash. Starting from €85M: subtract €12M of withholding tax on overseas cash (= €73M), assess the €15M regulated subsidiary restrictions (may be inaccessible). Effective free cash for EV purposes is approximately €58M or less. This matters because the buyer's equity check is increased by the cash that cannot actually be accessed for debt paydown."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A PE firm's investment memo presents an 'EV at exit' of €600M assuming 10x exit multiple on €60M EBITDA. Upon review, what additional assumption matters for equity returns?",
+    "options": [
+      "Only the EBITDA figure",
+      "The remaining debt at exit also matters — exit equity = €600M EV – remaining debt; the pace of debt paydown during the hold materially affects final equity value and therefore MOIC/IRR",
+      "The exit multiple alone",
+      "The exit year is irrelevant"
+    ],
+    "correct_index": 1,
+    "explanation": "Exit EV of €600M is only half the picture. Exit Equity = EV – Remaining Debt. If €300M of debt was repaid during the hold (from initial €350M), remaining debt = €50M, exit equity = €550M. If only €100M was repaid, remaining debt = €250M, exit equity = €350M. This €200M swing in equity value reflects the importance of debt paydown in LBO returns. Model assumptions about cash flow, capex, working capital, and discretionary uses of cash all feed into the debt paydown projection."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "An investment banker's pitch shows a target's 'equity value' of €250M with €100M of debt. A junior analyst asks why the EV (which is what PE firms typically price on) isn't stated. What is the EV?",
+    "options": [
+      "€250M",
+      "€350M — equity value plus debt (€250M + €100M)",
+      "€150M — equity value minus debt",
+      "Cannot be calculated"
+    ],
+    "correct_index": 1,
+    "explanation": "Starting from equity value: EV = Equity Value + Debt – Cash + Debt-Like Items – Non-Operating Assets. If net debt is €100M and no debt-like items: EV = €250M + €100M = €350M. PE firms typically present EV first (since they're agnostic to capital structure), while equity-market-focused materials may start with equity value. Converting between the two simply requires the net debt figure."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A PE firm analyses 'EV per unit of capacity' for an infrastructure target. Why might this metric supplement EV/EBITDA analysis?",
+    "options": [
+      "It doesn't — EV/EBITDA is always sufficient",
+      "For infrastructure, real estate, or capacity-constrained businesses, EV per unit of physical capacity (€/kilowatt for power, €/unit for manufacturing, €/subscriber for telecoms) provides an alternative view grounded in the underlying asset base",
+      "It's required by regulators",
+      "It's used only for tax planning"
+    ],
+    "correct_index": 1,
+    "explanation": "EV per unit metrics provide asset-intensity-based valuation: €/KW for power plants, €/subscriber for telcos, €/bed for hospitals, €/square metre for retail. These metrics work alongside EV/EBITDA by grounding valuation in physical assets. For capacity-constrained businesses with relatively consistent unit economics, peer deals on a per-unit basis provide an alternative sanity check. This is particularly useful for infrastructure, real estate, and certain regulated industries."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A PE buyer notes that two comparable public companies trade at EV/Revenue multiples of 2.8x and 3.2x. The target generates €200M of revenue. How could this be applied?",
+    "options": [
+      "Only for startups",
+      "EV = average multiple × Revenue = 3.0 × €200M = €600M — provides a revenue-based valuation reference, particularly useful for growth companies, early-stage businesses, or when EBITDA is distorted or negative",
+      "This is never a valid approach",
+      "Only for loss-making businesses"
+    ],
+    "correct_index": 1,
+    "explanation": "EV/Revenue is particularly useful when: EBITDA is distorted (unprofitable growth investment), approaching zero, or heavily adjusted; companies have very different operating models obscuring EBITDA comparability; early-stage businesses where revenue growth is the primary metric. Application: EV = 3.0 × €200M = €600M. Limitations: ignores profitability, assumes revenue quality is similar across peers, and can mislead for heavily differentiated business models with divergent margin profiles."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A PE firm is structuring a deal where part of the consideration is 'vendor financing' — the seller extends a €30M loan to the buyer to fund part of the acquisition. How does this affect the EV calculation?",
+    "options": [
+      "Vendor financing reduces the EV",
+      "EV remains unchanged; vendor financing is a funding source (like bank debt) that reduces the PE firm's required equity check but doesn't affect the transaction value",
+      "Vendor financing doubles the EV",
+      "Vendor financing is not allowed"
+    ],
+    "correct_index": 1,
+    "explanation": "Vendor financing is an alternative funding source that doesn't change the EV — it changes how the acquisition is funded. The PE firm still acquires the business at the negotiated EV (say €300M); the funding mix shifts from equity+bank debt to equity+bank debt+vendor loan. Economically, vendor loans are debt-like (typically with interest, repayment terms, possibly collateral). They're useful when bank financing is constrained or when aligning seller interests through deferred consideration."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A PE buyer is assessing a target's working capital normalisation. The company shows €25M of working capital at closing. Over the past 3 years, average working capital was €35M. Why does this difference matter?",
+    "options": [
+      "It doesn't matter",
+      "The €10M deficit (€35M expected vs €25M at closing) means the seller has extracted €10M of working capital before closing — either through aggressive AR collection, payable stretching, or inventory reduction; the purchase price should be reduced by €10M to compensate the buyer",
+      "The seller should receive a bonus",
+      "Working capital doesn't affect deal pricing"
+    ],
+    "correct_index": 1,
+    "explanation": "Working capital normalisation protects against seller manipulation of working capital near closing. If historical average is €35M but closing is €25M, the seller has extracted €10M of 'business value' that should normally be part of the deal. The SPA's working capital adjustment mechanism reduces the purchase price by €10M to compensate. Without this adjustment, the buyer inherits a business with €10M less working capital than normal — either requiring €10M additional investment or experiencing operational difficulties."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A PE firm's LBO model shows entry EV of €400M, exit EV of €560M (5 years later), and remaining debt at exit of €150M (down from €240M at entry). What is the equity return?",
+    "options": [
+      "€400M — same as entry EV",
+      "Entry equity = €400M – €240M = €160M; exit equity = €560M – €150M = €410M; equity grew 2.56x, reflecting both EV growth and debt paydown",
+      "€560M — same as exit EV",
+      "€0 — no return"
+    ],
+    "correct_index": 1,
+    "explanation": "The equity return decomposition: Entry Equity = €160M. Exit Equity = €410M. Growth = €250M = 2.56x MOIC. Drivers: EV growth (€160M) + Debt paydown (€90M) = €250M total equity growth. Both drivers contribute: 64% from EV appreciation, 36% from debt paydown. Understanding this decomposition is central to PE analysis — it separates operational value creation (EV/EBITDA growth) from financial engineering (debt paydown) in generating returns."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "A PE analyst is comparing two targets with identical EBITDA of €50M. Target A has €100M of pension deficit; Target B has none. How should this affect the pricing comparison?",
+    "options": [
+      "Both targets should be priced identically at the same multiple",
+      "Target A's equity value should be €100M lower than Target B's at the same operating EV — the pension deficit is a debt-like item the buyer must assume; if both are priced at 10x EBITDA (€500M EV), Target A's equity = €400M while Target B's = €500M",
+      "Target A should have a higher multiple",
+      "Target A is more attractive because it has pension obligations"
+    ],
+    "correct_index": 1,
+    "explanation": "Both targets have identical operating performance (€50M EBITDA), justifying the same EV multiple. But Target A has a €100M pension deficit — a debt-like obligation the buyer assumes. At 10x EBITDA: Target A EV = €500M; equity = €500M – €100M pension = €400M. Target B EV = €500M; equity = €500M (no deficit). The buyer should pay €100M less for Target A's equity than Target B's, reflecting the economic reality that pensions are debt-like claims."
+  },
+  {
+    "topic_tag": "financial-analysis-enterprise-value",
+    "question": "Why is understanding the distinction between 'Enterprise Value' and 'Equity Value' so central to PE practice?",
+    "options": [
+      "Only lenders care about this distinction",
+      "EV is how PE firms think about business value (capital-structure-neutral), while equity value is what PE firms actually pay in cash plus assume in debt — the bridge between them contains all the pricing negotiations around debt, working capital, pensions, and other debt-like items",
+      "They are identical in PE practice",
+      "EV is only used for public companies"
+    ],
+    "correct_index": 1,
+    "explanation": "The EV-to-equity bridge is where PE deal pricing actually happens. EV represents the 'clean' business value (the seller's and buyer's views converge here through multiples analysis). The bridge — containing debt, cash, working capital, pensions, earn-outs, and other items — is where negotiation occurs. Each €1 in the bridge flows dollar-for-dollar to equity value (not multiplied). This is why the bridge is scrutinised carefully during QofE and why the seller typically wants the bridge to favor them at every line."
+  }
+]

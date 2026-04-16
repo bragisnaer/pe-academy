@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A PE associate is reviewing a target's three financial statements. Which statement is most critical for LBO analysis, and why?",
+    "options": [
+      "The income statement, because it shows revenue growth and net income trends",
+      "The balance sheet, because it shows the company's assets that will collateralise the acquisition debt",
+      "The cash flow statement, because PE returns depend on cash generation to service debt",
+      "All three are equally important and cannot be ranked"
+    ],
+    "correct_index": 2,
+    "explanation": "PE returns are driven by cash, not accounting profits. The cash flow statement reveals whether EBITDA actually converts to free cash flow — which is what services the acquisition debt. A business with strong reported earnings but weak cash generation is a poor LBO candidate regardless of what the income statement shows."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "During diligence, an associate notices that a target's revenue grew 18% year-over-year while accounts receivable grew 42% over the same period. What is the most likely concern this raises?",
+    "options": [
+      "The company is growing too quickly and risks operational strain",
+      "Revenue may be recognised prematurely or customers are paying more slowly",
+      "Working capital is being optimised, which is a positive sign",
+      "Nothing — growing receivables is a normal consequence of revenue growth"
+    ],
+    "correct_index": 1,
+    "explanation": "Receivables growing more than twice as fast as revenue signals either aggressive revenue recognition (booking revenue before collection is probable) or a deterioration in payment terms (customers paying later). Either way, cash conversion is weakening. This is a red flag that warrants investigation during quality of earnings analysis."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target company reports capex of 2.5% of revenue, while industry peers average 5.5%. What should a PE buyer conclude?",
+    "options": [
+      "The target is more capital-efficient than peers, which is attractive",
+      "The target may be underinvesting, creating a hidden liability for the buyer",
+      "The target operates an asset-light model and should be valued at a premium",
+      "Capex ratios are not meaningful for cross-company comparison"
+    ],
+    "correct_index": 1,
+    "explanation": "Consistently below-industry capex often signals deferred maintenance or underinvestment — creating a hidden future obligation the buyer will need to fund post-acquisition. The distinction between maintenance capex (sustaining current operations) and growth capex (expanding capacity) matters: if maintenance capex has been starved, the business may require significant catch-up investment."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A PE firm is analysing normalisation adjustments for a target. Which of the following would most legitimately be added back to arrive at adjusted EBITDA?",
+    "options": [
+      "Annual IT infrastructure upgrade costs that appear in every fiscal year",
+      "A one-time legal settlement from a discontinued product line that will not recur",
+      "The salary of a key account manager the company cannot operate without",
+      "Regulatory compliance costs that have been present for the last five years"
+    ],
+    "correct_index": 1,
+    "explanation": "The legitimate test for a normalisation add-back is whether the cost would recur in a normal operating year. A settled lawsuit from a discontinued product line meets that test. Recurring IT upgrades, essential operating salaries, and five-year-recurring compliance costs all fail the test — they are simply part of running the business."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A PE firm conducting due diligence is given three sets of financial information: management accounts (monthly), board-reported figures (quarterly), and audited financial statements (annual). Which should the PE buyer rely on most heavily?",
+    "options": [
+      "Management accounts because they are most recent",
+      "Audited financial statements because they have been externally verified, supplemented by management accounts for recent periods after audit",
+      "Board-reported figures because they are reviewed by directors",
+      "All three are equally reliable"
+    ],
+    "correct_index": 1,
+    "explanation": "Audited financials are the anchor — externally verified by independent auditors under accepted accounting standards. Management accounts are useful for recent months but may contain estimates, errors, or management bias. PE diligence typically reconciles management accounts back to audited figures to identify variances that could signal aggressive accounting or forecast manipulation."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "On a typical P&L, which line item represents revenue minus direct costs of producing or delivering goods/services?",
+    "options": [
+      "Net income",
+      "Gross profit",
+      "EBITDA",
+      "Operating income"
+    ],
+    "correct_index": 1,
+    "explanation": "Gross profit = Revenue – Cost of Goods Sold (COGS). It measures the profitability of core product/service delivery before operating expenses (sales, marketing, G&A). Gross margin (Gross profit / Revenue) is a key indicator of pricing power, scale economics, and competitive position. Software companies typically show 70-85% gross margins; industrial companies 25-45%."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target's P&L shows Operating Income (EBIT) of €18M and EBITDA of €28M. What accounts for the €10M difference?",
+    "options": [
+      "Tax expense of €10M",
+      "Depreciation and amortisation of €10M",
+      "Interest expense of €10M",
+      "Dividends of €10M"
+    ],
+    "correct_index": 1,
+    "explanation": "EBITDA = EBIT + D&A. The €10M gap represents the company's depreciation (fixed asset wear-down) and amortisation (intangible asset write-off) charges. Both are non-cash accounting entries that reduce reported profit but don't affect cash flow. PE firms focus on EBITDA because it's closer to cash-generating capacity, though D&A eventually shows up as capex in the cash flow statement."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "Why do PE professionals typically focus on EBITDA rather than net income when evaluating target companies?",
+    "options": [
+      "EBITDA is always higher than net income, making returns look better",
+      "EBITDA isolates operating performance by removing financing structure (interest), tax jurisdiction, and non-cash items (D&A) — providing a cleaner comparison across companies",
+      "Net income is manipulated by accounting rules while EBITDA is not",
+      "EBITDA is the only measure accepted by regulators"
+    ],
+    "correct_index": 1,
+    "explanation": "EBITDA normalises for capital structure (removing interest expense), tax regime (removing tax), and non-cash accounting (removing D&A) — isolating the company's ability to generate operating cash flow. This makes it useful for comparing companies with different debt levels, tax jurisdictions, or asset bases. However, EBITDA is not a perfect proxy for cash: it ignores capex requirements, working capital changes, and actual cash taxes."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "An income statement reports strong net income but the cash flow statement reveals negative operating cash flow. What might explain this divergence?",
+    "options": [
+      "The company is clearly committing fraud",
+      "Accrual accounting recognises revenue and expenses based on when transactions occur, not when cash moves; the gap may reflect growing receivables, inventory build, or revenue recognised before cash collection",
+      "Net income and cash flow are always identical, so one must be wrong",
+      "The cash flow statement is less reliable than the income statement"
+    ],
+    "correct_index": 1,
+    "explanation": "Accrual accounting creates gaps between reported profit and cash. Common causes: receivables growing (sales made, cash not yet collected), inventory building (cash spent on goods not yet sold), paying down deferred revenue (cash collected in prior periods is recognised as revenue now). Not all gaps indicate problems — growing businesses often consume cash — but systematic, unexplained divergence warrants investigation."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "The balance sheet follows a fundamental accounting equation. Which of the following represents this identity?",
+    "options": [
+      "Revenue = Expenses + Profit",
+      "Assets = Liabilities + Shareholders' Equity",
+      "Cash Flow = Net Income + Depreciation",
+      "Equity = Revenue – Costs"
+    ],
+    "correct_index": 1,
+    "explanation": "The balance sheet equation Assets = Liabilities + Shareholders' Equity is the foundation of double-entry accounting. It expresses that everything the company owns (assets) was funded either by creditors (liabilities) or shareholders (equity). This equation must always hold; any balance sheet that doesn't balance signals an accounting error. Changes in assets must match changes in liabilities plus equity."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target's balance sheet distinguishes between 'current' and 'non-current' assets. What defines this classification?",
+    "options": [
+      "Current assets are tangible; non-current assets are intangible",
+      "Current assets are expected to be converted to cash or consumed within 12 months; non-current assets are held longer",
+      "Current assets are valuable; non-current assets are not",
+      "There is no accepted distinction"
+    ],
+    "correct_index": 1,
+    "explanation": "Current assets (cash, receivables, inventory, prepaid expenses) are expected to be converted to cash or consumed within one year. Non-current assets (PP&E, goodwill, intangibles, long-term investments) have longer useful lives. The distinction matters for liquidity analysis: current assets fund current liabilities, and the difference (working capital) indicates short-term financial health."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target's accounts receivable aging schedule shows 35% of receivables are over 90 days past due. What does this suggest about the business?",
+    "options": [
+      "This is a healthy pattern showing robust customer relationships",
+      "Significant collection risk — receivables this old are increasingly likely to become bad debts, suggesting weak credit control, deteriorating customer quality, or disputes",
+      "The business is growing too fast",
+      "This is typical for all industries"
+    ],
+    "correct_index": 1,
+    "explanation": "A healthy AR aging typically shows most receivables in the 0-30 and 30-60 day buckets. 35% over 90 days is highly unusual and suggests: poor credit control processes, customer payment disputes, financial distress among customers, or weak enforcement of terms. This directly affects cash conversion, valuation of receivables (potential write-downs), and the quality of reported revenue."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target uses LIFO (Last In First Out) inventory valuation while peers use FIFO (First In First Out). In a period of rising prices, what effect does this have on reported results?",
+    "options": [
+      "No difference — both methods produce identical results",
+      "LIFO typically reports higher COGS, lower gross profit, and lower inventory values on the balance sheet during inflation",
+      "LIFO always produces higher profits",
+      "Only FIFO is allowed under modern accounting standards"
+    ],
+    "correct_index": 1,
+    "explanation": "Under LIFO, the most recently purchased (typically most expensive) inventory is expensed first, producing higher COGS and lower reported profits during inflation. FIFO expenses older (cheaper) inventory first, producing higher profits. LIFO is permitted under US GAAP but prohibited under IFRS. When comparing companies using different methods, the analyst must adjust for the difference to make results comparable."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target's balance sheet shows €85M of goodwill and €25M of other intangible assets. What do these represent, and why do they matter for PE analysis?",
+    "options": [
+      "They are imaginary assets with no economic meaning",
+      "Goodwill represents the premium paid above net identifiable assets in past acquisitions; intangibles represent separately identifiable non-physical assets (brands, customer lists, technology) — both reflect the company's acquisition history",
+      "They are tax deductions available to the buyer",
+      "They must be liquidated before a PE acquisition"
+    ],
+    "correct_index": 1,
+    "explanation": "Goodwill arises from past acquisitions: the excess of purchase price over the fair value of identifiable net assets. Intangibles include specifically identifiable assets (trademarks, patents, customer relationships, developed technology). Under IFRS, goodwill is tested for impairment annually rather than amortised. In PE analysis, goodwill reveals acquisition history; large impairments signal past overpayment; substantial intangibles may require amortisation expense consideration."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A SaaS company's balance sheet shows €30M of 'deferred revenue' as a liability. What does this represent?",
+    "options": [
+      "Revenue that was never collected and is considered uncollectable",
+      "Cash collected from customers for services to be delivered in future periods — representing a liability to deliver those services, not yet recognised as revenue",
+      "Revenue hidden by management for tax purposes",
+      "A form of customer deposit for returned products"
+    ],
+    "correct_index": 1,
+    "explanation": "Deferred revenue (also called 'unearned revenue') represents customer prepayments for services not yet delivered. It is a liability because the company owes the customer future delivery. For SaaS companies, annual subscriptions create deferred revenue that's recognised monthly as service is delivered. High deferred revenue is typically positive: it indicates strong cash collection, locked-in future revenue, and customer commitment."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target's balance sheet shows trade payables of €45M against COGS of €270M annually. What is the implied Days Payable Outstanding (DPO)?",
+    "options": [
+      "Approximately 61 days",
+      "Approximately 17 days",
+      "Approximately 6 days",
+      "Cannot be calculated from the information given"
+    ],
+    "correct_index": 0,
+    "explanation": "DPO = (Accounts Payable / COGS) × 365 = (€45M / €270M) × 365 ≈ 61 days. This means the company pays suppliers, on average, 61 days after receiving goods. DPO is a working capital lever: higher DPO means more favourable payment terms and better cash retention. Benchmarking DPO against industry peers reveals whether the company has negotiated strong supplier terms or is paying earlier than necessary."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target's 'retained earnings' has grown from €85M to €125M over three years. What does this growth represent?",
+    "options": [
+      "The company has received €40M in new capital contributions",
+      "The cumulative after-tax profits generated over those three years that have not been distributed to shareholders",
+      "The value of the company's assets has increased by €40M",
+      "The company has borrowed €40M from lenders"
+    ],
+    "correct_index": 1,
+    "explanation": "Retained earnings represents cumulative after-tax profits not distributed as dividends. The €40M growth equals: Net Income (over 3 years) minus dividends paid. This line shows how much profit the company has reinvested into the business. PE buyers often find retained earnings useful for understanding historical dividend policy and the potential for cash extraction during ownership."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A company's balance sheet shows 'Share Capital' of €1M and 'Share Premium' of €24M. What distinguishes these two items?",
+    "options": [
+      "They are identical line items",
+      "Share Capital represents the nominal/par value of issued shares; Share Premium represents amounts paid above par value by investors during share issuance",
+      "Share Premium is a liability, Share Capital is equity",
+      "Share Premium must be distributed as dividends"
+    ],
+    "correct_index": 1,
+    "explanation": "Share Capital records the nominal value (par) of issued shares (often €0.01 or €1 per share). Share Premium records the amount investors paid above par. If shares with €1 par were issued at €25 each, €1 is share capital and €24 is share premium. Both are forms of equity but are tracked separately. Share premium can be used for bonus issues or, in some jurisdictions, dividends subject to specific rules."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target's notes to the financial statements disclose a 'contingent liability' of €15M related to ongoing litigation. What does this mean for a PE buyer?",
+    "options": [
+      "The target must pay €15M immediately at closing",
+      "A potential future obligation whose amount and timing are uncertain, which must be factored into risk assessment, deal structuring (indemnities, escrows), and potentially pricing",
+      "The amount is guaranteed to become payable",
+      "Contingent liabilities can be ignored in PE analysis"
+    ],
+    "correct_index": 1,
+    "explanation": "Contingent liabilities are potential obligations that may arise depending on future events (e.g., litigation outcome, warranty claims, regulatory penalties). They are disclosed rather than recorded because the amount or probability is uncertain. PE buyers assess the likelihood of these becoming real liabilities, size them in downside scenarios, and may require indemnities from the seller, purchase price adjustments, or escrow arrangements to cover the risk."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "The cash flow statement is divided into three sections. What do they represent?",
+    "options": [
+      "Historical, current, and projected cash flows",
+      "Operating activities (cash from core operations), investing activities (cash from asset purchases/sales), and financing activities (cash from debt/equity)",
+      "Cash receipts, cash payments, and cash reserves",
+      "Monthly, quarterly, and annual cash flows"
+    ],
+    "correct_index": 1,
+    "explanation": "The cash flow statement separates cash flows by source: (1) Operating — cash generated by core business operations; (2) Investing — cash from buying/selling long-term assets (capex, acquisitions, asset disposals); (3) Financing — cash from capital providers (debt issuance/repayment, equity issuance/buybacks, dividends). The sum of these three sections plus opening cash equals closing cash."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "Using the indirect method, the cash flow statement typically starts with which line item?",
+    "options": [
+      "Cash received from customers",
+      "Net income, adjusted for non-cash items (depreciation, amortisation, stock compensation) and changes in working capital",
+      "Revenue",
+      "Total cash balance"
+    ],
+    "correct_index": 1,
+    "explanation": "The indirect method (most common) starts with Net Income and reconciles to operating cash flow through adjustments: adding back non-cash charges (D&A, SBC, impairments), subtracting non-cash income (gains on sale), and adjusting for changes in working capital (receivables, payables, inventory, accrued expenses). The direct method (less common) lists actual cash receipts and payments by category."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A PE analyst computes 'Free Cash Flow' for a target. Which formula typically applies?",
+    "options": [
+      "Revenue minus Expenses",
+      "Operating Cash Flow minus Capex — representing cash available after maintaining and growing operational capacity",
+      "Net Income plus Depreciation",
+      "EBITDA minus Taxes"
+    ],
+    "correct_index": 1,
+    "explanation": "Free Cash Flow (FCF) = Operating Cash Flow – Capex. It measures cash available to capital providers (debt and equity) after the business has reinvested in its operations. For PE analysis, FCF is critical because it's what services debt and generates returns. Some analysts further distinguish 'Levered FCF' (after debt service) from 'Unlevered FCF' (before debt service, used for EV-based valuation)."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "Capital expenditure (capex) appears in which section of the cash flow statement?",
+    "options": [
+      "Operating activities as a non-cash charge",
+      "Investing activities, typically as a cash outflow",
+      "Financing activities as a form of debt repayment",
+      "As a separate standalone line item"
+    ],
+    "correct_index": 1,
+    "explanation": "Capex represents investment in long-term productive assets (buildings, machinery, technology). It flows through investing activities as a cash outflow. Note that depreciation is already handled in the operating section (added back as non-cash) — capex and depreciation are related: over time, capex should approximately match depreciation for a steady-state business, though not necessarily in any single year."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A company issues €200M of new long-term debt and repays €50M of short-term borrowings in the same year. How are these reported on the cash flow statement?",
+    "options": [
+      "Both appear in operating activities",
+      "Both appear in financing activities: €200M as proceeds from debt issuance (inflow), €50M as debt repayment (outflow)",
+      "Both appear in investing activities",
+      "They are netted and show €150M as operating cash flow"
+    ],
+    "correct_index": 1,
+    "explanation": "All debt-related cash movements flow through financing activities: borrowing proceeds (inflow), principal repayments (outflow), bond issuance, debt repurchases. Interest payments, however, typically appear in operating activities (reflecting ongoing debt service). This section also includes equity transactions: share issuance, buybacks, and dividends. PE buyers watch financing activities closely to understand capital structure changes."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A company reports net income of €50M but operating cash flow of €72M. The primary reason for the €22M gap is typically:",
+    "options": [
+      "Accounting fraud",
+      "Non-cash charges (depreciation, amortisation, stock-based compensation) being added back plus favourable working capital changes",
+      "Interest expense",
+      "Tax timing differences"
+    ],
+    "correct_index": 1,
+    "explanation": "The most common reason operating cash flow exceeds net income is non-cash charges being added back (particularly depreciation, amortisation, and stock-based compensation) plus favourable working capital changes. If a company has €20M of annual D&A and €2M of working capital benefit, net income of €50M reconciles to operating cash flow of €72M. This is a healthy sign — the company is earning real profits that translate to real cash."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A technology company reports stock-based compensation (SBC) expense of €8M annually. How does this affect the income statement and cash flow statement?",
+    "options": [
+      "It increases net income because it's a non-cash benefit",
+      "It reduces net income as an operating expense on the income statement but is added back as a non-cash charge in operating cash flow",
+      "It appears only on the balance sheet",
+      "It's hidden from all financial statements"
+    ],
+    "correct_index": 1,
+    "explanation": "SBC is a real compensation expense that reduces net income on the income statement. Because it's paid in equity (not cash), it's added back to arrive at operating cash flow. This creates a divergence: companies with heavy SBC (particularly tech) often show strong operating cash flow but weaker net income. Debate continues about whether SBC should be 'excluded' when evaluating cash generation — PE analysts typically treat it as a real economic cost even if non-cash."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "Under IFRS 15 / ASC 606, revenue is recognised based on the transfer of control. A software company sells a 3-year subscription for €300,000 paid upfront. How is revenue typically recognised?",
+    "options": [
+      "€300,000 recognised immediately upon receipt",
+      "€100,000 recognised per year over the 3-year service period, with remaining amounts held as deferred revenue",
+      "€300,000 recognised over 1 year",
+      "Revenue is recognised only when cash is received"
+    ],
+    "correct_index": 1,
+    "explanation": "Revenue recognition follows performance obligations being satisfied. For a 3-year subscription, the performance obligation (providing the service) is satisfied ratably over the term. Revenue is typically recognised €100K per year; the remaining €200K (year 1) and €100K (year 2) are deferred revenue on the balance sheet. This matches revenue with service delivery rather than cash timing and is standard practice under IFRS 15."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A PE firm reviewing a distributor notices that the company recorded significant sales in the final two weeks of its fiscal year, with many of those shipments returned in the first month of the next fiscal year. What is this pattern called?",
+    "options": [
+      "Inventory management",
+      "Channel stuffing — artificially accelerating sales to customers who may return the product, distorting period financials",
+      "Capacity utilisation",
+      "Seasonal adjustment"
+    ],
+    "correct_index": 1,
+    "explanation": "Channel stuffing involves pushing excessive inventory to distributors or customers near period-end to inflate reported revenue, often through extended payment terms or return privileges. Returns in the following period reveal that reported revenue was not genuine economic activity. Patterns to watch: elevated AR at period-end, high returns post-period, extended payment terms only for period-end sales, concentration of revenue in the final weeks of a quarter."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A construction company uses 'percentage-of-completion' revenue recognition for long-term contracts. What does this method do?",
+    "options": [
+      "Revenue is recognised only at project completion",
+      "Revenue is recognised progressively as the project is completed, based on costs incurred or output delivered relative to total expected",
+      "Revenue is recognised when cash is received from the customer",
+      "No revenue is recognised until the final invoice"
+    ],
+    "correct_index": 1,
+    "explanation": "Percentage-of-completion recognises revenue progressively as work is performed on long-term contracts (construction, engineering, defence). If a €100M project is 40% complete by cost-to-cost measurement, €40M of revenue and associated costs are recognised. This method requires estimates about total costs and completion — creating room for manipulation through aggressive estimates of progress or understated remaining costs."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A manufacturer invoices a customer for products stored in the manufacturer's warehouse ready for delivery. Under accounting rules, this is called:",
+    "options": [
+      "Standard revenue recognition",
+      "A 'bill-and-hold' arrangement, which has strict requirements (customer request, substantial reason for arrangement, products ready and identifiable) to legitimately recognise revenue before delivery",
+      "Inventory revaluation",
+      "Trade financing"
+    ],
+    "correct_index": 1,
+    "explanation": "Bill-and-hold allows revenue recognition when products are not yet delivered but have been billed. Under IFRS 15 / ASC 606, strict criteria must be met: the arrangement must be for the customer's benefit (not the seller's earnings management), the products must be separately identifiable as the customer's, and the goods must be ready for physical transfer. Abusive bill-and-hold has been a source of accounting fraud (e.g., the 1990s Sunbeam scandal)."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "An auditor issues a 'qualified opinion' on a target's financial statements. What does this mean?",
+    "options": [
+      "The auditor fully agrees with the statements (clean opinion)",
+      "The auditor has identified specific issues where the statements don't comply with accounting standards, but the overall statements are otherwise fairly presented — requiring investigation of the flagged matters",
+      "The statements are completely unreliable",
+      "The auditor has not completed the audit"
+    ],
+    "correct_index": 1,
+    "explanation": "Audit opinions come in four types: unqualified (clean — no issues identified), qualified (specific concerns but overall statements fairly presented 'except for' those items), adverse (statements are materially misstated or misleading), and disclaimer (auditor cannot form an opinion). A qualified opinion is a yellow flag that PE buyers must investigate — it may reveal accounting judgement disputes, estimation uncertainties, or limitations on audit scope."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target company's financial statements include segment reporting that breaks down revenue and EBITDA by business line. Why is this useful for PE analysis?",
+    "options": [
+      "Segment data is meaningless for PE analysis",
+      "It reveals the performance, growth, and profitability of each business line separately — supporting sum-of-the-parts valuation, identifying winners/losers within the portfolio, and highlighting divestiture candidates",
+      "It is only used for tax purposes",
+      "It is only required for public companies"
+    ],
+    "correct_index": 1,
+    "explanation": "Segment reporting (required under IFRS 8 / ASC 280) breaks down financial results by business unit. For PE analysis, this reveals: which business lines are growing vs. declining, relative margin profiles, concentration risk, candidates for divestiture or investment focus. It also enables sum-of-the-parts valuation where different segments might command different multiples. Weak businesses hidden inside a profitable parent often become visible only through segment analysis."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target's notes disclose 'related party transactions' including rent paid to the founder for office space and consulting fees paid to the founder's spouse. Why do PE buyers scrutinise these?",
+    "options": [
+      "They are always illegal",
+      "Related party transactions may be at non-market rates, inflating or deflating reported EBITDA; they must be normalised to market terms to understand true profitability, and the PE buyer must plan for how they will be handled post-acquisition",
+      "They have no effect on the business",
+      "They are automatically removed in audits"
+    ],
+    "correct_index": 1,
+    "explanation": "Related party transactions (between the company and its owners, executives, or their families) may be at above-market rates (inflating the seller's personal extraction) or below-market (artificially boosting EBITDA). Common examples: rent paid to owner-controlled entities, consulting fees to family members, loans to/from the owner. PE diligence normalises these to market rates — adjusting EBITDA accordingly — and plans for termination or restructuring post-acquisition."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target presents 'Adjusted EBITDA' of €45M alongside reported EBITDA of €32M (under GAAP). This is an example of:",
+    "options": [
+      "An accounting error",
+      "A non-GAAP measure — management-defined adjusted metric that modifies the standard figure for items management believes obscure underlying performance; PE buyers scrutinise every adjustment",
+      "A regulatory requirement",
+      "A tax calculation"
+    ],
+    "correct_index": 1,
+    "explanation": "Non-GAAP measures (Adjusted EBITDA, Pro-Forma Revenue, Normalised Profit, Cash EBITDA) are company-defined metrics that modify standard accounting figures. Management claims they better reflect 'underlying' performance by removing one-time items, stock compensation, restructuring costs, etc. PE buyers must scrutinise each adjustment: some are legitimate, others represent aggressive reframing of recurring costs as non-recurring. The gap between GAAP and adjusted numbers often signals areas requiring investigation."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A German company with significant UK operations reports its consolidated financials in EUR. A PE buyer analysing year-over-year revenue growth notices that UK revenue grew 12% in GBP but only 3% in EUR. What explains the difference?",
+    "options": [
+      "The company is double-counting revenue",
+      "Currency translation effects — GBP weakened against EUR during the period, so UK revenue measured in EUR grew less than in GBP; 'constant currency' reporting would show the underlying growth",
+      "An accounting error",
+      "Tax adjustments"
+    ],
+    "correct_index": 1,
+    "explanation": "Multinational companies translate foreign subsidiary results into the reporting currency at prevailing exchange rates. If GBP weakened against EUR, UK revenue translates to fewer EUR despite unchanged local-currency performance. This creates translation effects that can obscure underlying business performance. Sophisticated analysts use 'constant currency' reporting (translating at prior-period rates) to isolate operational growth from currency movements."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target's prior-year financial statements are being 'restated' due to identified errors. What does this signal to a PE buyer?",
+    "options": [
+      "Routine accounting adjustment with no significance",
+      "A significant red flag: material errors in previously reported figures indicate weaknesses in financial controls and reporting discipline; PE buyers investigate the nature, magnitude, and root cause of errors",
+      "The business has improved",
+      "The company is required to apologise"
+    ],
+    "correct_index": 1,
+    "explanation": "Restatements correct material errors in previously issued financial statements. They are serious signals of weak internal controls, accounting judgement errors, or potential fraud. PE buyers investigate: what was wrong, how large the errors were, what caused them, whether processes have been corrected, and whether other errors may exist. Restatements often precede management changes, SEC actions, or shareholder litigation."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target company's balance sheet shows a significant increase in 'inventory' over the past year without corresponding revenue growth. What concern might this raise?",
+    "options": [
+      "The company is well-prepared for future demand",
+      "Inventory build-up without revenue growth may signal weak sales, slow-moving or obsolete stock, aggressive production to meet cost absorption, or accounting errors",
+      "The company is being conservatively managed",
+      "This is always a positive indicator"
+    ],
+    "correct_index": 1,
+    "explanation": "Inventory growing faster than revenue is a common warning sign. Possible causes: declining sales without production adjustment (cost absorption), obsolescence (stale goods not yet written down), aggressive production to inflate reported profit through cost absorption, or overstated inventory valuation. PE diligence investigates through inventory aging analysis, obsolescence reserves review, and physical counts. This can materially affect both EBITDA and working capital calculations."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A target's financial statements report 'exceptional items' of €18M, primarily relating to 'restructuring initiatives.' How should a PE buyer evaluate these?",
+    "options": [
+      "Automatically exclude them from EBITDA as one-time",
+      "Examine whether the items are genuinely non-recurring or represent a recurring pattern that should be built into the normalised cost base; legitimate exceptional items are truly one-off, not annual restructuring",
+      "Always include them in EBITDA",
+      "Double them to show conservatism"
+    ],
+    "correct_index": 1,
+    "explanation": "'Exceptional' or 'non-recurring' items are often legitimate one-off costs (severance for a plant closure, settlement of specific litigation, asset impairments) that distort underlying performance. But 'exceptional items' that appear every year — annual restructuring, recurring legal settlements, perpetual integration costs — are simply part of the business and shouldn't be excluded. PE buyers trace these items back 3-5 years to test whether they're truly non-recurring."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A conglomerate target's income statement shows results from both 'continuing operations' and 'discontinued operations.' What does this distinction mean for PE analysis?",
+    "options": [
+      "Both sets of results are equally important",
+      "Continuing operations represent the ongoing business; discontinued operations represent a subsidiary or segment being divested or already sold — only continuing operations are relevant to the target's future",
+      "Discontinued operations indicate legal problems",
+      "The distinction is arbitrary"
+    ],
+    "correct_index": 1,
+    "explanation": "Under IFRS 5 / ASC 205-20, businesses being divested or already disposed of are reported separately as 'discontinued operations.' This isolates their results from the ongoing business. For PE analysis, only continuing operations matter when evaluating future performance potential. However, the buyer should understand why a segment was discontinued (poor performance? strategic pivot? regulatory forced?) and whether it reveals insights about management decision-making."
+  },
+  {
+    "topic_tag": "financial-analysis-statements",
+    "question": "A PE buyer reviewing a target's statements notices that 'interest expense' appears separate from 'operating income' on the P&L. Why is interest expense kept below operating income?",
+    "options": [
+      "It's an accounting error",
+      "Interest expense reflects financing structure, not operational performance — separating it allows comparison of operational results across companies with different debt levels",
+      "Interest expense is optional to include",
+      "Interest expense is always excluded from financial statements"
+    ],
+    "correct_index": 1,
+    "explanation": "Operating income measures the company's ability to generate profits from core operations. Interest expense is a financing cost, not an operating cost — two companies with identical operations but different debt levels would show different interest. Keeping interest below operating income allows cross-company comparison of operational performance independent of capital structure. For PE analysis, EBITDA (which excludes interest) is even more useful for this reason."
+  }
+]

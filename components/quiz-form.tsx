@@ -66,9 +66,9 @@ export function QuizForm({ questions, levelId, levelSlug }: QuizFormProps) {
         return (
           <div
             key={question.id}
-            className="bg-zinc-900 border border-white/10 rounded-lg p-6 mb-6"
+            className="bg-card border border-border rounded-lg p-6 mb-6"
           >
-            <p className="text-white font-medium mb-4">
+            <p className="text-foreground font-medium mb-4">
               Q{index + 1}. {question.question}
             </p>
 
@@ -85,8 +85,8 @@ export function QuizForm({ questions, levelId, levelSlug }: QuizFormProps) {
                     className={cn(
                       'rounded-md border px-4 py-3 text-sm text-left w-full transition-colors',
                       isSelected
-                        ? 'bg-zinc-700 border-white text-white'
-                        : 'bg-zinc-800 border-white/10 text-zinc-300 hover:border-white/30'
+                        ? 'bg-muted border-primary text-foreground'
+                        : 'bg-card border-border text-foreground/80 hover:border-border'
                     )}
                   >
                     <span className="font-medium mr-2">{OPTION_LABELS[optionIndex]}.</span>
@@ -100,7 +100,7 @@ export function QuizForm({ questions, levelId, levelSlug }: QuizFormProps) {
       })}
 
       {errorMessage && (
-        <p className="text-red-400 text-sm mb-4">{errorMessage}</p>
+        <p className="text-destructive text-sm mb-4">{errorMessage}</p>
       )}
 
       <div className="flex justify-end">
@@ -109,7 +109,7 @@ export function QuizForm({ questions, levelId, levelSlug }: QuizFormProps) {
           disabled={!allAnswered || submitting}
           className={cn(
             'inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-medium transition-colors',
-            'bg-white text-zinc-950 hover:bg-zinc-100',
+            'bg-primary text-primary-foreground hover:bg-primary/90',
             (!allAnswered || submitting) && 'opacity-50 cursor-not-allowed'
           )}
         >

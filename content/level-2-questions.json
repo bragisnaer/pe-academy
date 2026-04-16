@@ -1,0 +1,242 @@
+[
+  {
+    "topic_tag": "financial-statements",
+    "question": "A PE associate is reviewing a target's three financial statements. Which statement is most critical for LBO analysis, and why?",
+    "options": [
+      "The income statement, because it shows revenue growth and net income trends",
+      "The balance sheet, because it shows the company's assets that will collateralise the acquisition debt",
+      "The cash flow statement, because PE returns depend on cash generation to service debt",
+      "All three are equally important and cannot be ranked"
+    ],
+    "correct_index": 2,
+    "explanation": "PE returns are driven by cash, not accounting profits. The cash flow statement reveals whether EBITDA actually converts to free cash flow — which is what services the acquisition debt. A business with strong reported earnings but weak cash generation is a poor LBO candidate regardless of what the income statement shows."
+  },
+  {
+    "topic_tag": "financial-statements",
+    "question": "During diligence, an associate notices that a target's revenue grew 18% year-over-year while accounts receivable grew 42% over the same period. What is the most likely concern this raises?",
+    "options": [
+      "The company is growing too quickly and risks operational strain",
+      "Revenue may be recognised prematurely or customers are paying more slowly",
+      "Working capital is being optimised, which is a positive sign",
+      "Nothing — growing receivables is a normal consequence of revenue growth"
+    ],
+    "correct_index": 1,
+    "explanation": "Receivables growing more than twice as fast as revenue signals either aggressive revenue recognition (booking revenue before collection is probable) or a deterioration in payment terms (customers paying later). Either way, cash conversion is weakening. This is a red flag that warrants investigation during quality of earnings analysis."
+  },
+  {
+    "topic_tag": "financial-statements",
+    "question": "A target company reports capex of 2.5% of revenue, while industry peers average 5.5%. What should a PE buyer conclude?",
+    "options": [
+      "The target is more capital-efficient than peers, which is attractive",
+      "The target may be underinvesting, creating a hidden liability for the buyer",
+      "The target operates an asset-light model and should be valued at a premium",
+      "Capex ratios are not meaningful for cross-company comparison"
+    ],
+    "correct_index": 1,
+    "explanation": "Consistently below-industry capex often signals deferred maintenance or underinvestment — creating a hidden future obligation the buyer will need to fund post-acquisition. The distinction between maintenance capex (sustaining current operations) and growth capex (expanding capacity) matters: if maintenance capex has been starved, the business may require significant catch-up investment."
+  },
+  {
+    "topic_tag": "financial-statements",
+    "question": "A PE firm is analysing normalisation adjustments for a target. Which of the following would most legitimately be added back to arrive at adjusted EBITDA?",
+    "options": [
+      "Annual IT infrastructure upgrade costs that appear in every fiscal year",
+      "A one-time legal settlement from a discontinued product line that will not recur",
+      "The salary of a key account manager the company cannot operate without",
+      "Regulatory compliance costs that have been present for the last five years"
+    ],
+    "correct_index": 1,
+    "explanation": "The legitimate test for a normalisation add-back is whether the cost would recur in a normal operating year. A settled lawsuit from a discontinued product line meets that test. Recurring IT upgrades, essential operating salaries, and five-year-recurring compliance costs all fail the test — they are simply part of running the business."
+  },
+  {
+    "topic_tag": "ebitda",
+    "question": "A target generates €50M of EBITDA with a 25% EBITDA margin. Capex is €10M, working capital consumes €3M, and cash taxes are €7M. What is the company's FCF conversion rate?",
+    "options": [
+      "100% — by definition, EBITDA converts fully to free cash flow",
+      "60% — FCF of €30M divided by EBITDA of €50M",
+      "75% — because capex should be excluded from the conversion calculation",
+      "Cannot be calculated without the interest expense"
+    ],
+    "correct_index": 1,
+    "explanation": "FCF = EBITDA – Cash Taxes – Working Capital Change – Capex = €50M – €7M – €3M – €10M = €30M. FCF conversion = €30M / €50M = 60%. A conversion rate below 65% is a yellow flag for LBO suitability because the business generates less usable cash than its EBITDA implies."
+  },
+  {
+    "topic_tag": "ebitda",
+    "question": "A seller presents adjusted EBITDA of €28M, which includes a €3M add-back for 'run-rate savings from a cost reduction programme completed in Q3 last year.' How should an experienced buyer respond to this add-back?",
+    "options": [
+      "Accept it in full if the programme is documented and the savings appear sustained",
+      "Reject it entirely because run-rate adjustments are never legitimate",
+      "Accept it in full regardless of documentation — sellers would not fabricate such claims",
+      "Reduce the EBITDA by €3M because run-rate adjustments inflate the figure artificially"
+    ],
+    "correct_index": 0,
+    "explanation": "Run-rate adjustments are legitimate when a genuine, completed change produces measurable, recurring savings — and the buyer can verify this through documentation and observation of post-implementation performance. They should be rejected when the programme is still in progress, when savings cannot be isolated from other cost movements, or when the assumptions are aspirational rather than achieved."
+  },
+  {
+    "topic_tag": "ebitda",
+    "question": "A software company reports €40M of adjusted EBITDA after adding back €5M of stock-based compensation (SBC). A mature peer in the same sector includes SBC as an operating expense. When comparing EV/EBITDA multiples between these companies, what adjustment should a PE analyst make?",
+    "options": [
+      "No adjustment — SBC is universally treated as a non-cash add-back",
+      "Recalculate both companies' EBITDA consistently, either both including or both excluding SBC",
+      "Use the peer's lower EBITDA because it is more conservative",
+      "Average the two EBITDA figures to arrive at a blended metric"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiples comparisons require consistent EBITDA definitions. If one company adds back SBC and another does not, the multiples are not directly comparable. The analyst must recalculate one figure to match the other's convention. The broader debate about whether SBC should be treated as a real economic cost is separate — what matters for comparison is consistency."
+  },
+  {
+    "topic_tag": "ebitda",
+    "question": "Two businesses both generate €20M EBITDA. Business A has 85% recurring subscription revenue with 8% annual growth. Business B has project-based revenue with 15% annual growth but high volatility. Why might a PE buyer pay a higher EBITDA multiple for Business A?",
+    "options": [
+      "Business A has higher margins than Business B",
+      "Business A's stable, predictable EBITDA supports more debt and generates higher-quality earnings",
+      "Business A is in a more attractive industry",
+      "Business B's higher growth rate is less valuable than Business A's stability"
+    ],
+    "correct_index": 1,
+    "explanation": "EBITDA quality — not just EBITDA quantity — drives valuation multiples. Recurring, predictable EBITDA supports higher leverage (lenders accept more debt against stable cash flows), reduces downside risk, and commands a premium multiple. Business B's higher growth is attractive but offset by earnings volatility that makes it a weaker LBO candidate."
+  },
+  {
+    "topic_tag": "enterprise-value",
+    "question": "A target has an equity value of €420M, financial debt of €180M, cash of €40M, and an underfunded pension of €25M. What is the enterprise value?",
+    "options": [
+      "€560M — equity plus financial debt minus cash",
+      "€585M — equity plus financial debt plus pension deficit minus cash",
+      "€640M — the sum of all items",
+      "€600M — equity plus financial debt"
+    ],
+    "correct_index": 1,
+    "explanation": "EV = Equity Value + Net Debt + Debt-Like Items. Here: €420M + (€180M – €40M cash) + €25M pension = €585M. Pension deficits are debt-like items because they represent real economic obligations the buyer inherits. Excluding them understates the true cost of the acquisition and transfers hidden liability to the buyer."
+  },
+  {
+    "topic_tag": "enterprise-value",
+    "question": "During SPA negotiation, a seller insists that 'normalised working capital' at closing be set at €12M, while the buyer's analysis suggests €18M is the true normalised level. What is the financial implication of this difference?",
+    "options": [
+      "It is a technical dispute with no cash impact",
+      "If the seller's number is accepted, the buyer effectively pays €6M extra at closing",
+      "If the seller's number is accepted, the seller transfers €6M of extra working capital",
+      "The difference only matters for tax reporting, not deal economics"
+    ],
+    "correct_index": 1,
+    "explanation": "The SPA's working capital adjustment mechanism reduces the purchase price if actual closing working capital is below the normalised level. If the 'normal' is set artificially low at €12M (vs. a true €18M), the seller keeps €6M of working capital the buyer will need to fund post-closing. This is why working capital is one of the most contentious areas in deal completion."
+  },
+  {
+    "topic_tag": "enterprise-value",
+    "question": "A PE firm acquires a business at an enterprise value of €400M (10x EBITDA of €40M). Over the hold period, EBITDA grows to €55M and €100M of debt is repaid. If the company is sold at the same 10x multiple, what is the equity value at exit, assuming entry debt of €250M?",
+    "options": [
+      "€400M — equity value always equals enterprise value at exit",
+      "€400M — 10x multiple applied to €40M EBITDA",
+      "€400M — €55M EBITDA x 10 multiple minus €150M remaining debt",
+      "€550M — the increase in EBITDA drives exit equity value"
+    ],
+    "correct_index": 2,
+    "explanation": "Exit EV = €55M x 10 = €550M. Remaining debt = €250M – €100M = €150M. Exit equity value = €550M – €150M = €400M. Compared to entry equity of €150M (€400M EV – €250M debt), this is a 2.7x MOIC — driven by EBITDA growth (€15M x 10 = €150M) and debt paydown (€100M), even with no multiple expansion."
+  },
+  {
+    "topic_tag": "enterprise-value",
+    "question": "A buyer is negotiating a deal where the seller proposes pricing the acquisition on equity value rather than enterprise value. Why would a sophisticated PE buyer resist this approach?",
+    "options": [
+      "Equity value is easier to manipulate through accounting adjustments",
+      "Enterprise value is capital-structure-neutral and creates a cleaner comparison across deals and multiples",
+      "Equity value is only appropriate for distressed transactions",
+      "Equity value excludes fixed assets, which are important to the buyer"
+    ],
+    "correct_index": 1,
+    "explanation": "Enterprise value treats the business as a whole (debt plus equity claims), making it comparable across companies with different capital structures. Equity value reflects a specific capital structure that will change in the acquisition. Pricing on EV allows the buyer to structure the financing independently of the acquisition price negotiation."
+  },
+  {
+    "topic_tag": "debt-and-credit",
+    "question": "A mid-market LBO uses a unitranche facility rather than a traditional senior + mezzanine structure. What is the primary advantage of unitranche financing?",
+    "options": [
+      "It is cheaper than pure senior bank debt",
+      "It provides faster execution and funding certainty from a single lender relationship",
+      "It eliminates the need for due diligence",
+      "It has looser covenants than any other debt type"
+    ],
+    "correct_index": 1,
+    "explanation": "Unitranche combines senior and subordinated debt into a single facility from one direct lender (or lender group). This provides speed of execution, simpler documentation, and funding certainty — particularly valuable in competitive auction processes. It is more expensive than pure senior debt but less expensive than the equivalent senior-plus-mezzanine combination."
+  },
+  {
+    "topic_tag": "debt-and-credit",
+    "question": "A covenant-lite leveraged loan contains incurrence covenants but not maintenance covenants. What practical difference does this create for the PE-backed borrower?",
+    "options": [
+      "The borrower has looser pricing and a lower interest rate",
+      "The borrower can miss interest payments without triggering default",
+      "The borrower can underperform financially without breaching covenants unless it takes a specific restricted action",
+      "The borrower has no covenants at all"
+    ],
+    "correct_index": 2,
+    "explanation": "Maintenance covenants require the borrower to meet financial tests at regular intervals (typically quarterly). Incurrence covenants only restrict specific actions (new debt, dividends, acquisitions). Under a cov-lite structure, the company can experience significant operational decline without triggering default — provided it avoids the restricted actions. Lenders lose early warning signals of distress."
+  },
+  {
+    "topic_tag": "debt-and-credit",
+    "question": "A company has EBITDA of €30M and annual interest expense of €9M. What is the interest coverage ratio, and what does it indicate?",
+    "options": [
+      "0.3x — the company cannot service its interest expense",
+      "3.3x — adequate but not strong coverage; lenders typically require at least 2.0x",
+      "30% — a measure of interest expense as a share of revenue",
+      "Cannot be calculated without knowing the leverage ratio"
+    ],
+    "correct_index": 1,
+    "explanation": "Interest coverage = EBITDA / Interest Expense = €30M / €9M = 3.3x. This means the business generates 3.3 times the cash needed to pay interest — adequate coverage. Most LBO lenders require minimum coverage of 2.0x (sometimes higher), with declining coverage triggering covenant pressure. Leverage ratio and coverage ratio are complementary but distinct metrics."
+  },
+  {
+    "topic_tag": "debt-and-credit",
+    "question": "A PE firm's portfolio company has €200M of debt and €50M of cash on the balance sheet. EBITDA is €40M. What is the company's net leverage ratio?",
+    "options": [
+      "5.0x — gross debt divided by EBITDA",
+      "3.75x — net debt divided by EBITDA",
+      "4.0x — an average of gross and net leverage",
+      "1.25x — cash divided by EBITDA"
+    ],
+    "correct_index": 1,
+    "explanation": "Net leverage = (Total Debt – Cash) / EBITDA = (€200M – €50M) / €40M = 3.75x. Net leverage reflects the company's true debt burden after accounting for cash that could theoretically be used for repayment. Lenders and investors typically focus on net leverage rather than gross leverage, though cash held for operating purposes may be excluded from the calculation."
+  },
+  {
+    "topic_tag": "cash-flow-working-capital",
+    "question": "A manufacturing company has revenue of €180M, COGS of €108M, accounts receivable of €36M, inventory of €27M, and accounts payable of €18M. What is the cash conversion cycle?",
+    "options": [
+      "Approximately 32 days — a cash-efficient operation",
+      "Approximately 103 days — cash is tied up for over three months before collection",
+      "Approximately 73 days — indicating average working capital intensity",
+      "Cannot be calculated without knowing the gross margin"
+    ],
+    "correct_index": 1,
+    "explanation": "DSO = 36/180 x 365 = 73 days. DIO = 27/108 x 365 = 91 days. DPO = 18/108 x 365 = 61 days. CCC = 73 + 91 – 61 = 103 days. This means the company funds 103 days of operations from cash before collecting payment — indicating significant working capital intensity and an opportunity for PE-led optimisation."
+  },
+  {
+    "topic_tag": "cash-flow-working-capital",
+    "question": "A PE firm is planning post-acquisition initiatives for a €400M revenue distribution business with DSO of 65 days. If management can reduce DSO to 50 days through improved credit control, approximately how much cash will be released?",
+    "options": [
+      "€5M — a minor operational improvement",
+      "€16M — a meaningful one-time cash release that accelerates debt paydown",
+      "€60M — equivalent to the full receivables balance",
+      "Cannot be calculated without knowing the gross margin"
+    ],
+    "correct_index": 1,
+    "explanation": "Cash released = (Revenue / 365) x DSO reduction = (€400M / 365) x 15 = approximately €16.4M. This one-time release flows directly to debt paydown, reducing leverage and increasing equity value. Working capital optimisation is one of the most reliable value creation levers because the cash impact is predictable and within the PE firm's direct control."
+  },
+  {
+    "topic_tag": "cash-flow-working-capital",
+    "question": "When building a DCF valuation, which free cash flow metric should be used to derive enterprise value?",
+    "options": [
+      "Levered free cash flow — the cash available to equity holders after debt service",
+      "Unlevered free cash flow — the cash available to all capital providers before financing decisions",
+      "EBITDA minus capex — a simplified proxy that ignores working capital",
+      "Net income — the accounting measure of profit"
+    ],
+    "correct_index": 1,
+    "explanation": "DCF enterprise value is built on unlevered free cash flow (UFCF) — the cash available to all capital providers (debt and equity) before interest and debt repayments. This is consistent with the principle that enterprise value represents claims of all capital providers. Levered FCF is used when valuing equity directly rather than enterprise value."
+  },
+  {
+    "topic_tag": "cash-flow-working-capital",
+    "question": "A target company reports strong EBITDA growth of 15% year-over-year but free cash flow has remained flat. What is the most likely explanation a PE diligence team should investigate?",
+    "options": [
+      "The company has entered a new market requiring increased advertising spend",
+      "Growing working capital requirements, elevated capex, or rising cash taxes are absorbing the EBITDA growth",
+      "The business model has fundamentally weakened despite appearing to grow",
+      "EBITDA growth is inherently unrelated to cash flow performance"
+    ],
+    "correct_index": 1,
+    "explanation": "EBITDA growth without corresponding FCF growth typically indicates that working capital is expanding with the business (consuming cash to fund receivables and inventory), capex is elevated (perhaps for growth initiatives), or cash taxes are rising. All three are legitimate but reduce the cash available for debt service. The PE buyer must understand which driver is at work to model realistic future cash flows."
+  }
+]

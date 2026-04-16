@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A family office is considering two investment options: buying shares of a publicly listed industrial conglomerate or committing capital to a private equity buyout fund. Which feature most fundamentally distinguishes the PE commitment from the public share purchase?",
+    "options": [
+      "The PE commitment requires a higher minimum investment amount",
+      "The PE commitment locks up capital for years with no ability to redeem at will",
+      "The PE commitment involves less risk because private companies are more stable",
+      "The PE commitment generates dividend income rather than capital gains"
+    ],
+    "correct_index": 1,
+    "explanation": "Illiquidity is the defining structural difference. Public shares can be sold on any trading day; PE commitments lock capital for 5–10 years. This illiquidity is why PE historically demands a return premium over public markets, not because the underlying businesses are riskier or safer on average."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A large pension fund is comparing its PE portfolio's 15-year net IRR of 13.5% to a public index return of 10.2% over the same period. Which of the following best explains why the pension fund accepts the operational complexity and illiquidity of PE in exchange for this return differential?",
+    "options": [
+      "Public markets are inherently riskier than PE, so PE naturally earns more",
+      "The return premium compensates for capital being locked up for 5–10+ years (illiquidity premium)",
+      "PE funds are less volatile year-to-year, making them safer overall",
+      "Regulatory protections force PE funds to outperform public indices"
+    ],
+    "correct_index": 1,
+    "explanation": "PE funds lock up committed capital for 5–10+ years, during which LPs cannot redeem. The return premium compensates for this illiquidity and for the concentrated, undiversified nature of PE holdings. Public markets are not inherently riskier; PE interim valuations appear smoother only because they are marked quarterly rather than traded continuously."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A founder who sold his business to a PE firm complains that the new owners 'interfere constantly' with strategic decisions, hiring, and capital allocation. His prior experience with public shareholders involved only voting at the AGM. What does this contrast most accurately illustrate?",
+    "options": [
+      "PE firms typically micromanage portfolio companies in ways that destroy value",
+      "Public shareholders and PE owners operate under fundamentally different governance models: passive minority versus active majority",
+      "PE firms have weaker legal rights than public shareholders, forcing them to interfere",
+      "The founder should have negotiated stronger governance protections in the sale"
+    ],
+    "correct_index": 1,
+    "explanation": "Public shareholders typically hold minority stakes, lack operational influence, and interact through boards and AGMs. PE firms hold controlling stakes, sit on the board, and work actively with management to implement the value creation plan. The active engagement the founder experiences is central to how PE generates returns, not an aberration."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A PE fund structures its investments with a 5–7 year hold target, rejecting both shorter trading strategies (1–2 years) and longer permanent capital approaches (20+ years). What is the primary structural reason for this medium-term horizon?",
+    "options": [
+      "Tax regulations mandate a 5–7 year minimum hold before capital gains treatment applies",
+      "Operational transformations typically take 3–5 years to execute and validate before commanding exit premiums",
+      "Lenders require a specific maturity structure that aligns with 5–7 year holds",
+      "Insurance companies demand this exit timeline as an LP condition"
+    ],
+    "correct_index": 1,
+    "explanation": "Real operational transformation takes time: cost programmes, bolt-on integrations, commercial strategy shifts. Selling earlier rarely captures full value; holding longer ties up LP capital that could be redeployed. The 5–7 year window matches how long it takes for a PE thesis to play out in practice."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "Comparing a buyer evaluating a publicly listed retailer to a PE firm evaluating a private industrial target, which statement best describes the information environment each faces?",
+    "options": [
+      "Both have equal access to audited quarterly financials and management guidance",
+      "The public buyer relies on standardised regulatory disclosures; the PE buyer has access to deeper proprietary data under NDA but must construct the picture through active diligence",
+      "Private companies are legally required to disclose the same information as public ones",
+      "Information access is identical; only valuation methods differ"
+    ],
+    "correct_index": 1,
+    "explanation": "Public companies publish extensive standardised disclosures (quarterly reports, earnings calls, regulatory filings). Private companies face no equivalent obligation. PE firms gain access through NDAs and due diligence, often getting deeper insight than public analysts, but must actively build the picture from management accounts, customer interviews, and operational data."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A public company trades at 14x EBITDA. A PE firm acquires the same business through a take-private transaction at 16x EBITDA. Why is the PE firm willing to pay a premium over the public market price?",
+    "options": [
+      "PE firms are less disciplined than public investors and systematically overpay",
+      "Taking a company private eliminates regulatory reporting costs, which justifies the premium on its own",
+      "The PE firm gains operational control to implement changes that public minority shareholders cannot drive",
+      "The premium represents the tax benefit of PE ownership"
+    ],
+    "correct_index": 2,
+    "explanation": "The control premium reflects the value of implementing changes that public minority shareholders cannot. PE ownership enables capital structure optimisation, strategic pivots, cost programmes, and M&A on timelines that public boards rarely match. This control premium is integral to how PE can pay above-market prices and still generate returns."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A PE firm acquires a business at 9x EBITDA of €40M, grows EBITDA to €55M over five years, exits at 10x EBITDA, and repays €80M of debt during the hold period. Which value creation levers contributed to the return?",
+    "options": [
+      "Only EBITDA growth, because the exit multiple is nearly identical to the entry multiple",
+      "EBITDA growth, modest multiple expansion, and debt paydown — all three",
+      "Only debt paydown, because the business value was essentially unchanged",
+      "Multiple expansion alone, since the entry and exit multiples differ"
+    ],
+    "correct_index": 1,
+    "explanation": "All three classic LBO return drivers are present: EBITDA growth (€40M to €55M), multiple expansion (9x to 10x), and debt paydown (€80M). The strongest PE returns combine all three. Even a one-turn multiple move contributes meaningful value on a €55M EBITDA base."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A post-mortem review of a successful PE investment shows the return was generated 40% by EBITDA growth, 30% by debt paydown, 20% by multiple expansion, and 10% by interim dividend recapitalisations. What does this attribution most likely indicate?",
+    "options": [
+      "The deal relied heavily on leverage and should be considered unusually risky",
+      "Multiple expansion was the primary driver, reflecting favourable market timing",
+      "The return was earned through a diversified combination of operational, financial, and market factors, characteristic of a well-executed modern deal",
+      "The attribution suggests the PE firm got lucky rather than adding genuine value"
+    ],
+    "correct_index": 2,
+    "explanation": "Modern successful PE deals rarely rely on a single return driver. A balanced combination of operational improvement, financial engineering, and market dynamics is characteristic of durable performance. Over-reliance on any single lever, especially multiple expansion alone, is fragile because it depends on factors outside the PE firm's control."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "At its most fundamental level, what distinguishes the PE business model from traditional public market investing?",
+    "options": [
+      "PE firms hold for longer periods than public investors",
+      "PE firms actively manage businesses to improve them before selling, rather than passively holding for appreciation",
+      "PE firms have better access to information than public investors",
+      "PE firms use more leverage than public investors"
+    ],
+    "correct_index": 1,
+    "explanation": "PE is fundamentally an active ownership strategy: buying businesses with the explicit intention of improving them operationally and strategically, then selling. Public investing is primarily about selecting well-run businesses to passively hold. The longer horizons, better information, and leverage are all consequences of this active ownership model rather than the defining feature."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A PE professional distinguishes between 'high-quality' and 'low-quality' returns in post-deal attribution analysis. Which return profile would generally be considered higher quality?",
+    "options": [
+      "A 3.0x MOIC generated primarily by multiple expansion (entry at 8x, exit at 13x) with flat EBITDA",
+      "A 3.0x MOIC generated primarily by EBITDA growth, with EBITDA doubling during the hold and stable multiples",
+      "A 3.0x MOIC generated primarily by leverage paydown with no underlying business improvement",
+      "A 3.0x MOIC generated entirely through recapitalisation dividends before any operational change"
+    ],
+    "correct_index": 1,
+    "explanation": "EBITDA-driven returns reflect genuine operational value creation by the PE firm and management. Multiple expansion-driven returns depend on market conditions, credit cycles, and exit timing — factors outside the PE firm's control. EBITDA growth is more repeatable, more defensible, and more indicative of the firm's skill."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A PE firm's 2010s deal portfolio generated a 22% IRR, while its 1980s-era funds generated 28% IRR despite having weaker operational capabilities at the time. What most likely explains the narrower return premium in the modern era?",
+    "options": [
+      "Modern PE firms use less leverage than 1980s deals",
+      "Increased competition for deals has compressed entry multiples, reducing the pricing advantage available to a disciplined buyer",
+      "Modern deals are inherently more complex and therefore less profitable",
+      "Regulatory constraints limit modern returns"
+    ],
+    "correct_index": 1,
+    "explanation": "The 1980s PE era had few competitors, fragmented target markets, and inefficient pricing. Modern PE faces intense competition from thousands of firms, sophisticated intermediaries, and well-informed sellers. Competition compresses the entry-multiple advantage that drove outsized 1980s returns. Modern firms compensate through operational capabilities, sector specialisation, and proprietary deal flow."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A financier in the 1960s-70s developed a technique of acquiring family-owned businesses using a mix of equity and debt, improving them operationally, and selling them profitably. He called this 'bootstrapping.' This pioneering approach is most directly associated with:",
+    "options": [
+      "The founding of Apollo Global Management",
+      "Jerome Kohlberg at Bear Stearns, who later co-founded KKR",
+      "Warren Buffett's approach at Berkshire Hathaway",
+      "Michael Milken's work at Drexel Burnham Lambert"
+    ],
+    "correct_index": 1,
+    "explanation": "Jerome Kohlberg pioneered the bootstrapping buyout structure at Bear Stearns in the 1960s-70s, applying leverage and operational improvement to acquire family-owned businesses. In 1976 he left Bear Stearns with Henry Kravis and George Roberts to found KKR. Milken's work on high-yield debt markets came later and served a different function (financing), not deal sourcing and structuring."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "Why is the 1976 founding of KKR considered a foundational moment in private equity history?",
+    "options": [
+      "It was the first PE firm to invest in technology companies",
+      "It established the independent leveraged buyout firm as a distinct institutional category separate from investment banks",
+      "It marked the first time US regulators recognised PE as a distinct asset class",
+      "It introduced the 2-and-20 fee structure"
+    ],
+    "correct_index": 1,
+    "explanation": "Before KKR, leveraged buyouts were executed as one-off transactions by investment bankers, corporations, or wealthy individuals. KKR established the dedicated, independent LBO firm model: a permanent capital-raising vehicle focused on executing multiple buyouts across vintages. This institutional form defined the industry and was replicated by hundreds of firms."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "In the 1980s LBO boom, three conditions converged to enable the era's mega-deals. Which of the following was NOT one of them?",
+    "options": [
+      "The maturation of the high-yield bond market, pioneered by Michael Milken",
+      "Deregulation of financial markets that expanded credit availability",
+      "The breakup of diversified conglomerates that created undervalued targets",
+      "Widespread institutional LP allocations from pension funds and sovereign wealth funds"
+    ],
+    "correct_index": 3,
+    "explanation": "Institutional LP bases were relatively underdeveloped in the 1980s. Pension funds and sovereign wealth funds formalised their PE allocations mostly in the 1990s and 2000s. The three enabling 1980s conditions were high-yield debt markets, deregulation, and conglomerate breakups providing acquisition targets."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "During the 1980s LBO boom, large diversified conglomerates were common PE acquisition targets. Why did these entities create particularly attractive deal opportunities?",
+    "options": [
+      "Conglomerates had the strongest management teams, making them easier to operate",
+      "The sum of the individual divisions, when sold separately, often exceeded the conglomerate's market value, allowing PE firms to profit by breaking them up",
+      "Conglomerates paid higher dividends than focused companies",
+      "Conglomerates had no antitrust exposure"
+    ],
+    "correct_index": 1,
+    "explanation": "Many 1980s conglomerates traded at a 'conglomerate discount': the market valued the combined entity at less than the sum of its divisions. PE firms acquired them, broke them into standalone business units, and sold each to strategic acquirers who paid fair value for focused assets. This arbitrage was a defining deal strategy of the era."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "KKR's 1989 acquisition of RJR Nabisco for approximately $25 billion is often cited as emblematic of the 1980s PE era. What does the deal most represent in industry history?",
+    "options": [
+      "The first successful bolt-on acquisition strategy",
+      "The culmination of the 1980s mega-LBO era in terms of scale, financial engineering, and public attention",
+      "The first PE exit via IPO",
+      "The first cross-border PE transaction"
+    ],
+    "correct_index": 1,
+    "explanation": "RJR Nabisco was at the time the largest corporate transaction ever completed. It featured aggressive financial engineering, dramatic bidding wars, and significant controversy about executive incentives. The book 'Barbarians at the Gate' captured both the transaction and the cultural moment, making RJR Nabisco the defining PE deal of the decade."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "The early 1990s forced significant changes in the PE industry. What was the most important strategic shift that emerged from this period?",
+    "options": [
+      "PE firms started investing primarily in technology companies",
+      "Firms began emphasising operational value creation rather than relying solely on financial engineering and leverage",
+      "PE funds shifted toward shorter hold periods to improve IRR",
+      "The 2-and-20 fee structure was abandoned in favour of fixed fees"
+    ],
+    "correct_index": 1,
+    "explanation": "The collapse of the junk bond market, a recession, and several over-leveraged failures forced the industry to rebuild credibility. Simply buying, leveraging, and flipping became insufficient. PE firms began building dedicated sector expertise, operational capabilities, and longer-term value creation playbooks, a shift that continues to define the industry's approach today."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "Which of the following best describes how the LP base changed during the 1990s?",
+    "options": [
+      "Individual accredited investors replaced institutions as the dominant source of capital",
+      "Institutional investors (pension funds, endowments, sovereign wealth funds) formalised their PE allocations, creating a stable institutional base",
+      "LP capital commitments became shorter in duration",
+      "Hedge funds replaced pension funds as the primary LP category"
+    ],
+    "correct_index": 1,
+    "explanation": "The 1990s marked the institutionalisation of the PE LP base. Pension funds, endowments (following Yale's lead under David Swensen), and sovereign wealth funds formalised target allocations to PE, creating a stable and growing pool of institutional capital. This institutional base shaped the professional PE industry we know today."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "KKR's acquisition of Hilton Hotels in 2007 ultimately generated approximately $14 billion in profit, making it one of the most profitable PE deals ever. What was the primary driver of this outcome?",
+    "options": [
+      "Financial engineering through aggressive leverage and multiple dividend recapitalisations",
+      "Operational transformation of Hilton into an asset-light franchise model with an expanded brand portfolio",
+      "Favourable market timing — Hilton was acquired near a market low",
+      "Currency arbitrage from international operations"
+    ],
+    "correct_index": 1,
+    "explanation": "Despite being acquired near the pre-2008 market peak and surviving the global financial crisis, Hilton generated extraordinary returns through genuine operational transformation. KKR shifted Hilton from asset-heavy hotel ownership to a franchise-driven, asset-light model with a dramatically expanded brand portfolio and international footprint. The 11-year hold allowed the thesis to play out fully."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "The 2007 acquisition of TXU (now Vistra Energy) by a consortium of KKR, TPG, and Goldman Sachs for $45 billion is often cited as a cautionary tale in PE history. What was the primary reason for the deal's poor outcome?",
+    "options": [
+      "Regulatory intervention blocked the planned restructuring",
+      "The deal thesis depended on natural gas prices remaining high, which collapsed due to the shale revolution",
+      "Antitrust regulators forced divestitures that eliminated value creation potential",
+      "Management turnover destabilised the business post-acquisition"
+    ],
+    "correct_index": 1,
+    "explanation": "The TXU thesis depended on natural gas prices remaining elevated, which would support high electricity prices and the company's cash flows. The shale gas revolution drove natural gas prices sharply lower, collapsing electricity prices and the deal's economics. The company ultimately filed for bankruptcy. TXU illustrates the risk of mega-deals built on macro thesis rather than controllable operational improvement."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "During the 2008 financial crisis, many observers expected PE funds to experience forced selling similar to what happened in public markets. This did not happen. Why was PE more resilient than expected?",
+    "options": [
+      "PE funds had no exposure to the sectors affected by the crisis",
+      "The long-term committed capital structure insulated PE from the need to sell at distressed prices",
+      "PE firms received direct bailout support from central banks",
+      "Regulatory forbearance suspended all debt covenants during the crisis"
+    ],
+    "correct_index": 1,
+    "explanation": "PE's closed-end fund structure gives GPs multi-year capital commitments from LPs that cannot be withdrawn on demand. This insulates PE from the forced selling that affects mutual funds and hedge funds facing redemptions during market stress. Firms with dry powder could acquire distressed assets at low prices, turning the crisis into opportunity."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "Following the 2008 financial crisis, which US regulatory change most directly affected PE firms?",
+    "options": [
+      "The Sarbanes-Oxley Act required PE firms to use IFRS reporting",
+      "The Dodd-Frank Act required larger PE firms to register as investment advisers with the SEC, increasing reporting and compliance obligations",
+      "The Volcker Rule prohibited banks from lending to PE-backed companies",
+      "The Foreign Account Tax Compliance Act prohibited PE firms from raising international capital"
+    ],
+    "correct_index": 1,
+    "explanation": "The Dodd-Frank Act of 2010 required PE firms with $150M+ in AUM to register as investment advisers with the SEC. This registration brought PE under periodic SEC examination, required written compliance programmes, and introduced regular regulatory reporting (Form PF). It remains the core regulatory framework for US-based firms."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A US-based PE firm plans to market its fund to European institutional investors. Which regulatory framework will most directly affect its ability to do so?",
+    "options": [
+      "The EU General Data Protection Regulation (GDPR)",
+      "The Alternative Investment Fund Managers Directive (AIFMD)",
+      "The Markets in Financial Instruments Directive (MiFID II)",
+      "The European Central Bank's Solvency II framework"
+    ],
+    "correct_index": 1,
+    "explanation": "AIFMD is the primary EU regulatory framework governing PE fund managers operating in or marketing to European investors. Non-EU managers marketing into the EU must comply with national private placement regimes and satisfy AIFMD requirements. The regime imposes registration, reporting, remuneration, and depositary requirements. AIFMD II extends these rules from 2026."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "Since 2007, several major PE firms (Blackstone, KKR, Apollo, Carlyle, EQT, CVC) have completed IPOs of their own firms. What does this trend most directly represent?",
+    "options": [
+      "PE firms needed emergency capital to avoid insolvency during the 2008 crisis",
+      "The transformation of PE firms from private partnerships into diversified alternative asset managers serving retail and institutional investors",
+      "Regulatory requirements forcing PE firms to disclose partner compensation",
+      "A temporary phase that has since been reversed"
+    ],
+    "correct_index": 1,
+    "explanation": "The IPO trend reflects PE firms' transformation from deal-doing partnerships into diversified alternative asset managers. Public listings provide permanent capital, acquisition currency for building credit and real assets platforms, and access to the retail wealth channel. The listed firms are now multi-strategy alternative platforms, with PE as one product among many."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A pension fund evaluating Blackstone today would find the firm offers strategies across which of the following categories?",
+    "options": [
+      "Only traditional leveraged buyout funds",
+      "Leveraged buyouts, real estate, private credit, infrastructure, secondaries, and other alternative strategies",
+      "Only public equity index funds",
+      "Only venture capital funds"
+    ],
+    "correct_index": 1,
+    "explanation": "Modern mega-firms like Blackstone operate multi-strategy platforms spanning buyouts, real estate (the largest individual strategy for Blackstone), private credit, infrastructure, hedge fund solutions, secondaries, and insurance-linked strategies. Diversification serves both LP demand for one-stop alternatives access and the GP's strategic interests in broader fee base."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A European mid-market PE firm describes itself as 'operating in the upper mid-market.' What characteristic most accurately fits this positioning?",
+    "options": [
+      "Acquires businesses with $1–5 million of EBITDA using sector-focused strategies",
+      "Manages $50 billion or more in AUM and competes for the largest global deals",
+      "Operates with $5–50 billion in AUM and often builds concentrated sector-specialist portfolios",
+      "Invests exclusively in venture-stage technology companies with no leverage"
+    ],
+    "correct_index": 2,
+    "explanation": "Upper mid-market firms typically manage $5–50 billion in AUM and frequently operate as sector specialists with deep operational capabilities. Mega-funds sit above this tier ($50B+), while lower mid-market firms operate below $1B AUM. Venture investing is a separate asset class."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "Global private equity assets under management have reached which approximate scale as of recent years?",
+    "options": [
+      "Approximately $500 billion",
+      "Approximately $2 trillion",
+      "Approximately $8 trillion or more",
+      "Approximately $50 trillion"
+    ],
+    "correct_index": 2,
+    "explanation": "The global PE industry manages approximately $8 trillion or more in AUM across all strategies (buyouts, growth, credit, real assets, secondaries). This has grown from roughly $500 billion in the early 2000s. The largest individual firms each manage over $500 billion. This scale reflects decades of institutional LP flows and the industry's expansion into adjacent strategies."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "Industry dry powder — uncalled committed LP capital — has reached approximately $3.7 trillion globally. What does a high level of dry powder typically indicate?",
+    "options": [
+      "PE firms are struggling to raise new capital",
+      "A competitive deal environment with significant pressure to deploy capital, which can drive higher entry multiples",
+      "PE funds have failed to generate acceptable returns",
+      "The asset class is in structural decline"
+    ],
+    "correct_index": 1,
+    "explanation": "High dry powder signals both strong LP confidence (willing to commit large amounts) and deployment challenges (many buyers chasing limited attractive deals). The practical consequence is competitive tension that pushes entry multiples higher, compressing forward-looking returns. Dry powder is simultaneously a measure of industry health and a warning about discipline."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A retail investor with $250,000 in savings was historically unable to access private equity. Recent structural shifts have begun to change this. Which of the following best describes the democratisation trend?",
+    "options": [
+      "PE firms are acquiring banks so retail investors can access funds through checking accounts",
+      "Semi-liquid PE products and non-traded BDCs are allowing accredited retail and HNW investors to access alternatives with periodic liquidity",
+      "Governments have repealed accredited investor rules entirely",
+      "PE firms have lowered minimum fund commitments to $10,000"
+    ],
+    "correct_index": 1,
+    "explanation": "The democratisation trend involves semi-liquid structures (interval funds, BDCs, evergreen funds) that provide periodic redemption rights and lower minimums, making PE exposure available to accredited retail investors and HNW channels. This represents a large growth opportunity for GPs seeking to diversify their LP base beyond traditional institutions. It does not eliminate illiquidity entirely or change accredited investor rules."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "Over the past decade, private credit has grown into one of the largest segments within alternative asset management. What structural shift most directly enabled this growth?",
+    "options": [
+      "Central bank purchases of private credit securities",
+      "Banks retreating from middle-market lending post-2008, creating a gap filled by direct lenders",
+      "The repeal of Basel III capital requirements",
+      "Government subsidies for private credit funds"
+    ],
+    "correct_index": 1,
+    "explanation": "Post-2008 banking regulations (Basel III, Dodd-Frank) increased capital requirements on banks holding leveraged loans, reducing their appetite for middle-market lending. Direct lenders filled this gap by providing unitranche and other flexible loan products directly to PE-backed companies. Private credit has grown from a niche strategy to over $1.5 trillion in global AUM."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "In recent years, the technology sector has become the single largest category of PE deal activity. What characteristic of technology businesses makes them particularly attractive to PE buyers?",
+    "options": [
+      "Technology companies rarely require capital investment, reducing capex risk",
+      "Recurring subscription revenue produces predictable cash flows that support leverage, and high gross margins enable rapid operational improvement",
+      "Technology companies face no competitive pressure",
+      "Regulatory environments universally favour technology sector acquisitions"
+    ],
+    "correct_index": 1,
+    "explanation": "Software and tech-enabled businesses often combine recurring subscription revenue (predictable cash flows that support leverage), high gross margins (enabling margin expansion), and strong market positions (switching costs, network effects). These characteristics match the ideal LBO candidate profile. Firms like Thoma Bravo, Vista Equity Partners, and Silver Lake have built platforms entirely focused on software PE."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "An LP receives notice that the GP is proposing to transfer one portfolio company from the current fund (entering year 10) into a new vehicle. The LP can either roll into the new vehicle or cash out at fair value. What is this structure called, and why is it growing?",
+    "options": [
+      "A secondary buyout, growing because of hedge fund demand",
+      "A GP-led continuation vehicle, growing because it allows GPs to retain high-performing assets beyond fund life while giving LPs liquidity optionality",
+      "A recapitalisation, growing because interest rates are falling",
+      "A tender offer, growing because of retail investor demand"
+    ],
+    "correct_index": 1,
+    "explanation": "GP-led continuation vehicles allow GPs to extend ownership of high-performing portfolio companies beyond the original fund's life. Existing LPs get optionality: cash out at fair value or roll into the new vehicle with fresh terms. These structures have grown to over $50 billion annually, driven by LPs seeking liquidity, GPs retaining star assets, and secondary buyers providing fresh capital."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "Average PE hold periods have extended from approximately 4 years in the mid-2000s to over 5.5 years today. Which factors have most contributed to this shift?",
+    "options": [
+      "LPs are demanding shorter hold periods, but GPs ignore the requests",
+      "A combination of longer operational transformations, weaker exit markets in some vintages, and the growth of continuation vehicles",
+      "Regulatory requirements now mandate minimum 5-year holds",
+      "Tax law changes have made shorter holds uneconomic"
+    ],
+    "correct_index": 1,
+    "explanation": "Longer holds reflect structural shifts: operational value creation takes longer than financial engineering; exit markets have been periodically weaker (2022-2024 particularly); buy-and-build strategies require time to execute fully; and continuation vehicles extend ownership of high-performing assets. Regulatory changes have not driven this trend, and LPs generally prefer faster distributions."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "Over the past decade, large institutional LPs have concentrated their PE allocations among fewer GP relationships, often committing larger amounts to a smaller number of firms. This trend most benefits which group?",
+    "options": [
+      "New and emerging first-time fund managers",
+      "Established large firms with proven track records, who can absorb larger commitments from top LPs",
+      "Retail investors accessing PE through semi-liquid products",
+      "Regional boutique firms focused on single markets"
+    ],
+    "correct_index": 1,
+    "explanation": "LP consolidation — fewer GP relationships per LP, larger commitments per relationship — systematically favours large established firms with proven track records, deep operational capabilities, and ability to absorb $500M+ commitments. New and emerging firms face greater fundraising challenges as LPs concentrate capital with known quantities. This widens the gap between top-tier and second-tier firms."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A European institutional LP asks whether a new fund is classified as Article 6, 8, or 9 under SFDR. What is this LP trying to understand?",
+    "options": [
+      "The fund's pass-through tax status",
+      "The fund's sustainability and ESG disclosure classification",
+      "The fund's licensing arrangements with regulators",
+      "The fund's fee structure"
+    ],
+    "correct_index": 1,
+    "explanation": "The EU Sustainable Finance Disclosure Regulation (SFDR) requires funds to classify themselves: Article 6 (no specific sustainability integration), Article 8 (promotes environmental or social characteristics), or Article 9 (has sustainable investment as its objective). The classification affects disclosure, marketing, and LP due diligence. European institutional LPs increasingly require Article 8 or Article 9 classification as a prerequisite for investment."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "Approximately what share of global PE activity (by deal volume and AUM) is concentrated in North America?",
+    "options": [
+      "Approximately 25-30%",
+      "Approximately 55-60%",
+      "Approximately 85-90%",
+      "Approximately 10-15%"
+    ],
+    "correct_index": 1,
+    "explanation": "North America (primarily the United States) accounts for roughly 55-60% of global PE AUM and deal volume. This dominance reflects deeper US capital markets, the large institutional LP base, and the concentration of the world's largest PE firms in New York and other major US cities. Europe accounts for 25-30%, Asia-Pacific 15-20%, and other regions the remainder."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "The Nordic region (Sweden, Denmark, Norway, Finland) has produced a disproportionately large number of globally significant PE firms relative to its population. Which factors most contribute to this strength?",
+    "options": [
+      "Government subsidies for domestic PE firms",
+      "A combination of institutional LP maturity, strong engineering and technology talent, and deep family-business markets needing succession solutions",
+      "Lower corporate tax rates than other European countries",
+      "Proximity to US capital markets"
+    ],
+    "correct_index": 1,
+    "explanation": "The Nordic PE strength reflects several structural factors: sophisticated institutional LP base (AP funds in Sweden, ATP in Denmark, GPFG in Norway); strong technology and healthcare sectors; deep mid-market of family-owned businesses needing succession; and a culture of professional governance and transparency. Firms like EQT, Nordic Capital, Altor, IK Partners, and Hg have Nordic roots and strong track records."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "Which of the following is a characteristic difference between European and US PE markets?",
+    "options": [
+      "European deals use substantially more leverage than US deals",
+      "European markets have historically featured more conservative leverage, more family-owned targets, and a stronger regulatory overlay",
+      "European PE focuses only on technology sectors",
+      "European markets have no mid-market PE activity"
+    ],
+    "correct_index": 1,
+    "explanation": "European PE historically features lower entry leverage (4.5-5.5x vs. 5.5-6.5x in the US), a greater proportion of family-owned and privately-held targets, and significant regulatory overlay (AIFMD, GDPR, sustainability reporting). These differences reflect different credit markets, ownership patterns, and regulatory environments. The gap has narrowed but remains meaningful."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "A mid-market European PE firm focuses its sourcing strategy on family-owned businesses facing succession questions. Why is this a particularly attractive segment for European PE?",
+    "options": [
+      "Family-owned businesses are legally required to sell to PE firms",
+      "Europe has a deep base of founder-owned mid-market companies where the next generation is often unwilling or unable to continue, creating PE buying opportunities",
+      "Family-owned businesses always pay higher multiples than listed companies",
+      "Tax regulations favour PE acquisitions of family businesses"
+    ],
+    "correct_index": 1,
+    "explanation": "Continental Europe — particularly Germany (Mittelstand), but also France, Italy, Nordics — has a large base of founder-owned and family-owned mid-market businesses. When the next generation is unwilling or unable to run the business, succession often requires an external solution. PE firms with relationship-driven sourcing can identify these opportunities before they reach formal auction, often securing proprietary access."
+  },
+  {
+    "topic_tag": "pe-fundamentals",
+    "question": "Over the past two decades, sovereign wealth funds from the Gulf states, Norway, and Singapore have become among the most significant LP categories. What structural advantages do they bring as investors?",
+    "options": [
+      "They have the shortest investment horizons of any LP category",
+      "They bring enormous capital, long investment horizons, and ability to co-invest directly alongside GPs",
+      "They are exempt from all due diligence requirements",
+      "They only invest in domestic PE funds"
+    ],
+    "correct_index": 1,
+    "explanation": "SWFs bring three distinct advantages: massive committable capital (individual funds manage hundreds of billions to over a trillion); indefinite investment horizons (no liabilities forcing withdrawal); and sophisticated direct-investment capabilities that allow them to co-invest alongside GPs. They are increasingly active not just as LPs but also as direct deal participants."
+  }
+]

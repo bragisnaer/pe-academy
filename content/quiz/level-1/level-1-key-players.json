@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "key-players",
+    "question": "A PE fund's Limited Partnership Agreement specifies that LPs contribute 98% of the fund's capital. Yet the General Partner makes every investment decision without LP approval. What structural principle explains why LPs accept this arrangement?",
+    "options": [
+      "LPs retain veto rights through the investment committee",
+      "LPs are paid a higher return than the GP to compensate for their passive role",
+      "Limited partnership structure trades LP control for limited liability and professional management",
+      "LPs can withdraw their capital at any time if they disagree with investment decisions"
+    ],
+    "correct_index": 2,
+    "explanation": "The limited partnership structure grants LPs limited liability (capped at their commitment) and access to professional management in exchange for passivity in investment decisions. LPs cannot withdraw committed capital on demand, have no veto over individual investments, and do not earn higher returns than the GP — they earn different economics structured through the waterfall."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A mid-market PE firm is considering hiring its first operating partner. Which statement best captures the function this role typically performs?",
+    "options": [
+      "Sources new investment opportunities through industry networks and warm introductions",
+      "Provides operational expertise across portfolio companies — interim leadership, functional improvement, or sector guidance",
+      "Manages the fund's regulatory filings, compliance obligations, and LP reporting requirements",
+      "Negotiates debt financing terms with lenders on behalf of the deal team"
+    ],
+    "correct_index": 1,
+    "explanation": "Operating partners are typically former CEOs, CFOs, or functional experts who work directly with portfolio companies — serving as interim executives, leading operational improvement projects, or providing sector-specific expertise during diligence and ownership. Deal sourcing, compliance, and financing are performed by other roles within the firm."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "CLO managers have become one of the most important participants in the PE ecosystem, yet they rarely appear in news coverage of individual deals. What role do they play?",
+    "options": [
+      "They provide equity co-investment alongside PE funds in large buyouts",
+      "They are the single largest buyer of leveraged loans issued to finance LBOs",
+      "They advise portfolio companies on operational improvements during the hold period",
+      "They conduct independent valuations of PE fund portfolios for LP reporting purposes"
+    ],
+    "correct_index": 1,
+    "explanation": "Collateralised Loan Obligation (CLO) managers pool leveraged loans into structured vehicles and issue tranched securities to investors. They are the largest institutional buyer of the loans that finance PE-backed LBOs — making them a critical, if invisible, component of the PE debt ecosystem."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A PE firm is evaluating a proprietary deal opportunity — a founder-owned industrial business that was introduced through the firm's operating partner network. What competitive advantage does this sourcing channel typically provide?",
+    "options": [
+      "Lower regulatory scrutiny because the deal bypasses investment bank involvement",
+      "Guaranteed approval from the investment committee since senior partners made the introduction",
+      "Less competition and often better pricing than a formal auction process",
+      "Reduced legal costs because founder-owned businesses require no SPA documentation"
+    ],
+    "correct_index": 2,
+    "explanation": "Proprietary deal flow — where the PE firm is the primary or only bidder — typically produces better pricing and less competitive tension than formal auctions run by investment banks. This is why firms invest heavily in building industry relationships. Regulatory requirements, IC approval standards, and legal documentation do not change based on sourcing channel."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A PE firm's investment committee reviews every proposed acquisition before the deal team can sign. What is the primary purpose of this governance layer?",
+    "options": [
+      "To comply with SEC requirements for PE firms",
+      "To provide independent challenge to the deal team's analysis and prevent deal bias from driving poor decisions",
+      "To allow LPs to approve or reject individual transactions",
+      "To negotiate the final purchase price with the seller"
+    ],
+    "correct_index": 1,
+    "explanation": "The investment committee exists to provide independent, experienced challenge to the deal team. Teams that have spent months on a transaction develop commitment bias and can miss risks. The IC typically includes senior partners not involved in the deal. This institutional discipline is central to why well-governed PE firms avoid costly mistakes."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A senior partner at a PE firm typically sits on the board of 3-5 portfolio companies simultaneously. Why is this structural requirement important to the PE model?",
+    "options": [
+      "Regulatory rules require PE partners to hold board seats",
+      "Board presence is how PE firms exercise the active ownership and governance that distinguishes their model from passive investing",
+      "Partners earn additional fees for each board seat they hold",
+      "Board positions provide tax advantages for the individual partner"
+    ],
+    "correct_index": 1,
+    "explanation": "Board participation is the operational mechanism through which PE firms exercise control and drive value creation. Partners use board meetings to challenge strategy, approve major decisions, track KPIs, and ensure the 100-day plan stays on course. This active governance is a defining feature of PE ownership, distinct from passive public equity investing."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "An analyst at a PE firm spends most of their time on financial modelling, market research, and data room analysis. What is the typical progression from analyst to partner, and approximately how long does it take?",
+    "options": [
+      "Analyst → Associate → VP → Principal → Partner, typically 10-15 years with strong performance",
+      "Analyst → Partner directly within 2-3 years",
+      "Analyst positions do not lead to partner roles; partners are always recruited from investment banks",
+      "The progression is immediate upon MBA graduation"
+    ],
+    "correct_index": 0,
+    "explanation": "PE firms typically have a multi-stage progression: Analyst (2-3 years, often post-banking), Associate (2-3 years), VP (2-3 years), Principal/Director (2-4 years), then Partner. Total timeline to partner is typically 10-15 years with strong performance, though some firms compress this and others skip levels. MBAs often enter at Associate level."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A PE partner's compensation structure includes base salary, annual bonus, and carried interest. Which component typically represents the largest share of a senior partner's lifetime earnings in a successful fund?",
+    "options": [
+      "Base salary, because it is guaranteed and accumulates over decades",
+      "Annual bonus, because it is tied to fund performance year-by-year",
+      "Carried interest, because successful funds can generate returns that produce carry payments many multiples of the partner's salary",
+      "Management fees paid directly to individual partners"
+    ],
+    "correct_index": 2,
+    "explanation": "Carried interest — the 20% share of fund profits above the hurdle — is the defining economic driver for senior PE professionals. A strong senior partner's carry from a single successful fund can exceed several years of combined salary and bonus. This is why PE compensation is heavily back-loaded and aligned with long-term fund performance."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A PE fund's LPA requires the GP to invest 2% of the fund's committed capital personally — the 'GP commit.' Why is this requirement structurally important to LPs?",
+    "options": [
+      "It provides additional capital to the fund for deal-making",
+      "It ensures the GP has meaningful personal capital at risk alongside LP capital, aligning incentives",
+      "It demonstrates the GP's regulatory compliance",
+      "It reduces the fund's overall expense ratio"
+    ],
+    "correct_index": 1,
+    "explanation": "The GP commitment (typically 1-5% of fund size) ensures the GP has genuine personal capital at risk in every deal. This alignment is one of PE's strongest structural features: when things go wrong, the GP loses money alongside LPs, creating incentives against taking excessive risk purely to earn carry. LPs increasingly demand higher GP commits in competitive fundraising environments."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "Most PE firms are organised as limited partnerships or limited liability partnerships rather than corporations. Why is this legal structure preferred?",
+    "options": [
+      "It reduces the firm's tax burden significantly",
+      "It passes profits directly to partners without corporate-level taxation and provides flexibility in profit allocation",
+      "It protects the firm from regulatory oversight",
+      "It allows the firm to avoid registering with securities regulators"
+    ],
+    "correct_index": 1,
+    "explanation": "Partnership structures are tax pass-through entities: profits (and losses) flow directly to partners without being taxed at the firm level. This is crucial for PE economics, where individual partners receive carry allocations that would be double-taxed in a corporate structure. Partnerships also provide flexibility in how profits are divided among partners."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A PE firm describes itself as a 'sector specialist' focused exclusively on healthcare services. How does this positioning typically differ from a generalist firm's approach?",
+    "options": [
+      "Specialist firms have fewer regulatory obligations than generalists",
+      "Specialists develop deep industry knowledge, proprietary deal flow, and operational playbooks within their sector, but sacrifice the diversification of a multi-sector portfolio",
+      "Specialists only hire industry executives, not finance professionals",
+      "Specialists avoid using leverage in their transactions"
+    ],
+    "correct_index": 1,
+    "explanation": "Sector specialists (like Thoma Bravo in software, Welsh Carson in healthcare) develop deep industry expertise: understanding regulatory dynamics, competitive structures, management networks, and operational playbooks within their vertical. This concentration produces sourcing advantages and execution capabilities that generalists struggle to match, at the cost of sector concentration risk."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "Across the global PE industry, which LP category contributes the largest share of total committed capital?",
+    "options": [
+      "Individual retail investors",
+      "Public and private pension funds",
+      "Hedge funds",
+      "Commercial banks"
+    ],
+    "correct_index": 1,
+    "explanation": "Public and private pension funds are collectively the largest LP category, contributing roughly 30-40% of global PE capital. Major examples include CalPERS, CPPIB (Canada), ABP (Netherlands), ATP (Denmark), and Ontario Teachers. Their scale and long investment horizons make them well-suited to PE's illiquidity profile. Sovereign wealth funds, endowments, and insurance companies follow as major contributors."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "University endowments — particularly Yale under David Swensen — pioneered heavy allocations to private equity and alternatives. What was the underlying logic of the 'endowment model'?",
+    "options": [
+      "Endowments had to invest in PE due to regulatory mandates",
+      "Endowments' indefinite investment horizons allow them to capture illiquidity premiums that shorter-horizon investors cannot access",
+      "PE was the only asset class available to tax-exempt institutions",
+      "Endowments received special fee discounts from PE firms"
+    ],
+    "correct_index": 1,
+    "explanation": "Swensen's insight was that endowments have effectively perpetual time horizons and stable spending needs, unlike most institutions facing liability-matching constraints. This allows them to capture illiquidity premiums from PE, real assets, and other alternatives. Yale's allocation shifted heavily toward alternatives starting in the 1990s, producing decades of outperformance and becoming the template for endowment investing globally."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "Insurance companies are major LPs in PE but typically allocate smaller portfolio shares than endowments. What structural factor explains this difference?",
+    "options": [
+      "Insurance companies are prohibited from investing in PE",
+      "Capital adequacy and regulatory capital requirements penalise illiquid investments, constraining PE allocation size",
+      "Insurance companies only invest in domestic PE",
+      "Insurance companies have shorter liability horizons than endowments"
+    ],
+    "correct_index": 1,
+    "explanation": "Insurance companies operate under regulatory capital frameworks (Solvency II in Europe, risk-based capital in the US) that require them to hold additional capital against illiquid investments. This raises the effective cost of PE allocation and caps the share of portfolio they can commit. Despite these constraints, insurance companies remain important LPs, particularly for private credit where duration matches their long-dated liabilities."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "Single-family offices have become an increasingly important LP category. What distinguishes their approach from institutional LPs like pension funds?",
+    "options": [
+      "Family offices receive higher fee discounts than institutional LPs",
+      "They have greater flexibility in portfolio construction and can commit quickly without institutional approval processes, but lack the scale of pension funds",
+      "They are legally prohibited from accessing institutional PE funds",
+      "They only invest in venture capital, not buyout funds"
+    ],
+    "correct_index": 1,
+    "explanation": "Family offices benefit from flexibility that institutional LPs lack: no investment committee process, faster decision-making, willingness to write smaller cheques, and openness to emerging managers. Individual family offices rarely match the scale of major pension funds, but collectively represent a large and growing share of LP capital. They are particularly important to first-time fund managers and niche strategies."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "Funds of funds (FoF) raise capital from investors and commit it across multiple PE funds. What value proposition do they offer, and which investors do they primarily serve?",
+    "options": [
+      "They guarantee higher returns than direct PE fund investment",
+      "They offer access, diversification, and manager selection expertise to investors who lack resources to build direct PE portfolios — typically smaller institutions and HNW individuals",
+      "They eliminate all PE fees through institutional relationships",
+      "They are only available to sovereign wealth funds"
+    ],
+    "correct_index": 1,
+    "explanation": "Funds of funds serve investors who want PE exposure but lack the scale, expertise, or resources to build direct portfolios: smaller institutions, HNW individuals, and some family offices. FoF provide access (leveraging relationships with top GPs), diversification (exposure to 20-50 funds), and manager selection. The cost is a second fee layer (FoF fees plus underlying fund fees), which reduces net returns."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "Over the past decade, high-net-worth individuals have increasingly accessed PE through feeder funds and semi-liquid products. What change in the industry has enabled this shift?",
+    "options": [
+      "PE regulations have been repealed, allowing anyone to invest",
+      "Development of semi-liquid fund structures (BDCs, interval funds, evergreen structures) with lower minimums and periodic redemption rights",
+      "PE firms have stopped raising institutional capital",
+      "HNW investors are now treated as institutional LPs by regulators"
+    ],
+    "correct_index": 1,
+    "explanation": "Semi-liquid structures — business development companies (BDCs), interval funds, evergreen funds, tender offer funds — have made PE accessible to HNW and accredited retail channels. These structures feature lower minimums ($25K-$250K vs. $5M+), periodic redemption rights (subject to caps), and standardised reporting. This democratisation represents a large growth market for GPs."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A large institutional LP negotiates representation on the fund's LP Advisory Committee (LPAC) as a condition of its commitment. What functions does the LPAC typically perform?",
+    "options": [
+      "It approves every investment the GP proposes",
+      "It reviews conflicts of interest, valuation methodology, and governance matters, while generally respecting GP investment discretion",
+      "It directly manages the portfolio companies on behalf of LPs",
+      "It replaces the GP's investment committee"
+    ],
+    "correct_index": 1,
+    "explanation": "The LPAC provides LP oversight on governance matters: reviewing conflicts of interest, approving certain fund-level decisions (key-person events, term extensions), examining valuation methodology, and raising LP concerns. LPACs do not approve individual investments — that remains GP discretion. LPAC seats are typically reserved for the largest LPs and provide enhanced visibility into fund operations."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A large pension fund commits $200M to a PE fund and negotiates a side letter with provisions not available in the standard LPA. A 'Most Favoured Nation' clause in the side letter provides what protection?",
+    "options": [
+      "It guarantees the LP the highest returns among all LPs",
+      "It ensures the LP receives any more favourable terms granted to other LPs in the same fund",
+      "It requires the GP to exclude the LP from any losses",
+      "It gives the LP veto rights over fund decisions"
+    ],
+    "correct_index": 1,
+    "explanation": "MFN (Most Favoured Nation) clauses ensure that if the GP grants more favourable terms (lower fees, better reporting, co-investment priority) to another LP of similar or smaller size, those terms are extended to the MFN holder. This protects large LPs from being disadvantaged by side deals. MFN clauses have become standard for major institutional LPs and drive the market practice of uniform fund terms."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A PE firm allocates a portion of deal capital as 'co-investment' opportunities to select LPs. What economic benefit does co-investment provide to the LP?",
+    "options": [
+      "Co-investment capital is subject to higher fees than fund capital",
+      "Co-investment typically carries reduced or zero management fee and carried interest on the co-invested portion, lowering the effective blended cost",
+      "Co-investment provides veto rights over the main fund's investment decisions",
+      "Co-investment is only available to retail investors"
+    ],
+    "correct_index": 1,
+    "explanation": "Co-investment allocations let LPs invest additional capital alongside the fund in specific deals, typically with reduced fees (often fee-free and carry-free). This lowers the LP's blended cost of PE exposure and provides concentrated exposure to specific deals they find attractive. Co-investment rights are a key negotiating lever for large LPs and a meaningful economic benefit."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "Before committing capital to a new PE fund, an institutional LP typically conducts extensive due diligence on the GP. Which of the following is typically NOT a focus of LP due diligence?",
+    "options": [
+      "Track record analysis of prior funds and individual deal attribution",
+      "Team stability, key-person risk, and succession planning",
+      "Operational infrastructure, compliance, and governance processes",
+      "The personal investment philosophy of the LP's portfolio manager"
+    ],
+    "correct_index": 3,
+    "explanation": "LP due diligence on GPs is extensive and typically covers: track record and attribution analysis, team and key-person risk, investment process and discipline, operational and compliance infrastructure, reference checks with portfolio company executives and other LPs, and ESG practices. The LP's own investment philosophy is not part of GP due diligence — it shapes the LP's selection criteria but is not evaluated about the GP."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A pension fund evaluating a third-time fund weighs track record, team stability, and strategy evolution. Which combination would most likely cause concern?",
+    "options": [
+      "Strong Fund I returns, strong Fund II returns, and stable senior team",
+      "Strong Fund I, weak Fund II, and departure of two senior partners between Fund II and Fund III",
+      "Consistent returns across vintages with gradual strategy expansion",
+      "Strong returns combined with growing institutional LP base"
+    ],
+    "correct_index": 1,
+    "explanation": "Inconsistent performance paired with senior departures is a classic warning signal. It raises questions about whether strong early performance was attributable to departed partners and whether the remaining team can repeat past success. LPs track individual deal attribution and team continuity carefully. A single weak vintage is recoverable if the team remains intact; both problems together substantially raise commitment risk."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "Under PE ownership, the CEO of a portfolio company typically faces what combination of expectations that differs from owner-operator or public-company CEOs?",
+    "options": [
+      "Lower performance expectations in exchange for longer tenure",
+      "Higher accountability to board and investors, but also significant equity upside through the Management Equity Programme",
+      "Complete autonomy from the PE owners",
+      "The same expectations as a public-company CEO"
+    ],
+    "correct_index": 1,
+    "explanation": "PE-backed CEOs operate under heightened accountability: monthly KPI reporting, active board engagement, explicit value creation plans, and willingness to replace underperformers. In exchange, they receive equity incentives (MEP) that can deliver life-changing wealth if the value creation plan succeeds. This high-accountability, high-reward dynamic is distinctive to PE and attracts a specific type of operator."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A PE firm negotiates a Management Equity Programme (MEP) with the CEO of a newly acquired company. What is the typical structure and purpose?",
+    "options": [
+      "Management receives shares for free with no investment required",
+      "Management personally invests a meaningful amount (often 1-3 years of salary) and receives shares plus performance-linked 'sweet equity' that rewards outperformance",
+      "The PE firm pays management a fixed bonus in cash at exit",
+      "Management receives publicly listed stock in the PE firm"
+    ],
+    "correct_index": 1,
+    "explanation": "MEP structures require meaningful personal investment from management (often 1-3 years of salary) alongside performance-linked 'sweet equity' that increases management's share of proceeds if the PE firm exceeds specified return thresholds. Personal investment ensures skin in the game; sweet equity creates asymmetric upside that drives exceptional effort during the hold period."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A PE firm's MEP includes a 'sweet equity' structure that pays management a disproportionate share of returns above a specified IRR threshold. What is the purpose of this structure?",
+    "options": [
+      "To minimise the PE firm's own returns",
+      "To create asymmetric upside for management when they drive exceptional performance, while protecting the PE firm's downside",
+      "To satisfy regulatory requirements for management compensation",
+      "To reduce taxes on the PE firm's carry"
+    ],
+    "correct_index": 1,
+    "explanation": "Sweet equity works like a ratchet: if returns exceed specified thresholds (e.g., 25% IRR), management receives a larger share of proceeds above that level. This asymmetry aligns management with outperformance — they earn modestly if the deal works fine but spectacularly if they drive exceptional results. The PE firm retains the base return while incentivising management to push beyond adequate performance."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A CEO leaves a PE-backed company 18 months before exit. The MEP contains 'leaver provisions' that depend on whether the departure is classified as 'good leaver' or 'bad leaver.' What typically defines this distinction?",
+    "options": [
+      "Good leaver means the CEO left voluntarily; bad leaver means they were fired",
+      "Good leavers (death, disability, retirement, company dismissal without cause) typically receive fair value for their equity; bad leavers (resignation, dismissal for cause) may receive only cost",
+      "The distinction is personal and has no legal meaning",
+      "The classification is determined by the departing executive"
+    ],
+    "correct_index": 1,
+    "explanation": "Leaver provisions create financial consequences for departure: good leavers (death, disability, retirement, termination without cause) receive fair value for their shares; bad leavers (resignation before vesting, termination for cause) receive only their original cost or a discounted amount. This structure incentivises management to stay and deliver, while protecting the PE firm from opportunistic departures."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A PE firm acquires a family-owned business where the founder served as both CEO and CFO. Which executive replacement is typically the first priority post-acquisition?",
+    "options": [
+      "Replace the CEO immediately",
+      "Hire a professional CFO capable of supporting PE reporting standards, leverage management, and bolt-on integration",
+      "Replace the entire senior management team",
+      "No replacements are typically needed in the first year"
+    ],
+    "correct_index": 1,
+    "explanation": "Professional CFO recruitment is almost always the first priority post-acquisition. Family-owned businesses often lack CFOs capable of managing leveraged balance sheets, producing monthly management accounts on deadline, supporting M&A diligence, and handling lender relationships. The CEO may remain if performing well; the CFO gap is usually more urgent and more solvable."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A PE firm requires the management team to co-invest personal capital into the deal. What does the PE firm primarily gain from this requirement?",
+    "options": [
+      "Additional capital that reduces the PE firm's equity commitment",
+      "A strong signal of management's confidence in the business, plus alignment with PE returns",
+      "Tax benefits on the acquisition",
+      "Regulatory compliance for the transaction"
+    ],
+    "correct_index": 1,
+    "explanation": "Management co-investment (typically 1-3 years of salary) is less about raising capital and more about signal and alignment. Management willing to put meaningful personal capital at risk signals confidence in the business and the plan. It also creates genuine financial alignment with the PE firm's returns. Reluctance to co-invest is a red flag that the PE firm should investigate before proceeding."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A sell-side investment bank is engaged by a business owner planning to sell to a PE firm. Whose interests does the banker primarily serve?",
+    "options": [
+      "The eventual buyer's, to ensure a fair purchase price",
+      "The seller's, by running a competitive process that maximises valuation and deal terms",
+      "The regulator's, to ensure deal compliance",
+      "Both sides equally in a fiduciary capacity"
+    ],
+    "correct_index": 1,
+    "explanation": "Sell-side investment bankers are engaged by and work for the seller. Their job is to maximise sale price and deal terms for their client — typically through a competitive auction process that generates multiple bids. Buyers should never mistake a sell-side banker's cooperation for neutrality; every action (timing, information access, bid structure) is designed to enhance seller outcomes."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "During PE due diligence, 'CDD' and 'FDD' are two distinct workstreams. What is the primary focus of each?",
+    "options": [
+      "CDD covers legal due diligence; FDD covers financial due diligence",
+      "Commercial DD assesses market and competitive position; Financial DD validates the target's financial performance through quality-of-earnings analysis",
+      "CDD covers compliance; FDD covers forensic investigation",
+      "Both terms refer to the same workstream"
+    ],
+    "correct_index": 1,
+    "explanation": "Commercial DD (CDD) assesses market size, growth, competitive positioning, customer dynamics, and pricing power — typically conducted by management consultants (McKinsey, Bain, L.E.K., OC&C). Financial DD (FDD) validates reported and adjusted EBITDA through forensic quality-of-earnings analysis — typically by Big Four or specialist transaction advisory firms. Both are standard in PE processes."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "The Big Four (Deloitte, PwC, EY, KPMG) dominate PE financial due diligence work. What specialist alternatives exist, and when might a PE firm prefer them?",
+    "options": [
+      "No alternatives exist; Big Four have a legal monopoly on FDD work",
+      "Specialist transaction advisory firms (Alvarez & Marsal, FTI Consulting, Duff & Phelps) offer deeper forensic expertise and are often preferred for complex or distressed situations",
+      "Specialist firms are only used for very small transactions",
+      "Specialist firms are used only by non-US PE firms"
+    ],
+    "correct_index": 1,
+    "explanation": "While the Big Four handle the majority of PE FDD work, specialist firms (Alvarez & Marsal, FTI Consulting, Duff & Phelps, Houlihan Lokey) offer deeper forensic expertise, particularly for complex accounting, distressed situations, or highly technical industries. The choice depends on deal complexity, sector, and the PE firm's relationships. Some PE firms prefer specialists for the hands-on involvement of senior partners."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A first-time fund manager is raising a debut $300M fund and engages a placement agent. What does the placement agent provide?",
+    "options": [
+      "Legal advice on fund documentation",
+      "Access to institutional LP relationships and assistance with marketing and fundraising execution",
+      "Audit services for fund operations",
+      "Operational due diligence on portfolio companies"
+    ],
+    "correct_index": 1,
+    "explanation": "Placement agents (Park Hill, Campbell Lutyens, MVision, Monument Group, Rede Partners) help GPs — particularly first-time managers — access institutional LP relationships, prepare fundraising materials, organise roadshows, and manage the fundraising process. They typically charge 1-2% of capital raised. Established managers with existing LP bases may use placement agents for specific geographies or to supplement in-house IR teams."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A PE firm engages 'sponsor counsel' — a law firm representing the PE fund's interests — on every deal. What is the sponsor counsel's primary role?",
+    "options": [
+      "Representing the target company in negotiations",
+      "Structuring the acquisition, negotiating the SPA, and documenting the fund's governance and financing arrangements",
+      "Conducting independent valuation of the target",
+      "Providing accounting services for the transaction"
+    ],
+    "correct_index": 1,
+    "explanation": "Sponsor counsel represents the PE fund across the deal lifecycle: transaction structure (acquisition vehicle, debt placement), SPA negotiation (warranties, indemnities, conditions precedent), financing documentation, regulatory matters, and post-closing governance. Major sponsor counsel firms include Kirkland & Ellis, Simpson Thacher, Weil Gotshal, Latham & Watkins, Clifford Chance, Allen & Overy, and Linklaters."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "During commercial due diligence, 'voice of the customer' interviews — direct conversations between CDD advisers and the target's customers — are considered particularly valuable. Why?",
+    "options": [
+      "Customers are legally required to provide honest information to CDD advisers",
+      "Customer interviews provide unfiltered feedback about product, pricing, and competitive alternatives that management's narrative may not fully reflect",
+      "Customers determine the final purchase price",
+      "Customers have access to the target's confidential financial data"
+    ],
+    "correct_index": 1,
+    "explanation": "Voice-of-customer interviews (15-30 typical in a CDD) provide unfiltered signal about the target's competitive position, pricing power, customer satisfaction, and switching risk. Because customers are independent of management, their feedback often surfaces insights that contradict or qualify management's narrative. A customer citing strong alternatives or deteriorating service quality is a material finding even if financials look strong."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "The senior bank lender in a mid-market LBO provides the largest tranche of the debt financing, typically at the lowest cost. What protections does this lender demand in exchange?",
+    "options": [
+      "A minority equity stake in the target",
+      "Senior position in the capital structure, first-lien security over assets, and financial covenants that protect against deteriorating performance",
+      "Veto rights over the PE firm's investment decisions",
+      "Representation on the portfolio company's board"
+    ],
+    "correct_index": 1,
+    "explanation": "Senior bank lenders (or syndicates of lenders) receive: senior position in the capital structure (paid before subordinated creditors), first-lien security over the target's assets (providing collateral protection), and financial covenants (leverage ratio, interest coverage, cash flow tests). In exchange for these protections, they lend at the lowest cost of any capital in the structure. Covenants give lenders early intervention rights if performance deteriorates."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "Private credit direct lenders have grown dramatically as LBO financing providers. What competitive advantage do they offer PE borrowers versus traditional bank lenders?",
+    "options": [
+      "Lower interest rates than any other debt source",
+      "Speed, certainty of execution, bespoke structuring (unitranche, PIK, junior capital), and single-lender relationships that simplify negotiations",
+      "Regulatory exemptions from all debt restrictions",
+      "Government-subsidised lending terms"
+    ],
+    "correct_index": 1,
+    "explanation": "Private credit direct lenders (Ares, Blackstone Credit, Apollo Credit, Golub, Antares) compete on speed, execution certainty, and flexibility rather than price. They can underwrite and commit quickly, provide unitranche and bespoke structures, and handle complex situations (carve-outs, growth businesses, larger holds) that syndicated loan markets may reject. Their cost is typically 100-300 bps higher than comparable syndicated loans, which PE firms accept for the execution advantages."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "In an LBO capital structure, mezzanine debt occupies what position, and what economic features distinguish it from senior debt?",
+    "options": [
+      "Senior to bank debt, with cash interest only",
+      "Junior to senior debt but senior to equity, typically with higher interest rates, warrants, and PIK features",
+      "An equity investment that pays no interest",
+      "A government-sponsored lending programme"
+    ],
+    "correct_index": 1,
+    "explanation": "Mezzanine debt sits between senior debt and equity: subordinated to senior lenders in the priority waterfall but senior to equity. It typically carries 10-14% interest rates (vs. 5-8% for senior debt), often includes PIK (payment-in-kind) features that accrue rather than pay cash, and may include warrants for equity participation. Mezzanine is used when senior debt alone cannot fund the deal but pure equity would be too expensive."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A unitranche lender provides a single debt facility combining senior and subordinated debt features. What advantage does this structure offer PE borrowers?",
+    "options": [
+      "It is the cheapest form of LBO financing available",
+      "It simplifies execution by providing one lender, one set of documents, and faster closing than arranging separate senior and mezzanine tranches",
+      "It eliminates the need for due diligence on the target",
+      "It provides unlimited availability regardless of leverage"
+    ],
+    "correct_index": 1,
+    "explanation": "Unitranche facilities combine what would otherwise be separate senior and mezzanine tranches into a single loan with a blended interest rate. The advantages are execution: one lender relationship, one set of documentation, faster closing, and simpler negotiations. The cost is higher than pure senior debt but lower than senior-plus-mezzanine separately. Unitranche has become the dominant financing structure for European mid-market LBOs."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "The syndicated leveraged loan market finances many large LBOs. What does 'syndication' mean in this context?",
+    "options": [
+      "The borrower receives loans from multiple countries simultaneously",
+      "An arranging bank underwrites the loan, then distributes portions to multiple institutional investors (CLOs, loan mutual funds, other banks)",
+      "The borrower must refinance the loan every year",
+      "The loan is converted to equity upon signing"
+    ],
+    "correct_index": 1,
+    "explanation": "Syndication is the process where an arranging bank (JPMorgan, Goldman Sachs, Bank of America, Barclays, Deutsche Bank) commits to underwrite a large loan, then distributes portions to multiple institutional buyers. The final loan may have 50+ lenders, dominated by CLOs, loan mutual funds, and other institutional investors. Syndication allows loans of €500M+ to be funded and creates liquidity in the secondary loan market."
+  },
+  {
+    "topic_tag": "key-players",
+    "question": "A PE firm's deal team on a mid-market acquisition typically consists of a partner, a VP, and one or two junior professionals (associate and analyst). How is workload typically distributed across this team?",
+    "options": [
+      "Partners do all the modelling while juniors observe",
+      "Juniors build the financial model and conduct data room analysis; VPs manage workstreams and adviser coordination; partners lead strategy, negotiations, and IC presentation",
+      "All team members perform identical tasks",
+      "External advisers handle all analytical work"
+    ],
+    "correct_index": 1,
+    "explanation": "PE deal teams operate with distinct role definitions: juniors (analysts and associates) own the financial model, data room analysis, and detailed diligence; VPs and principals manage workstreams, coordinate external advisers, and drive the day-to-day process; partners lead strategic thinking, negotiation with the seller, IC presentation, and final decisions. This structure allows efficient work allocation while developing junior talent toward eventual partner roles."
+  }
+]

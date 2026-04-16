@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm is evaluating two potential targets. Company A generates €30M EBITDA with 85% recurring subscription revenue and 5% annual capex. Company B generates €30M EBITDA with project-based revenue tied to the construction cycle and 15% annual capex. Which is the stronger LBO candidate and why?",
+    "options": [
+      "Company B — higher capex means more tangible assets to serve as debt collateral",
+      "Company A — stable recurring revenue and low capex produce predictable free cash flow to service debt",
+      "Both are equally suitable since they have identical EBITDA",
+      "Company B — cyclical businesses typically command higher exit multiples"
+    ],
+    "correct_index": 1,
+    "explanation": "LBO candidates need stable, predictable cash flows because debt service is non-negotiable. Recurring subscription revenue and low capex produce reliable free cash flow. Cyclical, project-based businesses with high capex are poor LBO candidates because a downturn can trigger covenant breach while the debt load remains constant."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm has signed a Letter of Intent on a €300M acquisition with a 60-day exclusivity period. Three weeks into diligence, a competitor approaches the seller with a higher offer. What does the exclusivity provision allow or require?",
+    "options": [
+      "The seller must automatically accept the higher offer and terminate negotiations with the PE firm",
+      "The seller is contractually prohibited from negotiating with the competitor during the exclusivity window",
+      "The PE firm must match the higher offer or lose its position",
+      "Exclusivity provisions are non-binding and the seller can negotiate freely"
+    ],
+    "correct_index": 1,
+    "explanation": "Exclusivity provisions in LOIs legally prevent the seller from negotiating with other parties during the specified window — typically 30–60 days. This protects the buyer's diligence investment. While LOIs are generally non-binding on price and terms, exclusivity provisions are binding and enforceable."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm acquires a company for $500M using $175M equity and $325M debt. After 5 years, the business is sold for $600M. During the hold period, $100M of debt was repaid. What is the approximate equity return?",
+    "options": [
+      "1.2x — matching the enterprise value appreciation from $500M to $600M",
+      "2.0x — driven primarily by debt paydown even though enterprise value grew modestly",
+      "3.4x — because leverage amplifies the small enterprise value increase",
+      "The equity was lost because remaining debt exceeds the sale proceeds"
+    ],
+    "correct_index": 1,
+    "explanation": "Exit equity = $600M (EV) – $225M (remaining debt after $100M paydown) = $375M. MOIC = $375M / $175M ≈ 2.1x. This illustrates the leverage effect: even a modest 20% enterprise value increase produces a doubling of equity value when combined with significant debt paydown."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE-backed company has €60M of EBITDA and €360M of debt structured across senior secured (€240M at 5%), second lien (€80M at 8%), and mezzanine (€40M at 11%). What is the company's leverage ratio, and what does this indicate?",
+    "options": [
+      "4.0x — a conservative leverage level typical of investment-grade corporate structures",
+      "6.0x — a typical leveraged buyout capital structure for a stable business",
+      "9.5x — an extremely aggressive structure that would fail most covenant tests",
+      "Cannot be calculated without knowing the equity contribution"
+    ],
+    "correct_index": 1,
+    "explanation": "Leverage ratio = Total Debt / EBITDA = €360M / €60M = 6.0x. This is a typical LBO entry leverage for a stable, cash-generative business. Investment-grade corporates usually carry 2-3x leverage; LBOs range from 4-7x depending on business quality and credit market conditions."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "At its most basic, what is a leveraged buyout (LBO)?",
+    "options": [
+      "An acquisition funded entirely with equity capital from a PE fund",
+      "An acquisition where a PE fund uses a combination of equity and significant borrowed money to buy a company, with the debt typically secured against the target's assets",
+      "A hostile takeover of a publicly listed company",
+      "A merger between two similarly sized private companies"
+    ],
+    "correct_index": 1,
+    "explanation": "An LBO uses a combination of equity (from the PE fund) and debt (from lenders) to acquire a company. The debt is typically secured against the target's assets and repaid from its cash flows. This structure amplifies equity returns when the business performs but concentrates risk if it does not."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A typical mid-market European LBO uses approximately what capital structure split between equity and debt?",
+    "options": [
+      "90% equity, 10% debt",
+      "30-45% equity, 55-70% debt",
+      "10% equity, 90% debt",
+      "100% equity"
+    ],
+    "correct_index": 1,
+    "explanation": "Most mid-market LBOs finance deals with 30-45% equity and 55-70% debt. The exact ratio depends on business quality, credit conditions, and sector. Business with highly stable cash flows may support higher leverage; more volatile businesses require more equity. European deals have historically used slightly more conservative ratios than US deals."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "In an LBO, debt is typically repaid over the hold period using what source of funds?",
+    "options": [
+      "Additional equity contributions from the PE fund",
+      "The target company's own free cash flow",
+      "Proceeds from asset sales at the PE fund level",
+      "Interest income earned on the company's cash balance"
+    ],
+    "correct_index": 1,
+    "explanation": "The target company's free cash flow is the primary source of debt service. The company generates EBITDA, pays interest on the debt, funds capex and working capital, and uses remaining cash to amortise debt or accumulate on the balance sheet. This is why LBO candidates must have predictable, sustainable cash flow — debt service is non-negotiable."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm is evaluating a business with €25M EBITDA and €4M annual capex. Approximately how much free cash flow is available for debt service, assuming a 25% tax rate and €1M working capital increase?",
+    "options": [
+      "€25M — EBITDA represents available cash flow",
+      "Approximately €15M — EBITDA less taxes, capex, and working capital",
+      "€4M — only capex should be deducted",
+      "€21M — EBITDA less capex only"
+    ],
+    "correct_index": 1,
+    "explanation": "Free cash flow before debt service ≈ EBITDA – cash taxes – capex – working capital change. Roughly: €25M – €6M (25% tax assumption) – €4M capex – €1M WC = €14-15M. This FCF figure determines how much debt the business can safely carry, not EBITDA alone. High-quality LBOs focus on FCF conversion, not just headline EBITDA."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE fund is evaluating a target acquisition. During the initial screening phase, which of the following information sources would typically be reviewed FIRST, before formal due diligence begins?",
+    "options": [
+      "Full audited financial statements with all supporting documentation",
+      "A teaser or confidential information memorandum (CIM) prepared by the sell-side adviser, providing high-level business overview and key financials",
+      "Customer contracts and supplier agreements",
+      "Employee records and compensation details"
+    ],
+    "correct_index": 1,
+    "explanation": "The teaser (1-2 pages, anonymised) and subsequent CIM (30-100+ pages, named) are the first documents PE firms review in an auction process. They provide a high-level overview of the business, market, financials, and investment highlights. Detailed diligence documents (full financials, contracts, operational data) are only shared after NDA execution and initial bid selection."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A seller running a competitive auction invites PE firms to submit 'indicative bids' after initial review of the CIM. How do indicative bids typically differ from binding bids?",
+    "options": [
+      "Indicative bids are legally enforceable; binding bids are not",
+      "Indicative bids express interest at a price range based on limited information; binding bids are submitted after full due diligence and include firm price and committed financing",
+      "Indicative bids must exceed binding bids to qualify",
+      "There is no practical difference between the two"
+    ],
+    "correct_index": 1,
+    "explanation": "Indicative bids are non-binding expressions of interest at a preliminary price range, submitted based on limited information (CIM and a management presentation). They narrow the field to a shortlist. Binding bids are submitted after full due diligence, include firm pricing and committed debt financing, and are enforceable if accepted by the seller subject to SPA negotiation."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm is considering an acquisition sourced through a proprietary relationship rather than a competitive auction. What pricing dynamic does this typically create compared to a formal auction?",
+    "options": [
+      "Proprietary deals always command higher prices than auction deals",
+      "Proprietary deals often benefit the buyer through reduced competitive tension, less pricing pressure, and more flexibility in process",
+      "Proprietary deals bypass all due diligence requirements",
+      "Proprietary deals cannot be financed with debt"
+    ],
+    "correct_index": 1,
+    "explanation": "Proprietary deals — where the PE firm negotiates directly with the seller without a formal competitive process — typically produce better pricing and terms for the buyer. Without competing bids, the seller lacks pricing pressure; the buyer can structure a process on its timeline; and the buyer often gains access to management before pricing is locked. This is why PE firms invest heavily in relationship-based sourcing."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "In a typical M&A transaction, what is the distinction between 'signing' and 'closing'?",
+    "options": [
+      "Signing and closing are the same event",
+      "Signing is when the definitive agreements (SPA) are executed; closing is when the transaction actually completes, which may be days or months later after conditions are satisfied",
+      "Signing is when money changes hands; closing is the legal filing",
+      "Signing occurs before diligence; closing occurs after"
+    ],
+    "correct_index": 1,
+    "explanation": "Signing is the execution of definitive agreements (typically the SPA) — the parties are now contractually bound. Closing is the completion of the transaction: money transfers, shares change hands, and the business is legally transferred. Between signing and closing, conditions must be satisfied (regulatory approvals, financing commitments, sometimes specific operational milestones). The gap can be days (simple deals) to many months (complex or regulated deals)."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm acquires a business at 10x EBITDA. Five years later, the business is sold at 10x EBITDA with no change in multiple. EBITDA is flat throughout the hold period. How could the deal still generate strong equity returns?",
+    "options": [
+      "It cannot — flat EBITDA and flat multiple mean no return",
+      "Debt paydown during the hold period increases the equity's share of enterprise value, generating returns even without operational improvement",
+      "The deal would lose money in this scenario",
+      "Dividend recapitalisations are the only source of return"
+    ],
+    "correct_index": 1,
+    "explanation": "Even without EBITDA growth or multiple expansion, debt paydown increases the equity value at exit. Example: Entry at €100M EV (€40M equity, €60M debt). Exit at €100M EV with €30M debt repaid = €70M equity (1.75x return on €40M). In practice, PE firms rarely rely solely on this lever — it is a backstop for returns even when other drivers disappoint."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "Why do LBO capital structures amplify equity returns compared to all-equity acquisitions?",
+    "options": [
+      "Debt is cheaper than equity, reducing the company's cost of capital",
+      "Leverage concentrates the ownership stake of equity holders, so business value appreciation flows disproportionately to them while debt remains fixed",
+      "Debt holders are entitled to share in equity upside",
+      "Tax regulations automatically increase returns on leveraged deals"
+    ],
+    "correct_index": 1,
+    "explanation": "Leverage amplifies returns through a simple mechanic: debt is a fixed claim that does not share in upside. If the business's enterprise value grows, the debt still owes the same amount while the equity captures the full value increase. A 20% rise in EV can translate to 50%+ equity returns depending on leverage. The same mechanic amplifies losses when the business declines."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm is stress-testing its LBO model. The base case projects 8% annual EBITDA growth; the downside scenario holds EBITDA flat. In the downside case, the highest-risk outcome for equity holders is:",
+    "options": [
+      "The business will generate no profit",
+      "Debt service may consume most or all of the business's free cash flow, increasing the risk of covenant breach and potential equity wipeout if performance deteriorates further",
+      "The business will need additional equity from the PE fund",
+      "Lenders will automatically seize the business"
+    ],
+    "correct_index": 1,
+    "explanation": "Flat EBITDA combined with fixed debt service consumes the margin of safety. If performance deteriorates further, covenants may be breached (giving lenders intervention rights), refinancing becomes uncertain, and in severe cases equity can be wiped out while lenders recover through restructuring. This downside asymmetry — unlimited upside but bounded loss at equity — is why entry leverage and business quality matter so much."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A lender evaluating an LBO financing request focuses heavily on the interest coverage ratio. What does this metric measure, and why does it matter?",
+    "options": [
+      "It measures the company's gross margin; it matters because lenders prefer high-margin businesses",
+      "It measures EBITDA divided by interest expense; it matters because lenders want comfort that cash flow comfortably covers interest obligations with margin for error",
+      "It measures the company's market share; it matters because lenders prefer dominant companies",
+      "It measures the age of the company's debt"
+    ],
+    "correct_index": 1,
+    "explanation": "Interest coverage = EBITDA / Interest Expense. Lenders want comfort that the business generates cash flow comfortably exceeding its interest obligations. Typical minimums are 2.0-2.5x for LBO debt; weaker coverage indicates elevated default risk. Interest coverage is often included as a financial covenant, with breach triggering default and requiring renegotiation."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm's LBO model shows the business will generate €20M of free cash flow annually, sufficient to service €8M of interest and make €6M of mandatory debt amortisation. What happens to the remaining €6M?",
+    "options": [
+      "It must be returned to the PE fund as a dividend",
+      "It can be used for various purposes including voluntary debt prepayment (cash sweep), accumulation on the balance sheet, bolt-on acquisitions, or later distributions to the PE fund",
+      "It is automatically paid to management as a bonus",
+      "It must be paid as additional taxes"
+    ],
+    "correct_index": 1,
+    "explanation": "Excess cash flow above mandatory debt service is discretionary. Loan agreements typically include a 'cash sweep' that redirects a percentage (often 50-75%) to voluntary debt prepayment. Remaining cash may fund bolt-on acquisitions, accumulate on the balance sheet for flexibility, or — if permitted by the credit agreement — be distributed to the PE fund through dividend recapitalisation."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "In an LBO, debt amortisation can be structured as either 'amortising' or 'bullet' repayment. What distinguishes these structures?",
+    "options": [
+      "Amortising debt is repaid in equal instalments over the term; bullet debt is repaid in full at maturity with minimal interim amortisation",
+      "Both structures are identical",
+      "Amortising debt charges higher interest; bullet debt is interest-free",
+      "Amortising debt matures in one year; bullet debt has no maturity"
+    ],
+    "correct_index": 0,
+    "explanation": "Amortising debt requires regular principal repayments over the term (e.g., quarterly payments until full amortisation at maturity). Bullet debt makes minimal or no principal repayments during the term, with full principal due at maturity. LBO Term Loan B (the most common leveraged loan) is typically bullet (nominal 1% per year amortisation, 99% at maturity), allowing maximum cash flow retention during the hold period."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm evaluates an LBO opportunity and identifies €5M in 'run-rate savings' from a planned cost programme. How should this figure typically be treated in the model?",
+    "options": [
+      "Added to day-one EBITDA without adjustment",
+      "Phased in over 12-24 months during the hold, with implementation costs and risk-adjustment for achievement uncertainty",
+      "Excluded entirely from the analysis",
+      "Doubled to reflect upside potential"
+    ],
+    "correct_index": 1,
+    "explanation": "Run-rate savings represent projected future savings from a programme that has not yet been fully implemented. Sophisticated LBO models phase these in over 12-24 months, include one-time implementation costs (severance, consulting fees, IT changes), and often apply a haircut to the target (achieving 70-80% of planned savings) to reflect execution uncertainty. Adding projected savings directly to day-one EBITDA inflates the entry multiple."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "Which of the following business characteristics is MOST important for a business to be a strong LBO candidate?",
+    "options": [
+      "High growth rate exceeding 30% annually",
+      "Predictable, stable free cash flow generation sufficient to service debt",
+      "A founder who will remain for decades",
+      "Operations in multiple geographies"
+    ],
+    "correct_index": 1,
+    "explanation": "The defining LBO candidate feature is predictable, stable free cash flow — because debt service is non-negotiable. Growth, management continuity, and geographic diversification are positive but secondary. A slow-growing business with rock-solid recurring cash flows is a better LBO candidate than a fast-growing business with volatile earnings. This is why subscription businesses, consumer staples, and industrial services have been prime LBO targets for decades."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm pays €200M for a business generating €25M EBITDA. What is the entry multiple, and how does this compare to typical mid-market LBO multiples?",
+    "options": [
+      "8.0x — typical of mid-market transactions in many sectors",
+      "12.5x — typical of small-cap public companies",
+      "4.0x — unusually low, suggesting a distressed situation",
+      "Cannot be calculated from the information given"
+    ],
+    "correct_index": 0,
+    "explanation": "Entry multiple = EV / EBITDA = €200M / €25M = 8.0x. This is within the typical range for mid-market LBOs (6-11x depending on sector, growth, quality, and market conditions). Software and high-growth sectors trade higher; cyclical or commoditised businesses trade lower. The entry multiple sets the target for value creation — typically the PE firm seeks exit at a similar or expanded multiple."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "Between the signing of an SPA and the closing of the transaction, what is typically required to happen?",
+    "options": [
+      "Nothing — closing follows automatically from signing",
+      "Conditions precedent must be satisfied: regulatory approvals (competition, foreign investment), financing commitments confirmed, sometimes employee or customer consents obtained",
+      "The seller must repurchase the business from itself",
+      "All employees must resign"
+    ],
+    "correct_index": 1,
+    "explanation": "Between signing and closing, conditions precedent must be satisfied. Common conditions: antitrust/competition clearance, foreign investment screening approval, sector-specific regulatory approval (financial services, healthcare), third-party consents on critical contracts, and confirmation of debt financing. The gap can be anywhere from 30 days to 12+ months depending on complexity. Deals can fall apart during this period if conditions fail."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm is acquiring a family-owned business where the founder will stay on as CEO. The structure includes €20M of 'rollover equity' where the founder retains a stake in the new company. What is the purpose of rollover equity?",
+    "options": [
+      "To reduce the PE firm's equity investment",
+      "To align the founder's financial interests with post-acquisition value creation, ensuring commitment and continuity",
+      "To avoid paying the founder any cash at closing",
+      "To comply with regulatory requirements"
+    ],
+    "correct_index": 1,
+    "explanation": "Rollover equity — where the seller retains a meaningful equity stake in the new PE-backed entity — aligns continuing management's financial interests with post-acquisition performance. A founder who rolls 20-30% into the new company is materially invested in the success of the value creation plan. This is particularly important when the founder remains as CEO or in another executive role where their ongoing contribution matters."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm's Share Purchase Agreement (SPA) contains detailed 'warranties and representations' from the seller. What purpose do these serve?",
+    "options": [
+      "They guarantee the buyer will achieve specific returns",
+      "They allocate risk between buyer and seller for the business's condition at closing, enabling the buyer to claim damages if a warranty is breached after closing",
+      "They replace the need for due diligence",
+      "They set the purchase price of the deal"
+    ],
+    "correct_index": 1,
+    "explanation": "Warranties and representations are contractual statements by the seller about the business's condition: financial statements are accurate, no undisclosed litigation, no material breach of contracts, tax compliance, employment matters disclosed, and so on. If a warranty proves false after closing, the buyer can claim damages (subject to disclosure and limitations). W&R allocate risk and supplement due diligence — they do not replace it."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A buyer and seller disagree on the target's valuation. The buyer believes the business is worth €80M; the seller believes €100M. What deal structure might bridge this gap?",
+    "options": [
+      "The buyer must simply pay the seller's price",
+      "An earnout provision, where additional consideration (up to €20M) is paid to the seller if the business achieves specified performance milestones post-closing",
+      "The deal cannot proceed without perfect price agreement",
+      "The buyer and seller split ownership 50/50"
+    ],
+    "correct_index": 1,
+    "explanation": "Earnouts bridge valuation gaps by tying a portion of consideration to post-closing performance. If the seller is right about the business's prospects, they earn the full €100M; if the buyer is right, they only pay €80M. Earnouts are common in owner-led deals and growth situations but create complexity (metric definitions, measurement disputes, buyer control questions) that can lead to post-closing conflict."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "At closing of an M&A transaction, a portion of the purchase price is often held in 'escrow' for a period of 12-24 months. What is the purpose?",
+    "options": [
+      "To give the seller time to leave the business gradually",
+      "To provide a pre-funded source of recovery for the buyer if warranty claims or indemnity claims arise post-closing",
+      "To pay legal fees gradually",
+      "To avoid antitrust regulations"
+    ],
+    "correct_index": 1,
+    "explanation": "Escrow (typically 5-15% of purchase price) provides the buyer with a pre-funded source of recovery for warranty breaches, indemnity claims, or working capital adjustments identified after closing. Instead of suing the seller to recover damages, the buyer claims against the escrow. Escrow periods typically run 12-24 months, releasing gradually as claim periods expire."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm's typical hold period for a buyout investment is 5-7 years. What three-phase framework describes how value is created during this period?",
+    "options": [
+      "Borrow → pay dividends → sell",
+      "Buy → transform → sell (acquire the business, execute the value creation plan, exit to realise returns)",
+      "Fund → list on public markets → trade",
+      "Merge → split → liquidate"
+    ],
+    "correct_index": 1,
+    "explanation": "The PE value creation model follows three phases: BUY (identify and acquire the target at an attractive price); TRANSFORM (execute the 100-day plan, drive operational improvement, complete bolt-on acquisitions, optimise capital structure); SELL (exit to a strategic buyer, financial buyer, or through IPO, realising returns for LPs and GP). This buy-improve-sell cycle is fundamental to how PE generates returns."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "The first 100 days after a PE acquisition are considered particularly critical. What typically happens during this period?",
+    "options": [
+      "The PE firm waits to observe the business before making changes",
+      "The PE firm and management execute immediate priorities: KPI tracking, quick wins, organisational assessment, cash management, and setting up the value creation plan for longer-term initiatives",
+      "The business is listed on a public stock exchange",
+      "All existing management is replaced"
+    ],
+    "correct_index": 1,
+    "explanation": "The 100-day plan focuses on actions that can be initiated immediately: establishing monthly KPI reporting, implementing cash management discipline, conducting management assessment, executing quick-win initiatives (pricing, procurement), and setting up the longer-term value creation plan. Speed matters — momentum in the first 100 days shapes the entire hold period's trajectory."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm acquires a business with the intention of building a 'platform' and adding multiple bolt-on acquisitions. Why can bolt-ons generate attractive returns even without operational improvement?",
+    "options": [
+      "Bolt-ons are exempt from taxes",
+      "Bolt-ons are typically acquired at lower multiples than the platform, producing 'multiple arbitrage' when the combined entity is sold at the platform's higher exit multiple",
+      "Bolt-ons never require integration costs",
+      "Bolt-ons are always paid for in equity rather than cash"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiple arbitrage: if the platform is acquired at 10x EBITDA and bolt-ons are acquired at 5-7x, the bolt-on EBITDA is re-valued at the platform's exit multiple (say 10-11x) when the combined entity is sold. This multiple expansion on acquired EBITDA is a reliable source of return even if no operational improvement occurs. Combined with synergies and operational improvement, buy-and-build can produce extraordinary returns."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE fund's 10-year life typically follows a J-curve pattern in reported returns. What does this mean and why does it occur?",
+    "options": [
+      "Returns are constant throughout the fund life",
+      "Returns are initially negative due to fees and slow value realisation, then accelerate sharply in years 4-8 as exits occur and portfolio companies mature",
+      "Returns are highest in the first year",
+      "Returns are unpredictable and random"
+    ],
+    "correct_index": 1,
+    "explanation": "The J-curve: in the first 2-3 years, fees are charged on committed capital while portfolio companies are being acquired and just starting their value creation journey — producing negative reported returns. From years 4-8, portfolio companies mature and exits begin, driving strong positive returns. The shape resembles a 'J' on a graph. Sophisticated LPs understand and plan for the J-curve; unsophisticated evaluators mistake early losses for fund failure."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm typically seeks majority control (51%+) of its portfolio companies rather than minority stakes. Why is control so central to the PE model?",
+    "options": [
+      "Minority stakes are prohibited by regulation",
+      "Control enables the PE firm to implement its value creation plan — replacing management, changing strategy, optimising capital structure, and driving exits — without dependence on other shareholders' consent",
+      "Minority stakes cannot be leveraged",
+      "Control provides higher tax benefits than minority positions"
+    ],
+    "correct_index": 1,
+    "explanation": "Majority control is essential to executing the PE playbook: replacing underperforming management, implementing cost programmes, completing bolt-on acquisitions, optimising capital structure, and deciding on exit timing — all without needing approval from minority shareholders. Minority investments exist in PE (growth equity, structured equity) but operate under different economics because the investor lacks the control needed for traditional value creation."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A large LBO acquisition is subject to competition law review in multiple jurisdictions before it can close. What is the typical concern of competition regulators?",
+    "options": [
+      "The PE fund's internal governance structure",
+      "Whether the combination of buyer and target creates excessive market concentration that could harm consumers through higher prices or reduced choice",
+      "The PE fund's profitability",
+      "The target company's CEO compensation"
+    ],
+    "correct_index": 1,
+    "explanation": "Competition law focuses on whether a transaction creates or strengthens market dominance that could harm competition (and therefore consumers). In PE deals, concerns typically arise from bolt-on acquisitions combining competitors in fragmented markets, or when a PE firm owns competing businesses in the same sector across different funds. Clearance is required above specified thresholds; regulators can require divestitures or block deals entirely."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm uses a 'sources and uses' table to plan an LBO. What does this table show?",
+    "options": [
+      "The company's historical revenue sources",
+      "Where the deal's funding comes from (equity, senior debt, junior debt, rollover equity) and how it is applied (purchase price, refinanced debt, transaction fees, cash to balance sheet)",
+      "The company's operating expenses",
+      "The fund's LP commitments"
+    ],
+    "correct_index": 1,
+    "explanation": "The sources and uses table is the fundamental summary of an LBO's funding structure. Sources list every form of capital: PE sponsor equity, senior debt, junior debt/unitranche, rollover equity, and any cash available. Uses list every application: enterprise value paid for the target, refinancing of existing debt, transaction fees, and initial cash on the balance sheet. Sources must equal uses — they are the two sides of the same equation."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm structures its LBO to include €8M of transaction fees (legal, advisory, due diligence, debt arrangement). How are these typically funded?",
+    "options": [
+      "They are waived by advisers in PE transactions",
+      "They are funded at closing through the same 'sources' (debt and equity) that fund the purchase price, essentially added to the overall deal cost",
+      "They are paid by the seller",
+      "They are deferred and paid from future operating profits"
+    ],
+    "correct_index": 1,
+    "explanation": "Transaction fees (typically 2-4% of enterprise value) are funded at closing through the same mix of debt and equity that funds the purchase price. They increase the total deal size and either the equity check or debt quantum. Debt arrangement fees are often capitalised (added to the loan balance). Legal and advisory fees are typically paid in cash at closing. These fees represent a real cost that must be recovered through exit value."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "An LBO financing package includes a 'revolving credit facility' (RCF) of €25M. What is this facility used for?",
+    "options": [
+      "To fund the initial acquisition of the target",
+      "To provide ongoing working capital funding and operational flexibility during the hold period, allowing the company to draw and repay as cash flow fluctuates",
+      "To refinance the PE fund's investments",
+      "To pay dividends to the PE fund"
+    ],
+    "correct_index": 1,
+    "explanation": "The revolving credit facility (RCF) provides flexible working capital funding during the hold period. Unlike term loans that fund the acquisition itself, the RCF is available to draw and repay as cash flow fluctuates — funding seasonal working capital, bridging timing differences, or supporting small acquisitions. RCF availability provides operational safety margin and is typically undrawn at closing (€25M available but €0 drawn)."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm considers whether to include debt 'covenants' in an LBO financing. What are covenants and how do they affect the deal?",
+    "options": [
+      "Covenants are marketing arrangements between the PE firm and the lender",
+      "Covenants are contractual requirements the borrower must maintain (financial ratios, operational thresholds); breach gives lenders intervention rights, providing lenders early warning of distress",
+      "Covenants are tax agreements",
+      "Covenants have no practical effect"
+    ],
+    "correct_index": 1,
+    "explanation": "Covenants are contractual requirements in debt agreements: financial covenants (maintain leverage below 7.0x, interest coverage above 2.0x), negative covenants (no dividends without permission, no sale of key assets, limits on additional debt), and affirmative covenants (provide regular financial reporting, maintain insurance). Breach does not automatically trigger default — it gives lenders intervention rights and negotiation leverage, enabling early course correction."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm's LBO financing includes 'covenant-lite' debt. What does this term mean?",
+    "options": [
+      "Debt with no repayment obligations",
+      "Debt with minimal maintenance covenants, meaning lenders cannot intervene based on financial ratio deterioration unless a specific triggering event occurs",
+      "Debt at below-market interest rates",
+      "Debt with no interest payments"
+    ],
+    "correct_index": 1,
+    "explanation": "Covenant-lite debt minimises or eliminates maintenance financial covenants (leverage ratios tested periodically). Instead, covenants only apply on specific actions (additional debt, dividends, acquisitions). This gives borrowers more operational flexibility and protects against covenant-driven restructuring during temporary performance weakness. From the lender's perspective, it reduces early intervention rights. Cov-lite structures became dominant in the 2010s driven by competitive lender markets."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm's deal team presents an investment to the IC at a 10x entry multiple. The IC pushes back, asking to see a 'football field' analysis. What does this analysis show?",
+    "options": [
+      "The company's revenue from sports-related sectors",
+      "A visual display of valuation ranges across multiple methodologies (trading comps, deal comps, DCF, LBO) allowing comparison of results and identification of a convergence zone",
+      "The company's organisational chart",
+      "The deal team's hourly rates"
+    ],
+    "correct_index": 1,
+    "explanation": "A football field shows the valuation ranges produced by each method side-by-side: trading multiples at €450-550M, deal multiples at €480-580M, DCF at €440-530M, and LBO ability-to-pay at €500-540M. Overlap between methods identifies a defensible pricing range; gaps suggest methodological issues. The IC uses this visualisation to pressure-test whether the proposed entry price is supported by independent reference points."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm commits to an acquisition subject to 'financing certainty.' What does this mean and why does it matter to the seller?",
+    "options": [
+      "The PE firm guarantees its own profits",
+      "The PE firm has binding debt commitments from lenders that ensure the transaction can close without financing risk, giving the seller confidence the deal will actually complete",
+      "The PE firm agrees to use all-equity funding",
+      "The PE firm insures the transaction"
+    ],
+    "correct_index": 1,
+    "explanation": "Financing certainty means the PE firm has binding debt commitment letters from lenders — not just indicative proposals. This matters to the seller because the deal will not collapse due to debt market volatility between signing and closing. In competitive auctions, financing certainty is a differentiator: bids without committed financing are discounted regardless of headline price. Lenders charge fees for the committed backstop, which PE firms build into the transaction economics."
+  },
+  {
+    "topic_tag": "deal-concepts",
+    "question": "A PE firm acquires a company using a 'bidco' (bidding company) structure — a newly created entity that makes the acquisition. Why is this structure standard in LBOs?",
+    "options": [
+      "It allows the PE firm to avoid regulatory oversight",
+      "It isolates the acquisition from the PE fund's other investments, houses the acquisition debt, and provides a clean legal vehicle for subsequent actions (bolt-ons, refinancing, exit)",
+      "It reduces the taxes on the deal",
+      "It is required by international law"
+    ],
+    "correct_index": 1,
+    "explanation": "BidCo (often stacked with HoldCo and other vehicles) isolates each PE investment in its own legal structure. The BidCo holds the acquisition debt, making the debt specific to that deal and not cross-contaminating other portfolio companies. It provides a clean vehicle for management equity programmes, bolt-on acquisitions, and eventual exit. The acquisition structure also has tax implications that drive jurisdiction and structure decisions."
+  }
+]

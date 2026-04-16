@@ -14,6 +14,27 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
+// Select N random questions per topic_tag, then shuffle the combined set.
+// Produces a 20-question quiz where each topic is equally represented.
+// Works for any number of topics: 5 topics → 4 each, 10 topics → 2 each.
+function selectPerTopic<T extends { topic_tag: string }>(
+  questions: T[],
+  totalTarget = 20,
+): T[] {
+  const groups = new Map<string, T[]>()
+  for (const q of questions) {
+    const g = groups.get(q.topic_tag) ?? []
+    g.push(q)
+    groups.set(q.topic_tag, g)
+  }
+  const perTopic = Math.floor(totalTarget / groups.size)
+  const selected: T[] = []
+  for (const group of groups.values()) {
+    selected.push(...shuffle(group).slice(0, perTopic))
+  }
+  return shuffle(selected)
+}
+
 export default async function QuizPage({
   params,
 }: {
@@ -37,17 +58,19 @@ export default async function QuizPage({
     redirect('/')
   }
 
-  // Check user_progress: level must be unlocked for this user
-  const { data: progressRow } = await supabase
-    .from('user_progress')
-    .select('id')
-    .eq('user_id', user.id)
-    .eq('level_id', level.uuid)
-    .maybeSingle()
+  // Level 1 is always unlocked (matches dashboard logic + lesson page).
+  // For Level 2+, verify the user has a user_progress row.
+  if (level.number > 1) {
+    const { data: progressRow } = await supabase
+      .from('user_progress')
+      .select('id')
+      .eq('user_id', user.id)
+      .eq('level_id', level.uuid)
+      .maybeSingle()
 
-  if (!progressRow) {
-    // Level not yet unlocked — send to lessons to earn access
-    redirect('/lessons')
+    if (!progressRow) {
+      redirect('/dashboard')
+    }
   }
 
   // Fetch quiz questions — explicitly exclude correct_index (T-03-01 mitigation)
@@ -61,15 +84,23 @@ export default async function QuizPage({
     redirect('/lessons')
   }
 
-  const shuffledQuestions = shuffle(questions as QuizQuestionPublic[])
+  const shuffledQuestions = selectPerTopic(questions as QuizQuestionPublic[])
+
+  const { data: gate } = await supabase
+    .from('level_gates')
+    .select('required_quiz_score_pct')
+    .eq('level_id', level.uuid)
+    .single()
+
+  const threshold = gate?.required_quiz_score_pct ?? 70
 
   return (
-    <div className="bg-zinc-950 min-h-screen text-white px-6 py-12 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-semibold text-white mb-2">
+    <div className="bg-background min-h-screen text-foreground px-6 py-12 max-w-3xl mx-auto">
+      <h1 className="text-3xl font-semibold text-foreground mb-2">
         Level {level.number}: {level.name} Quiz
       </h1>
-      <p className="text-zinc-400 mb-10">
-        {shuffledQuestions.length} questions &middot; Pass mark: 70% (14/20)
+      <p className="text-muted-foreground mb-10">
+        {shuffledQuestions.length} questions &middot; Pass mark: {threshold}% ({Math.ceil(shuffledQuestions.length * threshold / 100)}/{shuffledQuestions.length})
       </p>
 
       <QuizForm

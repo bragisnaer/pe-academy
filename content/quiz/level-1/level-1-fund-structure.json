@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "fund-structure",
+    "question": "A $2 billion PE fund closes in January 2023. Two years later, the GP has called approximately $1.2 billion to fund six platform acquisitions. An LP asks when they will receive distributions. What is the most accurate answer based on typical fund dynamics?",
+    "options": [
+      "Distributions begin immediately after each capital call as investments generate cash flow",
+      "Distributions typically begin 3–5 years into the fund life as portfolio companies are exited",
+      "Distributions are paid annually based on portfolio company EBITDA growth",
+      "Distributions only occur at fund termination in year 10"
+    ],
+    "correct_index": 1,
+    "explanation": "PE funds follow a J-curve pattern. Years 1-3 involve capital deployment with minimal distributions. Distributions typically accelerate in years 4-8 as portfolio companies are exited. This J-curve is inherent to PE and is why short-term performance measurement is misleading for the asset class."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A GP raises a $1 billion fund with standard 2-and-20 terms and an 8% hurdle. After 10 years, the fund returns $2.2 billion to investors. Under a standard European (whole-fund) waterfall, approximately how much does the GP receive as carried interest?",
+    "options": [
+      "$200 million — 20% of the gross fund return",
+      "$100 million — 10% of the net profit",
+      "$175 million — 20% of profits above the preferred return",
+      "$440 million — 20% of the total distribution"
+    ],
+    "correct_index": 2,
+    "explanation": "Under a European waterfall: LPs receive capital back ($1.0B) plus 8% preferred return. Profits above the hurdle are then subject to 20% carry. Approximate carry: roughly $175-180M. Carry is calculated on profits above the hurdle, not on gross distributions or the whole fund return."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE firm's GP and LPs have negotiated a clawback provision in the LPA. In which scenario would this provision be triggered?",
+    "options": [
+      "The GP outperforms the hurdle rate and LPs want to reduce the GP's carry percentage",
+      "The fund generates strong early exits but later investments underperform, leaving the GP with excess carry already distributed",
+      "A key senior partner departs the firm during the investment period",
+      "The fund life is extended beyond the original 10-year term"
+    ],
+    "correct_index": 1,
+    "explanation": "Clawback provisions protect LPs when strong early exits cause the GP to receive carry, but subsequent underperformance means the GP was over-distributed relative to the fund's final overall return. The GP must return the excess carry to LPs. Key-person events and fund extensions trigger different provisions."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A pension fund is evaluating a commitment to a new PE fund. The GP proposes a 2% management fee on committed capital during the investment period, dropping to 1.5% on invested capital thereafter. What is the economic significance of this step-down?",
+    "options": [
+      "It is a loophole that allows the GP to extract additional fees after deployment",
+      "It aligns fees with the GP's actual workload — active investing versus portfolio management",
+      "It increases LP costs over time as the fund matures",
+      "It is required by regulators in most jurisdictions"
+    ],
+    "correct_index": 1,
+    "explanation": "The step-down reflects the economic reality that active deal-making during the investment period requires more resources than portfolio management during the harvest period. It also reduces fee drag on LP returns once the fund is fully deployed. The step-down is a market convention, not a regulatory requirement."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "The Limited Partnership Agreement (LPA) is the foundational legal document governing a PE fund. What does it primarily establish?",
+    "options": [
+      "Only the management fee rate",
+      "The full framework of the fund: term, economics (fees and carry), governance rights, investment restrictions, LP-GP relationship, and dispute resolution",
+      "The portfolio companies the fund will acquire",
+      "The identity of the LPs"
+    ],
+    "correct_index": 1,
+    "explanation": "The LPA is a comprehensive document (often 100-200+ pages) establishing every economic and governance term of the fund: fund term, investment period, management fee, carry waterfall, GP commit, key-person provisions, LPAC authority, investment restrictions, excuse rights, and default remedies. LPs and their counsel negotiate heavily on LPA terms before committing."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE fund has received $500M in committed capital. An LP that committed $25M asks why her bank account has not been debited for the full amount. What explains this?",
+    "options": [
+      "The LP has failed to transfer her commitment",
+      "PE fund commitments are 'called' gradually over the investment period as investments are made, not transferred upfront",
+      "The fund is not yet operational",
+      "The LP will receive her capital back annually"
+    ],
+    "correct_index": 1,
+    "explanation": "PE funds do not hold LP capital upfront. LPs sign commitment agreements for a specified amount, and the GP 'calls' portions of that commitment (typically with 10-15 business days' notice) as investments are made over the investment period — usually 4-6 years. This structure is efficient for LPs (capital earns returns elsewhere until needed) but creates the 'dry powder' phenomenon for the GP."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A typical closed-end PE fund has a 'term' of 10 years with possible extensions. What does this term structure mean for LPs?",
+    "options": [
+      "LPs can withdraw capital at any point during the 10 years",
+      "Capital is effectively locked up for the full fund life — LPs cannot request return of capital before exits occur, and the GP has ~10 years to complete the investment cycle and return capital",
+      "The fund pays guaranteed returns for 10 years",
+      "LPs must reinvest returns in the fund for 10 years"
+    ],
+    "correct_index": 1,
+    "explanation": "Closed-end PE funds have defined terms (typically 10 years with 1-2 year extension options). During this period, LP capital cannot be withdrawn — distributions come only from realised investments. The GP has the full term to acquire, improve, and exit portfolio companies, then wind down. This structural illiquidity is fundamental to the PE model and is why LPs require return premiums."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE fund's LPA divides the fund life into an 'investment period' and a 'harvest period.' What distinguishes these phases?",
+    "options": [
+      "The investment period is shorter than the harvest period because deployment is faster than exits",
+      "Investment period (typically first 4-6 years) is when new platform acquisitions are made; harvest period focuses on value creation in existing portfolio and exits, with new investments typically restricted",
+      "Both periods are identical in activity and purpose",
+      "The harvest period comes first in the fund life"
+    ],
+    "correct_index": 1,
+    "explanation": "The investment period (4-6 years) is when the GP deploys capital into new platform investments. After the investment period ends, the fund enters the harvest period: the GP manages the existing portfolio, pursues follow-on investments and bolt-ons, and executes exits. New platform acquisitions are typically not permitted during the harvest period, though follow-ons and bolt-ons to existing investments are allowed."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "An LP evaluating a new fund describes it as 'vintage 2024.' What does vintage year refer to, and why does it matter?",
+    "options": [
+      "The year the fund was conceived by the GP",
+      "The year the fund held its final close and began making investments; it matters because market conditions at vintage affect entry pricing, leverage availability, and ultimately returns",
+      "The LP's birth year",
+      "The date the fund must be fully exited"
+    ],
+    "correct_index": 1,
+    "explanation": "Vintage year marks when the fund began deploying capital. It matters because macro conditions (credit availability, valuation multiples, competition for deals, subsequent economic cycles) at the time of deployment shape fund returns. Vintages deploying into boom periods often underperform; vintages deploying into troughs (2002, 2009) often outperform. LPs use vintage-year benchmarks to compare funds in equivalent market conditions."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A fund is approaching the end of its 10-year term with three portfolio companies unsold. The GP requests a 2-year extension from LPs. What is the typical purpose of such an extension?",
+    "options": [
+      "To extract additional management fees",
+      "To provide time to execute orderly exits rather than selling into weak markets at discounted prices",
+      "To add new platform investments",
+      "To change the fund's strategy"
+    ],
+    "correct_index": 1,
+    "explanation": "Extensions (typically 1-2 years, sometimes 3) provide time to execute orderly exits rather than fire-selling assets into unfavourable markets. Extensions typically require LPAC or LP majority approval. Management fees during extensions are typically reduced or eliminated to avoid creating perverse incentives for the GP to prolong the fund. Extensions are increasingly common due to longer hold periods and weaker exit markets."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "The '2-and-20' fee structure is the traditional PE fund economic model. What do the '2' and '20' refer to?",
+    "options": [
+      "2% of invested capital as fees, 20% of the fund's deals",
+      "2% annual management fee on committed capital, 20% carried interest on profits above the hurdle",
+      "2 partners per deal, 20% staffing overhead",
+      "2 years of lock-up, 20% early redemption penalty"
+    ],
+    "correct_index": 1,
+    "explanation": "2-and-20 refers to the two components of GP compensation: 2% annual management fee (on committed capital during the investment period, often dropping to ~1.5% on invested capital in the harvest period) and 20% carried interest on profits above the preferred return hurdle. Top-tier firms sometimes charge higher (2.5% or 30% carry), while newer or emerging managers may offer discounts."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE fund has $1.5B in committed capital but has only invested $900M in portfolio companies. During the investment period, what is the management fee paid by LPs?",
+    "options": [
+      "2% of $900M = $18M annually",
+      "2% of $1.5B = $30M annually (on committed capital)",
+      "2% of $600M unused capital = $12M annually",
+      "Fees are suspended until the fund is fully invested"
+    ],
+    "correct_index": 1,
+    "explanation": "During the investment period, management fees are typically charged on committed capital ($1.5B), not invested capital ($900M). This generates $30M annually regardless of deployment pace. After the investment period, the fee base typically drops to invested capital and the rate steps down (e.g., from 2% to 1.5%), reducing both the fee basis and rate."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE portfolio company pays the GP's sponsor a 'monitoring fee' of $2M annually for services during the hold period. How is this typically treated under modern LPA terms?",
+    "options": [
+      "It is an additional fee that increases total GP compensation beyond the management fee",
+      "It typically offsets the management fee to LPs (100% offset is now standard), so LPs effectively keep the economic benefit",
+      "It is paid directly to LPs",
+      "It is not permitted under any LPA"
+    ],
+    "correct_index": 1,
+    "explanation": "Monitoring fees, transaction fees, and other fees received by the GP from portfolio companies historically flowed straight to the GP. Modern LPA standards require 100% offset against the management fee, meaning LPs effectively capture these fees. This structural change, led by sophisticated LPs over the past 15 years, eliminates a source of fee leakage that existed in earlier PE vintages."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A GP pays $3M in legal fees, placement agent fees, and regulatory setup costs when establishing a new $2B fund. How are these 'organisational expenses' typically treated?",
+    "options": [
+      "The GP pays them entirely from its own resources",
+      "They are typically capped (often at $1-2M) and reimbursed to the GP from fund capital, with any excess paid by the GP personally",
+      "LPs pay them directly separate from their commitments",
+      "They are amortised across portfolio company budgets"
+    ],
+    "correct_index": 1,
+    "explanation": "Organisational expenses (legal, placement, regulatory, marketing) are typically capped in the LPA (often $1-2M for mid-market funds; higher for mega-funds). Up to the cap, the fund reimburses the GP; any excess is paid by the GP personally. LPs monitor these caps carefully because uncapped organisational expenses can be a source of fee creep. Placement agent fees beyond the cap are often specifically excluded."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "What is the fundamental purpose of carried interest in PE fund economics?",
+    "options": [
+      "To guarantee the GP a minimum return",
+      "To align GP compensation with fund performance — the GP only earns meaningful compensation if LPs earn strong returns",
+      "To cover fund operational expenses",
+      "To compensate LPs for their time"
+    ],
+    "correct_index": 1,
+    "explanation": "Carried interest is the economic mechanism that aligns GP and LP interests. Management fees provide baseline income, but carry (typically 20% of profits above hurdle) can dwarf management fees in successful funds. This back-loaded compensation structure incentivises the GP to maximise long-term fund returns rather than asset accumulation. Carry only pays after LPs receive their capital back plus the preferred return."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE fund has an 8% preferred return (hurdle rate). What does this mean for the GP's ability to earn carry?",
+    "options": [
+      "The GP earns carry only on returns above 8%",
+      "LPs must receive their invested capital back plus an 8% annualised return before the GP earns any carried interest (subject to catch-up if applicable)",
+      "The GP guarantees LPs an 8% return",
+      "LPs receive only 8% of fund returns"
+    ],
+    "correct_index": 1,
+    "explanation": "The preferred return (hurdle) is the minimum return LPs must receive before GP carry begins. Typical 8% preferred: LPs receive 100% of distributions until they have capital back plus 8% annualised return; then (if catch-up applies) GP receives 100% of subsequent distributions until catch-up is satisfied; then GP receives 20% of remaining profits. The hurdle protects LPs from paying carry on mediocre performance."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "After LPs receive their preferred return, many PE funds include a 'catch-up' provision. How does this typically work?",
+    "options": [
+      "The GP receives 100% of distributions until it has caught up to a specified share of profits (often 20%), then 20-80 carry split resumes",
+      "LPs receive additional distributions to catch up to the GP",
+      "The fund extends by 1 year to catch up on investments",
+      "The GP personally invests more capital"
+    ],
+    "correct_index": 0,
+    "explanation": "A 100% catch-up (standard in many funds) means: after LPs receive preferred return, the GP receives 100% of subsequent distributions until it has caught up to 20% of total profits distributed. Then future distributions follow the 80-20 split. This makes the overall waterfall arrive at a 20% carry economically — the GP earns 20% of all profits above hurdle, just with a compressed payment pattern. Some funds use 50% or 80% catch-up, which lowers effective GP economics."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE fund uses an 'American' waterfall rather than a 'European' waterfall. What is the key difference for the timing of GP carry distributions?",
+    "options": [
+      "There is no practical difference between the two",
+      "American (deal-by-deal) waterfall calculates carry on each exit; European (whole-fund) waterfall calculates carry only after total capital is returned plus preferred return",
+      "American waterfalls charge higher fees",
+      "European waterfalls only apply to European LPs"
+    ],
+    "correct_index": 1,
+    "explanation": "American waterfall (deal-by-deal): GP earns carry on each successful exit, as long as that deal cleared the hurdle. European waterfall (whole-fund): GP earns no carry until total fund capital plus preferred return has been distributed to LPs. European is more LP-friendly (GP bears risk that underperforming later deals erode carry from strong early deals); American is GP-friendlier (carry flows earlier). Clawback provisions are especially important in American structures."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE fund's LPA specifies that senior partners receive 60% of carry, mid-level principals 25%, and vice presidents 10%, with 5% allocated to an operating partner pool. What does this allocation reflect?",
+    "options": [
+      "A fixed legal requirement",
+      "The internal economic hierarchy of the GP firm, reflecting seniority, track record, and contribution; specific allocations are highly variable and often a source of internal tension",
+      "The LPs' preferred distribution",
+      "An industry-standard allocation that never varies"
+    ],
+    "correct_index": 1,
+    "explanation": "Carry allocation among partners is a private economic matter within the GP firm, not disclosed to LPs. Typical patterns: founder/senior partners receive 40-60%, mid-level partners 20-30%, junior professionals 5-10%, and operating/functional professionals a dedicated pool. Allocation shifts across vintages as new partners earn larger shares. Internal disputes over carry allocation are a major source of partner departures and have destroyed multiple PE firms."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A $3B PE fund requires the GP to invest 2% of committed capital personally — the GP commit. What amount must the GP contribute, and why is this structurally important?",
+    "options": [
+      "$30M; it ensures the GP has meaningful personal capital at risk alongside LPs",
+      "$60M; it demonstrates GP confidence and aligns incentives with LPs through shared risk",
+      "$6M; it covers fund operational costs",
+      "No GP commit is typically required"
+    ],
+    "correct_index": 1,
+    "explanation": "At 2% of $3B, the GP commits $60M personally. This commitment (typically 1-5% of fund size, increasingly pushed higher by LPs) ensures the GP has meaningful personal capital at risk on every deal. When deals lose money, the GP loses its own capital — creating structural alignment that management fees alone cannot achieve. Top-tier firms increasingly commit 3-5%+ to demonstrate confidence in competitive fundraising."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE fund issues a 'capital call' to its LPs. What is this, and how quickly must LPs respond?",
+    "options": [
+      "A demand for LPs to increase their total commitments",
+      "A formal notice requesting LPs to transfer a portion of their committed capital (typically for a specific investment), due within 10-15 business days",
+      "A quarterly performance update",
+      "A vote on fund decisions"
+    ],
+    "correct_index": 1,
+    "explanation": "Capital calls are formal drawdown notices from the GP to LPs requesting transfer of a specified amount of committed capital, typically due within 10-15 business days. Calls fund specific investments, management fees, or expenses. LPs that fail to fund (LP default) face severe consequences: forfeiture of existing investment, interest charges, and potential exclusion from future funds. Planned calls are often communicated in advance to help LPs manage liquidity."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "An industry commentator notes that global PE 'dry powder' is at $3.7 trillion. What does dry powder refer to?",
+    "options": [
+      "Cash held on portfolio company balance sheets",
+      "Committed LP capital that has not yet been called and deployed into investments",
+      "Reserves held by the GP firm itself",
+      "The total value of portfolio companies"
+    ],
+    "correct_index": 1,
+    "explanation": "Dry powder is the industry term for committed-but-undeployed LP capital. A fund with $2B committed and $700M deployed has $1.3B of dry powder available for investment. High industry-wide dry powder creates competitive pressure for deployment (chasing limited attractive deals, driving multiples up) while signalling LP confidence in PE as an asset class. Dry powder levels correlate with entry multiples."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE fund reserves 20-30% of committed capital for 'follow-on investments' rather than deploying it into new platform acquisitions. Why?",
+    "options": [
+      "To reduce the GP's management fee base",
+      "To fund bolt-on acquisitions, additional equity injections, or opportunistic investments in existing portfolio companies during the hold period",
+      "To return capital to LPs early",
+      "To pay operational expenses"
+    ],
+    "correct_index": 1,
+    "explanation": "Reserve capital (20-30% of fund size) is held back to fund follow-on needs: bolt-on acquisitions for platform companies, additional equity for growth or distressed situations, equity cure payments to resolve covenant breaches, or opportunistic add-ons. A fund that deploys 100% into platform deals has no flexibility for follow-ons, which forces either reliance on co-investment or missed opportunities in the existing portfolio."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A fund's LPA includes 'recycling provisions.' What do these allow the GP to do?",
+    "options": [
+      "Resell the same portfolio company multiple times",
+      "Redeploy capital returned from short-hold exits (or fees received) back into new investments, effectively allowing greater total deployment than committed capital",
+      "Replace LPs that default on capital calls",
+      "Convert carry into management fees"
+    ],
+    "correct_index": 1,
+    "explanation": "Recycling provisions allow the GP to reinvest capital returned from early exits (typically within the first 2-3 years) or from transaction fees. A $1B fund with recycling might effectively deploy $1.1-1.2B over its life. Recycling benefits the fund by extending deployment capacity without additional LP commitments. LPs typically cap recycling (e.g., maximum 20-25% above committed capital) and restrict it to early exits."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A GP uses a 'subscription line' or 'capital call facility' — a revolving credit line secured by LP commitments — to fund initial investments. What is the effect on reported fund returns?",
+    "options": [
+      "No effect on returns",
+      "It delays capital calls from LPs, boosting reported IRR by shortening the period LP capital is deployed, though MOIC is unaffected",
+      "It reduces total distributions to LPs",
+      "It is prohibited by most LPAs"
+    ],
+    "correct_index": 1,
+    "explanation": "Subscription lines allow GPs to fund investments with short-term borrowing rather than immediate LP capital calls. This delays when LP capital clock starts running, mathematically inflating IRR (the return period shrinks). MOIC is unaffected. LPs are increasingly scrutinising this practice; some require reporting of 'pre-sub-line' IRR. Subscription lines are useful for cash management but can be misleading when used for IRR enhancement."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE fund exits a portfolio company for €200M in cash. How are these proceeds typically distributed to LPs?",
+    "options": [
+      "Immediately in full to LPs",
+      "Distributed according to the fund's waterfall (return of capital, preferred return, catch-up, carry split) typically within 30-60 days of closing",
+      "Held in the fund until term end",
+      "Reinvested in new deals automatically"
+    ],
+    "correct_index": 1,
+    "explanation": "Exit proceeds flow through the fund's waterfall in sequence: (1) return of capital invested in that deal (or the fund, under European waterfall); (2) preferred return to LPs; (3) GP catch-up (if applicable); (4) 80-20 split of remaining profits. Cash distributions to LPs typically occur within 30-60 days of exit closing, often as 'distribution notices' specifying source deal, amount, and classification (capital, preferred return, profit)."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A fund's LPA requires LPAC approval for 'conflict transactions.' Which of the following would typically require LPAC consent?",
+    "options": [
+      "Routine bolt-on acquisitions",
+      "Transactions between the fund and another vehicle managed by the same GP (cross-fund investments, affiliated party transactions), valuation methodology changes, and certain GP-favourable decisions",
+      "Any investment above $100M",
+      "All investment decisions"
+    ],
+    "correct_index": 1,
+    "explanation": "LPAC approval is typically required for transactions with inherent conflicts: cross-fund investments (Fund III buying from Fund II), affiliated party transactions (GP's captive credit fund lending to a buyout portfolio company), valuation methodology changes, fund life extensions, and certain GP indemnification matters. LPAC approval does not cover routine investment decisions — those remain GP discretion."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE fund's LPA includes 'key-person provisions.' What do these typically do?",
+    "options": [
+      "Grant the key persons veto rights over LP decisions",
+      "Suspend the investment period or trigger LP rights if specified senior partners (the 'key persons') cease to be actively involved in the fund",
+      "Require key persons to invest personal capital",
+      "Mandate succession planning"
+    ],
+    "correct_index": 1,
+    "explanation": "Key-person provisions specify senior individuals essential to the fund's strategy. If a specified number of key persons cease to be actively devoted to the fund (death, disability, departure, reduced time commitment), the investment period is automatically suspended until LPs decide how to proceed (resume with new key persons, terminate early, or restructure). This protects LPs from paying fees and deploying capital when the team they backed is no longer in place."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A fund LPA includes a 'no-fault divorce' provision. What rights does this provide LPs?",
+    "options": [
+      "The right to sue the GP for any reason",
+      "The right (typically requiring a supermajority of LP votes, e.g., 75%) to terminate the fund or remove the GP without proving cause",
+      "The right to withdraw capital at any time",
+      "The right to force the GP to divorce a partner"
+    ],
+    "correct_index": 1,
+    "explanation": "No-fault divorce provisions allow LPs — typically by a high threshold like 75% supermajority — to terminate the investment period or remove the GP without proving wrongdoing. This is a significant LP protection but rarely exercised because the vote threshold is high. For-cause termination (proven misconduct, conviction, or specified breaches) has lower thresholds but requires evidence. These provisions are standard in modern LPAs."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "When a PE firm raises its third fund, it often raises significantly more capital than its first or second funds. Why does fund size typically grow across vintages?",
+    "options": [
+      "Regulatory requirements force size increases",
+      "Successful track record, expanded LP relationships, and ability to execute larger deals enable larger subsequent fundraises",
+      "Fund sizes are fixed by law",
+      "Fund sizes decrease with experience"
+    ],
+    "correct_index": 1,
+    "explanation": "PE fund sizes typically grow across vintages for several reasons: successful track record attracts more LPs and larger commitments; existing LPs increase allocations; GP builds capacity to deploy more capital; firm may target larger deals as it grows. However, size growth is not automatic — poor prior performance can prevent growth or force downsize. Some LPs specifically resist excessive fund size growth (concerns about strategy drift or reduced attention per deal)."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE firm simultaneously raises Fund IV (new capital) while still managing Fund III (existing investments). What structural concern does this create and how is it typically managed?",
+    "options": [
+      "No concerns — this is standard practice with no implications",
+      "Conflict over new investment allocation between funds; typically managed through LPA restrictions (Fund III cannot invest once Fund IV is operational, with specified exceptions for follow-ons)",
+      "It is legally prohibited",
+      "Fund IV must return all capital to Fund III LPs first"
+    ],
+    "correct_index": 1,
+    "explanation": "Overlapping fund periods create allocation conflicts: which fund gets a new deal? LPAs typically address this with 'successor fund' provisions. Fund III's investment period ends when Fund IV hits a specified funding threshold (often 75% or final close). After that, new platform investments go to Fund IV; Fund III can only pursue follow-ons to existing deals. Transition rules and allocation policies are heavily negotiated and LPAC-monitored."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A US-based PE firm raises a fund with both 'onshore' (US investors) and 'offshore' (non-US investors) parallel vehicles. What is the purpose of this structure?",
+    "options": [
+      "To confuse LPs",
+      "To address different tax and regulatory needs of US versus non-US investors while investing side-by-side in the same deals",
+      "To deploy capital in different geographies",
+      "To charge different fees"
+    ],
+    "correct_index": 1,
+    "explanation": "Parallel fund structures accommodate different tax and regulatory frameworks: US investors typically invest through a Delaware LP, non-US investors through a Cayman Islands or Luxembourg vehicle, tax-exempt investors through a blocker corporation. All parallel vehicles invest side-by-side in the same deals, pro-rata. This structure is standard for funds raising from international LPs and is invisible to the underlying investments."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A fund structures a 'feeder' vehicle for high-net-worth individuals, aggregating many smaller commitments into a single position in the main fund. What purpose does this serve?",
+    "options": [
+      "To charge HNW investors higher fees",
+      "To allow smaller HNW commitments (e.g., €250K-€5M each) to access institutional fund minimums (€5M+), while the GP manages a single LP relationship rather than hundreds",
+      "To exclude HNW investors from the fund",
+      "To avoid regulatory requirements"
+    ],
+    "correct_index": 1,
+    "explanation": "Feeder vehicles pool smaller HNW commitments (aggregated by private banks, multi-family offices, or the GP's own feeder) into a single LP position in the main fund. Advantages: HNW investors access the fund below its standard minimum; the GP manages one LP relationship rather than hundreds; operational simplicity. Feeders typically charge additional fees on top of the underlying fund, which HNW investors pay for access."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "Most traditional PE funds are 'closed-end' structures. What distinguishes these from 'open-ended' (evergreen) fund structures?",
+    "options": [
+      "Open-ended funds are much larger",
+      "Closed-end: defined term (10 years), committed capital, no new subscriptions after final close, illiquid. Open-ended: indefinite life, rolling subscriptions and redemptions (subject to caps)",
+      "No difference — these terms are interchangeable",
+      "Closed-end funds invest only in closed companies"
+    ],
+    "correct_index": 1,
+    "explanation": "Closed-end funds have defined terms, committed capital structures, one-time fundraising, and no redemptions — the dominant PE structure. Open-ended (evergreen) funds have indefinite life, rolling subscriptions, periodic redemptions (subject to liquidity caps), and continuous NAV calculations. Evergreens are increasingly common in democratisation products (BDCs, interval funds) and offer LPs optional liquidity at the cost of some return optimisation."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A first-time fund manager is raising $300M, significantly smaller than established firms' funds. What challenges do first-time managers typically face?",
+    "options": [
+      "Regulatory exemptions that prevent fundraising",
+      "Limited track record to demonstrate skill, difficulty accessing institutional LPs that avoid first-time funds, and need to offer more LP-friendly terms to build a base",
+      "Excessive demand from LPs",
+      "Minimum fund sizes set by regulators"
+    ],
+    "correct_index": 1,
+    "explanation": "First-time managers face significant challenges: no fund-level track record (though partners may have attributable deal history), limited institutional LP access (many institutions avoid first-time funds categorically), longer fundraising timelines (often 18-24 months), and pressure to offer concessions (lower fees, better reporting, larger GP commit). First-time funds typically depend heavily on HNW, family office, and fund-of-funds LPs. Strong first funds position GPs for mainstream institutional access in Fund II-III."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "An LP evaluating a PE fund asks about the 'target return.' What does a typical mid-market buyout fund target?",
+    "options": [
+      "5-10% net IRR, similar to public equity",
+      "20-25% gross IRR, translating to approximately 15-18% net IRR after fees and carry",
+      "50%+ net IRR",
+      "Below inflation"
+    ],
+    "correct_index": 1,
+    "explanation": "Mid-market buyout funds typically target 20-25% gross IRR at the deal level, translating to 15-18% net IRR to LPs after management fees and carry. MOIC targets are typically 2.0-2.5x gross per deal. These returns reflect the illiquidity premium over public markets. Growth equity funds may target slightly lower returns; venture capital aims higher (30%+) to compensate for much higher loss rates. Actual returns vary enormously by vintage and manager."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A $2B fund with a 5-year investment period would typically deploy capital at what approximate pace?",
+    "options": [
+      "All $2B in the first 6 months",
+      "Roughly $300-500M per year on 2-4 platform investments, spread across the investment period to manage vintage year risk and maintain underwriting discipline",
+      "$100M per year, completing deployment in year 20",
+      "Deployment pace is random"
+    ],
+    "correct_index": 1,
+    "explanation": "A disciplined $2B fund deploys roughly $300-500M annually over the 5-year investment period, completing 8-15 platform investments total. This pace allows diversification across vintage conditions, maintains underwriting discipline, and preserves capacity for follow-ons. Faster deployment ('deployment pressure') is a warning sign — it often correlates with overpaying, reduced diligence depth, or selecting weaker opportunities to hit deployment targets."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE fund's performance can be measured using 'gross' returns (at the deal level) or 'net' returns (to LPs after fees and carry). Why does this distinction matter to LP evaluation?",
+    "options": [
+      "Gross and net returns are always identical",
+      "Gross returns measure investment selection and operational value creation; net returns reflect what LPs actually earn after fee drag — typically 3-7 percentage points lower",
+      "Only gross returns matter",
+      "Net returns measure fund size"
+    ],
+    "correct_index": 1,
+    "explanation": "Gross returns measure pure investment performance (what the deals earned before fund economics). Net returns measure what LPs actually received after management fees and carry. The gap between gross and net — the 'fee drag' — is typically 3-7 percentage points for well-performing funds. LPs care about net returns (their actual economics); GPs tend to emphasise gross returns (their operational achievement). Sophisticated LPs analyse both."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "An LP wants to redeem her commitment in a closed-end PE fund. What options does she have?",
+    "options": [
+      "Submit a redemption request to the GP for immediate payment",
+      "Sell her LP interest on the secondary market to another investor at a negotiated price (often at a discount to NAV), subject to GP consent and transfer restrictions",
+      "Withdraw her capital at any time",
+      "LPs have no ability to exit before fund term"
+    ],
+    "correct_index": 1,
+    "explanation": "LPs cannot demand redemption from a closed-end PE fund. The only liquidity option is the secondary market: selling the LP interest to another institutional investor (typically a secondary fund like Ardian, Lexington, or Partners Group Secondaries). Transactions are at negotiated prices (historically at NAV discounts, though recent premiums have occurred for top funds) and require GP consent plus compliance with LPA transfer restrictions. Secondaries are now a ~$100B+ annual market."
+  },
+  {
+    "topic_tag": "fund-structure",
+    "question": "A PE fund distributes €150M to LPs from a recent portfolio company exit. The accompanying notice classifies €100M as 'return of capital' and €50M as 'profit.' Why does this classification matter?",
+    "options": [
+      "It has no practical significance",
+      "The classification determines waterfall treatment (capital returned fills the LP return-of-capital bucket; profit may be subject to preferred return, catch-up, and carry) and affects tax treatment in the LP's hands",
+      "It determines whether the distribution is cash or in-kind",
+      "It specifies which LP receives the distribution"
+    ],
+    "correct_index": 1,
+    "explanation": "Distribution classification is economically significant. Return of capital reduces the LP's unreturned capital (progress toward hurdle calculation); profit is subject to the fund's waterfall (preferred return, catch-up, carry split). Tax treatment also varies: return of capital is not immediately taxable in most jurisdictions; profit distributions are typically subject to capital gains tax. LPs track distribution components carefully in their portfolio accounting."
+  }
+]

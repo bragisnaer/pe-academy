@@ -1,0 +1,482 @@
+[
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target generates €50M of EBITDA with a 25% EBITDA margin. Capex is €10M, working capital consumes €3M, and cash taxes are €7M. What is the company's FCF conversion rate?",
+    "options": [
+      "100% — by definition, EBITDA converts fully to free cash flow",
+      "60% — FCF of €30M divided by EBITDA of €50M",
+      "75% — because capex should be excluded from the conversion calculation",
+      "Cannot be calculated without the interest expense"
+    ],
+    "correct_index": 1,
+    "explanation": "FCF = EBITDA – Cash Taxes – Working Capital Change – Capex = €50M – €7M – €3M – €10M = €30M. FCF conversion = €30M / €50M = 60%. A conversion rate below 65% is a yellow flag for LBO suitability because the business generates less usable cash than its EBITDA implies."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A seller presents adjusted EBITDA of €28M, which includes a €3M add-back for 'run-rate savings from a cost reduction programme completed in Q3 last year.' How should an experienced buyer respond to this add-back?",
+    "options": [
+      "Accept it in full if the programme is documented and the savings appear sustained",
+      "Reject it entirely because run-rate adjustments are never legitimate",
+      "Accept it in full regardless of documentation — sellers would not fabricate such claims",
+      "Reduce the EBITDA by €3M because run-rate adjustments inflate the figure artificially"
+    ],
+    "correct_index": 0,
+    "explanation": "Run-rate adjustments are legitimate when a genuine, completed change produces measurable, recurring savings — and the buyer can verify this through documentation and observation of post-implementation performance. They should be rejected when the programme is still in progress, when savings cannot be isolated from other cost movements, or when the assumptions are aspirational rather than achieved."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A software company reports €40M of adjusted EBITDA after adding back €5M of stock-based compensation (SBC). A mature peer in the same sector includes SBC as an operating expense. When comparing EV/EBITDA multiples between these companies, what adjustment should a PE analyst make?",
+    "options": [
+      "No adjustment — SBC is universally treated as a non-cash add-back",
+      "Recalculate both companies' EBITDA consistently, either both including or both excluding SBC",
+      "Use the peer's lower EBITDA because it is more conservative",
+      "Average the two EBITDA figures to arrive at a blended metric"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiples comparisons require consistent EBITDA definitions. If one company adds back SBC and another does not, the multiples are not directly comparable. The analyst must recalculate one figure to match the other's convention. The broader debate about whether SBC should be treated as a real economic cost is separate — what matters for comparison is consistency."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "Two businesses both generate €20M EBITDA. Business A has 85% recurring subscription revenue with 8% annual growth. Business B has project-based revenue with 15% annual growth but high volatility. Why might a PE buyer pay a higher EBITDA multiple for Business A?",
+    "options": [
+      "Business A has higher margins than Business B",
+      "Business A's stable, predictable EBITDA supports more debt and generates higher-quality earnings",
+      "Business A is in a more attractive industry",
+      "Business B's higher growth rate is less valuable than Business A's stability"
+    ],
+    "correct_index": 1,
+    "explanation": "EBITDA quality — not just EBITDA quantity — drives valuation multiples. Recurring, predictable EBITDA supports higher leverage (lenders accept more debt against stable cash flows), reduces downside risk, and commands a premium multiple. Business B's higher growth is attractive but offset by earnings volatility that makes it a weaker LBO candidate."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "What does EBITDA stand for, and what is it conceptually measuring?",
+    "options": [
+      "Earnings Before Interest Taxes Depreciation and Amortisation — a proxy for operating cash generation before financing, tax, and non-cash accounting charges",
+      "Earnings Before Investment, Treasury, Distribution, and Acquisition",
+      "Equity Before Interest Taxes Depreciation and Amortisation — an equity-specific measure",
+      "European Based Income Tax Deduction Amount"
+    ],
+    "correct_index": 0,
+    "explanation": "EBITDA = Earnings Before Interest, Taxes, Depreciation, and Amortisation. By removing interest (financing), taxes (jurisdiction), depreciation and amortisation (non-cash accounting charges), EBITDA isolates a company's underlying operating performance. It serves as a cash-flow proxy because D&A are non-cash, and as a comparability metric because it strips out items that vary due to capital structure and tax regime rather than operational merit."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A company reports EBIT of €22M and D&A of €11M. What is its EBITDA?",
+    "options": [
+      "€11M",
+      "€22M",
+      "€33M",
+      "Cannot be calculated from these two figures"
+    ],
+    "correct_index": 2,
+    "explanation": "EBITDA = EBIT + Depreciation + Amortisation = €22M + €11M = €33M. The bridge from EBIT to EBITDA simply adds back D&A, since EBIT is after those non-cash charges while EBITDA is before. This is the standard calculation from the income statement, particularly useful when EBITDA isn't reported directly — which is common for private mid-market companies."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target reports €40M revenue and €8M EBITDA. A PE analyst compares this to industry peers averaging 25% EBITDA margins. What does this comparison reveal?",
+    "options": [
+      "The target's margin of 20% is slightly below industry average, potentially indicating opportunity for margin expansion through cost programmes, pricing improvements, or operational efficiency",
+      "The target's margin is above industry average",
+      "Margin comparisons are meaningless across companies",
+      "The target is unprofitable"
+    ],
+    "correct_index": 0,
+    "explanation": "Margin = €8M / €40M = 20%. Against a 25% peer benchmark, the target is underperforming by 5 percentage points — potentially representing €2M of additional EBITDA if brought to peer level. This gap is a common source of PE value creation thesis: identify operational inefficiencies and implement improvement programmes. However, the gap might reflect legitimate structural differences (sector mix, scale, geography) that cannot be closed."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A PE investor is evaluating 'reported EBITDA' versus 'adjusted EBITDA.' What is the primary purpose of adjustments?",
+    "options": [
+      "To hide poor performance from lenders",
+      "To normalise EBITDA by removing one-time, non-recurring, or non-operational items to reflect the business's underlying recurring earning power",
+      "To increase EBITDA at every opportunity for valuation purposes",
+      "Adjustments are not allowed in PE analysis"
+    ],
+    "correct_index": 1,
+    "explanation": "Adjusted EBITDA seeks to answer: 'What is the business's sustainable, recurring earning power in a normal operating year?' Legitimate adjustments remove non-recurring costs (one-time litigation, restructuring), owner-specific expenses (above-market compensation), and items unrelated to operations (asset sale gains). But aggressive sellers overreach — treating every awkward cost as 'exceptional.' The QofE process validates which adjustments are defensible."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target company's EBITDA add-backs include €1.2M for 'owner-founder's spouse salary.' How would a PE buyer typically treat this?",
+    "options": [
+      "Reject entirely because personal expenses cannot be adjusted",
+      "Accept if the founder's spouse is not actively working in the business and will cease being paid post-acquisition; partially accept if the role continues but is overcompensated relative to market",
+      "Accept the full amount automatically",
+      "Multiply by two to account for the founder's personal tax benefit"
+    ],
+    "correct_index": 1,
+    "explanation": "Owner/related party compensation that exceeds market rates or compensates non-working family members is a legitimate EBITDA adjustment — but only to the extent it will genuinely not continue post-acquisition. If the spouse is a working CFO receiving market compensation, no adjustment is warranted. If the spouse is paid but not working, the full amount can be adjusted. If overpaid for genuine work, only the excess is adjustable. Each adjustment requires verification, not automatic acceptance."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target presents an adjusted EBITDA of €35M with €7M of adjustments (20% uplift from reported EBITDA). A PE buyer's diligence identifies only €3M of the €7M adjustments as legitimate. What is the 'true' EBITDA for valuation purposes?",
+    "options": [
+      "€35M — the seller's figure",
+      "€31M — reported €28M plus €3M of accepted adjustments",
+      "€28M — the reported figure only",
+      "€42M — adding additional buyer-side adjustments"
+    ],
+    "correct_index": 1,
+    "explanation": "The valuation EBITDA is: Reported (€28M) + Accepted adjustments (€3M) = €31M. The seller's €35M figure is aspirational and includes €4M of disputed adjustments. This €4M gap matters enormously at a 10x multiple: it's €40M of enterprise value. The negotiation often focuses on which specific adjustments are accepted, with the parties agreeing on a figure between the buyer and seller positions."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target company categorises €4M of 'restructuring costs' in its adjusted EBITDA each year for the past three consecutive years. How should this pattern be interpreted?",
+    "options": [
+      "The €4M is legitimately one-time each year and should be adjusted",
+      "Recurring 'restructuring costs' each year indicate these are part of ongoing business operations, not truly non-recurring items — the adjustment should be rejected",
+      "Increase the adjustment to €5M to reflect inflation",
+      "Restructuring costs are always adjustable"
+    ],
+    "correct_index": 1,
+    "explanation": "The test for a true one-time adjustment is recurrence. An item that appears year after year — even under different labels — is not one-time; it's part of the business's normal operating rhythm. Companies may continually restructure, face 'exceptional' legal costs, or have 'non-recurring' consulting fees every year. These all fail the recurrence test. Sophisticated QofE analysis tracks line items across 3-5 years to identify patterns."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A 'quality of earnings' (QofE) report is commissioned during PE diligence. What does it primarily assess?",
+    "options": [
+      "Whether the company has any revenue at all",
+      "The sustainability, recurring nature, and accuracy of the target's reported earnings — including validating adjustments, analysing working capital normalisation, and identifying items that may distort reported EBITDA",
+      "The market share of the company",
+      "The salary of the CEO"
+    ],
+    "correct_index": 1,
+    "explanation": "QofE reports (typically from Big Four accountants or specialist firms like Alvarez & Marsal, FTI) assess earnings sustainability and accuracy. Key focus areas: normalisation adjustments, working capital benchmarks, segment-level EBITDA trends, revenue recognition practices, expense classification, and identification of below-the-line items that may have been inappropriately excluded from operating results. QofE is a critical input to the buyer's final EBITDA view for valuation and debt sizing."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "Which of the following is MOST commonly a legitimate EBITDA adjustment in mid-market buyout diligence?",
+    "options": [
+      "Ongoing salary costs for essential employees",
+      "Annual marketing expenses required to maintain customer base",
+      "One-time costs related to successfully implemented facility consolidation with documented cost savings",
+      "Regular monthly rent payments"
+    ],
+    "correct_index": 2,
+    "explanation": "Facility consolidation — a genuinely one-time event with documented future savings — is a classic legitimate adjustment. The cost was incurred once, the savings continue perpetually, and the financial impact is verifiable. Essential salaries, maintenance marketing, and routine rent are all ongoing operating costs that cannot be removed from EBITDA. The key test: would this cost recur if we ran the business normally next year?"
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target reports €3M of 'management bonus accruals' and excludes them from adjusted EBITDA claiming they relate to the current sale transaction. How should a PE buyer evaluate this?",
+    "options": [
+      "Accept the full €3M adjustment automatically",
+      "Examine the bonus plans: transaction-specific bonuses triggered only by sale (change-of-control payments) can be adjusted; ongoing performance-based management compensation cannot",
+      "Reject entirely without investigation",
+      "Double the adjustment for conservatism"
+    ],
+    "correct_index": 1,
+    "explanation": "Transaction bonuses — one-time payments triggered by the sale closing — are legitimate adjustments because they will not recur under new ownership. However, annual performance bonuses based on EBITDA or revenue targets are ongoing compensation that continues post-sale. The diligence team reviews bonus plan documents to distinguish transaction-triggered bonuses from ongoing compensation structures."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target's adjusted EBITDA includes a €2M add-back for 'recent software implementation costs.' Upon review, the buyer discovers these costs were for a new ERP system deployed mid-year and will be amortised over 5 years. How should this be treated?",
+    "options": [
+      "Accept as a one-time adjustment because the implementation was a discrete event",
+      "Reject the adjustment because software implementation costs are typically capitalised, not expensed — the €2M likely represents implementation labour that would be amortised rather than directly expensed, and ongoing implementations are part of normal business",
+      "Accept half the adjustment",
+      "Increase the adjustment to €3M"
+    ],
+    "correct_index": 1,
+    "explanation": "Major software implementation costs are typically capitalised as part of the software asset and amortised over its useful life. If the €2M flowed through expenses (not capitalised), either the accounting was incorrect or the costs were truly expense-type (training, change management). Mid-market companies continuously implement, upgrade, or replace IT systems — these are part of the ongoing cost base, not one-time adjustments. Each deal requires specific investigation of what the €2M actually represents."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A PE buyer calculates 'LTM EBITDA' (Last Twelve Months) for a target being acquired in June 2024. What period does this cover?",
+    "options": [
+      "January 2024 through December 2024",
+      "July 2023 through June 2024 — the most recent 12 months of performance",
+      "The company's most recent fiscal year",
+      "Any 12-month period chosen by the buyer"
+    ],
+    "correct_index": 1,
+    "explanation": "LTM EBITDA = the most recent 12 months of performance ending at the analysis date. For a June 2024 acquisition, LTM covers July 2023–June 2024. LTM is preferred over fiscal year data because it captures the most current performance — especially important if the business has changed significantly since the last fiscal year-end. LTM EBITDA is the standard reference for pricing multiples at the time of transaction."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target was acquired in June 2024 at 10x LTM EBITDA of €30M. A PE buyer also examines 'NTM EBITDA' (Next Twelve Months). What is the difference and relevance?",
+    "options": [
+      "NTM EBITDA is historical; LTM is projected",
+      "NTM EBITDA is forward-looking (next 12 months) and captures expected growth, while LTM is backward-looking — if growth is strong, the deal looks cheaper on NTM than LTM",
+      "LTM and NTM are always identical",
+      "NTM EBITDA is used only for public companies"
+    ],
+    "correct_index": 1,
+    "explanation": "NTM (Next Twelve Months) EBITDA reflects projections for the upcoming period. A deal at 10x LTM (€30M) for €300M EV may be 9x NTM if EBITDA grows to €33M. NTM captures the business's expected trajectory and is particularly relevant when LTM is unrepresentative (e.g., impact of an acquisition, one-time events, cyclical trough). Both LTM and NTM multiples are typically reported for context."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target PE firm's analysis includes 'pro-forma EBITDA' incorporating the effect of a recent acquisition completed 8 months before the sale. What is the purpose?",
+    "options": [
+      "To inflate reported earnings artificially",
+      "To reflect the combined business as if the acquisition had occurred at the start of the period, providing a clearer picture of the current consolidated performance",
+      "To exclude the acquisition entirely",
+      "To predict future earnings"
+    ],
+    "correct_index": 1,
+    "explanation": "Pro-forma EBITDA combines historical results with recent acquisitions or divestitures as if they had occurred earlier in the period. This normalises the comparison and reflects the current business configuration. Without pro-forma adjustment, LTM EBITDA mixes 8 months of standalone performance with 4 months of combined performance — a mix that doesn't represent what the business looks like going forward. Pro-forma is legitimate when properly computed; aggressive sellers may overreach by including unrealised synergies."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A bolt-on acquisition generating €4M of standalone EBITDA is integrated into a target's business. The seller claims pro-forma EBITDA including €1M of 'realised synergies.' How should a PE buyer evaluate this?",
+    "options": [
+      "Accept all synergies without verification",
+      "Scrutinise whether the synergies have actually been realised (not projected), are sustainable, and are properly documented; only realised and verifiable synergies belong in EBITDA",
+      "Automatically reject any synergy adjustment",
+      "Increase the synergies to €2M"
+    ],
+    "correct_index": 1,
+    "explanation": "Synergies from acquisitions can be legitimately included in pro-forma EBITDA only if they are: (1) actually realised, not projected; (2) documented with specific cost savings or revenue gains; (3) sustainable into the future. Sellers often stretch to include synergies that are still being captured or that rely on management's optimistic estimates. QofE analysis distinguishes between achieved synergies (include) and targeted synergies (exclude from historical EBITDA)."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target company had a disastrous Q3 with a one-time €3M customer lawsuit settlement. Its reported LTM EBITDA is €20M. What is a potential normalisation approach?",
+    "options": [
+      "Do nothing — the event is already reflected in LTM",
+      "Adjust LTM EBITDA upward by €3M to normalise for the one-time settlement, making the underlying business's earning power more visible",
+      "Reduce LTM EBITDA by an additional €3M",
+      "Multiply LTM EBITDA by 1.5 to account for the bad quarter"
+    ],
+    "correct_index": 1,
+    "explanation": "One-time settlement costs that will not recur can legitimately be added back. Adjusted LTM EBITDA = €20M + €3M = €23M. This gives a clearer picture of underlying earning power. However, the adjustment must satisfy key tests: (1) the lawsuit must be genuinely resolved; (2) similar lawsuits should not be likely in the future; (3) the event is not a symptom of systemic problems (e.g., product safety issues that generate repeat litigation). Otherwise the €3M is not truly non-recurring."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A QofE report identifies that the target's EBITDA has been inflated by €1.5M from 'below cost-of-capital related party transactions' (paying the founder's property company below-market rent). How should this be adjusted?",
+    "options": [
+      "No adjustment needed — the rent payments are factual",
+      "EBITDA should be reduced by €1.5M to normalise the rent to market levels, because the below-market rate will not continue post-acquisition when the related party relationship ends or is renegotiated",
+      "EBITDA should be increased by €1.5M to show conservative results",
+      "The adjustment depends only on the tax treatment"
+    ],
+    "correct_index": 1,
+    "explanation": "Related party transactions at below-market rates artificially inflate EBITDA because the company is not bearing market-level costs. Normalisation requires adjusting these to market: if the company pays €500K rent but market rent would be €2M, EBITDA is overstated by €1.5M. Post-acquisition, the PE buyer cannot rely on below-market related party deals — either they end (increasing costs) or are renegotiated. This adjustment is a downward normalisation, not a credit to the seller."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A PE analyst is evaluating 'segment EBITDA' for a multi-business target. Which of the following is most important to verify?",
+    "options": [
+      "Total EBITDA equals the sum of segment EBITDA",
+      "Corporate overhead and shared costs are properly allocated across segments — some sellers hide overhead at the corporate level, making individual segments appear more profitable than they would be as standalone businesses",
+      "Segments have the same EBITDA margins",
+      "Segment reporting is optional"
+    ],
+    "correct_index": 1,
+    "explanation": "A common tactic: reported segment EBITDA excludes corporate overhead (allocated centrally rather than to segments), making individual segments look more profitable than they really are. If a segment generates €10M standalone EBITDA but would bear €2M of allocated corporate overhead, its 'true' EBITDA is €8M. This matters for sum-of-the-parts valuation, divestiture decisions, and understanding real business unit performance. Diligent analysis scrutinises overhead allocation methodology."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target's adjusted EBITDA includes €1.8M labelled 'professional fees for the transaction.' How should these be treated?",
+    "options": [
+      "Reject the adjustment — transaction costs are operating costs",
+      "Accept as a legitimate adjustment — transaction-specific legal, advisory, and accounting fees are one-time and will not recur for the buyer as operating costs",
+      "Include in EBITDA and then adjust again",
+      "Double the adjustment for conservatism"
+    ],
+    "correct_index": 1,
+    "explanation": "Transaction fees (advisory, legal, accounting, due diligence, tax structuring) are genuinely one-time and related to the sale process itself. They will not recur for the buyer in normal operations. Legitimate adjustment. However, the buyer must verify: are these true transaction fees or disguised ordinary expenses? Do they match expected magnitudes for a deal of this size? Are ongoing professional fees (normal legal, accounting for operations) being inadvertently included?"
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target's LTM EBITDA is €40M. The PE buyer's own QofE-adjusted view lowers it to €35M. At a negotiation multiple of 9x, what is the impact on Enterprise Value?",
+    "options": [
+      "€1M — the difference multiplied by a factor",
+      "€45M — the €5M EBITDA difference multiplied by 9x",
+      "No impact — the multiple adjusts to compensate",
+      "Cannot be determined without knowing net debt"
+    ],
+    "correct_index": 1,
+    "explanation": "Every €1M of EBITDA adjustment translates to 9x that amount in enterprise value (at a 9x multiple). The €5M EBITDA difference = €45M of EV. This is why QofE is so economically important: a seemingly small €5M disagreement on EBITDA can shift deal value by €45M. Sophisticated sellers push for higher adjustments; sophisticated buyers push back — and the negotiation often settles somewhere between the two QofE views."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A PE buyer's internal analysis distinguishes 'cash EBITDA' from 'accounting EBITDA.' What is the distinction?",
+    "options": [
+      "They are identical measures",
+      "Cash EBITDA excludes non-cash accounting items that remain in accounting EBITDA (stock-based compensation, asset impairments, certain pension costs); it attempts to measure actual cash-generating capacity",
+      "Cash EBITDA is always smaller than accounting EBITDA",
+      "Cash EBITDA is used only for tax purposes"
+    ],
+    "correct_index": 1,
+    "explanation": "Cash EBITDA adjusts accounting EBITDA to remove items that are in accounting EBITDA but don't represent cash generation. Common exclusions: stock-based compensation (if added back), changes in asset valuations, non-cash pension movements. The goal is to approximate actual cash operating generation before financing, capex, and working capital. Different PE firms and analysts use slightly different definitions, so consistency in methodology matters."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A PE analyst is evaluating EBITDA conversion to free cash flow. A target shows EBITDA of €50M but FCF of only €15M. What is the most likely primary driver of the €35M gap?",
+    "options": [
+      "Accounting errors",
+      "Some combination of high capex, working capital growth, significant cash taxes, and potentially higher-than-D&A maintenance investment",
+      "Interest expense alone",
+      "The EBITDA figure is fabricated"
+    ],
+    "correct_index": 1,
+    "explanation": "The EBITDA-to-FCF gap (€50M to €15M = 30% conversion) reflects real cash leakage not captured in EBITDA. Common drivers: capex (especially for capital-intensive businesses), working capital investment (for growing companies), cash taxes (not reflected in pre-tax EBITDA), and timing of cash payments. PE buyers must understand which driver explains the gap — addressable drivers (e.g., excess working capital) offer value creation opportunity; structural drivers (e.g., inherent capex intensity) are limits."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "What is a major limitation of using EBITDA as a performance measure?",
+    "options": [
+      "It is too simple to calculate",
+      "EBITDA ignores capital expenditure requirements and working capital investments — a capital-intensive business may have strong EBITDA but poor cash generation after reinvestment",
+      "EBITDA is always negative",
+      "EBITDA cannot be compared across companies"
+    ],
+    "correct_index": 1,
+    "explanation": "EBITDA's key limitation is that it ignores reinvestment needs. A business with €50M EBITDA but €40M annual capex has only €10M before debt service, taxes, and working capital. A similar business with €50M EBITDA and €10M capex has €40M available. Both look identical on EBITDA but are fundamentally different. This is why 'EBITDA less capex' (sometimes called 'EBITDA less maintenance capex' or 'owner earnings') is a more meaningful measure for capital-intensive businesses."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target company's LTM EBITDA shows significant quarter-over-quarter volatility. A PE buyer sees €3M, €8M, €7M, and €2M across the four quarters. What should this pattern prompt?",
+    "options": [
+      "Immediate rejection of the deal",
+      "Investigation into whether the volatility reflects seasonality (requiring normalised annual view), cyclicality (requiring downside stress testing), or operational instability (potential concern)",
+      "Averaging the quarters to get €5M quarterly",
+      "Ignoring the volatility as irrelevant"
+    ],
+    "correct_index": 1,
+    "explanation": "Quarterly EBITDA volatility can reflect different underlying causes: seasonality (e.g., retail Q4 peak is normal); cyclicality (exposure to economic cycles requires stress testing); or operational instability (inconsistent performance signals underlying problems). The PE buyer must understand which is driving volatility. Seasonal patterns are fine for LBO candidates as long as annual performance is stable. Operational instability is a red flag even if annual totals look acceptable."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target claims €50M of 'adjusted EBITDA' and states that €15M of adjustments (30% uplift) are justified. A PE analyst's comparable deals show sellers typically have 10-15% uplift. What does this comparison suggest?",
+    "options": [
+      "The target's adjustments are in line with industry norms",
+      "The unusually large adjustment quantum is a red flag warranting extra scrutiny — when adjustments significantly exceed peer patterns, the risk of aggressive or unjustified items is elevated",
+      "Adjustments are unrelated to comparability",
+      "The deal should be rejected immediately"
+    ],
+    "correct_index": 1,
+    "explanation": "Adjustment quantum is a signal of seller aggressiveness. When a seller's 30% uplift substantially exceeds typical patterns (10-15%), it suggests inclusion of questionable adjustments. Not every over-standard case involves problems (some businesses have genuinely unusual situations), but it signals the diligence team must be especially careful. Conversely, a seller with minimal adjustments or adjustments below peer average may be signalling transparency and genuine performance."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A manufacturer reports EBITDA that has grown consistently over 5 years. However, its 'EBITDA margin' has declined from 22% to 17%. What does this reveal?",
+    "options": [
+      "Strong operational performance — EBITDA is growing",
+      "Revenue has grown faster than EBITDA, suggesting margin compression — perhaps from pricing pressure, input cost inflation, or mix shift to lower-margin products",
+      "The company has fewer customers",
+      "EBITDA margin is meaningless"
+    ],
+    "correct_index": 1,
+    "explanation": "Growing EBITDA with declining margin means revenue is growing faster than profits — margin is compressing even if absolute EBITDA rises. This pattern often reflects: pricing pressure from competitors; input cost inflation not passed through; growth in lower-margin segments diluting blended margins; or investments in sales/marketing without proportional revenue return. The trend matters more than the absolute: a business with 17% and declining margins is less attractive than one with stable 20% margins, all else equal."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A PE analyst evaluates the ratio of adjusted EBITDA to reported EBITDA for multiple peers. Company A: 115% (15% uplift). Company B: 120%. Company C: 145%. What does Company C's ratio suggest?",
+    "options": [
+      "It is the highest quality company",
+      "A 45% uplift is highly unusual and suggests either very legitimate one-time items or aggressive adjustments requiring careful scrutiny",
+      "All three companies are equivalent",
+      "The comparison is meaningless"
+    ],
+    "correct_index": 1,
+    "explanation": "A 45% EBITDA uplift is highly unusual. Possible explanations: a truly exceptional period (recent legal settlement, one-time write-off, temporary disruption) genuinely requiring large adjustment, or aggressive seller reframing of recurring costs. The diligence team must determine which. When uplifts exceed 30-40%, the burden of proof on specific adjustments shifts to the seller. Pattern analysis across peer deals helps identify outliers deserving extra scrutiny."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A PE analyst compares EBITDA margins across three companies in the same industry. Company X: 18%. Company Y: 22%. Company Z: 28%. What is the most valuable interpretation?",
+    "options": [
+      "Company Z has the highest quality; Company X has the lowest",
+      "The pattern raises questions about what drives the margin differentials: is Z actually better (higher pricing, lower costs, mix shift), or are Z's margins inflated by aggressive accounting, unusual benefits, or a fundamentally different business model within the industry",
+      "All three companies must have the same margins",
+      "Margin comparisons across companies are always misleading"
+    ],
+    "correct_index": 1,
+    "explanation": "Margin differences can reflect: genuine operational superiority (better products, scale economics, pricing power, cost discipline); mix differences (different service/product tiers); one-time effects that are not sustainable; or aggressive accounting that won't continue. Analysis should separate these drivers. A margin-superior company like Company Z might be an ideal acquisition target (if genuine) or a value trap (if accounting-driven). Understanding root causes is essential."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A distressed company reports 'EBITDAR' — EBITDA plus Rent. In what circumstances is this metric sometimes used?",
+    "options": [
+      "When a company's rent expense is particularly high",
+      "When analysing companies with significant operating lease expenses (retail, restaurants, hotels), EBITDAR allows comparison between companies that own vs. lease their real estate — though this has become less common under IFRS 16 which brings most leases onto the balance sheet",
+      "EBITDAR is never used",
+      "Only in construction industry analysis"
+    ],
+    "correct_index": 1,
+    "explanation": "EBITDAR (EBITDA + Rent) was historically used to compare companies with different property ownership structures — an asset-heavy company that owns its stores has depreciation in its EBITDA while a tenant company has rent in operating expenses. EBITDAR normalises for this. IFRS 16 (effective 2019) brought operating leases onto balance sheets, largely eliminating the distortion by pushing rent-like payments to D&A and interest. EBITDAR is now less common but still used in sectors with heavy real estate operations."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target's EBITDA includes a non-recurring €4M gain from selling excess land. How should this be treated?",
+    "options": [
+      "Include in EBITDA as a normal revenue event",
+      "Remove from EBITDA — asset sale gains are non-operating and will not recur as part of the business's ongoing earnings, so they should be excluded from the EBITDA used for valuation",
+      "Double the amount for conservatism",
+      "Include only half"
+    ],
+    "correct_index": 1,
+    "explanation": "Gains from asset sales (land, excess equipment, business divestitures) are non-operating and typically non-recurring. They belong outside EBITDA for valuation purposes. Similarly, gains from investments, FX hedges, or insurance recoveries are typically excluded. However, be consistent: if gains are excluded, losses from similar non-operating events should also be excluded. The buyer's EBITDA should reflect ongoing operations only."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A target's most recent quarter shows record-high EBITDA driven by a €2M reduction in 'warranty accrual.' What should a PE buyer investigate?",
+    "options": [
+      "Nothing — lower warranty accrual is always positive",
+      "Whether the reduction reflects genuine improvement in product quality (reducing expected warranty claims) or is an accounting choice to reduce accruals, artificially boosting reported EBITDA for the sale process",
+      "Treat the €2M as pure profit",
+      "Increase the accrual by €2M"
+    ],
+    "correct_index": 1,
+    "explanation": "Warranty accruals are estimates of future product warranty costs. Reducing accruals requires either improved product quality (justifying lower reserves) or a change in accounting estimate. The timing is critical: reducing accruals right before a sale is a classic seller trick to inflate reported EBITDA. The PE buyer should investigate whether the reduction is justified by operational improvements or represents an aggressive accounting choice. If the former, it's sustainable; if the latter, it will reverse post-acquisition."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "An industrial target's EBITDA has grown from €20M to €28M over three years. A PE buyer's analysis shows that €5M of the €8M growth came from 'currency translation effects' (favourable FX). How should this be interpreted?",
+    "options": [
+      "The growth is entirely genuine operational improvement",
+      "Only €3M of the €8M growth represents underlying business performance; the FX-driven portion is volatile and should not be projected forward without careful analysis of exposure and hedging",
+      "FX effects should be doubled in the analysis",
+      "FX gains are always equivalent to operational gains"
+    ],
+    "correct_index": 1,
+    "explanation": "Currency translation gains for international businesses can significantly boost reported EBITDA without reflecting underlying performance. PE buyers separate 'underlying EBITDA growth' (currency-neutral) from 'reported EBITDA growth' to understand genuine operational trajectory. If FX gains reverse in subsequent periods (currencies move the other way), the apparent growth disappears. Constant-currency analysis and FX hedging policy are important elements of diligence for international businesses."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A PE buyer is comparing two targets with identical €30M LTM EBITDA. Target A has grown EBITDA at 4% annually for five years; Target B has grown at 12% annually over the same period. How does this affect valuation?",
+    "options": [
+      "Both targets should be priced identically",
+      "Target B typically commands a higher EBITDA multiple reflecting its stronger growth trajectory — though the buyer must assess whether the growth is sustainable or reflects recent one-time effects",
+      "Target A is more attractive because of stability",
+      "Growth history has no impact on pricing"
+    ],
+    "correct_index": 1,
+    "explanation": "Higher EBITDA growth commands premium multiples because future cash flows grow faster. Target B might trade at 11-12x vs. Target A's 9-10x — a €30-60M valuation difference on €30M EBITDA. However, the PE buyer must assess growth sustainability: is the 12% growth from structural tailwinds (sustainable), market share gains (sustainable for a while), or one-time events (not sustainable)? Due diligence focuses on understanding the growth drivers and their future trajectory."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A PE buyer is assessing a target where adjusted EBITDA has not been independently verified. What does a QofE process add beyond accepting management's adjusted EBITDA?",
+    "options": [
+      "Nothing — management's figures are accurate",
+      "An independent analysis that validates add-backs, identifies adjustments the buyer-side should make (that seller excluded), verifies working capital, and produces a defensible EBITDA for pricing and debt underwriting",
+      "Increased legal fees only",
+      "Seller-side advocacy for higher valuation"
+    ],
+    "correct_index": 1,
+    "explanation": "Independent QofE goes beyond management presentation: it validates adjustments through documentation, identifies buyer-side adjustments that sellers have omitted (e.g., working capital normalisation the seller didn't include), verifies underlying EBITDA through detailed testing, and produces a buyer-side EBITDA view. This independent figure is what the PE firm uses for pricing, lender underwriting, and IC presentation — separate from the seller's aspirational number."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A PE buyer's final adjusted EBITDA is €42M after all QofE work, while the seller's is €50M. The buyer offers 9.5x multiple and the seller demands 10x multiple. What are the two ways each side can close the gap?",
+    "options": [
+      "Only one negotiation axis: price",
+      "Both sides can either compromise on multiple (e.g., settle at 9.75x) or compromise on adjusted EBITDA (accept buyer-side or seller-side adjustments); real-world negotiations often settle both dimensions in combination",
+      "The deal cannot be completed",
+      "The seller always wins on both dimensions"
+    ],
+    "correct_index": 1,
+    "explanation": "In reality, negotiations settle both dimensions. The buyer might accept some seller adjustments (raising the agreed EBITDA toward €46M) while the seller accepts a lower multiple (9.6x). Example: Buyer offers 9.5x × €42M = €399M; seller wants 10x × €50M = €500M. A settled deal at 9.7x × €45M = €437M might bridge the gap. This is why QofE, multiple benchmarking, and negotiation strategy all matter simultaneously — the two dimensions aren't independent."
+  },
+  {
+    "topic_tag": "financial-analysis-ebitda",
+    "question": "A PE firm's LBO model uses €35M of forecasted Year 1 EBITDA for debt sizing at 5.5x leverage. If actual Year 1 EBITDA comes in at €32M instead, what is the implication?",
+    "options": [
+      "No implication — the debt remains the same",
+      "The actual leverage ratio rises to approximately 6.0x (€192M debt / €32M EBITDA), bringing the company closer to or potentially breaching covenant thresholds and requiring corrective action",
+      "The debt amount adjusts automatically",
+      "Leverage ratios don't depend on actual EBITDA"
+    ],
+    "correct_index": 1,
+    "explanation": "Debt is fixed at closing based on underwritten EBITDA. If actual EBITDA underperforms, the leverage ratio (Debt/EBITDA) rises mechanically. Example: €35M × 5.5x = €192.5M debt. If EBITDA falls to €32M, leverage = €192.5M / €32M = 6.0x — a meaningful increase that may approach covenant thresholds. This is why EBITDA accuracy matters so much in deal underwriting: EBITDA errors amplify into leverage and covenant risks."
+  }
+]
