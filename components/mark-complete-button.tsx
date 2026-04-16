@@ -56,10 +56,9 @@ export function MarkCompleteButton({ lessonUuid, initialCompleted, nextHref }: M
     setPending(false)
     if (result?.error) {
       setCompleted(false)
-    } else if (nextHref) {
-      router.push(nextHref)
     } else {
       router.refresh()
+      if (nextHref) router.push(nextHref)
     }
   }
 
