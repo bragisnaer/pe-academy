@@ -1,0 +1,63 @@
+---
+title: "Sensitivity Analysis and Scenario Planning"
+level: 11
+module: "advanced-financial-modelling"
+order: 5
+topic_tag: "advanced-financial-modelling"
+uuid: "817039ba-6035-4bff-9730-ed2e3d9f6183"
+slug: "sensitivity-analysis-and-scenario-planning"
+---
+
+A model without sensitivity analysis is a point estimate — and point estimates are always wrong. The value of sensitivity analysis is not predicting the future. It is understanding which assumptions matter most and how much room for error exists.
+
+### Data Tables in Excel
+
+Excel's Data Table function (What-If Analysis > Data Table) is the standard tool for building two-variable sensitivity tables. The table varies two inputs simultaneously and shows the output (MOIC, IRR, or any calculated cell) across the matrix.
+
+**Standard sensitivity tables for an LBO model:**
+
+1. **MOIC by exit multiple (columns) and exit EBITDA (rows)** — shows how returns vary with the two primary exit drivers
+2. **IRR by exit year (columns) and exit multiple (rows)** — shows the time sensitivity of returns
+3. **IRR by revenue growth rate (columns) and EBITDA margin (rows)** — shows the operating sensitivity
+4. **Leverage at exit by EBITDA growth (columns) and entry leverage (rows)** — shows whether the company de-levers safely across scenarios
+
+### Tornado Charts
+
+A **tornado chart** ranks the model's input assumptions by their impact on the output (typically IRR or MOIC). The assumption with the widest output range is the most sensitive — and therefore the assumption that deserves the most diligence attention.
+
+Typical findings: the exit multiple is almost always the most sensitive assumption, followed by revenue growth rate and EBITDA margin. Entry leverage and interest rate are usually less sensitive (because they are known at entry), but they dominate the downside scenario.
+
+### Scenario Manager
+
+For presentations to investment committees, build a scenario manager — a single cell (or small panel) that switches all assumptions between Base, Upside, and Downside cases simultaneously. This allows the IC to see the full scenario range without manually changing individual cells.
+
+**Implementation:** Use named ranges for each assumption in each scenario, and a CHOOSE or INDEX function that selects the appropriate value based on a scenario toggle cell.
+
+### Exercise: Full LBO Model Build
+
+**Task:** Build a complete LBO model from scratch using these assumptions:
+
+**Target:** An industrial services company.
+- LTM EBITDA: €25M
+- Entry multiple: 9x EV/EBITDA
+- Revenue: €120M, growing 4% annually
+- EBITDA margin: 20.8%, expanding 0.5 percentage points per year through operational improvement
+- Capex: €5M per year
+- Working capital: 12% of revenue
+
+**Capital structure:**
+- Senior debt: 4.5x EBITDA (€112.5M) at 5.5% interest, 2% annual mandatory amortisation, 50% excess cash flow sweep
+- Sponsor equity: remainder after debt
+- Transaction fees: 3% of EV
+
+**Exit:** Year 5, at a range of exit multiples from 8x to 11x.
+
+**Deliverables:**
+1. Sources and uses table
+2. 5-year income statement, balance sheet, and cash flow statement
+3. Debt schedule with mandatory amortisation and cash sweep
+4. Returns analysis (MOIC and IRR at base case exit multiple of 9.5x)
+5. Sensitivity table: MOIC by exit multiple (8x, 9x, 9.5x, 10x, 11x) and EBITDA margin at exit (20%, 22%, 23%, 24%)
+6. Return attribution: how much of the return comes from EBITDA growth, multiple expansion, and debt paydown
+
+This exercise should take 4–8 hours for a first-time builder and 2–3 hours for someone with prior modelling experience. It is the foundational skill test for any PE analyst or associate role.

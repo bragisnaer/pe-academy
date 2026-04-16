@@ -1,0 +1,92 @@
+---
+title: "The Three-Statement Model"
+level: 11
+module: "advanced-financial-modelling"
+order: 1
+topic_tag: "advanced-financial-modelling"
+uuid: "7c62a24c-e86f-4b01-97fc-91929a33849d"
+slug: "the-three-statement-model"
+---
+
+Every LBO model rests on a foundation: the integrated three-statement financial model. Before adding leverage, returns analysis, or sensitivity tables, the analyst must build a functioning model that links the income statement, balance sheet, and cash flow statement into a single self-balancing structure.
+
+### Why Integration Matters
+
+The three statements are connected by mechanical links:
+
+- Net income from the income statement flows into retained earnings on the balance sheet and is the starting point for the cash flow statement
+- Depreciation from the income statement is a non-cash charge that is added back in the cash flow statement and reduces the PP&E balance on the balance sheet
+- Changes in working capital items (receivables, inventory, payables) on the balance sheet drive the working capital adjustment in the cash flow statement
+- Capital expenditure in the cash flow statement increases PP&E on the balance sheet
+- Debt issuance and repayment in the cash flow statement change the debt balance on the balance sheet
+- Interest expense in the income statement is calculated from the debt balance on the balance sheet
+
+If any link is broken, the balance sheet will not balance (assets will not equal liabilities plus equity). This is the primary diagnostic: if the balance sheet balances, the model is internally consistent.
+
+### Building the Income Statement
+
+**Revenue build.** Start with historical revenue and project forward. The approach depends on the business type:
+
+- **Volume x price model:** For businesses where units sold and average selling price can be independently estimated. Example: a packaging company selling X million units at €Y per unit.
+- **Organic growth rate model:** For businesses where a growth percentage applied to prior-year revenue is the simplest credible approach. Example: a software company growing ARR at 15% per year.
+- **Bottom-up segment build:** For diversified businesses, project each business segment or product line separately and sum them. This is the most granular and defensible approach for due diligence models.
+- **Contract-based model:** For businesses with long-term contracts, model each contract's revenue contribution (start date, end date, renewal probability, price escalation).
+
+**Cost structure.** Separate costs into:
+- **Variable costs** (cost of goods sold, direct materials, direct labour) — modelled as a percentage of revenue or on a per-unit basis
+- **Fixed costs** (rent, management salaries, insurance) — modelled as absolute amounts with inflation escalation
+- **Semi-variable costs** (sales commissions, distribution costs) — modelled with a fixed base plus a variable component
+
+**EBITDA.** Revenue minus all operating costs before D&A. This is the line the PE model is built around.
+
+**Depreciation and amortisation.** Depreciation is modelled as a percentage of gross PP&E or calculated from the asset schedule. Amortisation of intangible assets (from prior acquisitions) is modelled separately. In an LBO model, the acquisition itself creates new intangible assets (customer relationships, brand, technology) through purchase price allocation, which are then amortised over their useful lives.
+
+**Interest expense.** Calculated from the debt schedule (covered below). This creates a circularity in the model: interest expense depends on debt balance, which depends on cash flow available for debt repayment, which depends on interest expense. Most models handle this through an iterative calculation or a simple average-balance approximation.
+
+**Tax.** Apply the effective tax rate to pre-tax income. For cross-border models, different tax rates may apply to different entities. For PE models, the key question is whether acquisition debt interest is tax-deductible (it usually is, subject to interest limitation rules which vary by jurisdiction).
+
+**Net income.** The bottom line, flowing into retained earnings on the balance sheet.
+
+### Building the Balance Sheet
+
+**Assets:**
+- Cash and cash equivalents
+- Accounts receivable (modelled using DSO: AR = Revenue x DSO / 365)
+- Inventory (modelled using DIO: Inventory = COGS x DIO / 365)
+- Prepaid expenses and other current assets
+- Property, plant, and equipment (prior period balance + capex – depreciation)
+- Intangible assets (prior period balance + acquired intangibles – amortisation)
+- Goodwill (created at acquisition; does not amortise under IFRS, impairment-tested annually)
+
+**Liabilities:**
+- Accounts payable (modelled using DPO: AP = COGS x DPO / 365)
+- Accrued expenses and other current liabilities
+- Debt tranches (each modelled separately in the debt schedule)
+- Deferred tax liabilities
+- Other non-current liabilities (pensions, lease obligations)
+
+**Equity:**
+- Share capital
+- Retained earnings (prior period balance + net income – dividends)
+
+**The balance check:** Total assets must equal total liabilities plus equity. If the model does not balance, there is a broken link. The most common causes: a missing working capital item, a cash flow that is not reflected on the balance sheet, or a debt repayment that is not deducted from the debt balance.
+
+### Building the Cash Flow Statement
+
+**Cash from operations:**
+- Start with net income
+- Add back non-cash charges (depreciation, amortisation, share-based compensation)
+- Adjust for changes in working capital (increase in AR = cash outflow; increase in AP = cash inflow)
+
+**Cash from investing:**
+- Capital expenditure (negative)
+- Acquisition spending (negative)
+- Asset disposal proceeds (positive)
+
+**Cash from financing:**
+- Debt issuance (positive)
+- Debt repayment (negative)
+- Equity issuance (positive)
+- Dividends (negative)
+
+**Ending cash = Beginning cash + Cash from operations + Cash from investing + Cash from financing.** This must reconcile to the cash balance on the balance sheet.

@@ -1,0 +1,49 @@
+---
+title: "Model Presentation Standards"
+level: 11
+module: "advanced-financial-modelling"
+order: 6
+topic_tag: "advanced-financial-modelling"
+uuid: "a458a1f8-6228-4e52-b97f-b47e52ffea39"
+slug: "model-presentation-standards"
+---
+
+A model is only useful if it communicates clearly. PE firms have established conventions for model layout, formatting, and presentation.
+
+### Layout Conventions
+
+- **Inputs and assumptions** on a dedicated page (or clearly separated section), coloured blue
+- **Calculations** in black
+- **Links to other sheets** in green
+- **Hard-coded overrides** (manual adjustments that bypass formulas) in red — and minimised
+- **Time flows left to right** (historical years on the left, projection years on the right)
+- **Annual columns** for the operating model; **quarterly or monthly** for the debt schedule if covenant testing requires it
+
+### Formatting Standards
+
+- Consistent number formatting (one decimal place for percentages, zero decimals for large currency amounts, one decimal for multiples)
+- Row and column labels on every page
+- Units clearly stated (€ millions, $ thousands, etc.)
+- Print layout configured for A4 or Letter (models are still printed for IC meetings more often than people expect)
+- Version control (date and analyst initials in the header)
+
+### Common Modelling Errors
+
+| Error | Why It Happens | How to Catch It |
+|-------|---------------|-----------------|
+| Balance sheet does not balance | Broken link in working capital, debt, or equity | Check the balance every period |
+| Negative cash balance | Cash sweep is too aggressive or capex is not funded | Add a minimum cash constraint |
+| Interest calculated on wrong balance | Opening vs. closing vs. average confusion | Document the convention and apply consistently |
+| Tax on a loss year | Model calculates negative tax expense | Add MAX(0, tax) logic; carry forward losses where applicable |
+| Circularity error | Interest depends on debt depends on cash depends on interest | Enable iterative calculations; add a circularity switch |
+| Exit equity includes management equity | MOIC is calculated on total equity, not sponsor equity | Separate sponsor and management equity in the returns page |
+
+### Key Terms Introduced in This Module
+
+- **Three-statement model** — an integrated financial model linking the income statement, balance sheet, and cash flow statement
+- **Debt schedule** — the component tracking each debt tranche's balance, interest, and repayment over the hold period
+- **Cash sweep** — a provision requiring excess cash flow to be used for mandatory debt prepayment
+- **Circularity** — the circular reference created when interest expense depends on the debt balance, which depends on cash flow, which depends on interest expense
+- **Sensitivity table (data table)** — a matrix showing how a model output varies across a range of two input assumptions
+- **Tornado chart** — a visual ranking of input assumptions by their impact on the model output
+- **Sources and uses** — the reconciliation of all funding sources (debt + equity) with all uses (purchase price + fees + cash)

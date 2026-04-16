@@ -1,0 +1,68 @@
+---
+title: "Discounted Cash Flow (DCF)"
+level: 3
+module: "valuation-methods"
+order: 3
+topic_tag: "valuation-methods"
+uuid: "0829dff1-407b-4b07-8a9f-39b7baf03ca9"
+slug: "discounted-cash-flow"
+---
+
+A **discounted cash flow** analysis values a business based on the present value of its expected future cash flows. Unlike multiples-based approaches (which value by analogy), DCF is an **intrinsic valuation** — it asks: what is this specific business worth based on its own projected financial performance?
+
+### The DCF Framework
+
+A standard DCF has three components:
+
+**1. Projection period (typically 5–10 years).** The analyst builds a detailed financial model projecting revenue, EBITDA, capex, working capital changes, and taxes to derive **unlevered free cash flow** for each year.
+
+**2. Terminal value.** After the projection period, a terminal value captures the remaining value of the business in perpetuity. Two methods are common:
+
+- **Perpetuity growth method:** Terminal value = Final year FCF x (1 + long-term growth rate) / (discount rate – long-term growth rate). Assumes cash flows grow at a stable rate indefinitely (typically 2–3%, approximating GDP growth).
+- **Exit multiple method:** Terminal value = Final year EBITDA x assumed exit EV/EBITDA multiple. More common in PE because it mirrors how PE firms actually exit businesses.
+
+**3. Discount rate.** Future cash flows are discounted to the present using the **weighted average cost of capital (WACC)** — a blended rate reflecting the cost of both debt and equity capital, weighted by the target capital structure.
+
+> **Enterprise value = Sum of discounted FCFs + Discounted terminal value**
+
+### Sensitivity Analysis
+
+DCF outputs are highly sensitive to assumptions — small changes in growth rates, margins, or discount rates can shift the valuation by 20–30%. For this reason, PE professionals always run sensitivity analysis (also called a "sensitivity table" or "tornado chart") showing how the implied value changes across a range of assumptions.
+
+The two most impactful assumptions are typically the **terminal growth rate** (or exit multiple) and the **discount rate**. A serious DCF analysis presents a valuation range, not a single point estimate.
+
+### DCF in PE Practice
+
+PE firms use DCF less frequently as a primary valuation tool than multiples analysis, because:
+
+- PE deals are priced relative to market (multiples are what buyers actually pay)
+- DCF requires many subjective assumptions that are hard to validate
+- The terminal value often represents 60–80% of total DCF value, making the analysis heavily dependent on a single assumption about distant future performance
+
+However, DCF is useful for:
+
+- Cross-checking multiples-based valuations
+- Valuing businesses in sectors where public comps are scarce
+- Analysing asset-heavy businesses (infrastructure, real estate) where long-term cash flows are more predictable
+- Defending or challenging a price in negotiations
+
+### Exercise: DCF Sensitivity
+
+**Task:** A target company has projected Year 1 FCF of €20 million, growing at 5% annually for 5 years. The terminal growth rate is 2.5% and the WACC is 10%. Using the perpetuity growth method, calculate the enterprise value.
+
+**Solution:**
+Year 1–5 FCF: €20.0M, €21.0M, €22.05M, €23.15M, €24.31M
+Terminal value (end of Year 5): €24.31M x (1.025) / (0.10 – 0.025) = €24.92M / 0.075 = **€332.3M**
+PV of Year 1–5 FCF (discounted at 10%): €18.18M + €17.36M + €16.57M + €15.82M + €15.10M = **€83.0M**
+PV of terminal value: €332.3M / (1.10)^5 = €332.3M / 1.6105 = **€206.3M**
+**Enterprise value = €83.0M + €206.3M = €289.3M**
+
+Note that the terminal value represents 71% of total enterprise value — typical for a DCF, and the reason sensitivity analysis on terminal assumptions is critical.
+
+### Key Terms Introduced in This Lesson
+
+- **Discounted cash flow (DCF)** — valuation based on the present value of projected future cash flows
+- **Terminal value** — the value of a business beyond the explicit projection period
+- **WACC (Weighted Average Cost of Capital)** — the blended discount rate reflecting the cost of debt and equity capital
+- **Perpetuity growth method** — calculating terminal value by assuming FCF grows at a constant rate indefinitely
+- **Sensitivity analysis** — testing how valuation changes across a range of key assumptions

@@ -1,0 +1,66 @@
+---
+title: "The Debt Schedule"
+level: 11
+module: "advanced-financial-modelling"
+order: 2
+topic_tag: "advanced-financial-modelling"
+uuid: "94f4f466-fab6-4acc-89fd-181529a26903"
+slug: "the-debt-schedule"
+---
+
+The debt schedule is the mechanical heart of an LBO model. It tracks each debt tranche from issuance through repayment, calculates interest expense, and determines the ending debt balance that drives exit equity value.
+
+### Structure
+
+For each debt tranche, the schedule tracks:
+
+| Row | Description |
+|-----|-------------|
+| Opening balance | The debt balance at the start of the period |
+| Drawdowns | Any additional debt drawn during the period (for revolving credit facilities) |
+| Mandatory amortisation | Scheduled principal repayments (e.g., 1% per quarter for a term loan) |
+| Optional prepayment | Excess cash flow used to voluntarily repay debt (a "cash sweep") |
+| Closing balance | Opening balance + drawdowns – mandatory amortisation – optional prepayment |
+| Interest rate | Fixed or floating (base rate + spread) |
+| Interest expense | Average balance x interest rate (or opening balance x rate, depending on convention) |
+
+### Cash Sweep Mechanics
+
+Most LBO debt agreements include a **cash sweep** provision: a percentage (typically 50–75%) of excess cash flow must be used to prepay debt. Excess cash flow is generally defined as:
+
+> Excess cash flow = EBITDA – cash taxes – cash interest – capex – working capital increase – mandatory amortisation
+
+The cash sweep ensures that the company uses surplus cash to reduce leverage rather than accumulating cash on the balance sheet or paying dividends.
+
+In the model, the cash sweep is calculated after all other cash flows. The available cash is allocated to debt repayment in order of contractual priority (senior debt first, then junior tranches).
+
+### Revolving Credit Facility (RCF)
+
+Most LBO capital structures include a revolving credit facility — an undrawn line of credit that the company can draw on for working capital needs or short-term cash shortfalls. The RCF is modelled as:
+
+- Maximum availability (e.g., €20M)
+- Drawn balance (modelled as a plug to ensure the company maintains a minimum cash balance)
+- Undrawn commitment fee (typically 0.25–0.50% on the undrawn portion)
+- Interest on drawn amounts (similar to the term loan rate)
+
+### The Circularity Problem
+
+Interest expense depends on the debt balance. The debt balance depends on cash available for repayment. Cash available depends on net income, which depends on interest expense. This creates a **circular reference**.
+
+Solutions:
+- **Enable iterative calculations** in Excel (File > Options > Formulas > Enable Iterative Calculation). This allows Excel to resolve the circularity through multiple calculation passes.
+- **Use an average balance approach** for interest calculation: Interest = (Opening balance + Closing balance) / 2 x interest rate. This approximation avoids the full circularity.
+- **Use a circularity switch** (a toggle cell that breaks the circular reference for troubleshooting; set to 1 for live model, 0 to break the circle).
+
+### Exercise: Build a Simple Debt Schedule
+
+**Task:** Build a 5-year debt schedule for the following capital structure:
+
+- Senior term loan: €200M at 5.0% interest, 2% annual mandatory amortisation, 75% excess cash flow sweep
+- Revolving credit facility: €30M available, 0.5% commitment fee on undrawn, 5.0% interest on drawn
+- Annual EBITDA: €50M (Year 1), growing 5% per year
+- Cash taxes: 25% of pre-tax income
+- Capex: €8M per year
+- Working capital increase: €2M per year
+
+Calculate: the closing debt balance, cumulative interest paid, and cumulative debt repaid at the end of Year 5.

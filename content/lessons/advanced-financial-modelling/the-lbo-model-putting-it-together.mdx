@@ -1,0 +1,110 @@
+---
+title: "The LBO Model: Putting It Together"
+level: 11
+module: "advanced-financial-modelling"
+order: 3
+topic_tag: "advanced-financial-modelling"
+uuid: "6dd09170-b462-4592-bfcb-2b4a0ded0567"
+slug: "the-lbo-model-putting-it-together"
+---
+
+A complete LBO model integrates the three-statement model and debt schedule with two additional components: the transaction structure (entry) and the returns analysis (exit).
+
+### Transaction Page (Entry)
+
+The transaction page captures all entry assumptions in one place:
+
+**Valuation:**
+- Target EBITDA (LTM or NTM, and which EBITDA figure — reported, adjusted, or buyer's adjusted)
+- Entry multiple (EV/EBITDA)
+- Enterprise value (EBITDA x multiple)
+- Net debt adjustment (existing debt assumed or refinanced, cash, debt-like items)
+- Equity value at entry
+
+**Sources of funds:**
+- Senior debt (amount, rate, amortisation, maturity)
+- Unitranche or mezzanine (amount, rate, PIK component if applicable)
+- Revolving credit facility (size, rate, commitment fee)
+- Sponsor equity (PE fund investment)
+- Management rollover equity (if management reinvests existing equity)
+- Total sources (must equal total uses)
+
+**Uses of funds:**
+- Purchase of equity (equity value)
+- Refinancing of existing debt
+- Transaction fees (advisory fees, legal, accounting, debt arrangement fees — typically 2–4% of enterprise value)
+- Cash to balance sheet (minimum operating cash)
+- Total uses
+
+**The sources and uses must balance.** This is the first check in any LBO model.
+
+### Operating Model
+
+The operating model projects financial performance over the hold period (typically 5 years, sometimes 7). It consists of:
+
+- Revenue projection (using one of the methods described in the three-statement section)
+- EBITDA projection (revenue x EBITDA margin, or a detailed cost build)
+- Below-EBITDA items (D&A, interest from the debt schedule, taxes)
+- Free cash flow calculation
+- Working capital projection
+
+The operating model should include three scenarios:
+
+**Base case** — the GP's realistic expectation. Conservative revenue growth, achievable margin improvement, modest working capital optimisation.
+
+**Upside case** — what happens if the thesis outperforms. Higher revenue growth, faster margin expansion, successful bolt-on acquisitions. This case should be plausible.
+
+**Downside case** — what happens if the market turns or execution stumbles. Revenue flat or declining, margin compression, higher capex requirements. This case should model a genuine adverse scenario, not a gentle softening of the base case.
+
+### Returns Analysis (Exit)
+
+The returns page calculates what the PE fund earns:
+
+**Exit assumptions:**
+- Exit year (typically Year 3, 4, 5, 6, or 7 — model multiple scenarios)
+- Exit EBITDA (from the operating model for the chosen exit year)
+- Exit multiple (EV/EBITDA at exit — model a range, not a single point)
+
+**Calculation:**
+1. Exit enterprise value = Exit EBITDA x Exit multiple
+2. Net debt at exit = Total debt from the debt schedule minus cash on hand
+3. Exit equity value = Exit EV – Net debt at exit
+4. MOIC = Exit equity value / Sponsor equity invested
+5. IRR = The annualised return calculated using the XIRR function in Excel, based on the exact dates and amounts of all cash flows (equity investment at entry, any interim dividends, and equity proceeds at exit)
+
+### Sensitivity Tables
+
+The two most critical sensitivity tables:
+
+**MOIC sensitivity:** A matrix showing MOIC across a range of exit multiples (columns) and exit EBITDA levels (rows). This shows the GP how returns vary with the two key exit assumptions.
+
+**IRR sensitivity:** The same matrix but showing IRR instead of MOIC. Because IRR is time-sensitive, a separate set of tables showing IRR across different exit years is also valuable.
+
+**Leverage sensitivity:** A matrix showing returns at different entry leverage levels. This helps the GP understand the risk-return tradeoff: more leverage amplifies returns in the base case but destroys equity in the downside case.
+
+### The "Sources and Uses" Reconciliation
+
+A common error in LBO models is a mismatch between sources and uses. The reconciliation must account for:
+
+- Enterprise value (the total consideration for the business)
+- Existing debt that is refinanced (repaid and replaced with new LBO debt)
+- Existing cash that is retained or extracted
+- Transaction fees (paid at closing)
+- Debt arrangement fees (capitalised or expensed)
+- Minimum cash required on the balance sheet post-closing
+- Management rollover equity (if any)
+
+### Model Audit Checklist
+
+Before presenting an LBO model, verify:
+
+- [ ] Balance sheet balances in every period
+- [ ] Sources = Uses on the transaction page
+- [ ] Debt schedule closing balances reconcile to balance sheet debt
+- [ ] Interest expense in the income statement matches the debt schedule
+- [ ] Cash flow statement ending cash reconciles to balance sheet cash
+- [ ] Free cash flow is consistent between the cash flow statement and the debt schedule inputs
+- [ ] Tax calculation is correct (check for negative tax in loss years — most jurisdictions do not refund tax on losses immediately)
+- [ ] Sensitivity tables update correctly when assumptions change
+- [ ] MOIC and IRR are calculated on sponsor equity only (exclude management rollover)
+- [ ] The downside case does not breach debt covenants without flagging the breach

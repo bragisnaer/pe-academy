@@ -1,0 +1,71 @@
+---
+title: "LBO Model Construction"
+level: 3
+module: "valuation-methods"
+order: 4
+topic_tag: "valuation-methods"
+uuid: "5b0817ab-0165-4ff2-ba16-36fd6e412380"
+slug: "lbo-model-construction"
+---
+
+The **LBO model** is the defining analytical tool of private equity. It is a financial model that simulates the complete economics of a leveraged buyout — from acquisition and financing through operations and exit — to determine the expected equity return (MOIC and IRR) for the PE fund.
+
+### Structure of an LBO Model
+
+A standard LBO model has five interconnected components:
+
+**1. Transaction assumptions.** Entry enterprise value, entry multiple (EV/EBITDA), equity contribution, debt quantum and structure (senior, unitranche, mezzanine), transaction fees and expenses.
+
+**2. Operating model.** Revenue, EBITDA, and free cash flow projections over the hold period (typically 5 years). The operating model drives the cash available for debt repayment and the enterprise value at exit.
+
+**3. Debt schedule.** Tracks each debt tranche: opening balance, interest expense (fixed or floating), mandatory amortisation, and optional prepayments from excess cash flow. The debt schedule determines total interest expense (feeding into the income statement) and ending debt balance (feeding into the exit equity value calculation).
+
+**4. Returns analysis.** Calculates equity value at exit (exit EV minus remaining debt), MOIC, and IRR across base case, upside, and downside scenarios. The returns analysis also includes a sensitivity table showing how returns vary with different exit multiples and EBITDA outcomes.
+
+**5. Credit metrics.** Leverage ratio (Debt/EBITDA), interest coverage ratio, and fixed charge coverage ratio over the hold period. These confirm the deal is financeable and that the company can service its debt comfortably.
+
+### A Simplified LBO Walkthrough
+
+**Entry:**
+- Target EBITDA: €50 million
+- Entry multiple: 10x EV/EBITDA
+- Enterprise value: €500 million
+- Debt: €300 million (6x EBITDA)
+- Equity: €200 million
+
+**Operations (5-year hold):**
+- EBITDA grows at 5% annually: €50M → €63.8M by Year 5
+- Annual FCF after interest and taxes: approximately €25 million
+- Cumulative debt paydown: €100 million (debt falls from €300M to €200M)
+
+**Exit:**
+- Exit multiple: 11x EBITDA (modest expansion)
+- Exit EV: €63.8M x 11 = €701.8 million
+- Exit equity value: €701.8M – €200M remaining debt = **€501.8 million**
+
+**Returns:**
+- MOIC: €501.8M / €200M = **2.5x**
+- IRR (over 5 years): approximately **20%**
+
+**Return attribution:**
+- EBITDA growth contributed ~€138M of enterprise value increase
+- Multiple expansion (10x to 11x) contributed ~€63.8M
+- Debt paydown contributed €100M to equity value
+
+### The "Ability to Pay" Analysis
+
+PE firms use the LBO model to determine the **maximum price** they can pay for a business while still generating their target return (typically 20–25% gross IRR or 2.5x+ MOIC). This "ability to pay" analysis is the bridge between valuation and deal pricing:
+
+1. Set the target return (e.g., 20% IRR over 5 years)
+2. Assume a reasonable exit multiple range
+3. Build the operating model with base case assumptions
+4. Solve for the maximum entry price that still delivers the target return given available financing
+
+This approach is fundamentally different from public market valuation. Public investors ask "what is this business worth?" PE investors ask "what can I pay for this business and still earn my required return?"
+
+### Key Terms Introduced in This Lesson
+
+- **LBO model** — a financial model simulating the economics of a leveraged buyout from entry through exit
+- **Debt schedule** — the component of an LBO model tracking each debt tranche's balance, interest, and repayment over the hold period
+- **Return attribution** — decomposing a deal's total return into contributions from EBITDA growth, multiple expansion, and debt paydown
+- **Ability to pay** — the maximum acquisition price a PE firm can pay while generating its target return given financing constraints and operating assumptions

@@ -1,0 +1,56 @@
+---
+title: "Bolt-On Acquisition Modelling"
+level: 11
+module: "advanced-financial-modelling"
+order: 4
+topic_tag: "advanced-financial-modelling"
+uuid: "26f4fb0a-7941-4118-a472-32a66049aff5"
+slug: "bolt-on-acquisition-modelling"
+---
+
+Buy-and-build strategies require the LBO model to accommodate bolt-on acquisitions during the hold period. This adds significant complexity.
+
+### Modelling a Bolt-On
+
+**Entry assumptions for each bolt-on:**
+- Acquisition year
+- Bolt-on EBITDA at acquisition
+- Entry multiple (typically lower than the platform's entry multiple)
+- Bolt-on purchase price (EBITDA x multiple)
+- Funding source (incremental debt, equity from the fund, or cash from the platform's balance sheet)
+- Expected cost synergies (amount and timeline to achieve)
+- Revenue synergies (if any — model conservatively)
+- Integration costs (one-time expenses)
+
+**Impact on the operating model:**
+- The bolt-on's revenue and EBITDA are added to the platform's projections from the acquisition year onward
+- Synergies phase in over 1–2 years (do not assume full synergies from day one)
+- Integration costs are modelled as one-time expenses in the year of acquisition
+
+**Impact on the debt schedule:**
+- If funded by incremental debt, the bolt-on increases the platform's total leverage
+- The incremental debt carries its own interest rate and amortisation terms
+- The combined entity's leverage ratio (total debt / combined EBITDA) must remain within lender covenants
+
+**Impact on returns:**
+- The bolt-on increases the total equity invested (if funded by equity) or increases debt (if funded by debt)
+- At exit, the combined entity (platform + bolt-ons + synergies) is valued at the platform's exit multiple — this is where multiple arbitrage creates value
+- MOIC = Exit equity value / Total sponsor equity invested (platform equity + bolt-on equity contributions)
+
+### Multiple Arbitrage: A Worked Example
+
+**Platform:** Acquired at 10x EBITDA. EBITDA at entry: €30M. EV: €300M.
+
+**Bolt-on:** Acquired in Year 2 at 6x EBITDA. Bolt-on EBITDA: €5M. Bolt-on cost: €30M. Funded with incremental debt.
+
+**Synergies:** €2M annual cost synergies, fully realised by Year 3.
+
+**At exit (Year 5):**
+- Combined EBITDA: €30M (platform, grown to €38M at 5% CAGR) + €5M (bolt-on, grown to €6.4M) + €2M synergies = **€46.4M**
+- Exit multiple: 11x (modest expansion from 10x)
+- Exit EV: €46.4M x 11 = **€510.4M**
+
+**Value from multiple arbitrage alone:**
+The bolt-on was acquired at 6x (€30M for €5M EBITDA). At exit it is valued at 11x. The re-rating on the bolt-on's Year 5 EBITDA (€6.4M): (11 – 6) x €6.4M = **€32M of value created purely from the multiple differential.**
+
+This is the economic engine of buy-and-build.

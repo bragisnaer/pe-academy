@@ -1,10 +1,13 @@
 import { notFound, redirect } from "next/navigation"
 import type { Metadata } from "next"
 import { Suspense } from "react"
-import { getLessons, getLessonBySlug } from "@/lib/content"
+import Link from "next/link"
+import { getLessons, getLessonBySlug, getLessonsByModule } from "@/lib/content"
 import { MdxContent } from "@/components/mdx-content"
 import { MarkCompleteButton } from "@/components/mark-complete-button"
 import { NewsWidget } from "@/components/news-widget"
+import { LessonTOC } from "@/components/lesson-toc"
+import { ReadingProgress } from "@/components/reading-progress"
 import { getUnlockedLevelIds } from "@/lib/actions/progress"
 import { LEVELS } from "@/content/curriculum-taxonomy"
 
@@ -66,26 +69,36 @@ export default async function LessonPage({
     if (levelMeta) {
       const unlockedLevelIds = await getUnlockedLevelIds()
       if (!unlockedLevelIds.includes(levelMeta.uuid)) {
-        redirect("/levels/beginner/quiz")
+        // Redirect to the quiz that gates this level (level N-1 quiz)
+        const prevLevel = LEVELS.find((l) => l.number === lesson.level - 1)
+        redirect(prevLevel ? `/levels/${prevLevel.slug}/quiz` : '/dashboard')
       }
     }
   }
 
+  const moduleLessons = getLessonsByModule(moduleSlug)
+  const currentIndex = moduleLessons.findIndex((l) => l.slugAsParams === lessonSlug)
+  const prevLesson = currentIndex > 0 ? moduleLessons[currentIndex - 1] : null
+  const nextLesson = currentIndex < moduleLessons.length - 1 ? moduleLessons[currentIndex + 1] : null
+  const readingTime = Math.max(1, Math.ceil(lesson.wordCount / 200))
+
   return (
     <article>
-      <h1 className="text-3xl font-semibold text-white mb-8">{lesson.title}</h1>
+      <ReadingProgress />
 
-      <div
-        className={[
-          "text-base text-zinc-400 leading-relaxed",
-          "[&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:text-white [&_h2]:mt-8 [&_h2]:mb-4",
-          "[&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2",
-          "[&_li]:text-zinc-400",
-          "[&_blockquote]:border-l-2 [&_blockquote]:border-white/20 [&_blockquote]:pl-4 [&_blockquote]:text-zinc-300 [&_blockquote]:italic [&_blockquote]:my-4",
-          "[&_strong]:text-white [&_strong]:font-semibold",
-          "[&_p]:mb-4",
-        ].join(" ")}
-      >
+      {/* Meta row — position + reading time */}
+      <div className="flex items-center gap-2 text-xs text-muted-foreground mb-4">
+        <span>Lesson {currentIndex + 1} of {moduleLessons.length}</span>
+        <span aria-hidden="true">·</span>
+        <span>~{readingTime} min read</span>
+      </div>
+
+      <h1 className="text-3xl font-semibold text-foreground mb-6">{lesson.title}</h1>
+
+      {/* Table of contents with active-state tracking */}
+      <LessonTOC headings={lesson.headings} />
+
+      <div className="lesson-prose">
         <MdxContent code={lesson.body} withGlossary />
       </div>
 
@@ -93,6 +106,39 @@ export default async function LessonPage({
       <Suspense fallback={null}>
         <NewsWidget topicTag={lesson.topic_tag} />
       </Suspense>
+
+      {/* Prev / Next lesson navigation */}
+      <nav
+        aria-label="Lesson navigation"
+        className="flex items-start justify-between gap-4 mt-12 pt-8 border-t border-border"
+      >
+        {prevLesson ? (
+          <Link
+            href={`/lessons/${moduleSlug}/${prevLesson.slugAsParams}`}
+            className="flex flex-col gap-0.5 group max-w-[45%]"
+          >
+            <span className="text-xs text-muted-foreground">Previous</span>
+            <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors line-clamp-2">
+              ← {prevLesson.title}
+            </span>
+          </Link>
+        ) : (
+          <div />
+        )}
+        {nextLesson ? (
+          <Link
+            href={`/lessons/${moduleSlug}/${nextLesson.slugAsParams}`}
+            className="flex flex-col gap-0.5 items-end text-right group max-w-[45%]"
+          >
+            <span className="text-xs text-muted-foreground">Next</span>
+            <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors line-clamp-2">
+              {nextLesson.title} →
+            </span>
+          </Link>
+        ) : (
+          <div />
+        )}
+      </nav>
 
       {/* Mark complete — right-aligned on desktop, full-width on mobile */}
       <div className="flex justify-end mt-8">
