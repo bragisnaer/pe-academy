@@ -74,10 +74,6 @@ export default async function QuizSplashPage({
             No switching tabs or windows — three switches auto-submit your answers.
           </li>
           <li className="flex items-start gap-2">
-            <span className="text-destructive font-bold mt-0.5">!</span>
-            Questions are locked at start — refreshing will not give you new questions.
-          </li>
-          <li className="flex items-start gap-2">
             <span className="text-muted-foreground/60 mt-0.5">·</span>
             Score {threshold}% or higher to pass and unlock the next level.
           </li>
